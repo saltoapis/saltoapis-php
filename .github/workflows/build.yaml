@@ -1,0 +1,37 @@
+name: "SALTO APIs build"
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v2
+      - name: init
+        run: |
+          docker build -f Dockerfile.build -t saltoapis-php .
+          docker run --rm -i -d --name saltoapis-php saltoapis-php
+      - name: prepare
+        run: docker exec -i saltoapis-php make prepare
+      - name: sanity-check
+        run: docker exec -i saltoapis-php make sanity-check
+      - name: build
+        run: docker exec -i saltoapis-php make build
+      - name: test
+        run: docker exec -i saltoapis-php make test
+      - name: release
+        if: github.ref == 'refs/heads/main'
+        run: docker exec -i saltoapis-php make release
+      - name: clean
+        run: |
+          docker exec -i saltoapis-php make clean
+          docker stop saltoapis-php
