@@ -5,20 +5,21 @@ This file contains rules used to generate the `composer.json` file.
 def _get_dependency_template(repo, version):
     return '''\t\t"%s": "%s"''' % (repo, version)
 
-def _get_autoloading_template(ns):
+def _get_autoloading_template(ns, custom_prefix = ''):
     # ns: //src/Saltoapis/Nebula/User/V1
     # => "Saltoapis\\Nebula\\User\\V1\\": "src/Saltoapis/Nebula/User/V1",
-    # => "GPBMetadata\\Saltoapis\\Nebula\\User\\V1\\": "src/GPBMetadata/Saltoapis/Nebula/User/V1",
+    # if custom_prefix is set, then
+    # => "custom_prefix\\Saltoapis\\Nebula\\User\\V1\\": "src/custom_prefix/Saltoapis/Nebula/User/V1",
 
     path = ns.removeprefix("//")
     php_ns = ns.removeprefix("//src/").replace("/", "\\\\") + "\\\\"
-    
-    gpb_metadata_path = ns.replace("//src/", "src/GPBMetadata/")
-    gpb_metadata_ns = "GPBMetadata\\\\" + php_ns
+
+    if custom_prefix != '':
+        path = path.replace("src/", "src/%s/" % custom_prefix)
+        php_ns = custom_prefix + "\\\\" + php_ns
     
     return [
         '''\t\t\t"%s": "%s"''' % (php_ns, path),
-        '''\t\t\t"%s": "%s"''' % (gpb_metadata_ns, gpb_metadata_path),
     ]
 
 def _composer_json(ctx):
@@ -30,10 +31,12 @@ def _composer_json(ctx):
         version = dependencies[repo]
         external_dependencies.append(_get_dependency_template(repo, version))
 
-    namespaces = ctx.attr.namespaces
     autoloading = []
-    for ns in namespaces:
+    for ns in ctx.attr.namespaces:
         autoloading += _get_autoloading_template(ns)
+
+    for ns in ctx.attr.metadata_namespaces:
+        autoloading += _get_autoloading_template(ns, 'GPBMetadata')
 
     out = ctx.actions.declare_file('composer.json')
     ctx.actions.expand_template(
@@ -59,6 +62,9 @@ composer_json = rule(
             mandatory = True,
         ),
         "namespaces": attr.string_list(
+            default = [],
+        ),
+        "metadata_namespaces": attr.string_list(
             default = [],
         ),
         "external_deps": attr.string_dict(

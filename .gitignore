@@ -3,4 +3,4 @@ composer.phar
 /vendor/
 
 ##### Bazel
-bazel-*/
+bazel-*
