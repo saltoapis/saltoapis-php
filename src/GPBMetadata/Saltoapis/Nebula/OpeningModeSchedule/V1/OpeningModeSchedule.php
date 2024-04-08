@@ -22,7 +22,7 @@ class OpeningModeSchedule
         \GPBMetadata\Saltoapis\Type\TimeOfDay::initOnce();
         $pool->internalAddGeneratedFile(
             '
-Å
+á
 ?salto/nebula/openingmodeschedule/v1/opening_mode_schedule.proto#salto.nebula.openingmodeschedule.v1 google/protobuf/field_mask.proto salto/nebula/type/day_type.proto$salto/nebula/type/opening_mode.protosalto/type/day_of_week.protosalto/type/time_of_day.proto"Ã
 OpeningModeSchedule
 name (	
@@ -63,8 +63,8 @@ page_token (	
 GetOpeningModeScheduleB.salto.nebula.openingmodeschedule.v1.GetOpeningModeScheduleRequest8.salto.nebula.openingmodeschedule.v1.OpeningModeScheduleß
 ListOpeningModeSchedulesD.salto.nebula.openingmodeschedule.v1.ListOpeningModeSchedulesRequestE.salto.nebula.openingmodeschedule.v1.ListOpeningModeSchedulesResponseú
 UpdateOpeningModeScheduleE.salto.nebula.openingmodeschedule.v1.UpdateOpeningModeScheduleRequest8.salto.nebula.openingmodeschedule.v1.OpeningModeSchedulez
-DeleteOpeningModeScheduleE.salto.nebula.openingmodeschedule.v1.DeleteOpeningModeScheduleRequest.google.protobuf.EmptyB´
-+com.saltoapis.nebula.openingmodeschedule.v1BOpeningModeScheduleProtoPZVgithub.com/saltosystems/saltoapis-go/nebula/openingmodeschedule/v1;openingmodeschedule™\'Saltoapis.Nebula.OpeningModeSchedule.V1 \'Saltoapis\\Nebula\\OpeningModeSchedule\\V1‚3GPBMetadata\\Saltoapis\\Nebula\\OpeningModeSchedule\\V1bproto3'
+DeleteOpeningModeScheduleE.salto.nebula.openingmodeschedule.v1.DeleteOpeningModeScheduleRequest.google.protobuf.EmptyB±
++com.saltoapis.nebula.openingmodeschedule.v1BOpeningModeScheduleProtoPZ\\github.com/saltoapis-internal/saltoapis-go/nebula/openingmodeschedule/v1;openingmodeschedule™\'Saltoapis.Nebula.OpeningModeSchedule.V1 \'Saltoapis\\Nebula\\OpeningModeSchedule\\V1‚3GPBMetadata\\Saltoapis\\Nebula\\OpeningModeSchedule\\V1bproto3'
         , true);
 
         static::$is_initialized = true;

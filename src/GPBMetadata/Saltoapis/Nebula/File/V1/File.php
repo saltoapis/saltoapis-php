@@ -16,7 +16,7 @@ class File
         }
         $pool->internalAddGeneratedFile(
             '
-µ
+»
 salto/nebula/file/v1/file.protosalto.nebula.file.v1"(
 File
 name (	
@@ -26,8 +26,8 @@ upload_uri (	"#
 parent (	2`
 FileServiceQ
 
-CreateFile\'.salto.nebula.file.v1.CreateFileRequest.salto.nebula.file.v1.FileBÂ
-com.saltoapis.nebula.file.v1B	FileProtoPZ8github.com/saltosystems/saltoapis-go/nebula/file/v1;fileªSaltoapis.Nebula.File.V1ÊSaltoapis\\Nebula\\File\\V1â$GPBMetadata\\Saltoapis\\Nebula\\File\\V1bproto3'
+CreateFile\'.salto.nebula.file.v1.CreateFileRequest.salto.nebula.file.v1.FileBÈ
+com.saltoapis.nebula.file.v1B	FileProtoPZ>github.com/saltoapis-internal/saltoapis-go/nebula/file/v1;fileªSaltoapis.Nebula.File.V1ÊSaltoapis\\Nebula\\File\\V1â$GPBMetadata\\Saltoapis\\Nebula\\File\\V1bproto3'
         , true);
 
         static::$is_initialized = true;
