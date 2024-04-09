@@ -17,7 +17,7 @@ class DeviceMetadata
         \GPBMetadata\Saltoapis\Type\Date::initOnce();
         $pool->internalAddGeneratedFile(
             '
-Å
+Ë
 \'salto/nebula/type/device_metadata.protosalto.nebula.type"¥
 DeviceMetadataF
 circuit_boards (2..salto.nebula.type.DeviceMetadata.CircuitBoardÊ
@@ -27,8 +27,8 @@ class DeviceMetadata
 	firmwares (27.salto.nebula.type.DeviceMetadata.CircuitBoard.Firmware+
 Firmware
 number (	
-version (	BÖ
-com.saltoapis.nebula.typeBDeviceMetadataProtoPZNgithub.com/saltosystems/saltoapis-go/nebula/type/devicemetadata;devicemetadataªSaltoapis.Nebula.TypeÊSaltoapis\\Nebula\\Typeâ!GPBMetadata\\Saltoapis\\Nebula\\Typebproto3'
+version (	BÜ
+com.saltoapis.nebula.typeBDeviceMetadataProtoPZTgithub.com/saltoapis-internal/saltoapis-go/nebula/type/devicemetadata;devicemetadataªSaltoapis.Nebula.TypeÊSaltoapis\\Nebula\\Typeâ!GPBMetadata\\Saltoapis\\Nebula\\Typebproto3'
         , true);
 
         static::$is_initialized = true;

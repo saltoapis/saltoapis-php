@@ -19,7 +19,7 @@ class Types
         \GPBMetadata\Saltoapis\Nebula\User\V1\User::initOnce();
         $pool->internalAddGeneratedFile(
             '
-é
+ï
 !salto/nebula/event/v1/types.protosalto.nebula.event.v1.salto/nebula/accessright/v1/access_right.protosalto/nebula/user/v1/user.proto"T
 AccessPointCreated>
 access_point (2(.salto.nebula.accesspoint.v1.AccessPoint"T
@@ -86,9 +86,9 @@ wallet_key (2.salto.nebula.user.v1.WalletKey"r
 WalletKeyCanceled(
 user (2.salto.nebula.user.v1.User3
 
-wallet_key (2.salto.nebula.user.v1.WalletKeyBÉ
+wallet_key (2.salto.nebula.user.v1.WalletKeyBÏ
 com.saltoapis.nebula.event.v1B
-TypesProtoPZ:github.com/saltosystems/saltoapis-go/nebula/event/v1;eventªSaltoapis.Nebula.Event.V1ÊSaltoapis\\Nebula\\Event\\V1â%GPBMetadata\\Saltoapis\\Nebula\\Event\\V1bproto3'
+TypesProtoPZ@github.com/saltoapis-internal/saltoapis-go/nebula/event/v1;eventªSaltoapis.Nebula.Event.V1ÊSaltoapis\\Nebula\\Event\\V1â%GPBMetadata\\Saltoapis\\Nebula\\Event\\V1bproto3'
         , true);
 
         static::$is_initialized = true;

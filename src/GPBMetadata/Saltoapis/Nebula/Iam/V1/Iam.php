@@ -16,7 +16,7 @@ class Iam
         }
         $pool->internalAddGeneratedFile(
             '
-Ö
+Ü
 salto/nebula/iam/v1/iam.protosalto.nebula.iam.v1"?
 Role
 name (	
@@ -37,8 +37,8 @@ page_token (	
 
 IAMServiceI
 GetRole#.salto.nebula.iam.v1.GetRoleRequest.salto.nebula.iam.v1.RoleZ
-	ListRoles%.salto.nebula.iam.v1.ListRolesRequest&.salto.nebula.iam.v1.ListRolesResponseB»
-com.saltoapis.nebula.iam.v1BIamProtoPZ6github.com/saltosystems/saltoapis-go/nebula/iam/v1;iamªSaltoapis.Nebula.Iam.V1ÊSaltoapis\\Nebula\\Iam\\V1â#GPBMetadata\\Saltoapis\\Nebula\\Iam\\V1bproto3'
+	ListRoles%.salto.nebula.iam.v1.ListRolesRequest&.salto.nebula.iam.v1.ListRolesResponseBÁ
+com.saltoapis.nebula.iam.v1BIamProtoPZ<github.com/saltoapis-internal/saltoapis-go/nebula/iam/v1;iamªSaltoapis.Nebula.Iam.V1ÊSaltoapis\\Nebula\\Iam\\V1â#GPBMetadata\\Saltoapis\\Nebula\\Iam\\V1bproto3'
         , true);
 
         static::$is_initialized = true;

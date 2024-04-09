@@ -16,14 +16,14 @@ class Date
         }
         $pool->internalAddGeneratedFile(
             '
-õ
+û
 salto/type/date.proto
 salto.type"0
 Date
 year (
 month (
-day (B•
-com.saltoapis.typeB	DateProtoPZ3github.com/saltosystems/saltoapis-go/type/date;dateªSaltoapis.TypeÊSaltoapis\\TypeâGPBMetadata\\Saltoapis\\Typebproto3'
+day (B›
+com.saltoapis.typeB	DateProtoPZ9github.com/saltoapis-internal/saltoapis-go/type/date;dateªSaltoapis.TypeÊSaltoapis\\TypeâGPBMetadata\\Saltoapis\\Typebproto3'
         , true);
 
         static::$is_initialized = true;

@@ -18,7 +18,7 @@ class Event
         \GPBMetadata\Google\Protobuf\Timestamp::initOnce();
         $pool->internalAddGeneratedFile(
             '
-¡
+§
 !salto/nebula/event/v1/event.protosalto.nebula.event.v1google/protobuf/timestamp.proto"½
 Event
 name (	
@@ -43,9 +43,9 @@ page_token (	
 EventServiceP
 GetEvent&.salto.nebula.event.v1.GetEventRequest.salto.nebula.event.v1.Eventa
 
-ListEvents(.salto.nebula.event.v1.ListEventsRequest).salto.nebula.event.v1.ListEventsResponseBÉ
+ListEvents(.salto.nebula.event.v1.ListEventsRequest).salto.nebula.event.v1.ListEventsResponseBÏ
 com.saltoapis.nebula.event.v1B
-EventProtoPZ:github.com/saltosystems/saltoapis-go/nebula/event/v1;eventªSaltoapis.Nebula.Event.V1ÊSaltoapis\\Nebula\\Event\\V1â%GPBMetadata\\Saltoapis\\Nebula\\Event\\V1bproto3'
+EventProtoPZ@github.com/saltoapis-internal/saltoapis-go/nebula/event/v1;eventªSaltoapis.Nebula.Event.V1ÊSaltoapis\\Nebula\\Event\\V1â%GPBMetadata\\Saltoapis\\Nebula\\Event\\V1bproto3'
         , true);
 
         static::$is_initialized = true;

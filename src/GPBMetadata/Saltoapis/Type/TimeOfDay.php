@@ -16,15 +16,15 @@ class TimeOfDay
         }
         $pool->internalAddGeneratedFile(
             '
-¦
+¬
 salto/type/time_of_day.proto
 salto.type"K
 	TimeOfDay
 hours (
 minutes (
 seconds (
-nanos (B¤
-com.saltoapis.typeBTimeOfDayProtoPZ=github.com/saltosystems/saltoapis-go/type/timeofday;timeofdayªSaltoapis.TypeÊSaltoapis\\TypeâGPBMetadata\\Saltoapis\\Typebproto3'
+nanos (Bª
+com.saltoapis.typeBTimeOfDayProtoPZCgithub.com/saltoapis-internal/saltoapis-go/type/timeofday;timeofdayªSaltoapis.TypeÊSaltoapis\\TypeâGPBMetadata\\Saltoapis\\Typebproto3'
         , true);
 
         static::$is_initialized = true;

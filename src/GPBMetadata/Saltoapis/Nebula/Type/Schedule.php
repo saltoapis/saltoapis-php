@@ -19,7 +19,7 @@ class Schedule
         \GPBMetadata\Saltoapis\Type\TimeOfDay::initOnce();
         $pool->internalAddGeneratedFile(
             '
-±
+·
  salto/nebula/type/schedule.protosalto.nebula.typesalto/type/day_of_week.protosalto/type/time_of_day.proto"î
 Schedule-
 days (2.salto.nebula.type.Schedule.Day)
@@ -28,8 +28,8 @@ start_time (2.salto.type.TimeOfDay\'
 end_time (2.salto.type.TimeOfDay_
 Day,
 day_type (2.salto.nebula.type.DayType*
-day_of_week (2.salto.type.DayOfWeekBÄ
-com.saltoapis.nebula.typeBScheduleProtoPZBgithub.com/saltosystems/saltoapis-go/nebula/type/schedule;scheduleªSaltoapis.Nebula.TypeÊSaltoapis\\Nebula\\Typeâ!GPBMetadata\\Saltoapis\\Nebula\\Typebproto3'
+day_of_week (2.salto.type.DayOfWeekBÊ
+com.saltoapis.nebula.typeBScheduleProtoPZHgithub.com/saltoapis-internal/saltoapis-go/nebula/type/schedule;scheduleªSaltoapis.Nebula.TypeÊSaltoapis\\Nebula\\Typeâ!GPBMetadata\\Saltoapis\\Nebula\\Typebproto3'
         , true);
 
         static::$is_initialized = true;
