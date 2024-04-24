@@ -158,4 +158,23 @@ class ExtenderServiceClient extends \Grpc\BaseStub {
         $metadata, $options);
     }
 
+    /**
+     * Reset an extender
+     *
+     * Resetting a device such as an extender means returning it to its
+     * factory settings. Resetting is the process of removing the identity as
+     * well as all the associated information of an already configured device.
+     * @param \Saltoapis\Nebula\Extender\V1\ResetExtenderRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function ResetExtender(\Saltoapis\Nebula\Extender\V1\ResetExtenderRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.extender.v1.ExtenderService/ResetExtender',
+        $argument,
+        ['\Saltoapis\Longrunning\V1\Operation', 'decode'],
+        $metadata, $options);
+    }
+
 }
