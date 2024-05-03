@@ -18,18 +18,7 @@ class Schedule
         \GPBMetadata\Saltoapis\Type\DayOfWeek::initOnce();
         \GPBMetadata\Saltoapis\Type\TimeOfDay::initOnce();
         $pool->internalAddGeneratedFile(
-            '
-·
- salto/nebula/type/schedule.protosalto.nebula.typesalto/type/day_of_week.protosalto/type/time_of_day.proto"î
-Schedule-
-days (2.salto.nebula.type.Schedule.Day)
-
-start_time (2.salto.type.TimeOfDay\'
-end_time (2.salto.type.TimeOfDay_
-Day,
-day_type (2.salto.nebula.type.DayType*
-day_of_week (2.salto.type.DayOfWeekBÊ
-com.saltoapis.nebula.typeBScheduleProtoPZHgithub.com/saltoapis-internal/saltoapis-go/nebula/type/schedule;scheduleªSaltoapis.Nebula.TypeÊSaltoapis\\Nebula\\Typeâ!GPBMetadata\\Saltoapis\\Nebula\\Typebproto3'
+            "\x0A\xB7\x04\x0A salto/nebula/type/schedule.proto\x12\x11salto.nebula.type\x1A\x1Csalto/type/day_of_week.proto\x1A\x1Csalto/type/time_of_day.proto\"\xEE\x01\x0A\x08Schedule\x12-\x0A\x04days\x18\x01 \x03(\x0B2\x1F.salto.nebula.type.Schedule.Day\x12)\x0A\x0Astart_time\x18\x02 \x01(\x0B2\x15.salto.type.TimeOfDay\x12'\x0A\x08end_time\x18\x03 \x01(\x0B2\x15.salto.type.TimeOfDay\x1A_\x0A\x03Day\x12,\x0A\x08day_type\x18\x01 \x01(\x0E2\x1A.salto.nebula.type.DayType\x12*\x0A\x0Bday_of_week\x18\x02 \x01(\x0E2\x15.salto.type.DayOfWeekB\xCA\x01\x0A\x19com.saltoapis.nebula.typeB\x0DScheduleProtoP\x01ZHgithub.com/saltoapis-internal/saltoapis-go/nebula/type/schedule;schedule\xAA\x02\x15Saltoapis.Nebula.Type\xCA\x02\x15Saltoapis\\Nebula\\Type\xE2\x02!GPBMetadata\\Saltoapis\\Nebula\\Typeb\x06proto3"
         , true);
 
         static::$is_initialized = true;

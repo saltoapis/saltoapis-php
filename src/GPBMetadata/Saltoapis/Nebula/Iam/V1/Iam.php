@@ -15,30 +15,7 @@ class Iam
           return;
         }
         $pool->internalAddGeneratedFile(
-            '
-Ü
-salto/nebula/iam/v1/iam.protosalto.nebula.iam.v1"?
-Role
-name (	
-display_name (	
-permissions (	"
-GetRoleRequest
-name (	"k
-ListRolesRequest
-parent (	
-	page_size (
-
-page_token (	
-filter (	
-order_by (	"V
-ListRolesResponse(
-roles (2.salto.nebula.iam.v1.Role
-next_page_token (	2³
-
-IAMServiceI
-GetRole#.salto.nebula.iam.v1.GetRoleRequest.salto.nebula.iam.v1.RoleZ
-	ListRoles%.salto.nebula.iam.v1.ListRolesRequest&.salto.nebula.iam.v1.ListRolesResponseBÁ
-com.saltoapis.nebula.iam.v1BIamProtoPZ<github.com/saltoapis-internal/saltoapis-go/nebula/iam/v1;iamªSaltoapis.Nebula.Iam.V1ÊSaltoapis\\Nebula\\Iam\\V1â#GPBMetadata\\Saltoapis\\Nebula\\Iam\\V1bproto3'
+            "\x0A\xDC\x05\x0A\x1Dsalto/nebula/iam/v1/iam.proto\x12\x13salto.nebula.iam.v1\"?\x0A\x04Role\x12\x0C\x0A\x04name\x18\x01 \x01(\x09\x12\x14\x0A\x0Cdisplay_name\x18\x02 \x01(\x09\x12\x13\x0A\x0Bpermissions\x18\x03 \x03(\x09\"\x1E\x0A\x0EGetRoleRequest\x12\x0C\x0A\x04name\x18\x01 \x01(\x09\"k\x0A\x10ListRolesRequest\x12\x0E\x0A\x06parent\x18\x01 \x01(\x09\x12\x11\x0A\x09page_size\x18\x02 \x01(\x05\x12\x12\x0A\x0Apage_token\x18\x03 \x01(\x09\x12\x0E\x0A\x06filter\x18\x04 \x01(\x09\x12\x10\x0A\x08order_by\x18\x05 \x01(\x09\"V\x0A\x11ListRolesResponse\x12(\x0A\x05roles\x18\x01 \x03(\x0B2\x19.salto.nebula.iam.v1.Role\x12\x17\x0A\x0Fnext_page_token\x18\x02 \x01(\x092\xB3\x01\x0A\x0AIAMService\x12I\x0A\x07GetRole\x12#.salto.nebula.iam.v1.GetRoleRequest\x1A\x19.salto.nebula.iam.v1.Role\x12Z\x0A\x09ListRoles\x12%.salto.nebula.iam.v1.ListRolesRequest\x1A&.salto.nebula.iam.v1.ListRolesResponseB\xC1\x01\x0A\x1Bcom.saltoapis.nebula.iam.v1B\x08IamProtoP\x01Z<github.com/saltoapis-internal/saltoapis-go/nebula/iam/v1;iam\xAA\x02\x17Saltoapis.Nebula.Iam.V1\xCA\x02\x17Saltoapis\\Nebula\\Iam\\V1\xE2\x02#GPBMetadata\\Saltoapis\\Nebula\\Iam\\V1b\x06proto3"
         , true);
 
         static::$is_initialized = true;

@@ -16,19 +16,7 @@ class DeviceMetadata
         }
         \GPBMetadata\Saltoapis\Type\Date::initOnce();
         $pool->internalAddGeneratedFile(
-            '
-Ë
-\'salto/nebula/type/device_metadata.protosalto.nebula.type"¥
-DeviceMetadataF
-circuit_boards (2..salto.nebula.type.DeviceMetadata.CircuitBoardÊ
-CircuitBoard*
-manufacture_date (2.salto.type.Date
-serial_number (	J
-	firmwares (27.salto.nebula.type.DeviceMetadata.CircuitBoard.Firmware+
-Firmware
-number (	
-version (	BÜ
-com.saltoapis.nebula.typeBDeviceMetadataProtoPZTgithub.com/saltoapis-internal/saltoapis-go/nebula/type/devicemetadata;devicemetadataªSaltoapis.Nebula.TypeÊSaltoapis\\Nebula\\Typeâ!GPBMetadata\\Saltoapis\\Nebula\\Typebproto3'
+            "\x0A\xCB\x04\x0A'salto/nebula/type/device_metadata.proto\x12\x11salto.nebula.type\"\xA5\x02\x0A\x0EDeviceMetadata\x12F\x0A\x0Ecircuit_boards\x18\x01 \x03(\x0B2..salto.nebula.type.DeviceMetadata.CircuitBoard\x1A\xCA\x01\x0A\x0CCircuitBoard\x12*\x0A\x10manufacture_date\x18\x02 \x01(\x0B2\x10.salto.type.Date\x12\x15\x0A\x0Dserial_number\x18\x03 \x01(\x09\x12J\x0A\x09firmwares\x18\x04 \x03(\x0B27.salto.nebula.type.DeviceMetadata.CircuitBoard.Firmware\x1A+\x0A\x08Firmware\x12\x0E\x0A\x06number\x18\x01 \x01(\x09\x12\x0F\x0A\x07version\x18\x02 \x01(\x09B\xDC\x01\x0A\x19com.saltoapis.nebula.typeB\x13DeviceMetadataProtoP\x01ZTgithub.com/saltoapis-internal/saltoapis-go/nebula/type/devicemetadata;devicemetadata\xAA\x02\x15Saltoapis.Nebula.Type\xCA\x02\x15Saltoapis\\Nebula\\Type\xE2\x02!GPBMetadata\\Saltoapis\\Nebula\\Typeb\x06proto3"
         , true);
 
         static::$is_initialized = true;

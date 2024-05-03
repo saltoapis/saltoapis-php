@@ -143,6 +143,3 @@ class Card extends \Google\Protobuf\Internal\Message
 
 }
 
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(Card::class, \Saltoapis\Nebula\Installation\V1\PaymentMethod_Card::class);
-

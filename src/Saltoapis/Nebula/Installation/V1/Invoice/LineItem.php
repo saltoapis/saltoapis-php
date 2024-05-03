@@ -145,6 +145,3 @@ class LineItem extends \Google\Protobuf\Internal\Message
 
 }
 
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(LineItem::class, \Saltoapis\Nebula\Installation\V1\Invoice_LineItem::class);
-
