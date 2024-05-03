@@ -83,6 +83,3 @@ class MetadataEntry extends \Google\Protobuf\Internal\Message
 
 }
 
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(MetadataEntry::class, \Google\Rpc\ErrorInfo_MetadataEntry::class);
-

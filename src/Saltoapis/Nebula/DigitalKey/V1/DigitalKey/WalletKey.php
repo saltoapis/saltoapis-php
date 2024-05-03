@@ -119,6 +119,3 @@ class WalletKey extends \Google\Protobuf\Internal\Message
 
 }
 
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(WalletKey::class, \Saltoapis\Nebula\DigitalKey\V1\DigitalKey_WalletKey::class);
-

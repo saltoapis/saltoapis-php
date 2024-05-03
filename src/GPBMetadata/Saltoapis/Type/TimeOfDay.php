@@ -15,16 +15,7 @@ class TimeOfDay
           return;
         }
         $pool->internalAddGeneratedFile(
-            '
-¬
-salto/type/time_of_day.proto
-salto.type"K
-	TimeOfDay
-hours (
-minutes (
-seconds (
-nanos (Bª
-com.saltoapis.typeBTimeOfDayProtoPZCgithub.com/saltoapis-internal/saltoapis-go/type/timeofday;timeofdayªSaltoapis.TypeÊSaltoapis\\TypeâGPBMetadata\\Saltoapis\\Typebproto3'
+            "\x0A\xAC\x02\x0A\x1Csalto/type/time_of_day.proto\x12\x0Asalto.type\"K\x0A\x09TimeOfDay\x12\x0D\x0A\x05hours\x18\x01 \x01(\x05\x12\x0F\x0A\x07minutes\x18\x02 \x01(\x05\x12\x0F\x0A\x07seconds\x18\x03 \x01(\x05\x12\x0D\x0A\x05nanos\x18\x04 \x01(\x05B\xAA\x01\x0A\x12com.saltoapis.typeB\x0ETimeOfDayProtoP\x01ZCgithub.com/saltoapis-internal/saltoapis-go/type/timeofday;timeofday\xAA\x02\x0ESaltoapis.Type\xCA\x02\x0ESaltoapis\\Type\xE2\x02\x1AGPBMetadata\\Saltoapis\\Typeb\x06proto3"
         , true);
 
         static::$is_initialized = true;

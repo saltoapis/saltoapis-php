@@ -18,77 +18,7 @@ class Types
         \GPBMetadata\Saltoapis\Nebula\AccessRight\V1\AccessRight::initOnce();
         \GPBMetadata\Saltoapis\Nebula\User\V1\User::initOnce();
         $pool->internalAddGeneratedFile(
-            '
-ï
-!salto/nebula/event/v1/types.protosalto.nebula.event.v1.salto/nebula/accessright/v1/access_right.protosalto/nebula/user/v1/user.proto"T
-AccessPointCreated>
-access_point (2(.salto.nebula.accesspoint.v1.AccessPoint"T
-AccessPointUpdated>
-access_point (2(.salto.nebula.accesspoint.v1.AccessPoint"T
-AccessPointDeleted>
-access_point (2(.salto.nebula.accesspoint.v1.AccessPoint"
-AccessPointUnlocked>
-access_point (2(.salto.nebula.accesspoint.v1.AccessPoint(
-user (2.salto.nebula.user.v1.User"}
-AccessPointLocked>
-access_point (2(.salto.nebula.accesspoint.v1.AccessPoint(
-user (2.salto.nebula.user.v1.User"x
-AccessDenied>
-access_point (2(.salto.nebula.accesspoint.v1.AccessPoint(
-user (2.salto.nebula.user.v1.User"T
-AccessRightCreated>
-access_right (2(.salto.nebula.accessright.v1.AccessRight"T
-AccessRightUpdated>
-access_right (2(.salto.nebula.accessright.v1.AccessRight"T
-AccessRightDeleted>
-access_right (2(.salto.nebula.accessright.v1.AccessRight"Ÿ
-AccessRightAccessPointCreated>
-access_right (2(.salto.nebula.accessright.v1.AccessRight>
-access_point (2(.salto.nebula.accesspoint.v1.AccessPoint"Ÿ
-AccessRightAccessPointDeleted>
-access_right (2(.salto.nebula.accessright.v1.AccessRight>
-access_point (2(.salto.nebula.accesspoint.v1.AccessPoint"7
-UserCreated(
-user (2.salto.nebula.user.v1.User"7
-UserUpdated(
-user (2.salto.nebula.user.v1.User"7
-UserBlocked(
-user (2.salto.nebula.user.v1.User"9
-UserUnblocked(
-user (2.salto.nebula.user.v1.User"7
-UserDeleted(
-user (2.salto.nebula.user.v1.User"‚
-UserAccessRightCreated(
-user (2.salto.nebula.user.v1.User>
-access_right (2(.salto.nebula.accessright.v1.AccessRight"‚
-UserAccessRightUpdated(
-user (2.salto.nebula.user.v1.User>
-access_right (2(.salto.nebula.accessright.v1.AccessRight"‚
-UserAccessRightDeleted(
-user (2.salto.nebula.user.v1.User>
-access_right (2(.salto.nebula.accessright.v1.AccessRight"l
-CardKeyAssigned(
-user (2.salto.nebula.user.v1.User/
-card_key (2.salto.nebula.user.v1.CardKey"l
-CardKeyCanceled(
-user (2.salto.nebula.user.v1.User/
-card_key (2.salto.nebula.user.v1.CardKey"i
-AppKeyAssigned(
-user (2.salto.nebula.user.v1.User-
-app_key (2.salto.nebula.user.v1.AppKey"i
-AppKeyCanceled(
-user (2.salto.nebula.user.v1.User-
-app_key (2.salto.nebula.user.v1.AppKey"r
-WalletKeyAssigned(
-user (2.salto.nebula.user.v1.User3
-
-wallet_key (2.salto.nebula.user.v1.WalletKey"r
-WalletKeyCanceled(
-user (2.salto.nebula.user.v1.User3
-
-wallet_key (2.salto.nebula.user.v1.WalletKeyBÏ
-com.saltoapis.nebula.event.v1B
-TypesProtoPZ@github.com/saltoapis-internal/saltoapis-go/nebula/event/v1;eventªSaltoapis.Nebula.Event.V1ÊSaltoapis\\Nebula\\Event\\V1â%GPBMetadata\\Saltoapis\\Nebula\\Event\\V1bproto3'
+            "\x0A\xEF\x16\x0A!salto/nebula/event/v1/types.proto\x12\x15salto.nebula.event.v1\x1A.salto/nebula/accessright/v1/access_right.proto\x1A\x1Fsalto/nebula/user/v1/user.proto\"T\x0A\x12AccessPointCreated\x12>\x0A\x0Caccess_point\x18\x01 \x01(\x0B2(.salto.nebula.accesspoint.v1.AccessPoint\"T\x0A\x12AccessPointUpdated\x12>\x0A\x0Caccess_point\x18\x01 \x01(\x0B2(.salto.nebula.accesspoint.v1.AccessPoint\"T\x0A\x12AccessPointDeleted\x12>\x0A\x0Caccess_point\x18\x01 \x01(\x0B2(.salto.nebula.accesspoint.v1.AccessPoint\"\x7F\x0A\x13AccessPointUnlocked\x12>\x0A\x0Caccess_point\x18\x01 \x01(\x0B2(.salto.nebula.accesspoint.v1.AccessPoint\x12(\x0A\x04user\x18\x02 \x01(\x0B2\x1A.salto.nebula.user.v1.User\"}\x0A\x11AccessPointLocked\x12>\x0A\x0Caccess_point\x18\x01 \x01(\x0B2(.salto.nebula.accesspoint.v1.AccessPoint\x12(\x0A\x04user\x18\x02 \x01(\x0B2\x1A.salto.nebula.user.v1.User\"x\x0A\x0CAccessDenied\x12>\x0A\x0Caccess_point\x18\x01 \x01(\x0B2(.salto.nebula.accesspoint.v1.AccessPoint\x12(\x0A\x04user\x18\x02 \x01(\x0B2\x1A.salto.nebula.user.v1.User\"T\x0A\x12AccessRightCreated\x12>\x0A\x0Caccess_right\x18\x01 \x01(\x0B2(.salto.nebula.accessright.v1.AccessRight\"T\x0A\x12AccessRightUpdated\x12>\x0A\x0Caccess_right\x18\x01 \x01(\x0B2(.salto.nebula.accessright.v1.AccessRight\"T\x0A\x12AccessRightDeleted\x12>\x0A\x0Caccess_right\x18\x01 \x01(\x0B2(.salto.nebula.accessright.v1.AccessRight\"\x9F\x01\x0A\x1DAccessRightAccessPointCreated\x12>\x0A\x0Caccess_right\x18\x01 \x01(\x0B2(.salto.nebula.accessright.v1.AccessRight\x12>\x0A\x0Caccess_point\x18\x02 \x01(\x0B2(.salto.nebula.accesspoint.v1.AccessPoint\"\x9F\x01\x0A\x1DAccessRightAccessPointDeleted\x12>\x0A\x0Caccess_right\x18\x01 \x01(\x0B2(.salto.nebula.accessright.v1.AccessRight\x12>\x0A\x0Caccess_point\x18\x02 \x01(\x0B2(.salto.nebula.accesspoint.v1.AccessPoint\"7\x0A\x0BUserCreated\x12(\x0A\x04user\x18\x01 \x01(\x0B2\x1A.salto.nebula.user.v1.User\"7\x0A\x0BUserUpdated\x12(\x0A\x04user\x18\x01 \x01(\x0B2\x1A.salto.nebula.user.v1.User\"7\x0A\x0BUserBlocked\x12(\x0A\x04user\x18\x01 \x01(\x0B2\x1A.salto.nebula.user.v1.User\"9\x0A\x0DUserUnblocked\x12(\x0A\x04user\x18\x01 \x01(\x0B2\x1A.salto.nebula.user.v1.User\"7\x0A\x0BUserDeleted\x12(\x0A\x04user\x18\x01 \x01(\x0B2\x1A.salto.nebula.user.v1.User\"\x82\x01\x0A\x16UserAccessRightCreated\x12(\x0A\x04user\x18\x01 \x01(\x0B2\x1A.salto.nebula.user.v1.User\x12>\x0A\x0Caccess_right\x18\x02 \x01(\x0B2(.salto.nebula.accessright.v1.AccessRight\"\x82\x01\x0A\x16UserAccessRightUpdated\x12(\x0A\x04user\x18\x01 \x01(\x0B2\x1A.salto.nebula.user.v1.User\x12>\x0A\x0Caccess_right\x18\x02 \x01(\x0B2(.salto.nebula.accessright.v1.AccessRight\"\x82\x01\x0A\x16UserAccessRightDeleted\x12(\x0A\x04user\x18\x01 \x01(\x0B2\x1A.salto.nebula.user.v1.User\x12>\x0A\x0Caccess_right\x18\x02 \x01(\x0B2(.salto.nebula.accessright.v1.AccessRight\"l\x0A\x0FCardKeyAssigned\x12(\x0A\x04user\x18\x01 \x01(\x0B2\x1A.salto.nebula.user.v1.User\x12/\x0A\x08card_key\x18\x02 \x01(\x0B2\x1D.salto.nebula.user.v1.CardKey\"l\x0A\x0FCardKeyCanceled\x12(\x0A\x04user\x18\x01 \x01(\x0B2\x1A.salto.nebula.user.v1.User\x12/\x0A\x08card_key\x18\x02 \x01(\x0B2\x1D.salto.nebula.user.v1.CardKey\"i\x0A\x0EAppKeyAssigned\x12(\x0A\x04user\x18\x01 \x01(\x0B2\x1A.salto.nebula.user.v1.User\x12-\x0A\x07app_key\x18\x02 \x01(\x0B2\x1C.salto.nebula.user.v1.AppKey\"i\x0A\x0EAppKeyCanceled\x12(\x0A\x04user\x18\x01 \x01(\x0B2\x1A.salto.nebula.user.v1.User\x12-\x0A\x07app_key\x18\x02 \x01(\x0B2\x1C.salto.nebula.user.v1.AppKey\"r\x0A\x11WalletKeyAssigned\x12(\x0A\x04user\x18\x01 \x01(\x0B2\x1A.salto.nebula.user.v1.User\x123\x0A\x0Awallet_key\x18\x02 \x01(\x0B2\x1F.salto.nebula.user.v1.WalletKey\"r\x0A\x11WalletKeyCanceled\x12(\x0A\x04user\x18\x01 \x01(\x0B2\x1A.salto.nebula.user.v1.User\x123\x0A\x0Awallet_key\x18\x02 \x01(\x0B2\x1F.salto.nebula.user.v1.WalletKeyB\xCF\x01\x0A\x1Dcom.saltoapis.nebula.event.v1B\x0ATypesProtoP\x01Z@github.com/saltoapis-internal/saltoapis-go/nebula/event/v1;event\xAA\x02\x19Saltoapis.Nebula.Event.V1\xCA\x02\x19Saltoapis\\Nebula\\Event\\V1\xE2\x02%GPBMetadata\\Saltoapis\\Nebula\\Event\\V1b\x06proto3"
         , true);
 
         static::$is_initialized = true;

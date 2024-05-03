@@ -17,35 +17,7 @@ class Event
         \GPBMetadata\Google\Protobuf\Struct::initOnce();
         \GPBMetadata\Google\Protobuf\Timestamp::initOnce();
         $pool->internalAddGeneratedFile(
-            '
-§
-!salto/nebula/event/v1/event.protosalto.nebula.event.v1google/protobuf/timestamp.proto"½
-Event
-name (	
-type (	
-resource (	/
-create_time (2.google.protobuf.Timestamp.
-
-occur_time (2.google.protobuf.Timestamp%
-data (2.google.protobuf.Struct"
-GetEventRequest
-name (	"l
-ListEventsRequest
-parent (	
-	page_size (
-
-page_token (	
-filter (	
-order_by (	"[
-ListEventsResponse,
-events (2.salto.nebula.event.v1.Event
-next_page_token (	2Ã
-EventServiceP
-GetEvent&.salto.nebula.event.v1.GetEventRequest.salto.nebula.event.v1.Eventa
-
-ListEvents(.salto.nebula.event.v1.ListEventsRequest).salto.nebula.event.v1.ListEventsResponseBÏ
-com.saltoapis.nebula.event.v1B
-EventProtoPZ@github.com/saltoapis-internal/saltoapis-go/nebula/event/v1;eventªSaltoapis.Nebula.Event.V1ÊSaltoapis\\Nebula\\Event\\V1â%GPBMetadata\\Saltoapis\\Nebula\\Event\\V1bproto3'
+            "\x0A\xA7\x07\x0A!salto/nebula/event/v1/event.proto\x12\x15salto.nebula.event.v1\x1A\x1Fgoogle/protobuf/timestamp.proto\"\xBD\x01\x0A\x05Event\x12\x0C\x0A\x04name\x18\x01 \x01(\x09\x12\x0C\x0A\x04type\x18\x02 \x01(\x09\x12\x10\x0A\x08resource\x18\x03 \x01(\x09\x12/\x0A\x0Bcreate_time\x18\x04 \x01(\x0B2\x1A.google.protobuf.Timestamp\x12.\x0A\x0Aoccur_time\x18\x05 \x01(\x0B2\x1A.google.protobuf.Timestamp\x12%\x0A\x04data\x18\x06 \x01(\x0B2\x17.google.protobuf.Struct\"\x1F\x0A\x0FGetEventRequest\x12\x0C\x0A\x04name\x18\x01 \x01(\x09\"l\x0A\x11ListEventsRequest\x12\x0E\x0A\x06parent\x18\x01 \x01(\x09\x12\x11\x0A\x09page_size\x18\x02 \x01(\x05\x12\x12\x0A\x0Apage_token\x18\x03 \x01(\x09\x12\x0E\x0A\x06filter\x18\x04 \x01(\x09\x12\x10\x0A\x08order_by\x18\x05 \x01(\x09\"[\x0A\x12ListEventsResponse\x12,\x0A\x06events\x18\x01 \x03(\x0B2\x1C.salto.nebula.event.v1.Event\x12\x17\x0A\x0Fnext_page_token\x18\x02 \x01(\x092\xC3\x01\x0A\x0CEventService\x12P\x0A\x08GetEvent\x12&.salto.nebula.event.v1.GetEventRequest\x1A\x1C.salto.nebula.event.v1.Event\x12a\x0A\x0AListEvents\x12(.salto.nebula.event.v1.ListEventsRequest\x1A).salto.nebula.event.v1.ListEventsResponseB\xCF\x01\x0A\x1Dcom.saltoapis.nebula.event.v1B\x0AEventProtoP\x01Z@github.com/saltoapis-internal/saltoapis-go/nebula/event/v1;event\xAA\x02\x19Saltoapis.Nebula.Event.V1\xCA\x02\x19Saltoapis\\Nebula\\Event\\V1\xE2\x02%GPBMetadata\\Saltoapis\\Nebula\\Event\\V1b\x06proto3"
         , true);
 
         static::$is_initialized = true;

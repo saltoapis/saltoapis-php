@@ -133,6 +133,3 @@ class Day extends \Google\Protobuf\Internal\Message
 
 }
 
-// Adding a class alias for backwards compatibility with the previous class name.
-class_alias(Day::class, \Saltoapis\Nebula\OpeningModeSchedule\V1\OpeningModeSchedule_Day::class);
-

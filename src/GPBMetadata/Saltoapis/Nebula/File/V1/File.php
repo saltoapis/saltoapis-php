@@ -15,19 +15,7 @@ class File
           return;
         }
         $pool->internalAddGeneratedFile(
-            '
-»
-salto/nebula/file/v1/file.protosalto.nebula.file.v1"(
-File
-name (	
-
-upload_uri (	"#
-CreateFileRequest
-parent (	2`
-FileServiceQ
-
-CreateFile\'.salto.nebula.file.v1.CreateFileRequest.salto.nebula.file.v1.FileBÈ
-com.saltoapis.nebula.file.v1B	FileProtoPZ>github.com/saltoapis-internal/saltoapis-go/nebula/file/v1;fileªSaltoapis.Nebula.File.V1ÊSaltoapis\\Nebula\\File\\V1â$GPBMetadata\\Saltoapis\\Nebula\\File\\V1bproto3'
+            "\x0A\xBB\x03\x0A\x1Fsalto/nebula/file/v1/file.proto\x12\x14salto.nebula.file.v1\"(\x0A\x04File\x12\x0C\x0A\x04name\x18\x01 \x01(\x09\x12\x12\x0A\x0Aupload_uri\x18\x02 \x01(\x09\"#\x0A\x11CreateFileRequest\x12\x0E\x0A\x06parent\x18\x01 \x01(\x092`\x0A\x0BFileService\x12Q\x0A\x0ACreateFile\x12'.salto.nebula.file.v1.CreateFileRequest\x1A\x1A.salto.nebula.file.v1.FileB\xC8\x01\x0A\x1Ccom.saltoapis.nebula.file.v1B\x09FileProtoP\x01Z>github.com/saltoapis-internal/saltoapis-go/nebula/file/v1;file\xAA\x02\x18Saltoapis.Nebula.File.V1\xCA\x02\x18Saltoapis\\Nebula\\File\\V1\xE2\x02\$GPBMetadata\\Saltoapis\\Nebula\\File\\V1b\x06proto3"
         , true);
 
         static::$is_initialized = true;
