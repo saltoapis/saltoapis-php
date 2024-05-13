@@ -29,6 +29,18 @@ class Unit extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string display_name = 2;</code>
      */
     protected $display_name = '';
+    /**
+     * Time the unit was moved in.
+     *
+     * Generated from protobuf field <code>.google.protobuf.Timestamp move_in_time = 3;</code>
+     */
+    protected $move_in_time = null;
+    /**
+     * Time the unit was moved out.
+     *
+     * Generated from protobuf field <code>.google.protobuf.Timestamp move_out_time = 4;</code>
+     */
+    protected $move_out_time = null;
 
     /**
      * Constructor.
@@ -42,6 +54,10 @@ class Unit extends \Google\Protobuf\Internal\Message
      *           `installations/surelock-homes-hq/units/101`.
      *     @type string $display_name
      *           Display name.
+     *     @type \Google\Protobuf\Timestamp $move_in_time
+     *           Time the unit was moved in.
+     *     @type \Google\Protobuf\Timestamp $move_out_time
+     *           Time the unit was moved out.
      * }
      */
     public function __construct($data = NULL) {
@@ -101,6 +117,78 @@ class Unit extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->display_name = $var;
+
+        return $this;
+    }
+
+    /**
+     * Time the unit was moved in.
+     *
+     * Generated from protobuf field <code>.google.protobuf.Timestamp move_in_time = 3;</code>
+     * @return \Google\Protobuf\Timestamp|null
+     */
+    public function getMoveInTime()
+    {
+        return $this->move_in_time;
+    }
+
+    public function hasMoveInTime()
+    {
+        return isset($this->move_in_time);
+    }
+
+    public function clearMoveInTime()
+    {
+        unset($this->move_in_time);
+    }
+
+    /**
+     * Time the unit was moved in.
+     *
+     * Generated from protobuf field <code>.google.protobuf.Timestamp move_in_time = 3;</code>
+     * @param \Google\Protobuf\Timestamp $var
+     * @return $this
+     */
+    public function setMoveInTime($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
+        $this->move_in_time = $var;
+
+        return $this;
+    }
+
+    /**
+     * Time the unit was moved out.
+     *
+     * Generated from protobuf field <code>.google.protobuf.Timestamp move_out_time = 4;</code>
+     * @return \Google\Protobuf\Timestamp|null
+     */
+    public function getMoveOutTime()
+    {
+        return $this->move_out_time;
+    }
+
+    public function hasMoveOutTime()
+    {
+        return isset($this->move_out_time);
+    }
+
+    public function clearMoveOutTime()
+    {
+        unset($this->move_out_time);
+    }
+
+    /**
+     * Time the unit was moved out.
+     *
+     * Generated from protobuf field <code>.google.protobuf.Timestamp move_out_time = 4;</code>
+     * @param \Google\Protobuf\Timestamp $var
+     * @return $this
+     */
+    public function setMoveOutTime($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
+        $this->move_out_time = $var;
 
         return $this;
     }
