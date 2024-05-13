@@ -104,6 +104,13 @@ class ElectronicLock extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>optional bool force_rotate_carriage_end = 13;</code>
      */
     protected $force_rotate_carriage_end = null;
+    /**
+     * If applicable, the duration the motorized lock's hold-back latch remains
+     * engaged before the latch closes.
+     *
+     * Generated from protobuf field <code>optional .google.protobuf.Duration hold_back_latch_duration = 14;</code>
+     */
+    protected $hold_back_latch_duration = null;
     protected $parent_device;
 
     /**
@@ -161,6 +168,9 @@ class ElectronicLock extends \Google\Protobuf\Internal\Message
      *           For example, this could apply to electronic locks that are unaware of the
      *           carriage's endpoint or those that can lose their position, as seen in
      *           double clutch cylinders.
+     *     @type \Google\Protobuf\Duration $hold_back_latch_duration
+     *           If applicable, the duration the motorized lock's hold-back latch remains
+     *           engaged before the latch closes.
      * }
      */
     public function __construct($data = NULL) {
@@ -608,6 +618,44 @@ class ElectronicLock extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->force_rotate_carriage_end = $var;
+
+        return $this;
+    }
+
+    /**
+     * If applicable, the duration the motorized lock's hold-back latch remains
+     * engaged before the latch closes.
+     *
+     * Generated from protobuf field <code>optional .google.protobuf.Duration hold_back_latch_duration = 14;</code>
+     * @return \Google\Protobuf\Duration|null
+     */
+    public function getHoldBackLatchDuration()
+    {
+        return $this->hold_back_latch_duration;
+    }
+
+    public function hasHoldBackLatchDuration()
+    {
+        return isset($this->hold_back_latch_duration);
+    }
+
+    public function clearHoldBackLatchDuration()
+    {
+        unset($this->hold_back_latch_duration);
+    }
+
+    /**
+     * If applicable, the duration the motorized lock's hold-back latch remains
+     * engaged before the latch closes.
+     *
+     * Generated from protobuf field <code>optional .google.protobuf.Duration hold_back_latch_duration = 14;</code>
+     * @param \Google\Protobuf\Duration $var
+     * @return $this
+     */
+    public function setHoldBackLatchDuration($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Protobuf\Duration::class);
+        $this->hold_back_latch_duration = $var;
 
         return $this;
     }
