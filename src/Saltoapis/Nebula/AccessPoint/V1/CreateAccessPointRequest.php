@@ -17,7 +17,7 @@ class CreateAccessPointRequest extends \Google\Protobuf\Internal\Message
 {
     /**
      * Resource name of the parent resource under which the access point is created.
-     * For example, `installations/surelock-homes-hq`.
+     * For example: `installations/surelock-homes-hq`.
      *
      * Generated from protobuf field <code>string parent = 1;</code>
      */
@@ -45,7 +45,7 @@ class CreateAccessPointRequest extends \Google\Protobuf\Internal\Message
      *
      *     @type string $parent
      *           Resource name of the parent resource under which the access point is created.
-     *           For example, `installations/surelock-homes-hq`.
+     *           For example: `installations/surelock-homes-hq`.
      *     @type string $access_point_id
      *           The access point id to use for this access point. If it's
      *           empty the server will autogenerate a unique identifier.
@@ -61,7 +61,7 @@ class CreateAccessPointRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Resource name of the parent resource under which the access point is created.
-     * For example, `installations/surelock-homes-hq`.
+     * For example: `installations/surelock-homes-hq`.
      *
      * Generated from protobuf field <code>string parent = 1;</code>
      * @return string
@@ -73,7 +73,7 @@ class CreateAccessPointRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Resource name of the parent resource under which the access point is created.
-     * For example, `installations/surelock-homes-hq`.
+     * For example: `installations/surelock-homes-hq`.
      *
      * Generated from protobuf field <code>string parent = 1;</code>
      * @param string $var
