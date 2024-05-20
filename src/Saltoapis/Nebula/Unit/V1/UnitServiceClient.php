@@ -126,6 +126,49 @@ class UnitServiceClient extends \Grpc\BaseStub {
     }
 
     /**
+     * Move in a unit
+     *
+     * Moves in a unit by creating new occupants and associating them with the unit.
+     * (-- api-linter: core::0136::http-uri-suffix=disabled
+     *     aip.dev/not-precedent: We need to do this because "move in" is a phrasal
+     *     verb and the api-linter doesn't support using them. --)
+     * @param \Saltoapis\Nebula\Unit\V1\MoveInUnitRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function MoveInUnit(\Saltoapis\Nebula\Unit\V1\MoveInUnitRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.unit.v1.UnitService/MoveInUnit',
+        $argument,
+        ['\Saltoapis\Nebula\Unit\V1\MoveInUnitResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * Move out a unit
+     *
+     * Moves out a unit by deleting all the occupants belonging to it. This process
+     * implicitly entails the blocking of the keys that were active within the
+     * unit. Moving out a unit will not delete the access rights and the
+     * associated access points that belong to the unit.
+     * (-- api-linter: core::0136::http-uri-suffix=disabled
+     *     aip.dev/not-precedent: We need to do this because "move out" is a phrasal
+     *     verb and the api-linter doesn't support using them. --)
+     * @param \Saltoapis\Nebula\Unit\V1\MoveOutUnitRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function MoveOutUnit(\Saltoapis\Nebula\Unit\V1\MoveOutUnitRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.unit.v1.UnitService/MoveOutUnit',
+        $argument,
+        ['\Saltoapis\Nebula\Unit\V1\MoveOutUnitResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
      * Create a policy
      *
      * Creates a new policy.
