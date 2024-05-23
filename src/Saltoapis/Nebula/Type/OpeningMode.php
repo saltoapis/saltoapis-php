@@ -31,18 +31,11 @@ class OpeningMode
      * Generated from protobuf enum <code>TOGGLE = 2;</code>
      */
     const TOGGLE = 2;
-    /**
-     * Automatic opening for ICAD.
-     *
-     * Generated from protobuf enum <code>RING_AND_OPEN = 13;</code>
-     */
-    const RING_AND_OPEN = 13;
 
     private static $valueToName = [
         self::OPENING_MODE_UNSPECIFIED => 'OPENING_MODE_UNSPECIFIED',
         self::OFFICE => 'OFFICE',
         self::TOGGLE => 'TOGGLE',
-        self::RING_AND_OPEN => 'RING_AND_OPEN',
     ];
 
     public static function name($value)
