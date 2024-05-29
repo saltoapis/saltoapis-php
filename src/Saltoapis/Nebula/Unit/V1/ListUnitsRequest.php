@@ -16,7 +16,7 @@ use Google\Protobuf\Internal\GPBUtil;
 class ListUnitsRequest extends \Google\Protobuf\Internal\Message
 {
     /**
-     * The parent resource name, for example, `installations/surelock-homes-hq`.
+     * The parent resource name, for example: `installations/surelock-homes-hq`.
      *
      * Generated from protobuf field <code>string parent = 1;</code>
      */
@@ -54,7 +54,7 @@ class ListUnitsRequest extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $parent
-     *           The parent resource name, for example, `installations/surelock-homes-hq`.
+     *           The parent resource name, for example: `installations/surelock-homes-hq`.
      *     @type int $page_size
      *           The maximum number of items to return.
      *     @type string $page_token
@@ -72,7 +72,7 @@ class ListUnitsRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * The parent resource name, for example, `installations/surelock-homes-hq`.
+     * The parent resource name, for example: `installations/surelock-homes-hq`.
      *
      * Generated from protobuf field <code>string parent = 1;</code>
      * @return string
@@ -83,7 +83,7 @@ class ListUnitsRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * The parent resource name, for example, `installations/surelock-homes-hq`.
+     * The parent resource name, for example: `installations/surelock-homes-hq`.
      *
      * Generated from protobuf field <code>string parent = 1;</code>
      * @param string $var
