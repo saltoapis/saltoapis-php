@@ -25,6 +25,7 @@ class AssignCardKeyRequest extends \Google\Protobuf\Internal\Message
     /**
      * Unique identifier of the physical card. Length dependent of technology.
      * Max length for ISO14443-3 is 10 bytes.
+     * (-- api-linter: salto::9001::internal-annotation=disabled --)
      *
      * Generated from protobuf field <code>string uid = 2;</code>
      */
@@ -42,6 +43,7 @@ class AssignCardKeyRequest extends \Google\Protobuf\Internal\Message
      *     @type string $uid
      *           Unique identifier of the physical card. Length dependent of technology.
      *           Max length for ISO14443-3 is 10 bytes.
+     *           (-- api-linter: salto::9001::internal-annotation=disabled --)
      * }
      */
     public function __construct($data = NULL) {
@@ -80,6 +82,7 @@ class AssignCardKeyRequest extends \Google\Protobuf\Internal\Message
     /**
      * Unique identifier of the physical card. Length dependent of technology.
      * Max length for ISO14443-3 is 10 bytes.
+     * (-- api-linter: salto::9001::internal-annotation=disabled --)
      *
      * Generated from protobuf field <code>string uid = 2;</code>
      * @return string
@@ -92,6 +95,7 @@ class AssignCardKeyRequest extends \Google\Protobuf\Internal\Message
     /**
      * Unique identifier of the physical card. Length dependent of technology.
      * Max length for ISO14443-3 is 10 bytes.
+     * (-- api-linter: salto::9001::internal-annotation=disabled --)
      *
      * Generated from protobuf field <code>string uid = 2;</code>
      * @param string $var
