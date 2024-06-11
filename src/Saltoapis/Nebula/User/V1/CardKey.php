@@ -24,14 +24,6 @@ class CardKey extends \Google\Protobuf\Internal\Message
      */
     protected $name = '';
     /**
-     * Unique identifier of the physical card. Length dependent of technology.
-     * Max length for ISO14443-3 is 10 bytes.
-     * (-- api-linter: salto::9001::internal-annotation=disabled --)
-     *
-     * Generated from protobuf field <code>string uid = 2;</code>
-     */
-    protected $uid = '';
-    /**
      * Indicates whether this card key has been assigned, not assigned or is
      * active and ready for use. This field cannot be modified using a standard
      * [`UpdateCardKey`][salto.nebula.user.v1.UserService.UpdateCardKey]
@@ -53,6 +45,7 @@ class CardKey extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool outdated = 4;</code>
      */
     protected $outdated = false;
+    protected $card_id;
 
     /**
      * Constructor.
@@ -67,7 +60,6 @@ class CardKey extends \Google\Protobuf\Internal\Message
      *     @type string $uid
      *           Unique identifier of the physical card. Length dependent of technology.
      *           Max length for ISO14443-3 is 10 bytes.
-     *           (-- api-linter: salto::9001::internal-annotation=disabled --)
      *     @type int $state
      *           Indicates whether this card key has been assigned, not assigned or is
      *           active and ready for use. This field cannot be modified using a standard
@@ -122,20 +114,23 @@ class CardKey extends \Google\Protobuf\Internal\Message
     /**
      * Unique identifier of the physical card. Length dependent of technology.
      * Max length for ISO14443-3 is 10 bytes.
-     * (-- api-linter: salto::9001::internal-annotation=disabled --)
      *
      * Generated from protobuf field <code>string uid = 2;</code>
      * @return string
      */
     public function getUid()
     {
-        return $this->uid;
+        return $this->readOneof(2);
+    }
+
+    public function hasUid()
+    {
+        return $this->hasOneof(2);
     }
 
     /**
      * Unique identifier of the physical card. Length dependent of technology.
      * Max length for ISO14443-3 is 10 bytes.
-     * (-- api-linter: salto::9001::internal-annotation=disabled --)
      *
      * Generated from protobuf field <code>string uid = 2;</code>
      * @param string $var
@@ -144,7 +139,7 @@ class CardKey extends \Google\Protobuf\Internal\Message
     public function setUid($var)
     {
         GPBUtil::checkString($var, True);
-        $this->uid = $var;
+        $this->writeOneof(2, $var);
 
         return $this;
     }
@@ -219,6 +214,14 @@ class CardKey extends \Google\Protobuf\Internal\Message
         $this->outdated = $var;
 
         return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCardId()
+    {
+        return $this->whichOneof("card_id");
     }
 
 }
