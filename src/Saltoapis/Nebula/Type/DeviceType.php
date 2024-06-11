@@ -55,12 +55,6 @@ class DeviceType
      * Generated from protobuf enum <code>INTERCOM_ADAPTOR = 6;</code>
      */
     const INTERCOM_ADAPTOR = 6;
-    /**
-     * Electronic key
-     *
-     * Generated from protobuf enum <code>ELECTRONIC_KEY = 7;</code>
-     */
-    const ELECTRONIC_KEY = 7;
 
     private static $valueToName = [
         self::DEVICE_TYPE_UNSPECIFIED => 'DEVICE_TYPE_UNSPECIFIED',
@@ -70,7 +64,6 @@ class DeviceType
         self::ENCODER => 'ENCODER',
         self::CONTROLLER => 'CONTROLLER',
         self::INTERCOM_ADAPTOR => 'INTERCOM_ADAPTOR',
-        self::ELECTRONIC_KEY => 'ELECTRONIC_KEY',
     ];
 
     public static function name($value)
