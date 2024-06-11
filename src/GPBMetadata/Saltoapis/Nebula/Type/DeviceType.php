@@ -15,7 +15,7 @@ class DeviceType
           return;
         }
         $pool->internalAddGeneratedFile(
-            "\x0A\xB6\x03\x0A#salto/nebula/type/device_type.proto\x12\x11salto.nebula.type*\xA0\x01\x0A\x0ADeviceType\x12\x1B\x0A\x17DEVICE_TYPE_UNSPECIFIED\x10\x00\x12\x13\x0A\x0FELECTRONIC_LOCK\x10\x01\x12\x0B\x0A\x07GATEWAY\x10\x02\x12\x0C\x0A\x08EXTENDER\x10\x03\x12\x0B\x0A\x07ENCODER\x10\x04\x12\x0E\x0A\x0ACONTROLLER\x10\x05\x12\x14\x0A\x10INTERCOM_ADAPTOR\x10\x06\x12\x12\x0A\x0EELECTRONIC_KEY\x10\x07B\xD0\x01\x0A\x19com.saltoapis.nebula.typeB\x0FDeviceTypeProtoP\x01ZLgithub.com/saltoapis-internal/saltoapis-go/nebula/type/devicetype;devicetype\xAA\x02\x15Saltoapis.Nebula.Type\xCA\x02\x15Saltoapis\\Nebula\\Type\xE2\x02!GPBMetadata\\Saltoapis\\Nebula\\Typeb\x06proto3"
+            "\x0A\xA2\x03\x0A#salto/nebula/type/device_type.proto\x12\x11salto.nebula.type*\x8C\x01\x0A\x0ADeviceType\x12\x1B\x0A\x17DEVICE_TYPE_UNSPECIFIED\x10\x00\x12\x13\x0A\x0FELECTRONIC_LOCK\x10\x01\x12\x0B\x0A\x07GATEWAY\x10\x02\x12\x0C\x0A\x08EXTENDER\x10\x03\x12\x0B\x0A\x07ENCODER\x10\x04\x12\x0E\x0A\x0ACONTROLLER\x10\x05\x12\x14\x0A\x10INTERCOM_ADAPTOR\x10\x06B\xD0\x01\x0A\x19com.saltoapis.nebula.typeB\x0FDeviceTypeProtoP\x01ZLgithub.com/saltoapis-internal/saltoapis-go/nebula/type/devicetype;devicetype\xAA\x02\x15Saltoapis.Nebula.Type\xCA\x02\x15Saltoapis\\Nebula\\Type\xE2\x02!GPBMetadata\\Saltoapis\\Nebula\\Typeb\x06proto3"
         , true);
 
         static::$is_initialized = true;
