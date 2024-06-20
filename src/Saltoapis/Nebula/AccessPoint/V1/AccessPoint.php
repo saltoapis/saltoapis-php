@@ -38,6 +38,16 @@ class AccessPoint extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>optional string calendar = 5;</code>
      */
     protected $calendar = null;
+    /**
+     * Enables or disables card key updates. This parameter doesn't have any
+     * effect on access points where its associated device is offline.
+     * This field is optional to maintain backward compatibility. The server
+     * checks for its presence to determine if clients are not updated and
+     * assigns a default value if it's missing.
+     *
+     * Generated from protobuf field <code>optional bool card_key_updater = 6;</code>
+     */
+    protected $card_key_updater = null;
     protected $opening_mode;
 
     /**
@@ -61,6 +71,12 @@ class AccessPoint extends \Google\Protobuf\Internal\Message
      *           If not set, a calendar where all days are NORMAL will be used.
      *           That's to say a regular calendar that doesn't have any
      *           HOLIDAY or OTHER days added to it.
+     *     @type bool $card_key_updater
+     *           Enables or disables card key updates. This parameter doesn't have any
+     *           effect on access points where its associated device is offline.
+     *           This field is optional to maintain backward compatibility. The server
+     *           checks for its presence to determine if clients are not updated and
+     *           assigns a default value if it's missing.
      * }
      */
     public function __construct($data = NULL) {
@@ -224,6 +240,50 @@ class AccessPoint extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->calendar = $var;
+
+        return $this;
+    }
+
+    /**
+     * Enables or disables card key updates. This parameter doesn't have any
+     * effect on access points where its associated device is offline.
+     * This field is optional to maintain backward compatibility. The server
+     * checks for its presence to determine if clients are not updated and
+     * assigns a default value if it's missing.
+     *
+     * Generated from protobuf field <code>optional bool card_key_updater = 6;</code>
+     * @return bool
+     */
+    public function getCardKeyUpdater()
+    {
+        return isset($this->card_key_updater) ? $this->card_key_updater : false;
+    }
+
+    public function hasCardKeyUpdater()
+    {
+        return isset($this->card_key_updater);
+    }
+
+    public function clearCardKeyUpdater()
+    {
+        unset($this->card_key_updater);
+    }
+
+    /**
+     * Enables or disables card key updates. This parameter doesn't have any
+     * effect on access points where its associated device is offline.
+     * This field is optional to maintain backward compatibility. The server
+     * checks for its presence to determine if clients are not updated and
+     * assigns a default value if it's missing.
+     *
+     * Generated from protobuf field <code>optional bool card_key_updater = 6;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setCardKeyUpdater($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->card_key_updater = $var;
 
         return $this;
     }
