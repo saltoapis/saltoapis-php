@@ -48,6 +48,13 @@ class AccessPoint extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>optional bool card_key_updater = 6;</code>
      */
     protected $card_key_updater = null;
+    /**
+     * The duration the access point remains unlocked. This field is optional
+     * for the server to check for its presence and assign a default value if it's missing.
+     *
+     * Generated from protobuf field <code>optional .google.protobuf.Duration unlock_duration = 7;</code>
+     */
+    protected $unlock_duration = null;
     protected $opening_mode;
 
     /**
@@ -77,6 +84,9 @@ class AccessPoint extends \Google\Protobuf\Internal\Message
      *           This field is optional to maintain backward compatibility. The server
      *           checks for its presence to determine if clients are not updated and
      *           assigns a default value if it's missing.
+     *     @type \Google\Protobuf\Duration $unlock_duration
+     *           The duration the access point remains unlocked. This field is optional
+     *           for the server to check for its presence and assign a default value if it's missing.
      * }
      */
     public function __construct($data = NULL) {
@@ -284,6 +294,44 @@ class AccessPoint extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->card_key_updater = $var;
+
+        return $this;
+    }
+
+    /**
+     * The duration the access point remains unlocked. This field is optional
+     * for the server to check for its presence and assign a default value if it's missing.
+     *
+     * Generated from protobuf field <code>optional .google.protobuf.Duration unlock_duration = 7;</code>
+     * @return \Google\Protobuf\Duration|null
+     */
+    public function getUnlockDuration()
+    {
+        return $this->unlock_duration;
+    }
+
+    public function hasUnlockDuration()
+    {
+        return isset($this->unlock_duration);
+    }
+
+    public function clearUnlockDuration()
+    {
+        unset($this->unlock_duration);
+    }
+
+    /**
+     * The duration the access point remains unlocked. This field is optional
+     * for the server to check for its presence and assign a default value if it's missing.
+     *
+     * Generated from protobuf field <code>optional .google.protobuf.Duration unlock_duration = 7;</code>
+     * @param \Google\Protobuf\Duration $var
+     * @return $this
+     */
+    public function setUnlockDuration($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Protobuf\Duration::class);
+        $this->unlock_duration = $var;
 
         return $this;
     }
