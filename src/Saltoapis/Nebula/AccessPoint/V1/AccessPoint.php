@@ -55,6 +55,12 @@ class AccessPoint extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>optional .google.protobuf.Duration unlock_duration = 7;</code>
      */
     protected $unlock_duration = null;
+    /**
+     * Indicates whether the access point was left open.
+     *
+     * Generated from protobuf field <code>bool left_open = 8;</code>
+     */
+    protected $left_open = false;
     protected $opening_mode;
 
     /**
@@ -87,6 +93,8 @@ class AccessPoint extends \Google\Protobuf\Internal\Message
      *     @type \Google\Protobuf\Duration $unlock_duration
      *           The duration the access point remains unlocked. This field is optional
      *           for the server to check for its presence and assign a default value if it's missing.
+     *     @type bool $left_open
+     *           Indicates whether the access point was left open.
      * }
      */
     public function __construct($data = NULL) {
@@ -332,6 +340,32 @@ class AccessPoint extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Duration::class);
         $this->unlock_duration = $var;
+
+        return $this;
+    }
+
+    /**
+     * Indicates whether the access point was left open.
+     *
+     * Generated from protobuf field <code>bool left_open = 8;</code>
+     * @return bool
+     */
+    public function getLeftOpen()
+    {
+        return $this->left_open;
+    }
+
+    /**
+     * Indicates whether the access point was left open.
+     *
+     * Generated from protobuf field <code>bool left_open = 8;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setLeftOpen($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->left_open = $var;
 
         return $this;
     }
