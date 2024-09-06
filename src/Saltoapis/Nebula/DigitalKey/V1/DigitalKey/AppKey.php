@@ -59,6 +59,14 @@ class AppKey extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>optional string unit_id = 4;</code>
      */
     protected $unit_id = null;
+    /**
+     * Access points change time.
+     * This data is populated with the user access points sync time.
+     * Indicates the last time the digital key's access points changed.
+     *
+     * Generated from protobuf field <code>.google.protobuf.Timestamp access_points_change_time = 7;</code>
+     */
+    protected $access_points_change_time = null;
 
     /**
      * Constructor.
@@ -86,6 +94,10 @@ class AppKey extends \Google\Protobuf\Internal\Message
      *           WARNING: This is going to be removed after the initial nebula release
      *           as its only purpose is to ease the unit picking mechanism in mobile
      *           apps.
+     *     @type \Google\Protobuf\Timestamp $access_points_change_time
+     *           Access points change time.
+     *           This data is populated with the user access points sync time.
+     *           Indicates the last time the digital key's access points changed.
      * }
      */
     public function __construct($data = NULL) {
@@ -291,6 +303,46 @@ class AppKey extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->unit_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Access points change time.
+     * This data is populated with the user access points sync time.
+     * Indicates the last time the digital key's access points changed.
+     *
+     * Generated from protobuf field <code>.google.protobuf.Timestamp access_points_change_time = 7;</code>
+     * @return \Google\Protobuf\Timestamp|null
+     */
+    public function getAccessPointsChangeTime()
+    {
+        return $this->access_points_change_time;
+    }
+
+    public function hasAccessPointsChangeTime()
+    {
+        return isset($this->access_points_change_time);
+    }
+
+    public function clearAccessPointsChangeTime()
+    {
+        unset($this->access_points_change_time);
+    }
+
+    /**
+     * Access points change time.
+     * This data is populated with the user access points sync time.
+     * Indicates the last time the digital key's access points changed.
+     *
+     * Generated from protobuf field <code>.google.protobuf.Timestamp access_points_change_time = 7;</code>
+     * @param \Google\Protobuf\Timestamp $var
+     * @return $this
+     */
+    public function setAccessPointsChangeTime($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
+        $this->access_points_change_time = $var;
 
         return $this;
     }
