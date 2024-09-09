@@ -26,6 +26,7 @@ class ListDigitalKeyAccessPointsResponse extends \Google\Protobuf\Internal\Messa
     /**
      * Token to retrieve the next page of results, or empty if there are no more
      * results in the list.
+     * Note: this field is not being used in the current implementation. It always returns an empty string.
      *
      * Generated from protobuf field <code>string next_page_token = 2;</code>
      */
@@ -44,6 +45,7 @@ class ListDigitalKeyAccessPointsResponse extends \Google\Protobuf\Internal\Messa
      *     @type string $next_page_token
      *           Token to retrieve the next page of results, or empty if there are no more
      *           results in the list.
+     *           Note: this field is not being used in the current implementation. It always returns an empty string.
      * }
      */
     public function __construct($data = NULL) {
@@ -84,6 +86,7 @@ class ListDigitalKeyAccessPointsResponse extends \Google\Protobuf\Internal\Messa
     /**
      * Token to retrieve the next page of results, or empty if there are no more
      * results in the list.
+     * Note: this field is not being used in the current implementation. It always returns an empty string.
      *
      * Generated from protobuf field <code>string next_page_token = 2;</code>
      * @return string
@@ -96,6 +99,7 @@ class ListDigitalKeyAccessPointsResponse extends \Google\Protobuf\Internal\Messa
     /**
      * Token to retrieve the next page of results, or empty if there are no more
      * results in the list.
+     * Note: this field is not being used in the current implementation. It always returns an empty string.
      *
      * Generated from protobuf field <code>string next_page_token = 2;</code>
      * @param string $var

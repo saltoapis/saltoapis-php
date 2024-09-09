@@ -36,6 +36,7 @@ class ListDigitalKeyAccessPointsRequest extends \Google\Protobuf\Internal\Messag
     /**
      * The `next_page_token` value returned from a previous `List` request, if
      * any.
+     * Note: this field is not being used in the current implementation. It is being ignored.
      *
      * Generated from protobuf field <code>string page_token = 4;</code>
      */
@@ -56,6 +57,7 @@ class ListDigitalKeyAccessPointsRequest extends \Google\Protobuf\Internal\Messag
      *     @type string $page_token
      *           The `next_page_token` value returned from a previous `List` request, if
      *           any.
+     *           Note: this field is not being used in the current implementation. It is being ignored.
      * }
      */
     public function __construct($data = NULL) {
@@ -144,6 +146,7 @@ class ListDigitalKeyAccessPointsRequest extends \Google\Protobuf\Internal\Messag
     /**
      * The `next_page_token` value returned from a previous `List` request, if
      * any.
+     * Note: this field is not being used in the current implementation. It is being ignored.
      *
      * Generated from protobuf field <code>string page_token = 4;</code>
      * @return string
@@ -156,6 +159,7 @@ class ListDigitalKeyAccessPointsRequest extends \Google\Protobuf\Internal\Messag
     /**
      * The `next_page_token` value returned from a previous `List` request, if
      * any.
+     * Note: this field is not being used in the current implementation. It is being ignored.
      *
      * Generated from protobuf field <code>string page_token = 4;</code>
      * @param string $var
