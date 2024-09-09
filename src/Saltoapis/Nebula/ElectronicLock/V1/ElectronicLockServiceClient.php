@@ -246,4 +246,23 @@ class ElectronicLockServiceClient extends \Grpc\BaseStub {
         $metadata, $options);
     }
 
+    /**
+     * Generate electronic lock firmware download URI
+     *
+     * Provides the download URI for the latest firmware bundle for the
+     * electronic lock. The returned URI can be used to bring the electronic
+     * lock firmwares up to latest.
+     * @param \Saltoapis\Nebula\ElectronicLock\V1\GenerateFirmwareDownloadUriRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function GenerateFirmwareDownloadUri(\Saltoapis\Nebula\ElectronicLock\V1\GenerateFirmwareDownloadUriRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.electroniclock.v1.ElectronicLockService/GenerateFirmwareDownloadUri',
+        $argument,
+        ['\Saltoapis\Longrunning\V1\Operation', 'decode'],
+        $metadata, $options);
+    }
+
 }
