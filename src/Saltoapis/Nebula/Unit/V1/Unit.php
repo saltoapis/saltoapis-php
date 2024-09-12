@@ -41,6 +41,14 @@ class Unit extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.google.protobuf.Timestamp move_out_time = 4;</code>
      */
     protected $move_out_time = null;
+    /**
+     * The privacy settings of the unit. Can either be enabled or disabled.
+     * If enabled, owners and installation managers can see neither events
+     * nor users that belong to the unit.
+     *
+     * Generated from protobuf field <code>.salto.nebula.unit.v1.Unit.PrivacySettings privacy_settings = 5;</code>
+     */
+    protected $privacy_settings = null;
 
     /**
      * Constructor.
@@ -58,6 +66,10 @@ class Unit extends \Google\Protobuf\Internal\Message
      *           Time the unit was moved in.
      *     @type \Google\Protobuf\Timestamp $move_out_time
      *           Time the unit was moved out.
+     *     @type \Saltoapis\Nebula\Unit\V1\Unit\PrivacySettings $privacy_settings
+     *           The privacy settings of the unit. Can either be enabled or disabled.
+     *           If enabled, owners and installation managers can see neither events
+     *           nor users that belong to the unit.
      * }
      */
     public function __construct($data = NULL) {
@@ -189,6 +201,46 @@ class Unit extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->move_out_time = $var;
+
+        return $this;
+    }
+
+    /**
+     * The privacy settings of the unit. Can either be enabled or disabled.
+     * If enabled, owners and installation managers can see neither events
+     * nor users that belong to the unit.
+     *
+     * Generated from protobuf field <code>.salto.nebula.unit.v1.Unit.PrivacySettings privacy_settings = 5;</code>
+     * @return \Saltoapis\Nebula\Unit\V1\Unit\PrivacySettings|null
+     */
+    public function getPrivacySettings()
+    {
+        return $this->privacy_settings;
+    }
+
+    public function hasPrivacySettings()
+    {
+        return isset($this->privacy_settings);
+    }
+
+    public function clearPrivacySettings()
+    {
+        unset($this->privacy_settings);
+    }
+
+    /**
+     * The privacy settings of the unit. Can either be enabled or disabled.
+     * If enabled, owners and installation managers can see neither events
+     * nor users that belong to the unit.
+     *
+     * Generated from protobuf field <code>.salto.nebula.unit.v1.Unit.PrivacySettings privacy_settings = 5;</code>
+     * @param \Saltoapis\Nebula\Unit\V1\Unit\PrivacySettings $var
+     * @return $this
+     */
+    public function setPrivacySettings($var)
+    {
+        GPBUtil::checkMessage($var, \Saltoapis\Nebula\Unit\V1\Unit\PrivacySettings::class);
+        $this->privacy_settings = $var;
 
         return $this;
     }
