@@ -22,6 +22,12 @@ class AcceptInstallationOwnershipRequest extends \Google\Protobuf\Internal\Messa
      * Generated from protobuf field <code>string installation = 1;</code>
      */
     protected $installation = '';
+    /**
+     * The billing info resource for the subscription billing.
+     *
+     * Generated from protobuf field <code>optional .salto.nebula.installation.v1.BillingInfo billing_info = 2;</code>
+     */
+    protected $billing_info = null;
 
     /**
      * Constructor.
@@ -32,6 +38,8 @@ class AcceptInstallationOwnershipRequest extends \Google\Protobuf\Internal\Messa
      *     @type string $installation
      *           The resource name for which the accept ownership is being requested.
      *           For example: `installations/surelock-homes-hq`.
+     *     @type \Saltoapis\Nebula\Installation\V1\BillingInfo $billing_info
+     *           The billing info resource for the subscription billing.
      * }
      */
     public function __construct($data = NULL) {
@@ -63,6 +71,42 @@ class AcceptInstallationOwnershipRequest extends \Google\Protobuf\Internal\Messa
     {
         GPBUtil::checkString($var, True);
         $this->installation = $var;
+
+        return $this;
+    }
+
+    /**
+     * The billing info resource for the subscription billing.
+     *
+     * Generated from protobuf field <code>optional .salto.nebula.installation.v1.BillingInfo billing_info = 2;</code>
+     * @return \Saltoapis\Nebula\Installation\V1\BillingInfo|null
+     */
+    public function getBillingInfo()
+    {
+        return $this->billing_info;
+    }
+
+    public function hasBillingInfo()
+    {
+        return isset($this->billing_info);
+    }
+
+    public function clearBillingInfo()
+    {
+        unset($this->billing_info);
+    }
+
+    /**
+     * The billing info resource for the subscription billing.
+     *
+     * Generated from protobuf field <code>optional .salto.nebula.installation.v1.BillingInfo billing_info = 2;</code>
+     * @param \Saltoapis\Nebula\Installation\V1\BillingInfo $var
+     * @return $this
+     */
+    public function setBillingInfo($var)
+    {
+        GPBUtil::checkMessage($var, \Saltoapis\Nebula\Installation\V1\BillingInfo::class);
+        $this->billing_info = $var;
 
         return $this;
     }
