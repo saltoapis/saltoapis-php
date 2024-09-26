@@ -177,4 +177,23 @@ class ExtenderServiceClient extends \Grpc\BaseStub {
         $metadata, $options);
     }
 
+    /**
+     * Generate extender firmware download URI
+     *
+     * Provides the download URI for the latest firmware bundle for the
+     * extender. The returned URI can be used to bring the extender firmwares up
+     * to latest.
+     * @param \Saltoapis\Nebula\Extender\V1\GenerateFirmwareDownloadUriRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function GenerateFirmwareDownloadUri(\Saltoapis\Nebula\Extender\V1\GenerateFirmwareDownloadUriRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.extender.v1.ExtenderService/GenerateFirmwareDownloadUri',
+        $argument,
+        ['\Saltoapis\Longrunning\V1\Operation', 'decode'],
+        $metadata, $options);
+    }
+
 }

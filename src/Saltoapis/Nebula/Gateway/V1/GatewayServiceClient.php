@@ -238,4 +238,23 @@ class GatewayServiceClient extends \Grpc\BaseStub {
         $metadata, $options);
     }
 
+    /**
+     * Generate gateway firmware download URI
+     *
+     * Provides the download URI for the latest firmware bundle for the
+     * gateway. The returned URI can be used to bring the gateway
+     * firmwares up to latest.
+     * @param \Saltoapis\Nebula\Gateway\V1\GenerateFirmwareDownloadUriRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function GenerateFirmwareDownloadUri(\Saltoapis\Nebula\Gateway\V1\GenerateFirmwareDownloadUriRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.gateway.v1.GatewayService/GenerateFirmwareDownloadUri',
+        $argument,
+        ['\Saltoapis\Longrunning\V1\Operation', 'decode'],
+        $metadata, $options);
+    }
+
 }
