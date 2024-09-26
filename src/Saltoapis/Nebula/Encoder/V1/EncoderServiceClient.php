@@ -238,4 +238,23 @@ class EncoderServiceClient extends \Grpc\BaseStub {
         $metadata, $options);
     }
 
+    /**
+     * Generate encoder firmware download URI
+     *
+     * Provides the download URI for the latest firmware bundle for the
+     * encoder. The returned URI can be used to bring the encoder
+     * firmwares up to latest.
+     * @param \Saltoapis\Nebula\Encoder\V1\GenerateFirmwareDownloadUriRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function GenerateFirmwareDownloadUri(\Saltoapis\Nebula\Encoder\V1\GenerateFirmwareDownloadUriRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.encoder.v1.EncoderService/GenerateFirmwareDownloadUri',
+        $argument,
+        ['\Saltoapis\Longrunning\V1\Operation', 'decode'],
+        $metadata, $options);
+    }
+
 }

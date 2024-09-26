@@ -240,4 +240,23 @@ class IntercomAdaptorServiceClient extends \Grpc\BaseStub {
         $metadata, $options);
     }
 
+    /**
+     * Generate intercom adaptor firmware download URI
+     *
+     * Provides the download URI for the latest firmware bundle for the
+     * intercom adaptor. The returned URI can be used to bring the intercom
+     * adaptor firmwares up to latest.
+     * @param \Saltoapis\Nebula\IntercomAdaptor\V1\GenerateFirmwareDownloadUriRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function GenerateFirmwareDownloadUri(\Saltoapis\Nebula\IntercomAdaptor\V1\GenerateFirmwareDownloadUriRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.intercomadaptor.v1.IntercomAdaptorService/GenerateFirmwareDownloadUri',
+        $argument,
+        ['\Saltoapis\Longrunning\V1\Operation', 'decode'],
+        $metadata, $options);
+    }
+
 }

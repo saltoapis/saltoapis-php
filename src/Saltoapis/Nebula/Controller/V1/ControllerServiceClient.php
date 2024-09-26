@@ -224,4 +224,23 @@ class ControllerServiceClient extends \Grpc\BaseStub {
         $metadata, $options);
     }
 
+    /**
+     * Generate controller firmware download URI
+     *
+     * Provides the download URI for the latest firmware bundle for the
+     * controller. The returned URI can be used to bring the controller
+     * firmwares up to latest.
+     * @param \Saltoapis\Nebula\Controller\V1\GenerateFirmwareDownloadUriRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function GenerateFirmwareDownloadUri(\Saltoapis\Nebula\Controller\V1\GenerateFirmwareDownloadUriRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.controller.v1.ControllerService/GenerateFirmwareDownloadUri',
+        $argument,
+        ['\Saltoapis\Longrunning\V1\Operation', 'decode'],
+        $metadata, $options);
+    }
+
 }
