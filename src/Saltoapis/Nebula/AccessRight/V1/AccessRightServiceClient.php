@@ -124,6 +124,25 @@ class AccessRightServiceClient extends \Grpc\BaseStub {
     }
 
     /**
+     * Create a batch of access rights access points
+     *
+     * Creates a batch of access rights access points associations.
+     * This method allows the creation of multiple access rights access points in a single operation.
+     * Experimental feature. DO NOT USE
+     * @param \Saltoapis\Nebula\AccessRight\V1\BatchCreateAccessRightAccessPointsRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function BatchCreateAccessRightAccessPoints(\Saltoapis\Nebula\AccessRight\V1\BatchCreateAccessRightAccessPointsRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.accessright.v1.AccessRightService/BatchCreateAccessRightAccessPoints',
+        $argument,
+        ['\Saltoapis\Nebula\AccessRight\V1\BatchCreateAccessRightAccessPointsResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
      * Get an access point
      *
      * Retrieves an existing access right's access point association.
@@ -188,6 +207,25 @@ class AccessRightServiceClient extends \Grpc\BaseStub {
         return $this->_simpleRequest('/salto.nebula.accessright.v1.AccessRightService/DeleteAccessRightAccessPoint',
         $argument,
         ['\Google\Protobuf\GPBEmpty', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * Delete a batch of access points
+     *
+     * Permanently deletes a batch of access right's access point associations.
+     * This cannot be undone.
+     * Experimental feature. DO NOT USE
+     * @param \Saltoapis\Nebula\AccessRight\V1\BatchDeleteAccessRightAccessPointsRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function BatchDeleteAccessRightAccessPoints(\Saltoapis\Nebula\AccessRight\V1\BatchDeleteAccessRightAccessPointsRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.accessright.v1.AccessRightService/BatchDeleteAccessRightAccessPoints',
+        $argument,
+        ['\Saltoapis\Nebula\AccessRight\V1\BatchDeleteAccessRightAccessPointsResponse', 'decode'],
         $metadata, $options);
     }
 
