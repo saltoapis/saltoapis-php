@@ -225,6 +225,24 @@ class ControllerServiceClient extends \Grpc\BaseStub {
     }
 
     /**
+     * Generates an authorization token for a controller
+     *
+     * Generates an authorization token that allows to connect, authenticate and
+     * authorize against a controller.
+     * @param \Saltoapis\Nebula\Controller\V1\GenerateAuthorizationTokenRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function GenerateAuthorizationToken(\Saltoapis\Nebula\Controller\V1\GenerateAuthorizationTokenRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.controller.v1.ControllerService/GenerateAuthorizationToken',
+        $argument,
+        ['\Saltoapis\Nebula\Controller\V1\GenerateAuthorizationTokenResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
      * Generate controller firmware download URI
      *
      * Provides the download URI for the latest firmware bundle for the
