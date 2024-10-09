@@ -239,6 +239,24 @@ class EncoderServiceClient extends \Grpc\BaseStub {
     }
 
     /**
+     * Generates an authorization token for an encoder
+     *
+     * Generates an authorization token that allows to connect, authenticate and
+     * authorize against an encoder.
+     * @param \Saltoapis\Nebula\Encoder\V1\GenerateAuthorizationTokenRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function GenerateAuthorizationToken(\Saltoapis\Nebula\Encoder\V1\GenerateAuthorizationTokenRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.encoder.v1.EncoderService/GenerateAuthorizationToken',
+        $argument,
+        ['\Saltoapis\Nebula\Encoder\V1\GenerateAuthorizationTokenResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
      * Generate encoder firmware download URI
      *
      * Provides the download URI for the latest firmware bundle for the
