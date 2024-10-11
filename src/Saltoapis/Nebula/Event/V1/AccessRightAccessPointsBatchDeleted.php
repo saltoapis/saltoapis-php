@@ -11,9 +11,9 @@ use Google\Protobuf\Internal\GPBUtil;
 /**
  * Event representing the deletion of multiple access right's access point association.
  *
- * Generated from protobuf message <code>salto.nebula.event.v1.AccessRightAccessPointBatchDeleted</code>
+ * Generated from protobuf message <code>salto.nebula.event.v1.AccessRightAccessPointsBatchDeleted</code>
  */
-class AccessRightAccessPointBatchDeleted extends \Google\Protobuf\Internal\Message
+class AccessRightAccessPointsBatchDeleted extends \Google\Protobuf\Internal\Message
 {
     /**
      * The access right to which the access points have been removed.
