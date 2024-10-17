@@ -125,6 +125,24 @@ class AccessPointGroupServiceClient extends \Grpc\BaseStub {
     }
 
     /**
+     * Create an batch of access point group access points
+     *
+     * Creates a batch of access point group's access points association.
+     * This method allows the creation of multiple access point group's access points in a single operation.
+     * @param \Saltoapis\Nebula\AccessPointGroup\V1\BatchCreateAccessPointGroupAccessPointsRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function BatchCreateAccessPointGroupAccessPoints(\Saltoapis\Nebula\AccessPointGroup\V1\BatchCreateAccessPointGroupAccessPointsRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.accesspointgroup.v1.AccessPointGroupService/BatchCreateAccessPointGroupAccessPoints',
+        $argument,
+        ['\Saltoapis\Nebula\AccessPointGroup\V1\BatchCreateAccessPointGroupAccessPointsResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
      * Get an access point
      *
      * Retrieves an existing access point group's access point association.
@@ -189,6 +207,24 @@ class AccessPointGroupServiceClient extends \Grpc\BaseStub {
         return $this->_simpleRequest('/salto.nebula.accesspointgroup.v1.AccessPointGroupService/DeleteAccessPointGroupAccessPoint',
         $argument,
         ['\Google\Protobuf\GPBEmpty', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * Delete a batch of access point group access point associations
+     *
+     * Deletes a batch of access point group access point associations. This method allows the
+     * deletion of multiple access point group access points in a single operation. This cannot be undone.
+     * @param \Saltoapis\Nebula\AccessPointGroup\V1\BatchDeleteAccessPointGroupAccessPointsRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function BatchDeleteAccessPointGroupAccessPoints(\Saltoapis\Nebula\AccessPointGroup\V1\BatchDeleteAccessPointGroupAccessPointsRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.accesspointgroup.v1.AccessPointGroupService/BatchDeleteAccessPointGroupAccessPoints',
+        $argument,
+        ['\Saltoapis\Nebula\AccessPointGroup\V1\BatchDeleteAccessPointGroupAccessPointsResponse', 'decode'],
         $metadata, $options);
     }
 
