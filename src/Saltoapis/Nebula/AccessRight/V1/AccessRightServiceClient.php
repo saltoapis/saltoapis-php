@@ -128,7 +128,6 @@ class AccessRightServiceClient extends \Grpc\BaseStub {
      *
      * Creates a batch of access rights access points associations.
      * This method allows the creation of multiple access rights access points in a single operation.
-     * Experimental feature. DO NOT USE
      * @param \Saltoapis\Nebula\AccessRight\V1\BatchCreateAccessRightAccessPointsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
@@ -215,7 +214,6 @@ class AccessRightServiceClient extends \Grpc\BaseStub {
      *
      * Permanently deletes a batch of access right's access point associations.
      * This cannot be undone.
-     * Experimental feature. DO NOT USE
      * @param \Saltoapis\Nebula\AccessRight\V1\BatchDeleteAccessRightAccessPointsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
