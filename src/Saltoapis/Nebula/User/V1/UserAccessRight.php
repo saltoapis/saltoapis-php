@@ -52,6 +52,30 @@ class UserAccessRight extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .salto.nebula.type.Schedule effective_schedules = 5;</code>
      */
     private $effective_schedules;
+    /**
+     * Activation time independent of any time zone or calendar.
+     * User access right's association activation time rules:
+     * 1. Activation time must be specified in multiples of 10 minutes.
+     *    Valid examples: 07:40, 12:30, 18:10. Invalid examples: 12:32, 10:15.
+     * 2. If no activation time is provided, the current time is used, truncated to the nearest earlier multiple of 10 minutes.
+     *    For example, if the current time is 14:46, the system will use 14:40.
+     *
+     * Generated from protobuf field <code>optional .google.protobuf.Timestamp activate_time = 6;</code>
+     */
+    protected $activate_time = null;
+    /**
+     * Expiration time independent of any time zone or calendar.
+     * User access right's association expiration time rules:
+     * 1. Expiration time must be specified in multiples of 10 minutes.
+     *    Valid examples: 07:40, 12:30, 18:10. Invalid examples: 12:32, 10:15.
+     * 2. When specifying expiration time, it must:
+     *    - Be at least 10 minutes after activation time.
+     *    - Always be a multiple of 10 minutes. The system does not round or adjust expiration time for you.
+     *      For example, if you attempt to set 10:15, the system will reject it.
+     *
+     * Generated from protobuf field <code>optional .google.protobuf.Timestamp expire_time = 7;</code>
+     */
+    protected $expire_time = null;
 
     /**
      * Constructor.
@@ -76,6 +100,22 @@ class UserAccessRight extends \Google\Protobuf\Internal\Message
      *     @type array<\Saltoapis\Nebula\Type\Schedule>|\Google\Protobuf\Internal\RepeatedField $effective_schedules
      *           The computed effective schedules for the user's access right based on the
      *           given parent resource.
+     *     @type \Google\Protobuf\Timestamp $activate_time
+     *           Activation time independent of any time zone or calendar.
+     *           User access right's association activation time rules:
+     *           1. Activation time must be specified in multiples of 10 minutes.
+     *              Valid examples: 07:40, 12:30, 18:10. Invalid examples: 12:32, 10:15.
+     *           2. If no activation time is provided, the current time is used, truncated to the nearest earlier multiple of 10 minutes.
+     *              For example, if the current time is 14:46, the system will use 14:40.
+     *     @type \Google\Protobuf\Timestamp $expire_time
+     *           Expiration time independent of any time zone or calendar.
+     *           User access right's association expiration time rules:
+     *           1. Expiration time must be specified in multiples of 10 minutes.
+     *              Valid examples: 07:40, 12:30, 18:10. Invalid examples: 12:32, 10:15.
+     *           2. When specifying expiration time, it must:
+     *              - Be at least 10 minutes after activation time.
+     *              - Always be a multiple of 10 minutes. The system does not round or adjust expiration time for you.
+     *                For example, if you attempt to set 10:15, the system will reject it.
      * }
      */
     public function __construct($data = NULL) {
@@ -223,6 +263,102 @@ class UserAccessRight extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Saltoapis\Nebula\Type\Schedule::class);
         $this->effective_schedules = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Activation time independent of any time zone or calendar.
+     * User access right's association activation time rules:
+     * 1. Activation time must be specified in multiples of 10 minutes.
+     *    Valid examples: 07:40, 12:30, 18:10. Invalid examples: 12:32, 10:15.
+     * 2. If no activation time is provided, the current time is used, truncated to the nearest earlier multiple of 10 minutes.
+     *    For example, if the current time is 14:46, the system will use 14:40.
+     *
+     * Generated from protobuf field <code>optional .google.protobuf.Timestamp activate_time = 6;</code>
+     * @return \Google\Protobuf\Timestamp|null
+     */
+    public function getActivateTime()
+    {
+        return $this->activate_time;
+    }
+
+    public function hasActivateTime()
+    {
+        return isset($this->activate_time);
+    }
+
+    public function clearActivateTime()
+    {
+        unset($this->activate_time);
+    }
+
+    /**
+     * Activation time independent of any time zone or calendar.
+     * User access right's association activation time rules:
+     * 1. Activation time must be specified in multiples of 10 minutes.
+     *    Valid examples: 07:40, 12:30, 18:10. Invalid examples: 12:32, 10:15.
+     * 2. If no activation time is provided, the current time is used, truncated to the nearest earlier multiple of 10 minutes.
+     *    For example, if the current time is 14:46, the system will use 14:40.
+     *
+     * Generated from protobuf field <code>optional .google.protobuf.Timestamp activate_time = 6;</code>
+     * @param \Google\Protobuf\Timestamp $var
+     * @return $this
+     */
+    public function setActivateTime($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
+        $this->activate_time = $var;
+
+        return $this;
+    }
+
+    /**
+     * Expiration time independent of any time zone or calendar.
+     * User access right's association expiration time rules:
+     * 1. Expiration time must be specified in multiples of 10 minutes.
+     *    Valid examples: 07:40, 12:30, 18:10. Invalid examples: 12:32, 10:15.
+     * 2. When specifying expiration time, it must:
+     *    - Be at least 10 minutes after activation time.
+     *    - Always be a multiple of 10 minutes. The system does not round or adjust expiration time for you.
+     *      For example, if you attempt to set 10:15, the system will reject it.
+     *
+     * Generated from protobuf field <code>optional .google.protobuf.Timestamp expire_time = 7;</code>
+     * @return \Google\Protobuf\Timestamp|null
+     */
+    public function getExpireTime()
+    {
+        return $this->expire_time;
+    }
+
+    public function hasExpireTime()
+    {
+        return isset($this->expire_time);
+    }
+
+    public function clearExpireTime()
+    {
+        unset($this->expire_time);
+    }
+
+    /**
+     * Expiration time independent of any time zone or calendar.
+     * User access right's association expiration time rules:
+     * 1. Expiration time must be specified in multiples of 10 minutes.
+     *    Valid examples: 07:40, 12:30, 18:10. Invalid examples: 12:32, 10:15.
+     * 2. When specifying expiration time, it must:
+     *    - Be at least 10 minutes after activation time.
+     *    - Always be a multiple of 10 minutes. The system does not round or adjust expiration time for you.
+     *      For example, if you attempt to set 10:15, the system will reject it.
+     *
+     * Generated from protobuf field <code>optional .google.protobuf.Timestamp expire_time = 7;</code>
+     * @param \Google\Protobuf\Timestamp $var
+     * @return $this
+     */
+    public function setExpireTime($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
+        $this->expire_time = $var;
 
         return $this;
     }
