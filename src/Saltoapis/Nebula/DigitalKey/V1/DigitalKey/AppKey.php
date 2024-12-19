@@ -60,13 +60,19 @@ class AppKey extends \Google\Protobuf\Internal\Message
      */
     protected $unit_id = null;
     /**
-     * Access points change time.
-     * This data is populated with the user access points sync time.
-     * Indicates the last time the digital key's access points changed.
+     * Access points synchronization time.
+     * This data is populated with the user's access points sync time.
+     * Indicates the last time the digital key's access points were synced.
      *
-     * Generated from protobuf field <code>.google.protobuf.Timestamp access_points_change_time = 7;</code>
+     * Generated from protobuf field <code>.google.protobuf.Timestamp access_points_sync_time = 7;</code>
      */
-    protected $access_points_change_time = null;
+    protected $access_points_sync_time = null;
+    /**
+     * The sync state of the digital key's access points.
+     *
+     * Generated from protobuf field <code>.salto.nebula.digitalkey.v1.DigitalKey.AppKey.AccessPointsSyncState access_points_sync_state = 8;</code>
+     */
+    protected $access_points_sync_state = 0;
 
     /**
      * Constructor.
@@ -94,10 +100,12 @@ class AppKey extends \Google\Protobuf\Internal\Message
      *           WARNING: This is going to be removed after the initial nebula release
      *           as its only purpose is to ease the unit picking mechanism in mobile
      *           apps.
-     *     @type \Google\Protobuf\Timestamp $access_points_change_time
-     *           Access points change time.
-     *           This data is populated with the user access points sync time.
-     *           Indicates the last time the digital key's access points changed.
+     *     @type \Google\Protobuf\Timestamp $access_points_sync_time
+     *           Access points synchronization time.
+     *           This data is populated with the user's access points sync time.
+     *           Indicates the last time the digital key's access points were synced.
+     *     @type int $access_points_sync_state
+     *           The sync state of the digital key's access points.
      * }
      */
     public function __construct($data = NULL) {
@@ -308,41 +316,67 @@ class AppKey extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Access points change time.
-     * This data is populated with the user access points sync time.
-     * Indicates the last time the digital key's access points changed.
+     * Access points synchronization time.
+     * This data is populated with the user's access points sync time.
+     * Indicates the last time the digital key's access points were synced.
      *
-     * Generated from protobuf field <code>.google.protobuf.Timestamp access_points_change_time = 7;</code>
+     * Generated from protobuf field <code>.google.protobuf.Timestamp access_points_sync_time = 7;</code>
      * @return \Google\Protobuf\Timestamp|null
      */
-    public function getAccessPointsChangeTime()
+    public function getAccessPointsSyncTime()
     {
-        return $this->access_points_change_time;
+        return $this->access_points_sync_time;
     }
 
-    public function hasAccessPointsChangeTime()
+    public function hasAccessPointsSyncTime()
     {
-        return isset($this->access_points_change_time);
+        return isset($this->access_points_sync_time);
     }
 
-    public function clearAccessPointsChangeTime()
+    public function clearAccessPointsSyncTime()
     {
-        unset($this->access_points_change_time);
+        unset($this->access_points_sync_time);
     }
 
     /**
-     * Access points change time.
-     * This data is populated with the user access points sync time.
-     * Indicates the last time the digital key's access points changed.
+     * Access points synchronization time.
+     * This data is populated with the user's access points sync time.
+     * Indicates the last time the digital key's access points were synced.
      *
-     * Generated from protobuf field <code>.google.protobuf.Timestamp access_points_change_time = 7;</code>
+     * Generated from protobuf field <code>.google.protobuf.Timestamp access_points_sync_time = 7;</code>
      * @param \Google\Protobuf\Timestamp $var
      * @return $this
      */
-    public function setAccessPointsChangeTime($var)
+    public function setAccessPointsSyncTime($var)
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
-        $this->access_points_change_time = $var;
+        $this->access_points_sync_time = $var;
+
+        return $this;
+    }
+
+    /**
+     * The sync state of the digital key's access points.
+     *
+     * Generated from protobuf field <code>.salto.nebula.digitalkey.v1.DigitalKey.AppKey.AccessPointsSyncState access_points_sync_state = 8;</code>
+     * @return int
+     */
+    public function getAccessPointsSyncState()
+    {
+        return $this->access_points_sync_state;
+    }
+
+    /**
+     * The sync state of the digital key's access points.
+     *
+     * Generated from protobuf field <code>.salto.nebula.digitalkey.v1.DigitalKey.AppKey.AccessPointsSyncState access_points_sync_state = 8;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setAccessPointsSyncState($var)
+    {
+        GPBUtil::checkEnum($var, \Saltoapis\Nebula\DigitalKey\V1\DigitalKey\AppKey\AccessPointsSyncState::class);
+        $this->access_points_sync_state = $var;
 
         return $this;
     }
