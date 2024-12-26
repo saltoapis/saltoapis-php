@@ -58,6 +58,7 @@ php_projects = [
     '//src/Saltoapis/Nebula/Calendar/V1',
     '//src/Saltoapis/Nebula/Controller/V1',
     '//src/Saltoapis/Nebula/Device/V1',
+    '//src/Saltoapis/Nebula/ElectronicKey/V1',
     '//src/Saltoapis/Nebula/ElectronicLock/V1',
     '//src/Saltoapis/Nebula/Encoder/V1',
     '//src/Saltoapis/Nebula/Extender/V1',
