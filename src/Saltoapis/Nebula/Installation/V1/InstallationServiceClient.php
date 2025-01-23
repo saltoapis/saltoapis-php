@@ -300,7 +300,8 @@ class InstallationServiceClient extends \Grpc\BaseStub {
     /**
      * Update subscription payment method's card
      *
-     * Updates subscription payment method's card.
+     * Updates subscription payment method's card. If there is a payment method
+     * associated with the subscription, it will be deleted.
      * @param \Saltoapis\Nebula\Installation\V1\UpdateCardRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options

@@ -87,4 +87,24 @@ class DigitalKeyServiceClient extends \Grpc\BaseStub {
         $metadata, $options);
     }
 
+    /**
+     * Synchronize access points
+     *
+     * Synchronize the digital key's access point associations.
+     * This methods asks the cloud to synchronize the access points for the given digital key.
+     * The cloud will trigger the synchronization of the digital key's access points if needed.
+     * (-- api-linter: core::0136::http-name-variable=disabled --)
+     * @param \Saltoapis\Nebula\DigitalKey\V1\SyncDigitalKeyAccessPointsRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function SyncDigitalKeyAccessPoints(\Saltoapis\Nebula\DigitalKey\V1\SyncDigitalKeyAccessPointsRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.digitalkey.v1.DigitalKeyService/SyncDigitalKeyAccessPoints',
+        $argument,
+        ['\Saltoapis\Longrunning\V1\Operation', 'decode'],
+        $metadata, $options);
+    }
+
 }
