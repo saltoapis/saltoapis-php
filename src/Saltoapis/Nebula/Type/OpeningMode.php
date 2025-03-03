@@ -31,11 +31,18 @@ class OpeningMode
      * Generated from protobuf enum <code>TOGGLE = 2;</code>
      */
     const TOGGLE = 2;
+    /**
+     * Autolock.
+     *
+     * Generated from protobuf enum <code>AUTOLOCK = 3;</code>
+     */
+    const AUTOLOCK = 3;
 
     private static $valueToName = [
         self::OPENING_MODE_UNSPECIFIED => 'OPENING_MODE_UNSPECIFIED',
         self::OFFICE => 'OFFICE',
         self::TOGGLE => 'TOGGLE',
+        self::AUTOLOCK => 'AUTOLOCK',
     ];
 
     public static function name($value)
