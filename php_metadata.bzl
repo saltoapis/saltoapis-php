@@ -44,12 +44,12 @@ VALE_VERSION="2.27.0"
 
 php_projects = [
     '//src/Saltoapis/Nebula/AccessPointGroup/V1',
+    '//src/Saltoapis/Nebula/EmergencyKey/V1',
     '//src/Saltoapis/Nebula/File/V1',
     '//src/Saltoapis/Nebula/Iam/V1',
     '//src/Saltoapis/Nebula/Unit/V1',
     '//src/Saltoapis/Type',
     '//src/Google/Rpc',
-    '//src/Saltoapis/Nebula/DigitalKey/V1',
     '//src/Saltoapis/Nebula/Installation/V1',
     '//src/Saltoapis/Nebula/Type',
     '//src/Saltoapis/Longrunning/V1',
@@ -58,6 +58,7 @@ php_projects = [
     '//src/Saltoapis/Nebula/Calendar/V1',
     '//src/Saltoapis/Nebula/Controller/V1',
     '//src/Saltoapis/Nebula/Device/V1',
+    '//src/Saltoapis/Nebula/DigitalKey/V1',
     '//src/Saltoapis/Nebula/ElectronicKey/V1',
     '//src/Saltoapis/Nebula/ElectronicLock/V1',
     '//src/Saltoapis/Nebula/Encoder/V1',

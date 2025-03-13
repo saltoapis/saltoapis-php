@@ -44,6 +44,14 @@ class AccessPointsSyncState
      * Generated from protobuf enum <code>NOT_SUPPORTED = 4;</code>
      */
     const NOT_SUPPORTED = 4;
+    /**
+     * The digital key's access points synchronization is skipped because the
+     * number of access points associated with this digital key
+     * exceeds the system's maximum allowed limit.
+     *
+     * Generated from protobuf enum <code>LIMIT_EXCEEDED = 5;</code>
+     */
+    const LIMIT_EXCEEDED = 5;
 
     private static $valueToName = [
         self::ACCESS_POINTS_SYNC_STATE_UNSPECIFIED => 'ACCESS_POINTS_SYNC_STATE_UNSPECIFIED',
@@ -51,6 +59,7 @@ class AccessPointsSyncState
         self::SYNCING => 'SYNCING',
         self::SYNCED => 'SYNCED',
         self::NOT_SUPPORTED => 'NOT_SUPPORTED',
+        self::LIMIT_EXCEEDED => 'LIMIT_EXCEEDED',
     ];
 
     public static function name($value)

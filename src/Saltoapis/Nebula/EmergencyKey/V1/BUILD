@@ -4,10 +4,8 @@ load("//:rules.bzl", "load_rules")
 package(default_visibility = ['//:__subpackages__'])
 
 load_rules(
-    lib_name = 'Saltoapis\\Nebula\\DigitalKey\\V1',
+    lib_name = 'Saltoapis\\Nebula\\EmergencyKey\\V1',
     internal_dependencies = [
-        '//src/Saltoapis/Longrunning/V1',
-        '//src/Saltoapis/Type',
     ],
     extra_info = {
         'generator': 'php',
