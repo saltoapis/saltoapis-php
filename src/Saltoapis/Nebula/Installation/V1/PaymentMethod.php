@@ -37,6 +37,8 @@ class PaymentMethod extends \Google\Protobuf\Internal\Message
      *           `installations/surelock-homes-hq/subscription/payment-method`.
      *     @type \Saltoapis\Nebula\Installation\V1\PaymentMethod\Card $card
      *           Card details.
+     *     @type \Saltoapis\Nebula\Installation\V1\PaymentMethod\DirectDebit $direct_debit
+     *           Direct debit details.
      * }
      */
     public function __construct($data = NULL) {
@@ -101,6 +103,37 @@ class PaymentMethod extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Saltoapis\Nebula\Installation\V1\PaymentMethod\Card::class);
         $this->writeOneof(2, $var);
+
+        return $this;
+    }
+
+    /**
+     * Direct debit details.
+     *
+     * Generated from protobuf field <code>.salto.nebula.installation.v1.PaymentMethod.DirectDebit direct_debit = 3;</code>
+     * @return \Saltoapis\Nebula\Installation\V1\PaymentMethod\DirectDebit|null
+     */
+    public function getDirectDebit()
+    {
+        return $this->readOneof(3);
+    }
+
+    public function hasDirectDebit()
+    {
+        return $this->hasOneof(3);
+    }
+
+    /**
+     * Direct debit details.
+     *
+     * Generated from protobuf field <code>.salto.nebula.installation.v1.PaymentMethod.DirectDebit direct_debit = 3;</code>
+     * @param \Saltoapis\Nebula\Installation\V1\PaymentMethod\DirectDebit $var
+     * @return $this
+     */
+    public function setDirectDebit($var)
+    {
+        GPBUtil::checkMessage($var, \Saltoapis\Nebula\Installation\V1\PaymentMethod\DirectDebit::class);
+        $this->writeOneof(3, $var);
 
         return $this;
     }
