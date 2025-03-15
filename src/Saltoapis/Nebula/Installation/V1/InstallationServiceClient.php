@@ -298,9 +298,30 @@ class InstallationServiceClient extends \Grpc\BaseStub {
     }
 
     /**
+     * Update subscription payment method
+     *
+     * Updates an existing subscription payment method. If there is a payment
+     * method associated with the subscription, it will be deleted.
+     * (-- api-linter: core::0134::method-signature=disabled
+     *     aip.dev/not-precedent: We need to do this to simplify the update operation. --)
+     * @param \Saltoapis\Nebula\Installation\V1\UpdatePaymentMethodRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function UpdatePaymentMethod(\Saltoapis\Nebula\Installation\V1\UpdatePaymentMethodRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.installation.v1.InstallationService/UpdatePaymentMethod',
+        $argument,
+        ['\Saltoapis\Nebula\Installation\V1\PaymentMethod', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
      * Update subscription payment method's card
      *
-     * Updates subscription payment method's card.
+     * Updates subscription payment method's card. If there is a payment method
+     * associated with the subscription, it will be deleted.
      * @param \Saltoapis\Nebula\Installation\V1\UpdateCardRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
