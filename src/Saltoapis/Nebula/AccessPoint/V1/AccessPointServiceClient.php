@@ -122,4 +122,22 @@ class AccessPointServiceClient extends \Grpc\BaseStub {
         $metadata, $options);
     }
 
+    /**
+     * Lock an access point
+     *
+     * Remotely locks an access point. This can be run against those access
+     * points where their associated devices are online and connected.
+     * @param \Saltoapis\Nebula\AccessPoint\V1\LockAccessPointRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function LockAccessPoint(\Saltoapis\Nebula\AccessPoint\V1\LockAccessPointRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.accesspoint.v1.AccessPointService/LockAccessPoint',
+        $argument,
+        ['\Saltoapis\Longrunning\V1\Operation', 'decode'],
+        $metadata, $options);
+    }
+
 }
