@@ -23,11 +23,12 @@ class AccessPointUnlocked extends \Google\Protobuf\Internal\Message
      */
     protected $access_point = null;
     /**
-     * The user who unlocked the access point.
+     * The user who unlocked the access point, if any.
      *
      * Generated from protobuf field <code>.salto.nebula.user.v1.User user = 2;</code>
      */
     protected $user = null;
+    protected $credential;
 
     /**
      * Constructor.
@@ -38,7 +39,9 @@ class AccessPointUnlocked extends \Google\Protobuf\Internal\Message
      *     @type \Saltoapis\Nebula\AccessPoint\V1\AccessPoint $access_point
      *           The access point that's been unlocked.
      *     @type \Saltoapis\Nebula\User\V1\User $user
-     *           The user who unlocked the access point.
+     *           The user who unlocked the access point, if any.
+     *     @type \Saltoapis\Nebula\EmergencyKey\V1\EmergencyKey $emergency_key
+     *           The emergency key used to unlock the access point.
      * }
      */
     public function __construct($data = NULL) {
@@ -83,7 +86,7 @@ class AccessPointUnlocked extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * The user who unlocked the access point.
+     * The user who unlocked the access point, if any.
      *
      * Generated from protobuf field <code>.salto.nebula.user.v1.User user = 2;</code>
      * @return \Saltoapis\Nebula\User\V1\User|null
@@ -104,7 +107,7 @@ class AccessPointUnlocked extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * The user who unlocked the access point.
+     * The user who unlocked the access point, if any.
      *
      * Generated from protobuf field <code>.salto.nebula.user.v1.User user = 2;</code>
      * @param \Saltoapis\Nebula\User\V1\User $var
@@ -116,6 +119,45 @@ class AccessPointUnlocked extends \Google\Protobuf\Internal\Message
         $this->user = $var;
 
         return $this;
+    }
+
+    /**
+     * The emergency key used to unlock the access point.
+     *
+     * Generated from protobuf field <code>.salto.nebula.emergencykey.v1.EmergencyKey emergency_key = 3;</code>
+     * @return \Saltoapis\Nebula\EmergencyKey\V1\EmergencyKey|null
+     */
+    public function getEmergencyKey()
+    {
+        return $this->readOneof(3);
+    }
+
+    public function hasEmergencyKey()
+    {
+        return $this->hasOneof(3);
+    }
+
+    /**
+     * The emergency key used to unlock the access point.
+     *
+     * Generated from protobuf field <code>.salto.nebula.emergencykey.v1.EmergencyKey emergency_key = 3;</code>
+     * @param \Saltoapis\Nebula\EmergencyKey\V1\EmergencyKey $var
+     * @return $this
+     */
+    public function setEmergencyKey($var)
+    {
+        GPBUtil::checkMessage($var, \Saltoapis\Nebula\EmergencyKey\V1\EmergencyKey::class);
+        $this->writeOneof(3, $var);
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCredential()
+    {
+        return $this->whichOneof("credential");
     }
 
 }
