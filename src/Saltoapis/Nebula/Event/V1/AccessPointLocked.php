@@ -44,6 +44,8 @@ class AccessPointLocked extends \Google\Protobuf\Internal\Message
      *           The emergency key used to lock the access point.
      *     @type \Saltoapis\Nebula\User\V1\CardKey $card_key
      *           The card key used to lock the access point.
+     *     @type \Saltoapis\Nebula\User\V1\AppKey $app_key
+     *           The app key used to lock the access point.
      * }
      */
     public function __construct($data = NULL) {
@@ -181,6 +183,37 @@ class AccessPointLocked extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Saltoapis\Nebula\User\V1\CardKey::class);
         $this->writeOneof(4, $var);
+
+        return $this;
+    }
+
+    /**
+     * The app key used to lock the access point.
+     *
+     * Generated from protobuf field <code>.salto.nebula.user.v1.AppKey app_key = 5;</code>
+     * @return \Saltoapis\Nebula\User\V1\AppKey|null
+     */
+    public function getAppKey()
+    {
+        return $this->readOneof(5);
+    }
+
+    public function hasAppKey()
+    {
+        return $this->hasOneof(5);
+    }
+
+    /**
+     * The app key used to lock the access point.
+     *
+     * Generated from protobuf field <code>.salto.nebula.user.v1.AppKey app_key = 5;</code>
+     * @param \Saltoapis\Nebula\User\V1\AppKey $var
+     * @return $this
+     */
+    public function setAppKey($var)
+    {
+        GPBUtil::checkMessage($var, \Saltoapis\Nebula\User\V1\AppKey::class);
+        $this->writeOneof(5, $var);
 
         return $this;
     }
