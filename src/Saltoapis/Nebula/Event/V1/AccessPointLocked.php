@@ -46,6 +46,8 @@ class AccessPointLocked extends \Google\Protobuf\Internal\Message
      *           The card key used to lock the access point.
      *     @type \Saltoapis\Nebula\User\V1\AppKey $app_key
      *           The app key used to lock the access point.
+     *     @type \Saltoapis\Nebula\User\V1\WalletKey $wallet_key
+     *           The wallet key used to lock the access point.
      * }
      */
     public function __construct($data = NULL) {
@@ -214,6 +216,37 @@ class AccessPointLocked extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Saltoapis\Nebula\User\V1\AppKey::class);
         $this->writeOneof(5, $var);
+
+        return $this;
+    }
+
+    /**
+     * The wallet key used to lock the access point.
+     *
+     * Generated from protobuf field <code>.salto.nebula.user.v1.WalletKey wallet_key = 6;</code>
+     * @return \Saltoapis\Nebula\User\V1\WalletKey|null
+     */
+    public function getWalletKey()
+    {
+        return $this->readOneof(6);
+    }
+
+    public function hasWalletKey()
+    {
+        return $this->hasOneof(6);
+    }
+
+    /**
+     * The wallet key used to lock the access point.
+     *
+     * Generated from protobuf field <code>.salto.nebula.user.v1.WalletKey wallet_key = 6;</code>
+     * @param \Saltoapis\Nebula\User\V1\WalletKey $var
+     * @return $this
+     */
+    public function setWalletKey($var)
+    {
+        GPBUtil::checkMessage($var, \Saltoapis\Nebula\User\V1\WalletKey::class);
+        $this->writeOneof(6, $var);
 
         return $this;
     }
