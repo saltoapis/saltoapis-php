@@ -31,18 +31,6 @@ class AccessRight extends \Google\Protobuf\Internal\Message
      */
     protected $display_name = '';
     /**
-     * Activation time independent of any time zone or calendar.
-     *
-     * Generated from protobuf field <code>.google.protobuf.Timestamp activate_time = 3;</code>
-     */
-    protected $activate_time = null;
-    /**
-     * Expiration time independent of any time zone or calendar.
-     *
-     * Generated from protobuf field <code>.google.protobuf.Timestamp expire_time = 4;</code>
-     */
-    protected $expire_time = null;
-    /**
      * Schedules in which this access right is applied.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.type.Schedule schedules = 5;</code>
@@ -61,10 +49,6 @@ class AccessRight extends \Google\Protobuf\Internal\Message
      *           `installations/surelock-homes-hq/access-rights/baskerville`.
      *     @type string $display_name
      *           Display name of the access right.
-     *     @type \Google\Protobuf\Timestamp $activate_time
-     *           Activation time independent of any time zone or calendar.
-     *     @type \Google\Protobuf\Timestamp $expire_time
-     *           Expiration time independent of any time zone or calendar.
      *     @type array<\Saltoapis\Nebula\Type\Schedule>|\Google\Protobuf\Internal\RepeatedField $schedules
      *           Schedules in which this access right is applied.
      * }
@@ -126,78 +110,6 @@ class AccessRight extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->display_name = $var;
-
-        return $this;
-    }
-
-    /**
-     * Activation time independent of any time zone or calendar.
-     *
-     * Generated from protobuf field <code>.google.protobuf.Timestamp activate_time = 3;</code>
-     * @return \Google\Protobuf\Timestamp|null
-     */
-    public function getActivateTime()
-    {
-        return $this->activate_time;
-    }
-
-    public function hasActivateTime()
-    {
-        return isset($this->activate_time);
-    }
-
-    public function clearActivateTime()
-    {
-        unset($this->activate_time);
-    }
-
-    /**
-     * Activation time independent of any time zone or calendar.
-     *
-     * Generated from protobuf field <code>.google.protobuf.Timestamp activate_time = 3;</code>
-     * @param \Google\Protobuf\Timestamp $var
-     * @return $this
-     */
-    public function setActivateTime($var)
-    {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
-        $this->activate_time = $var;
-
-        return $this;
-    }
-
-    /**
-     * Expiration time independent of any time zone or calendar.
-     *
-     * Generated from protobuf field <code>.google.protobuf.Timestamp expire_time = 4;</code>
-     * @return \Google\Protobuf\Timestamp|null
-     */
-    public function getExpireTime()
-    {
-        return $this->expire_time;
-    }
-
-    public function hasExpireTime()
-    {
-        return isset($this->expire_time);
-    }
-
-    public function clearExpireTime()
-    {
-        unset($this->expire_time);
-    }
-
-    /**
-     * Expiration time independent of any time zone or calendar.
-     *
-     * Generated from protobuf field <code>.google.protobuf.Timestamp expire_time = 4;</code>
-     * @param \Google\Protobuf\Timestamp $var
-     * @return $this
-     */
-    public function setExpireTime($var)
-    {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
-        $this->expire_time = $var;
 
         return $this;
     }
