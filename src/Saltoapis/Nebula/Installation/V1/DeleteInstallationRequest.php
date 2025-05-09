@@ -31,6 +31,7 @@ class DeleteInstallationRequest extends \Google\Protobuf\Internal\Message
     protected $validate_only = null;
     /**
      * The number of hours to wait before permanently deleting the installation.
+     * If unset, the default is 720 (30 days).
      *
      * Generated from protobuf field <code>optional int32 delay_hours = 3;</code>
      */
@@ -49,6 +50,7 @@ class DeleteInstallationRequest extends \Google\Protobuf\Internal\Message
      *           If set, validate the request but do not actually delete the installation.
      *     @type int $delay_hours
      *           The number of hours to wait before permanently deleting the installation.
+     *           If unset, the default is 720 (30 days).
      * }
      */
     public function __construct($data = NULL) {
@@ -122,6 +124,7 @@ class DeleteInstallationRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * The number of hours to wait before permanently deleting the installation.
+     * If unset, the default is 720 (30 days).
      *
      * Generated from protobuf field <code>optional int32 delay_hours = 3;</code>
      * @return int
@@ -143,6 +146,7 @@ class DeleteInstallationRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * The number of hours to wait before permanently deleting the installation.
+     * If unset, the default is 720 (30 days).
      *
      * Generated from protobuf field <code>optional int32 delay_hours = 3;</code>
      * @param int $var
