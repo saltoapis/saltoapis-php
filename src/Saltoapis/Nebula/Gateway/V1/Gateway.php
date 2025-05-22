@@ -50,6 +50,12 @@ class Gateway extends \Google\Protobuf\Internal\Message
      */
     protected $initialized = false;
     /**
+     * Device metadata contains information about a device hardware and firmware.
+     *
+     * Generated from protobuf field <code>.salto.nebula.type.DeviceMetadata device_metadata = 8;</code>
+     */
+    protected $device_metadata = null;
+    /**
      * Indicates whether this gateway is connected or not. It's considered
      * connected if the gateway has successfully established communication
      * with the MQTT server.
@@ -93,6 +99,8 @@ class Gateway extends \Google\Protobuf\Internal\Message
      *           [`InitializeGateway`][salto.nebula.gateway.v1.GatewayService.InitializeGateway].
      *           If the value is `false` also applies to the case where the
      *           initialization process has been initiated but where it has not finished.
+     *     @type \Saltoapis\Nebula\Type\DeviceMetadata $device_metadata
+     *           Device metadata contains information about a device hardware and firmware.
      *     @type bool $connected
      *           Indicates whether this gateway is connected or not. It's considered
      *           connected if the gateway has successfully established communication
@@ -236,6 +244,42 @@ class Gateway extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->initialized = $var;
+
+        return $this;
+    }
+
+    /**
+     * Device metadata contains information about a device hardware and firmware.
+     *
+     * Generated from protobuf field <code>.salto.nebula.type.DeviceMetadata device_metadata = 8;</code>
+     * @return \Saltoapis\Nebula\Type\DeviceMetadata|null
+     */
+    public function getDeviceMetadata()
+    {
+        return $this->device_metadata;
+    }
+
+    public function hasDeviceMetadata()
+    {
+        return isset($this->device_metadata);
+    }
+
+    public function clearDeviceMetadata()
+    {
+        unset($this->device_metadata);
+    }
+
+    /**
+     * Device metadata contains information about a device hardware and firmware.
+     *
+     * Generated from protobuf field <code>.salto.nebula.type.DeviceMetadata device_metadata = 8;</code>
+     * @param \Saltoapis\Nebula\Type\DeviceMetadata $var
+     * @return $this
+     */
+    public function setDeviceMetadata($var)
+    {
+        GPBUtil::checkMessage($var, \Saltoapis\Nebula\Type\DeviceMetadata::class);
+        $this->device_metadata = $var;
 
         return $this;
     }

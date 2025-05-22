@@ -58,6 +58,12 @@ class ElectronicKey extends \Google\Protobuf\Internal\Message
      */
     protected $outdated = false;
     /**
+     * Device metadata contains information about a device hardware and firmware.
+     *
+     * Generated from protobuf field <code>.salto.nebula.type.DeviceMetadata device_metadata = 8;</code>
+     */
+    protected $device_metadata = null;
+    /**
      * Indicates whether the battery of this electronic key is low, and needs
      * replacing, or is normal and doesn't need replacing.
      *
@@ -92,6 +98,8 @@ class ElectronicKey extends \Google\Protobuf\Internal\Message
      *           Indicates whether this electronic key has pending updates or not. This
      *           could be because there was a pending configuration or a firmware update
      *           and is conditionally set based on the current installation settings.
+     *     @type \Saltoapis\Nebula\Type\DeviceMetadata $device_metadata
+     *           Device metadata contains information about a device hardware and firmware.
      *     @type bool $low_battery
      *           Indicates whether the battery of this electronic key is low, and needs
      *           replacing, or is normal and doesn't need replacing.
@@ -260,6 +268,42 @@ class ElectronicKey extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->outdated = $var;
+
+        return $this;
+    }
+
+    /**
+     * Device metadata contains information about a device hardware and firmware.
+     *
+     * Generated from protobuf field <code>.salto.nebula.type.DeviceMetadata device_metadata = 8;</code>
+     * @return \Saltoapis\Nebula\Type\DeviceMetadata|null
+     */
+    public function getDeviceMetadata()
+    {
+        return $this->device_metadata;
+    }
+
+    public function hasDeviceMetadata()
+    {
+        return isset($this->device_metadata);
+    }
+
+    public function clearDeviceMetadata()
+    {
+        unset($this->device_metadata);
+    }
+
+    /**
+     * Device metadata contains information about a device hardware and firmware.
+     *
+     * Generated from protobuf field <code>.salto.nebula.type.DeviceMetadata device_metadata = 8;</code>
+     * @param \Saltoapis\Nebula\Type\DeviceMetadata $var
+     * @return $this
+     */
+    public function setDeviceMetadata($var)
+    {
+        GPBUtil::checkMessage($var, \Saltoapis\Nebula\Type\DeviceMetadata::class);
+        $this->device_metadata = $var;
 
         return $this;
     }
