@@ -261,4 +261,141 @@ class ControllerServiceClient extends \Grpc\BaseStub {
         $metadata, $options);
     }
 
+    /**
+     * Create a controller relay
+     *
+     * Creates a new controller relay
+     * @param \Saltoapis\Nebula\Controller\V1\CreateControllerRelayRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function CreateControllerRelay(\Saltoapis\Nebula\Controller\V1\CreateControllerRelayRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.controller.v1.ControllerService/CreateControllerRelay',
+        $argument,
+        ['\Saltoapis\Nebula\Controller\V1\ControllerRelay', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * Create a batch of controller relays
+     *
+     * Creates a batch of controller relays. This method allows the creation of multiple
+     * controller relays in a single operation.
+     * @param \Saltoapis\Nebula\Controller\V1\BatchCreateControllerRelaysRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function BatchCreateControllerRelays(\Saltoapis\Nebula\Controller\V1\BatchCreateControllerRelaysRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.controller.v1.ControllerService/BatchCreateControllerRelays',
+        $argument,
+        ['\Saltoapis\Nebula\Controller\V1\BatchCreateControllerRelaysResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * Get a controller relay
+     *
+     * Gets an existing controller relay.
+     * @param \Saltoapis\Nebula\Controller\V1\GetControllerRelayRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function GetControllerRelay(\Saltoapis\Nebula\Controller\V1\GetControllerRelayRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.controller.v1.ControllerService/GetControllerRelay',
+        $argument,
+        ['\Saltoapis\Nebula\Controller\V1\ControllerRelay', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * List controller relays
+     *
+     * Returns a list of controller relays that have been previously created.
+     * @param \Saltoapis\Nebula\Controller\V1\ListControllerRelaysRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function ListControllerRelays(\Saltoapis\Nebula\Controller\V1\ListControllerRelaysRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.controller.v1.ControllerService/ListControllerRelays',
+        $argument,
+        ['\Saltoapis\Nebula\Controller\V1\ListControllerRelaysResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * Update a controller relay
+     *
+     * Updates an existing controller relay.
+     * @param \Saltoapis\Nebula\Controller\V1\UpdateControllerRelayRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function UpdateControllerRelay(\Saltoapis\Nebula\Controller\V1\UpdateControllerRelayRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.controller.v1.ControllerService/UpdateControllerRelay',
+        $argument,
+        ['\Saltoapis\Nebula\Controller\V1\ControllerRelay', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * Update a batch of controller relays
+     *
+     * Updates a batch of controller relays. This method allows updating multiple controller relays in a single operation.
+     * @param \Saltoapis\Nebula\Controller\V1\BatchUpdateControllerRelaysRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function BatchUpdateControllerRelays(\Saltoapis\Nebula\Controller\V1\BatchUpdateControllerRelaysRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.controller.v1.ControllerService/BatchUpdateControllerRelays',
+        $argument,
+        ['\Saltoapis\Nebula\Controller\V1\BatchUpdateControllerRelaysResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * Delete a controller relay
+     *
+     * Permanently deletes a controller relay. This cannot be undone.
+     * @param \Saltoapis\Nebula\Controller\V1\DeleteControllerRelayRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function DeleteControllerRelay(\Saltoapis\Nebula\Controller\V1\DeleteControllerRelayRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.controller.v1.ControllerService/DeleteControllerRelay',
+        $argument,
+        ['\Google\Protobuf\GPBEmpty', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * Delete a batch of controller relays
+     *
+     * Permanently deletes a batch of controller relays. This cannot be undone.
+     * @param \Saltoapis\Nebula\Controller\V1\BatchDeleteControllerRelaysRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function BatchDeleteControllerRelays(\Saltoapis\Nebula\Controller\V1\BatchDeleteControllerRelaysRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.controller.v1.ControllerService/BatchDeleteControllerRelays',
+        $argument,
+        ['\Saltoapis\Nebula\Controller\V1\BatchDeleteControllerRelaysResponse', 'decode'],
+        $metadata, $options);
+    }
+
 }
