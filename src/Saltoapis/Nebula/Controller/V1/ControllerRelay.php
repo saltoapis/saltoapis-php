@@ -28,13 +28,6 @@ class ControllerRelay extends \Google\Protobuf\Internal\Message
      */
     protected $name = '';
     /**
-     * Extension board address. Values range from 0-15, allowing for up to 16 boards in the system.
-     * This field is not applicable for master boards or wall reader extension boards.
-     *
-     * Generated from protobuf field <code>optional int32 dipswitch = 2;</code>
-     */
-    protected $dipswitch = null;
-    /**
      * Identifies the specific controller relay on the board (1-4). Board type determines
      * which controller relay IDs are actually available for configuration and use.
      *
@@ -53,16 +46,11 @@ class ControllerRelay extends \Google\Protobuf\Internal\Message
      *           Output only. Resource name of the controller relay. It must have the format of
      *           `installations/{@*}controllers/{@*}relays/*`. For example:
      *           `installations/surelock-homes-hq/controller/dancing-men/relays/first-floor`.
-     *     @type int $dipswitch
-     *           Extension board address. Values range from 0-15, allowing for up to 16 boards in the system.
-     *           This field is not applicable for master boards or wall reader extension boards.
      *     @type int $relay_id
      *           Identifies the specific controller relay on the board (1-4). Board type determines
      *           which controller relay IDs are actually available for configuration and use.
      *     @type \Saltoapis\Nebula\Controller\V1\DestinationOutput $destination_output
      *           Destination output configuration for this controller relay.
-     *     @type string $access_point
-     *           Access point configuration for this controller relay.
      * }
      */
     public function __construct($data = NULL) {
@@ -96,44 +84,6 @@ class ControllerRelay extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->name = $var;
-
-        return $this;
-    }
-
-    /**
-     * Extension board address. Values range from 0-15, allowing for up to 16 boards in the system.
-     * This field is not applicable for master boards or wall reader extension boards.
-     *
-     * Generated from protobuf field <code>optional int32 dipswitch = 2;</code>
-     * @return int
-     */
-    public function getDipswitch()
-    {
-        return isset($this->dipswitch) ? $this->dipswitch : 0;
-    }
-
-    public function hasDipswitch()
-    {
-        return isset($this->dipswitch);
-    }
-
-    public function clearDipswitch()
-    {
-        unset($this->dipswitch);
-    }
-
-    /**
-     * Extension board address. Values range from 0-15, allowing for up to 16 boards in the system.
-     * This field is not applicable for master boards or wall reader extension boards.
-     *
-     * Generated from protobuf field <code>optional int32 dipswitch = 2;</code>
-     * @param int $var
-     * @return $this
-     */
-    public function setDipswitch($var)
-    {
-        GPBUtil::checkInt32($var);
-        $this->dipswitch = $var;
 
         return $this;
     }
@@ -193,37 +143,6 @@ class ControllerRelay extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Saltoapis\Nebula\Controller\V1\DestinationOutput::class);
         $this->writeOneof(4, $var);
-
-        return $this;
-    }
-
-    /**
-     * Access point configuration for this controller relay.
-     *
-     * Generated from protobuf field <code>string access_point = 5;</code>
-     * @return string
-     */
-    public function getAccessPoint()
-    {
-        return $this->readOneof(5);
-    }
-
-    public function hasAccessPoint()
-    {
-        return $this->hasOneof(5);
-    }
-
-    /**
-     * Access point configuration for this controller relay.
-     *
-     * Generated from protobuf field <code>string access_point = 5;</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setAccessPoint($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->writeOneof(5, $var);
 
         return $this;
     }
