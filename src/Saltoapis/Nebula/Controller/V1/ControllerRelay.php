@@ -49,7 +49,7 @@ class ControllerRelay extends \Google\Protobuf\Internal\Message
      *     @type int $relay_id
      *           Identifies the specific controller relay on the board (1-4). Board type determines
      *           which controller relay IDs are actually available for configuration and use.
-     *     @type \Saltoapis\Nebula\Controller\V1\DestinationOutput $destination_output
+     *     @type \Saltoapis\Nebula\Controller\V1\ControllerRelay\DestinationOutput $destination_output
      *           Destination output configuration for this controller relay.
      * }
      */
@@ -119,8 +119,8 @@ class ControllerRelay extends \Google\Protobuf\Internal\Message
     /**
      * Destination output configuration for this controller relay.
      *
-     * Generated from protobuf field <code>.salto.nebula.controller.v1.DestinationOutput destination_output = 4;</code>
-     * @return \Saltoapis\Nebula\Controller\V1\DestinationOutput|null
+     * Generated from protobuf field <code>.salto.nebula.controller.v1.ControllerRelay.DestinationOutput destination_output = 4;</code>
+     * @return \Saltoapis\Nebula\Controller\V1\ControllerRelay\DestinationOutput|null
      */
     public function getDestinationOutput()
     {
@@ -135,13 +135,13 @@ class ControllerRelay extends \Google\Protobuf\Internal\Message
     /**
      * Destination output configuration for this controller relay.
      *
-     * Generated from protobuf field <code>.salto.nebula.controller.v1.DestinationOutput destination_output = 4;</code>
-     * @param \Saltoapis\Nebula\Controller\V1\DestinationOutput $var
+     * Generated from protobuf field <code>.salto.nebula.controller.v1.ControllerRelay.DestinationOutput destination_output = 4;</code>
+     * @param \Saltoapis\Nebula\Controller\V1\ControllerRelay\DestinationOutput $var
      * @return $this
      */
     public function setDestinationOutput($var)
     {
-        GPBUtil::checkMessage($var, \Saltoapis\Nebula\Controller\V1\DestinationOutput::class);
+        GPBUtil::checkMessage($var, \Saltoapis\Nebula\Controller\V1\ControllerRelay\DestinationOutput::class);
         $this->writeOneof(4, $var);
 
         return $this;
