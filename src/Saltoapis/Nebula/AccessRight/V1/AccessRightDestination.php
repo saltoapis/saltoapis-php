@@ -34,13 +34,6 @@ class AccessRightDestination extends \Google\Protobuf\Internal\Message
      */
     protected $destination = '';
     /**
-     * The access right resource name of the parent access right. For example:
-     * `installations/surelock-homes-hq/access-rights/baskerville`.
-     *
-     * Generated from protobuf field <code>string access_right = 4;</code>
-     */
-    protected $access_right = '';
-    /**
      * Display name of the associated entity. In this case a destination.
      *
      * Generated from protobuf field <code>string display_name = 3;</code>
@@ -62,9 +55,6 @@ class AccessRightDestination extends \Google\Protobuf\Internal\Message
      *           The destination resource name to bind as an association to the parent
      *           access right. For example:
      *           `installations/surelock-homes-hq/destinations/elevator-floor-5`.
-     *     @type string $access_right
-     *           The access right resource name of the parent access right. For example:
-     *           `installations/surelock-homes-hq/access-rights/baskerville`.
      *     @type string $display_name
      *           Display name of the associated entity. In this case a destination.
      * }
@@ -132,34 +122,6 @@ class AccessRightDestination extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->destination = $var;
-
-        return $this;
-    }
-
-    /**
-     * The access right resource name of the parent access right. For example:
-     * `installations/surelock-homes-hq/access-rights/baskerville`.
-     *
-     * Generated from protobuf field <code>string access_right = 4;</code>
-     * @return string
-     */
-    public function getAccessRight()
-    {
-        return $this->access_right;
-    }
-
-    /**
-     * The access right resource name of the parent access right. For example:
-     * `installations/surelock-homes-hq/access-rights/baskerville`.
-     *
-     * Generated from protobuf field <code>string access_right = 4;</code>
-     * @param string $var
-     * @return $this
-     */
-    public function setAccessRight($var)
-    {
-        GPBUtil::checkString($var, True);
-        $this->access_right = $var;
 
         return $this;
     }
