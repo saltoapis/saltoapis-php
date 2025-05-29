@@ -347,4 +347,89 @@ class AccessRightServiceClient extends \Grpc\BaseStub {
         $metadata, $options);
     }
 
+    /**
+     * Create an access right destination
+     *
+     * Creates an access right's destination association.
+     * @param \Saltoapis\Nebula\AccessRight\V1\CreateAccessRightDestinationRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function CreateAccessRightDestination(\Saltoapis\Nebula\AccessRight\V1\CreateAccessRightDestinationRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.accessright.v1.AccessRightService/CreateAccessRightDestination',
+        $argument,
+        ['\Saltoapis\Nebula\AccessRight\V1\AccessRightDestination', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * Get an access right destination
+     *
+     * Retrieves an existing access right's destination association.
+     * @param \Saltoapis\Nebula\AccessRight\V1\GetAccessRightDestinationRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function GetAccessRightDestination(\Saltoapis\Nebula\AccessRight\V1\GetAccessRightDestinationRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.accessright.v1.AccessRightService/GetAccessRightDestination',
+        $argument,
+        ['\Saltoapis\Nebula\AccessRight\V1\AccessRightDestination', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * List access right destinations
+     *
+     * Lists an existing access right's destination associations.
+     * @param \Saltoapis\Nebula\AccessRight\V1\ListAccessRightDestinationsRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function ListAccessRightDestinations(\Saltoapis\Nebula\AccessRight\V1\ListAccessRightDestinationsRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.accessright.v1.AccessRightService/ListAccessRightDestinations',
+        $argument,
+        ['\Saltoapis\Nebula\AccessRight\V1\ListAccessRightDestinationsResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * Update an access right destination
+     *
+     * Updates an existing access right's destination association.
+     * @param \Saltoapis\Nebula\AccessRight\V1\UpdateAccessRightDestinationRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function UpdateAccessRightDestination(\Saltoapis\Nebula\AccessRight\V1\UpdateAccessRightDestinationRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.accessright.v1.AccessRightService/UpdateAccessRightDestination',
+        $argument,
+        ['\Saltoapis\Nebula\AccessRight\V1\AccessRightDestination', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * Delete an access right destination
+     *
+     * Deletes an access right's destination association.
+     * @param \Saltoapis\Nebula\AccessRight\V1\DeleteAccessRightDestinationRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function DeleteAccessRightDestination(\Saltoapis\Nebula\AccessRight\V1\DeleteAccessRightDestinationRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.accessright.v1.AccessRightService/DeleteAccessRightDestination',
+        $argument,
+        ['\Google\Protobuf\GPBEmpty', 'decode'],
+        $metadata, $options);
+    }
+
 }
