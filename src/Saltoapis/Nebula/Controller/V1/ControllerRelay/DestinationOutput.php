@@ -3,7 +3,7 @@
 # NO CHECKED-IN PROTOBUF GENCODE
 # source: salto/nebula/controller/v1/controller.proto
 
-namespace Saltoapis\Nebula\Controller\V1;
+namespace Saltoapis\Nebula\Controller\V1\ControllerRelay;
 
 use Google\Protobuf\Internal\GPBType;
 use Google\Protobuf\Internal\RepeatedField;
@@ -21,7 +21,7 @@ use Google\Protobuf\Internal\GPBUtil;
  * floor button, with the "output" field (0-255) corresponding to a specific permission
  * bit in the credential's access rights.
  *
- * Generated from protobuf message <code>salto.nebula.controller.v1.DestinationOutput</code>
+ * Generated from protobuf message <code>salto.nebula.controller.v1.ControllerRelay.DestinationOutput</code>
  */
 class DestinationOutput extends \Google\Protobuf\Internal\Message
 {
