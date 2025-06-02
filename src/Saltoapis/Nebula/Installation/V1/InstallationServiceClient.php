@@ -336,6 +336,27 @@ class InstallationServiceClient extends \Grpc\BaseStub {
     }
 
     /**
+     * Create a payment authorization
+     *
+     * Creates a payment authorization for the subscription.
+     * The payment authorization is a process that allows the customer to
+     * authorize a payment card for future use. This is done by creating a payment
+     * authorization request. The result of the request is a payment authorization
+     * that must be authorized by the client in the client's UI.
+     * @param \Saltoapis\Nebula\Installation\V1\CreatePaymentAuthorizationRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function CreatePaymentAuthorization(\Saltoapis\Nebula\Installation\V1\CreatePaymentAuthorizationRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.installation.v1.InstallationService/CreatePaymentAuthorization',
+        $argument,
+        ['\Saltoapis\Nebula\Installation\V1\PaymentAuthorization', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
      * List invoices
      *
      * Returns a list of invoices.
