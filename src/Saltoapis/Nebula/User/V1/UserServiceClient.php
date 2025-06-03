@@ -146,7 +146,7 @@ class UserServiceClient extends \Grpc\BaseStub {
     }
 
     /**
-     * Create an access right
+     * Create a user access right
      *
      * Creates a user's access right association.
      * @param \Saltoapis\Nebula\User\V1\CreateUserAccessRightRequest $argument input argument
@@ -163,7 +163,7 @@ class UserServiceClient extends \Grpc\BaseStub {
     }
 
     /**
-     * Get an access right
+     * Get a user access right
      *
      * Gets an existing user's access right association.
      * @param \Saltoapis\Nebula\User\V1\GetUserAccessRightRequest $argument input argument
@@ -180,7 +180,7 @@ class UserServiceClient extends \Grpc\BaseStub {
     }
 
     /**
-     * List access rights
+     * List user access rights
      *
      * Lists an existing user's access right associations.
      * @param \Saltoapis\Nebula\User\V1\ListUserAccessRightsRequest $argument input argument
@@ -197,7 +197,7 @@ class UserServiceClient extends \Grpc\BaseStub {
     }
 
     /**
-     * Update an access right
+     * Update a user access right
      *
      * Updates an existing user's access right associations.
      * @param \Saltoapis\Nebula\User\V1\UpdateUserAccessRightRequest $argument input argument
@@ -214,7 +214,7 @@ class UserServiceClient extends \Grpc\BaseStub {
     }
 
     /**
-     * Delete an access right
+     * Delete a user access right
      *
      * Deletes a user's access right association. This cannot be undone.
      * @param \Saltoapis\Nebula\User\V1\DeleteUserAccessRightRequest $argument input argument
