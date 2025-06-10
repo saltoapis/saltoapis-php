@@ -28,6 +28,13 @@ class ControllerRelay extends \Google\Protobuf\Internal\Message
      */
     protected $name = '';
     /**
+     * Extension board address. Values range from 0-15, allowing for up to 16 boards in the system.
+     * This field is not applicable for master boards or wall reader extension boards.
+     *
+     * Generated from protobuf field <code>optional int32 dip_switch = 2;</code>
+     */
+    protected $dip_switch = null;
+    /**
      * Identifies the specific controller relay on the board (1-4). Board type determines
      * which controller relay IDs are actually available for configuration and use.
      *
@@ -46,11 +53,16 @@ class ControllerRelay extends \Google\Protobuf\Internal\Message
      *           Output only. Resource name of the controller relay. It must have the format of
      *           `installations/{@*}controllers/{@*}relays/*`. For example:
      *           `installations/surelock-homes-hq/controller/dancing-men/relays/first-floor`.
+     *     @type int $dip_switch
+     *           Extension board address. Values range from 0-15, allowing for up to 16 boards in the system.
+     *           This field is not applicable for master boards or wall reader extension boards.
      *     @type int $relay_id
      *           Identifies the specific controller relay on the board (1-4). Board type determines
      *           which controller relay IDs are actually available for configuration and use.
      *     @type \Saltoapis\Nebula\Controller\V1\ControllerRelay\DestinationOutput $destination_output
      *           Destination output configuration for this controller relay.
+     *     @type \Saltoapis\Nebula\Controller\V1\ControllerRelay\Strike $strike
+     *           Strike configuration for this controller relay.
      * }
      */
     public function __construct($data = NULL) {
@@ -84,6 +96,44 @@ class ControllerRelay extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->name = $var;
+
+        return $this;
+    }
+
+    /**
+     * Extension board address. Values range from 0-15, allowing for up to 16 boards in the system.
+     * This field is not applicable for master boards or wall reader extension boards.
+     *
+     * Generated from protobuf field <code>optional int32 dip_switch = 2;</code>
+     * @return int
+     */
+    public function getDipSwitch()
+    {
+        return isset($this->dip_switch) ? $this->dip_switch : 0;
+    }
+
+    public function hasDipSwitch()
+    {
+        return isset($this->dip_switch);
+    }
+
+    public function clearDipSwitch()
+    {
+        unset($this->dip_switch);
+    }
+
+    /**
+     * Extension board address. Values range from 0-15, allowing for up to 16 boards in the system.
+     * This field is not applicable for master boards or wall reader extension boards.
+     *
+     * Generated from protobuf field <code>optional int32 dip_switch = 2;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setDipSwitch($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->dip_switch = $var;
 
         return $this;
     }
@@ -143,6 +193,37 @@ class ControllerRelay extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Saltoapis\Nebula\Controller\V1\ControllerRelay\DestinationOutput::class);
         $this->writeOneof(4, $var);
+
+        return $this;
+    }
+
+    /**
+     * Strike configuration for this controller relay.
+     *
+     * Generated from protobuf field <code>.salto.nebula.controller.v1.ControllerRelay.Strike strike = 5;</code>
+     * @return \Saltoapis\Nebula\Controller\V1\ControllerRelay\Strike|null
+     */
+    public function getStrike()
+    {
+        return $this->readOneof(5);
+    }
+
+    public function hasStrike()
+    {
+        return $this->hasOneof(5);
+    }
+
+    /**
+     * Strike configuration for this controller relay.
+     *
+     * Generated from protobuf field <code>.salto.nebula.controller.v1.ControllerRelay.Strike strike = 5;</code>
+     * @param \Saltoapis\Nebula\Controller\V1\ControllerRelay\Strike $var
+     * @return $this
+     */
+    public function setStrike($var)
+    {
+        GPBUtil::checkMessage($var, \Saltoapis\Nebula\Controller\V1\ControllerRelay\Strike::class);
+        $this->writeOneof(5, $var);
 
         return $this;
     }
