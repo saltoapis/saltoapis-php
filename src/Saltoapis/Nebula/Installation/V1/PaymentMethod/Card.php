@@ -34,6 +34,13 @@ class Card extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string brand = 3;</code>
      */
     protected $brand = '';
+    /**
+     * The payment authorization resource reference for updating the card.
+     * It must be authorized by the payment provider before it can be used.
+     *
+     * Generated from protobuf field <code>string payment_authorization = 4;</code>
+     */
+    protected $payment_authorization = '';
 
     /**
      * Constructor.
@@ -47,6 +54,9 @@ class Card extends \Google\Protobuf\Internal\Message
      *           The last four digits of the card.
      *     @type string $brand
      *           The card brand. For example: visa, mastercard, american_express, other.
+     *     @type string $payment_authorization
+     *           The payment authorization resource reference for updating the card.
+     *           It must be authorized by the payment provider before it can be used.
      * }
      */
     public function __construct($data = NULL) {
@@ -138,6 +148,34 @@ class Card extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->brand = $var;
+
+        return $this;
+    }
+
+    /**
+     * The payment authorization resource reference for updating the card.
+     * It must be authorized by the payment provider before it can be used.
+     *
+     * Generated from protobuf field <code>string payment_authorization = 4;</code>
+     * @return string
+     */
+    public function getPaymentAuthorization()
+    {
+        return $this->payment_authorization;
+    }
+
+    /**
+     * The payment authorization resource reference for updating the card.
+     * It must be authorized by the payment provider before it can be used.
+     *
+     * Generated from protobuf field <code>string payment_authorization = 4;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setPaymentAuthorization($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->payment_authorization = $var;
 
         return $this;
     }
