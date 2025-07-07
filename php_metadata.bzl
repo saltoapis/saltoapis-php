@@ -49,6 +49,7 @@ VALE_VERSION="3.7.1"
 
 php_projects = [
     '//src/Saltoapis/Nebula/AccessPointGroup/V1',
+    '//src/Saltoapis/Nebula/Destination/V1',
     '//src/Saltoapis/Nebula/EmergencyKey/V1',
     '//src/Saltoapis/Nebula/File/V1',
     '//src/Saltoapis/Nebula/Iam/V1',
