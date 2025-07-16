@@ -61,6 +61,9 @@ class CardKey extends \Google\Protobuf\Internal\Message
      *     @type string $uid
      *           Unique identifier of the physical card. Length dependent of technology.
      *           Max length for ISO14443-3 is 10 bytes.
+     *     @type string $device_id
+     *           Globally unique identifier that is used across all devices manufactured
+     *           by SALTO.
      *     @type int $state
      *           Indicates whether this card key has been assigned, not assigned or is
      *           active and ready for use. This field cannot be modified using a standard
@@ -141,6 +144,39 @@ class CardKey extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->writeOneof(2, $var);
+
+        return $this;
+    }
+
+    /**
+     * Globally unique identifier that is used across all devices manufactured
+     * by SALTO.
+     *
+     * Generated from protobuf field <code>string device_id = 5;</code>
+     * @return string
+     */
+    public function getDeviceId()
+    {
+        return $this->readOneof(5);
+    }
+
+    public function hasDeviceId()
+    {
+        return $this->hasOneof(5);
+    }
+
+    /**
+     * Globally unique identifier that is used across all devices manufactured
+     * by SALTO.
+     *
+     * Generated from protobuf field <code>string device_id = 5;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setDeviceId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->writeOneof(5, $var);
 
         return $this;
     }
