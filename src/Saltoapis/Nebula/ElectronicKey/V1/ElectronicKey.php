@@ -60,7 +60,7 @@ class ElectronicKey extends \Google\Protobuf\Internal\Message
     /**
      * Device metadata contains information about a device hardware and firmware.
      *
-     * Generated from protobuf field <code>.salto.nebula.type.DeviceMetadata device_metadata = 8;</code>
+     * Generated from protobuf field <code>.salto.nebula.type.DeviceMetadata device_metadata = 6;</code>
      */
     protected $device_metadata = null;
     /**
@@ -275,7 +275,7 @@ class ElectronicKey extends \Google\Protobuf\Internal\Message
     /**
      * Device metadata contains information about a device hardware and firmware.
      *
-     * Generated from protobuf field <code>.salto.nebula.type.DeviceMetadata device_metadata = 8;</code>
+     * Generated from protobuf field <code>.salto.nebula.type.DeviceMetadata device_metadata = 6;</code>
      * @return \Saltoapis\Nebula\Type\DeviceMetadata|null
      */
     public function getDeviceMetadata()
@@ -296,7 +296,7 @@ class ElectronicKey extends \Google\Protobuf\Internal\Message
     /**
      * Device metadata contains information about a device hardware and firmware.
      *
-     * Generated from protobuf field <code>.salto.nebula.type.DeviceMetadata device_metadata = 8;</code>
+     * Generated from protobuf field <code>.salto.nebula.type.DeviceMetadata device_metadata = 6;</code>
      * @param \Saltoapis\Nebula\Type\DeviceMetadata $var
      * @return $this
      */

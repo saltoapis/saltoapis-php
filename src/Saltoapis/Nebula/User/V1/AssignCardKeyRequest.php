@@ -23,7 +23,13 @@ class AssignCardKeyRequest extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string name = 1;</code>
      */
     protected $name = '';
-    protected $card_id;
+    /**
+     * Unique identifier of the physical card. Length dependent of technology.
+     * Max length for ISO14443-3 is 10 bytes.
+     *
+     * Generated from protobuf field <code>string uid = 2;</code>
+     */
+    protected $uid = '';
 
     /**
      * Constructor.
@@ -81,12 +87,7 @@ class AssignCardKeyRequest extends \Google\Protobuf\Internal\Message
      */
     public function getUid()
     {
-        return $this->readOneof(2);
-    }
-
-    public function hasUid()
-    {
-        return $this->hasOneof(2);
+        return $this->uid;
     }
 
     /**
@@ -100,17 +101,9 @@ class AssignCardKeyRequest extends \Google\Protobuf\Internal\Message
     public function setUid($var)
     {
         GPBUtil::checkString($var, True);
-        $this->writeOneof(2, $var);
+        $this->uid = $var;
 
         return $this;
-    }
-
-    /**
-     * @return string
-     */
-    public function getCardId()
-    {
-        return $this->whichOneof("card_id");
     }
 
 }
