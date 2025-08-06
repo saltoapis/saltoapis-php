@@ -10,6 +10,7 @@
     "autoload": {
         "psr-4": {
 			"Saltoapis\\Nebula\\AccessPointGroup\\V1\\": "src/Saltoapis/Nebula/AccessPointGroup/V1",
+			"Saltoapis\\Nebula\\Destination\\V1\\": "src/Saltoapis/Nebula/Destination/V1",
 			"Saltoapis\\Nebula\\EmergencyKey\\V1\\": "src/Saltoapis/Nebula/EmergencyKey/V1",
 			"Saltoapis\\Nebula\\File\\V1\\": "src/Saltoapis/Nebula/File/V1",
 			"Saltoapis\\Nebula\\Iam\\V1\\": "src/Saltoapis/Nebula/Iam/V1",
@@ -36,6 +37,7 @@
 			"Saltoapis\\Nebula\\Event\\V1\\": "src/Saltoapis/Nebula/Event/V1",
 			"Saltoapis\\Auth\\": "src/Saltoapis/Auth",
 			"GPBMetadata\\Saltoapis\\Nebula\\AccessPointGroup\\V1\\": "src/GPBMetadata/Saltoapis/Nebula/AccessPointGroup/V1",
+			"GPBMetadata\\Saltoapis\\Nebula\\Destination\\V1\\": "src/GPBMetadata/Saltoapis/Nebula/Destination/V1",
 			"GPBMetadata\\Saltoapis\\Nebula\\EmergencyKey\\V1\\": "src/GPBMetadata/Saltoapis/Nebula/EmergencyKey/V1",
 			"GPBMetadata\\Saltoapis\\Nebula\\File\\V1\\": "src/GPBMetadata/Saltoapis/Nebula/File/V1",
 			"GPBMetadata\\Saltoapis\\Nebula\\Iam\\V1\\": "src/GPBMetadata/Saltoapis/Nebula/Iam/V1",
