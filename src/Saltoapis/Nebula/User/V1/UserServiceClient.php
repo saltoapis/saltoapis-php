@@ -402,4 +402,55 @@ class UserServiceClient extends \Grpc\BaseStub {
         $metadata, $options);
     }
 
+    /**
+     * Assign an electronic key
+     *
+     * Assigns an electronic key to an existing user.
+     * @param \Saltoapis\Nebula\User\V1\AssignElectronicKeyRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function AssignElectronicKey(\Saltoapis\Nebula\User\V1\AssignElectronicKeyRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.user.v1.UserService/AssignElectronicKey',
+        $argument,
+        ['\Saltoapis\Nebula\User\V1\AssignElectronicKeyResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * Cancel an electronic key
+     *
+     * Cancels an existing user's electronic key.
+     * @param \Saltoapis\Nebula\User\V1\CancelElectronicKeyRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function CancelElectronicKey(\Saltoapis\Nebula\User\V1\CancelElectronicKeyRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.user.v1.UserService/CancelElectronicKey',
+        $argument,
+        ['\Saltoapis\Nebula\User\V1\CancelElectronicKeyResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * Encode an electronic key
+     *
+     * Encodes an existing user's electronic key.
+     * @param \Saltoapis\Nebula\User\V1\EncodeElectronicKeyRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function EncodeElectronicKey(\Saltoapis\Nebula\User\V1\EncodeElectronicKeyRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.user.v1.UserService/EncodeElectronicKey',
+        $argument,
+        ['\Saltoapis\Longrunning\V1\Operation', 'decode'],
+        $metadata, $options);
+    }
+
 }

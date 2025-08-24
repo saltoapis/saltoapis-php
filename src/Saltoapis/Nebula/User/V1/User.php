@@ -94,6 +94,12 @@ class User extends \Google\Protobuf\Internal\Message
      */
     protected $card_key = null;
     /**
+     * The electronic key resource that belongs to the user.
+     *
+     * Generated from protobuf field <code>.salto.nebula.user.v1.ElectronicKey electronic_key = 16;</code>
+     */
+    protected $electronic_key = null;
+    /**
      * The app key resource that belongs to the user.
      *
      * Generated from protobuf field <code>.salto.nebula.user.v1.AppKey app_key = 12;</code>
@@ -160,6 +166,8 @@ class User extends \Google\Protobuf\Internal\Message
      *           The URI to view the user photo.
      *     @type \Saltoapis\Nebula\User\V1\CardKey $card_key
      *           The card key resource that belongs to the user.
+     *     @type \Saltoapis\Nebula\User\V1\ElectronicKey $electronic_key
+     *           The electronic key resource that belongs to the user.
      *     @type \Saltoapis\Nebula\User\V1\AppKey $app_key
      *           The app key resource that belongs to the user.
      *     @type \Saltoapis\Nebula\User\V1\WalletKey $wallet_key
@@ -552,6 +560,42 @@ class User extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Saltoapis\Nebula\User\V1\CardKey::class);
         $this->card_key = $var;
+
+        return $this;
+    }
+
+    /**
+     * The electronic key resource that belongs to the user.
+     *
+     * Generated from protobuf field <code>.salto.nebula.user.v1.ElectronicKey electronic_key = 16;</code>
+     * @return \Saltoapis\Nebula\User\V1\ElectronicKey|null
+     */
+    public function getElectronicKey()
+    {
+        return $this->electronic_key;
+    }
+
+    public function hasElectronicKey()
+    {
+        return isset($this->electronic_key);
+    }
+
+    public function clearElectronicKey()
+    {
+        unset($this->electronic_key);
+    }
+
+    /**
+     * The electronic key resource that belongs to the user.
+     *
+     * Generated from protobuf field <code>.salto.nebula.user.v1.ElectronicKey electronic_key = 16;</code>
+     * @param \Saltoapis\Nebula\User\V1\ElectronicKey $var
+     * @return $this
+     */
+    public function setElectronicKey($var)
+    {
+        GPBUtil::checkMessage($var, \Saltoapis\Nebula\User\V1\ElectronicKey::class);
+        $this->electronic_key = $var;
 
         return $this;
     }
