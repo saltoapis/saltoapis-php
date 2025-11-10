@@ -70,6 +70,12 @@ class ElectronicKey extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool low_battery = 7;</code>
      */
     protected $low_battery = false;
+    /**
+     * User associated with this electronic key.
+     *
+     * Generated from protobuf field <code>optional string user = 8;</code>
+     */
+    protected $user = null;
 
     /**
      * Constructor.
@@ -103,6 +109,8 @@ class ElectronicKey extends \Google\Protobuf\Internal\Message
      *     @type bool $low_battery
      *           Indicates whether the battery of this electronic key is low, and needs
      *           replacing, or is normal and doesn't need replacing.
+     *     @type string $user
+     *           User associated with this electronic key.
      * }
      */
     public function __construct($data = NULL) {
@@ -332,6 +340,42 @@ class ElectronicKey extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->low_battery = $var;
+
+        return $this;
+    }
+
+    /**
+     * User associated with this electronic key.
+     *
+     * Generated from protobuf field <code>optional string user = 8;</code>
+     * @return string
+     */
+    public function getUser()
+    {
+        return isset($this->user) ? $this->user : '';
+    }
+
+    public function hasUser()
+    {
+        return isset($this->user);
+    }
+
+    public function clearUser()
+    {
+        unset($this->user);
+    }
+
+    /**
+     * User associated with this electronic key.
+     *
+     * Generated from protobuf field <code>optional string user = 8;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setUser($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->user = $var;
 
         return $this;
     }

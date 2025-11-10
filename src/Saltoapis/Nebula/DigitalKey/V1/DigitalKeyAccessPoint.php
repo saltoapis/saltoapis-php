@@ -36,6 +36,12 @@ class DigitalKeyAccessPoint extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string device_id = 3;</code>
      */
     protected $device_id = '';
+    /**
+     * Supported technologies used by the app to open an access point.
+     *
+     * Generated from protobuf field <code>repeated .salto.nebula.type.AppKeyTechnology supported_technologies = 4;</code>
+     */
+    private $supported_technologies;
 
     /**
      * Constructor.
@@ -51,6 +57,8 @@ class DigitalKeyAccessPoint extends \Google\Protobuf\Internal\Message
      *           Display name of the access point.
      *     @type string $device_id
      *           The device which gives coverage to the access point.
+     *     @type array<int>|\Google\Protobuf\Internal\RepeatedField $supported_technologies
+     *           Supported technologies used by the app to open an access point.
      * }
      */
     public function __construct($data = NULL) {
@@ -136,6 +144,32 @@ class DigitalKeyAccessPoint extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->device_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Supported technologies used by the app to open an access point.
+     *
+     * Generated from protobuf field <code>repeated .salto.nebula.type.AppKeyTechnology supported_technologies = 4;</code>
+     * @return \Google\Protobuf\Internal\RepeatedField
+     */
+    public function getSupportedTechnologies()
+    {
+        return $this->supported_technologies;
+    }
+
+    /**
+     * Supported technologies used by the app to open an access point.
+     *
+     * Generated from protobuf field <code>repeated .salto.nebula.type.AppKeyTechnology supported_technologies = 4;</code>
+     * @param array<int>|\Google\Protobuf\Internal\RepeatedField $var
+     * @return $this
+     */
+    public function setSupportedTechnologies($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \Saltoapis\Nebula\Type\AppKeyTechnology::class);
+        $this->supported_technologies = $arr;
 
         return $this;
     }

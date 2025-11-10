@@ -22,6 +22,12 @@ class UnitCreated extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.salto.nebula.unit.v1.Unit unit = 1;</code>
      */
     protected $unit = null;
+    /**
+     * The actor who created the unit.
+     *
+     * Generated from protobuf field <code>.salto.nebula.event.v1.Principal actor = 2;</code>
+     */
+    protected $actor = null;
 
     /**
      * Constructor.
@@ -31,6 +37,8 @@ class UnitCreated extends \Google\Protobuf\Internal\Message
      *
      *     @type \Saltoapis\Nebula\Unit\V1\Unit $unit
      *           Unit created.
+     *     @type \Saltoapis\Nebula\Event\V1\Principal $actor
+     *           The actor who created the unit.
      * }
      */
     public function __construct($data = NULL) {
@@ -70,6 +78,42 @@ class UnitCreated extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Saltoapis\Nebula\Unit\V1\Unit::class);
         $this->unit = $var;
+
+        return $this;
+    }
+
+    /**
+     * The actor who created the unit.
+     *
+     * Generated from protobuf field <code>.salto.nebula.event.v1.Principal actor = 2;</code>
+     * @return \Saltoapis\Nebula\Event\V1\Principal|null
+     */
+    public function getActor()
+    {
+        return $this->actor;
+    }
+
+    public function hasActor()
+    {
+        return isset($this->actor);
+    }
+
+    public function clearActor()
+    {
+        unset($this->actor);
+    }
+
+    /**
+     * The actor who created the unit.
+     *
+     * Generated from protobuf field <code>.salto.nebula.event.v1.Principal actor = 2;</code>
+     * @param \Saltoapis\Nebula\Event\V1\Principal $var
+     * @return $this
+     */
+    public function setActor($var)
+    {
+        GPBUtil::checkMessage($var, \Saltoapis\Nebula\Event\V1\Principal::class);
+        $this->actor = $var;
 
         return $this;
     }

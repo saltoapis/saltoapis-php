@@ -28,6 +28,12 @@ class UserAccessRightCreated extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.salto.nebula.accessright.v1.AccessRight access_right = 2;</code>
      */
     protected $access_right = null;
+    /**
+     * The actor who created the user access right association.
+     *
+     * Generated from protobuf field <code>.salto.nebula.event.v1.Principal actor = 3;</code>
+     */
+    protected $actor = null;
 
     /**
      * Constructor.
@@ -39,6 +45,8 @@ class UserAccessRightCreated extends \Google\Protobuf\Internal\Message
      *           Access right's user association created.
      *     @type \Saltoapis\Nebula\AccessRight\V1\AccessRight $access_right
      *           User's access right association created.
+     *     @type \Saltoapis\Nebula\Event\V1\Principal $actor
+     *           The actor who created the user access right association.
      * }
      */
     public function __construct($data = NULL) {
@@ -114,6 +122,42 @@ class UserAccessRightCreated extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Saltoapis\Nebula\AccessRight\V1\AccessRight::class);
         $this->access_right = $var;
+
+        return $this;
+    }
+
+    /**
+     * The actor who created the user access right association.
+     *
+     * Generated from protobuf field <code>.salto.nebula.event.v1.Principal actor = 3;</code>
+     * @return \Saltoapis\Nebula\Event\V1\Principal|null
+     */
+    public function getActor()
+    {
+        return $this->actor;
+    }
+
+    public function hasActor()
+    {
+        return isset($this->actor);
+    }
+
+    public function clearActor()
+    {
+        unset($this->actor);
+    }
+
+    /**
+     * The actor who created the user access right association.
+     *
+     * Generated from protobuf field <code>.salto.nebula.event.v1.Principal actor = 3;</code>
+     * @param \Saltoapis\Nebula\Event\V1\Principal $var
+     * @return $this
+     */
+    public function setActor($var)
+    {
+        GPBUtil::checkMessage($var, \Saltoapis\Nebula\Event\V1\Principal::class);
+        $this->actor = $var;
 
         return $this;
     }

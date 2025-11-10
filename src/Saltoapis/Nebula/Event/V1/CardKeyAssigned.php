@@ -28,6 +28,12 @@ class CardKeyAssigned extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.salto.nebula.user.v1.CardKey card_key = 2;</code>
      */
     protected $card_key = null;
+    /**
+     * The actor who assigned a user's card key.
+     *
+     * Generated from protobuf field <code>.salto.nebula.event.v1.Principal actor = 3;</code>
+     */
+    protected $actor = null;
 
     /**
      * Constructor.
@@ -39,6 +45,8 @@ class CardKeyAssigned extends \Google\Protobuf\Internal\Message
      *           Card key's user.
      *     @type \Saltoapis\Nebula\User\V1\CardKey $card_key
      *           Card key assigned.
+     *     @type \Saltoapis\Nebula\Event\V1\Principal $actor
+     *           The actor who assigned a user's card key.
      * }
      */
     public function __construct($data = NULL) {
@@ -114,6 +122,42 @@ class CardKeyAssigned extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Saltoapis\Nebula\User\V1\CardKey::class);
         $this->card_key = $var;
+
+        return $this;
+    }
+
+    /**
+     * The actor who assigned a user's card key.
+     *
+     * Generated from protobuf field <code>.salto.nebula.event.v1.Principal actor = 3;</code>
+     * @return \Saltoapis\Nebula\Event\V1\Principal|null
+     */
+    public function getActor()
+    {
+        return $this->actor;
+    }
+
+    public function hasActor()
+    {
+        return isset($this->actor);
+    }
+
+    public function clearActor()
+    {
+        unset($this->actor);
+    }
+
+    /**
+     * The actor who assigned a user's card key.
+     *
+     * Generated from protobuf field <code>.salto.nebula.event.v1.Principal actor = 3;</code>
+     * @param \Saltoapis\Nebula\Event\V1\Principal $var
+     * @return $this
+     */
+    public function setActor($var)
+    {
+        GPBUtil::checkMessage($var, \Saltoapis\Nebula\Event\V1\Principal::class);
+        $this->actor = $var;
 
         return $this;
     }

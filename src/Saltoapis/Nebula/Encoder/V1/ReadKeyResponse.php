@@ -17,6 +17,7 @@ use Google\Protobuf\Internal\GPBUtil;
 class ReadKeyResponse extends \Google\Protobuf\Internal\Message
 {
     protected $key;
+    protected $key_id;
 
     /**
      * Constructor.
@@ -26,6 +27,12 @@ class ReadKeyResponse extends \Google\Protobuf\Internal\Message
      *
      *     @type string $card_key
      *           Card key reference, belonging to a user.
+     *     @type string $electronic_key
+     *           Electronic key reference, belonging to a user.
+     *     @type string $uid
+     *           UID of the key that was read.
+     *     @type string $device_id
+     *           Device ID of the key that was read.
      * }
      */
     public function __construct($data = NULL) {
@@ -65,11 +72,112 @@ class ReadKeyResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Electronic key reference, belonging to a user.
+     *
+     * Generated from protobuf field <code>string electronic_key = 2;</code>
+     * @return string
+     */
+    public function getElectronicKey()
+    {
+        return $this->readOneof(2);
+    }
+
+    public function hasElectronicKey()
+    {
+        return $this->hasOneof(2);
+    }
+
+    /**
+     * Electronic key reference, belonging to a user.
+     *
+     * Generated from protobuf field <code>string electronic_key = 2;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setElectronicKey($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->writeOneof(2, $var);
+
+        return $this;
+    }
+
+    /**
+     * UID of the key that was read.
+     *
+     * Generated from protobuf field <code>string uid = 3;</code>
+     * @return string
+     */
+    public function getUid()
+    {
+        return $this->readOneof(3);
+    }
+
+    public function hasUid()
+    {
+        return $this->hasOneof(3);
+    }
+
+    /**
+     * UID of the key that was read.
+     *
+     * Generated from protobuf field <code>string uid = 3;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setUid($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->writeOneof(3, $var);
+
+        return $this;
+    }
+
+    /**
+     * Device ID of the key that was read.
+     *
+     * Generated from protobuf field <code>string device_id = 4;</code>
+     * @return string
+     */
+    public function getDeviceId()
+    {
+        return $this->readOneof(4);
+    }
+
+    public function hasDeviceId()
+    {
+        return $this->hasOneof(4);
+    }
+
+    /**
+     * Device ID of the key that was read.
+     *
+     * Generated from protobuf field <code>string device_id = 4;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setDeviceId($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->writeOneof(4, $var);
+
+        return $this;
+    }
+
+    /**
      * @return string
      */
     public function getKey()
     {
         return $this->whichOneof("key");
+    }
+
+    /**
+     * @return string
+     */
+    public function getKeyId()
+    {
+        return $this->whichOneof("key_id");
     }
 
 }

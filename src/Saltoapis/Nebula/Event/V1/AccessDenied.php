@@ -28,6 +28,13 @@ class AccessDenied extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.salto.nebula.user.v1.User user = 2;</code>
      */
     protected $user = null;
+    /**
+     * The reason for the access denial.
+     *
+     * Generated from protobuf field <code>.salto.nebula.event.v1.AccessDenied.Reason reason = 3;</code>
+     */
+    protected $reason = 0;
+    protected $credential;
 
     /**
      * Constructor.
@@ -39,6 +46,18 @@ class AccessDenied extends \Google\Protobuf\Internal\Message
      *           Access denied by the access point.
      *     @type \Saltoapis\Nebula\User\V1\User $user
      *           The user whose access was rejected.
+     *     @type int $reason
+     *           The reason for the access denial.
+     *     @type \Saltoapis\Nebula\EmergencyKey\V1\EmergencyKey $emergency_key
+     *           The emergency key used to attempt access to the access point.
+     *     @type \Saltoapis\Nebula\User\V1\CardKey $card_key
+     *           The card key used to attempt access to the access point.
+     *     @type \Saltoapis\Nebula\User\V1\AppKey $app_key
+     *           The app key used to attempt access to the access point.
+     *     @type \Saltoapis\Nebula\User\V1\WalletKey $wallet_key
+     *           The wallet key used to attempt access to the access point.
+     *     @type \Saltoapis\Nebula\User\V1\Passcode $passcode
+     *           The passcode used to attempt access to the access point.
      * }
      */
     public function __construct($data = NULL) {
@@ -116,6 +135,195 @@ class AccessDenied extends \Google\Protobuf\Internal\Message
         $this->user = $var;
 
         return $this;
+    }
+
+    /**
+     * The reason for the access denial.
+     *
+     * Generated from protobuf field <code>.salto.nebula.event.v1.AccessDenied.Reason reason = 3;</code>
+     * @return int
+     */
+    public function getReason()
+    {
+        return $this->reason;
+    }
+
+    /**
+     * The reason for the access denial.
+     *
+     * Generated from protobuf field <code>.salto.nebula.event.v1.AccessDenied.Reason reason = 3;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setReason($var)
+    {
+        GPBUtil::checkEnum($var, \Saltoapis\Nebula\Event\V1\AccessDenied\Reason::class);
+        $this->reason = $var;
+
+        return $this;
+    }
+
+    /**
+     * The emergency key used to attempt access to the access point.
+     *
+     * Generated from protobuf field <code>.salto.nebula.emergencykey.v1.EmergencyKey emergency_key = 4;</code>
+     * @return \Saltoapis\Nebula\EmergencyKey\V1\EmergencyKey|null
+     */
+    public function getEmergencyKey()
+    {
+        return $this->readOneof(4);
+    }
+
+    public function hasEmergencyKey()
+    {
+        return $this->hasOneof(4);
+    }
+
+    /**
+     * The emergency key used to attempt access to the access point.
+     *
+     * Generated from protobuf field <code>.salto.nebula.emergencykey.v1.EmergencyKey emergency_key = 4;</code>
+     * @param \Saltoapis\Nebula\EmergencyKey\V1\EmergencyKey $var
+     * @return $this
+     */
+    public function setEmergencyKey($var)
+    {
+        GPBUtil::checkMessage($var, \Saltoapis\Nebula\EmergencyKey\V1\EmergencyKey::class);
+        $this->writeOneof(4, $var);
+
+        return $this;
+    }
+
+    /**
+     * The card key used to attempt access to the access point.
+     *
+     * Generated from protobuf field <code>.salto.nebula.user.v1.CardKey card_key = 5;</code>
+     * @return \Saltoapis\Nebula\User\V1\CardKey|null
+     */
+    public function getCardKey()
+    {
+        return $this->readOneof(5);
+    }
+
+    public function hasCardKey()
+    {
+        return $this->hasOneof(5);
+    }
+
+    /**
+     * The card key used to attempt access to the access point.
+     *
+     * Generated from protobuf field <code>.salto.nebula.user.v1.CardKey card_key = 5;</code>
+     * @param \Saltoapis\Nebula\User\V1\CardKey $var
+     * @return $this
+     */
+    public function setCardKey($var)
+    {
+        GPBUtil::checkMessage($var, \Saltoapis\Nebula\User\V1\CardKey::class);
+        $this->writeOneof(5, $var);
+
+        return $this;
+    }
+
+    /**
+     * The app key used to attempt access to the access point.
+     *
+     * Generated from protobuf field <code>.salto.nebula.user.v1.AppKey app_key = 6;</code>
+     * @return \Saltoapis\Nebula\User\V1\AppKey|null
+     */
+    public function getAppKey()
+    {
+        return $this->readOneof(6);
+    }
+
+    public function hasAppKey()
+    {
+        return $this->hasOneof(6);
+    }
+
+    /**
+     * The app key used to attempt access to the access point.
+     *
+     * Generated from protobuf field <code>.salto.nebula.user.v1.AppKey app_key = 6;</code>
+     * @param \Saltoapis\Nebula\User\V1\AppKey $var
+     * @return $this
+     */
+    public function setAppKey($var)
+    {
+        GPBUtil::checkMessage($var, \Saltoapis\Nebula\User\V1\AppKey::class);
+        $this->writeOneof(6, $var);
+
+        return $this;
+    }
+
+    /**
+     * The wallet key used to attempt access to the access point.
+     *
+     * Generated from protobuf field <code>.salto.nebula.user.v1.WalletKey wallet_key = 7;</code>
+     * @return \Saltoapis\Nebula\User\V1\WalletKey|null
+     */
+    public function getWalletKey()
+    {
+        return $this->readOneof(7);
+    }
+
+    public function hasWalletKey()
+    {
+        return $this->hasOneof(7);
+    }
+
+    /**
+     * The wallet key used to attempt access to the access point.
+     *
+     * Generated from protobuf field <code>.salto.nebula.user.v1.WalletKey wallet_key = 7;</code>
+     * @param \Saltoapis\Nebula\User\V1\WalletKey $var
+     * @return $this
+     */
+    public function setWalletKey($var)
+    {
+        GPBUtil::checkMessage($var, \Saltoapis\Nebula\User\V1\WalletKey::class);
+        $this->writeOneof(7, $var);
+
+        return $this;
+    }
+
+    /**
+     * The passcode used to attempt access to the access point.
+     *
+     * Generated from protobuf field <code>.salto.nebula.user.v1.Passcode passcode = 8;</code>
+     * @return \Saltoapis\Nebula\User\V1\Passcode|null
+     */
+    public function getPasscode()
+    {
+        return $this->readOneof(8);
+    }
+
+    public function hasPasscode()
+    {
+        return $this->hasOneof(8);
+    }
+
+    /**
+     * The passcode used to attempt access to the access point.
+     *
+     * Generated from protobuf field <code>.salto.nebula.user.v1.Passcode passcode = 8;</code>
+     * @param \Saltoapis\Nebula\User\V1\Passcode $var
+     * @return $this
+     */
+    public function setPasscode($var)
+    {
+        GPBUtil::checkMessage($var, \Saltoapis\Nebula\User\V1\Passcode::class);
+        $this->writeOneof(8, $var);
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCredential()
+    {
+        return $this->whichOneof("credential");
     }
 
 }

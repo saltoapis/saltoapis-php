@@ -84,6 +84,14 @@ class Device extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.google.protobuf.Timestamp last_event_time = 11;</code>
      */
     protected $last_event_time = null;
+    /**
+     * Indicates whether this device has been initialized or not. To change
+     * the value of this field, you must call the device-type-specific
+     * initialization operation (for example, InitializeElectronicLock).
+     *
+     * Generated from protobuf field <code>bool initialized = 12;</code>
+     */
+    protected $initialized = false;
     protected $parent_device;
 
     /**
@@ -128,6 +136,10 @@ class Device extends \Google\Protobuf\Internal\Message
      *           gateway, an extender, or a control unit.
      *     @type \Google\Protobuf\Timestamp $last_event_time
      *           The last time an event was received.
+     *     @type bool $initialized
+     *           Indicates whether this device has been initialized or not. To change
+     *           the value of this field, you must call the device-type-specific
+     *           initialization operation (for example, InitializeElectronicLock).
      * }
      */
     public function __construct($data = NULL) {
@@ -495,6 +507,36 @@ class Device extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->last_event_time = $var;
+
+        return $this;
+    }
+
+    /**
+     * Indicates whether this device has been initialized or not. To change
+     * the value of this field, you must call the device-type-specific
+     * initialization operation (for example, InitializeElectronicLock).
+     *
+     * Generated from protobuf field <code>bool initialized = 12;</code>
+     * @return bool
+     */
+    public function getInitialized()
+    {
+        return $this->initialized;
+    }
+
+    /**
+     * Indicates whether this device has been initialized or not. To change
+     * the value of this field, you must call the device-type-specific
+     * initialization operation (for example, InitializeElectronicLock).
+     *
+     * Generated from protobuf field <code>bool initialized = 12;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setInitialized($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->initialized = $var;
 
         return $this;
     }
