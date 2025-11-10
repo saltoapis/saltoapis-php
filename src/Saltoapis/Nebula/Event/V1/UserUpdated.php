@@ -22,6 +22,18 @@ class UserUpdated extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.salto.nebula.user.v1.User user = 1;</code>
      */
     protected $user = null;
+    /**
+     * The actor who updated the user.
+     *
+     * Generated from protobuf field <code>.salto.nebula.event.v1.Principal actor = 2;</code>
+     */
+    protected $actor = null;
+    /**
+     * The previous values of the user's fields that were changed.
+     *
+     * Generated from protobuf field <code>.salto.nebula.event.v1.PreviousValues previous_values = 3;</code>
+     */
+    protected $previous_values = null;
 
     /**
      * Constructor.
@@ -31,6 +43,10 @@ class UserUpdated extends \Google\Protobuf\Internal\Message
      *
      *     @type \Saltoapis\Nebula\User\V1\User $user
      *           User updated.
+     *     @type \Saltoapis\Nebula\Event\V1\Principal $actor
+     *           The actor who updated the user.
+     *     @type \Saltoapis\Nebula\Event\V1\PreviousValues $previous_values
+     *           The previous values of the user's fields that were changed.
      * }
      */
     public function __construct($data = NULL) {
@@ -70,6 +86,78 @@ class UserUpdated extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Saltoapis\Nebula\User\V1\User::class);
         $this->user = $var;
+
+        return $this;
+    }
+
+    /**
+     * The actor who updated the user.
+     *
+     * Generated from protobuf field <code>.salto.nebula.event.v1.Principal actor = 2;</code>
+     * @return \Saltoapis\Nebula\Event\V1\Principal|null
+     */
+    public function getActor()
+    {
+        return $this->actor;
+    }
+
+    public function hasActor()
+    {
+        return isset($this->actor);
+    }
+
+    public function clearActor()
+    {
+        unset($this->actor);
+    }
+
+    /**
+     * The actor who updated the user.
+     *
+     * Generated from protobuf field <code>.salto.nebula.event.v1.Principal actor = 2;</code>
+     * @param \Saltoapis\Nebula\Event\V1\Principal $var
+     * @return $this
+     */
+    public function setActor($var)
+    {
+        GPBUtil::checkMessage($var, \Saltoapis\Nebula\Event\V1\Principal::class);
+        $this->actor = $var;
+
+        return $this;
+    }
+
+    /**
+     * The previous values of the user's fields that were changed.
+     *
+     * Generated from protobuf field <code>.salto.nebula.event.v1.PreviousValues previous_values = 3;</code>
+     * @return \Saltoapis\Nebula\Event\V1\PreviousValues|null
+     */
+    public function getPreviousValues()
+    {
+        return $this->previous_values;
+    }
+
+    public function hasPreviousValues()
+    {
+        return isset($this->previous_values);
+    }
+
+    public function clearPreviousValues()
+    {
+        unset($this->previous_values);
+    }
+
+    /**
+     * The previous values of the user's fields that were changed.
+     *
+     * Generated from protobuf field <code>.salto.nebula.event.v1.PreviousValues previous_values = 3;</code>
+     * @param \Saltoapis\Nebula\Event\V1\PreviousValues $var
+     * @return $this
+     */
+    public function setPreviousValues($var)
+    {
+        GPBUtil::checkMessage($var, \Saltoapis\Nebula\Event\V1\PreviousValues::class);
+        $this->previous_values = $var;
 
         return $this;
     }

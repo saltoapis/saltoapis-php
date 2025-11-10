@@ -55,6 +55,23 @@ class UserServiceClient extends \Grpc\BaseStub {
     }
 
     /**
+     * Get a batch of users
+     *
+     * Retrieves a batch of existing users.
+     * @param \Saltoapis\Nebula\User\V1\BatchGetUsersRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function BatchGetUsers(\Saltoapis\Nebula\User\V1\BatchGetUsersRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.user.v1.UserService/BatchGetUsers',
+        $argument,
+        ['\Saltoapis\Nebula\User\V1\BatchGetUsersResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
      * List users
      *
      * Returns a list of users that have been previously created.
@@ -320,6 +337,11 @@ class UserServiceClient extends \Grpc\BaseStub {
      *
      * Compute an existing user's app key data. Data contains encoded access
      * rights of the user.
+     *
+     * Note: There might be a delay for the key data to be updated after a user
+     * is created or their access rights are modified. It is recommended to wait
+     * for a moment (at least 60 seconds, for example) before calling this method to
+     * ensure the returned data is up-to-date.
      * (-- api-linter: core::0136::http-name-variable=disabled --)
      * @param \Saltoapis\Nebula\User\V1\ComputeAppKeyDataRequest $argument input argument
      * @param array $metadata metadata
@@ -399,6 +421,57 @@ class UserServiceClient extends \Grpc\BaseStub {
         return $this->_simpleRequest('/salto.nebula.user.v1.UserService/CancelPasscode',
         $argument,
         ['\Saltoapis\Nebula\User\V1\CancelPasscodeResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * Assign an electronic key
+     *
+     * Assigns an electronic key to an existing user.
+     * @param \Saltoapis\Nebula\User\V1\AssignElectronicKeyRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function AssignElectronicKey(\Saltoapis\Nebula\User\V1\AssignElectronicKeyRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.user.v1.UserService/AssignElectronicKey',
+        $argument,
+        ['\Saltoapis\Nebula\User\V1\AssignElectronicKeyResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * Cancel an electronic key
+     *
+     * Cancels an existing user's electronic key.
+     * @param \Saltoapis\Nebula\User\V1\CancelElectronicKeyRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function CancelElectronicKey(\Saltoapis\Nebula\User\V1\CancelElectronicKeyRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.user.v1.UserService/CancelElectronicKey',
+        $argument,
+        ['\Saltoapis\Nebula\User\V1\CancelElectronicKeyResponse', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * Encode an electronic key
+     *
+     * Encodes an existing user's electronic key.
+     * @param \Saltoapis\Nebula\User\V1\EncodeElectronicKeyRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function EncodeElectronicKey(\Saltoapis\Nebula\User\V1\EncodeElectronicKeyRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.user.v1.UserService/EncodeElectronicKey',
+        $argument,
+        ['\Saltoapis\Longrunning\V1\Operation', 'decode'],
         $metadata, $options);
     }
 

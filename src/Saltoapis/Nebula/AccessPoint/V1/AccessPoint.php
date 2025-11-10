@@ -63,6 +63,7 @@ class AccessPoint extends \Google\Protobuf\Internal\Message
      */
     protected $left_open = false;
     protected $opening_mode;
+    protected $source;
 
     /**
      * Constructor.
@@ -96,6 +97,12 @@ class AccessPoint extends \Google\Protobuf\Internal\Message
      *           for the server to check for its presence and assign a default value if it's missing.
      *     @type bool $left_open
      *           Indicates whether the access point was left open.
+     *     @type string $electronic_lock
+     *           Source name, when source is an electronic lock.
+     *     @type string $controller
+     *           Source name, when source is a controller.
+     *     @type string $intercom_adaptor
+     *           Source name, when source is an intercom adaptor.
      * }
      */
     public function __construct($data = NULL) {
@@ -372,11 +379,112 @@ class AccessPoint extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Source name, when source is an electronic lock.
+     *
+     * Generated from protobuf field <code>string electronic_lock = 9;</code>
+     * @return string
+     */
+    public function getElectronicLock()
+    {
+        return $this->readOneof(9);
+    }
+
+    public function hasElectronicLock()
+    {
+        return $this->hasOneof(9);
+    }
+
+    /**
+     * Source name, when source is an electronic lock.
+     *
+     * Generated from protobuf field <code>string electronic_lock = 9;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setElectronicLock($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->writeOneof(9, $var);
+
+        return $this;
+    }
+
+    /**
+     * Source name, when source is a controller.
+     *
+     * Generated from protobuf field <code>string controller = 10;</code>
+     * @return string
+     */
+    public function getController()
+    {
+        return $this->readOneof(10);
+    }
+
+    public function hasController()
+    {
+        return $this->hasOneof(10);
+    }
+
+    /**
+     * Source name, when source is a controller.
+     *
+     * Generated from protobuf field <code>string controller = 10;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setController($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->writeOneof(10, $var);
+
+        return $this;
+    }
+
+    /**
+     * Source name, when source is an intercom adaptor.
+     *
+     * Generated from protobuf field <code>string intercom_adaptor = 11;</code>
+     * @return string
+     */
+    public function getIntercomAdaptor()
+    {
+        return $this->readOneof(11);
+    }
+
+    public function hasIntercomAdaptor()
+    {
+        return $this->hasOneof(11);
+    }
+
+    /**
+     * Source name, when source is an intercom adaptor.
+     *
+     * Generated from protobuf field <code>string intercom_adaptor = 11;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setIntercomAdaptor($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->writeOneof(11, $var);
+
+        return $this;
+    }
+
+    /**
      * @return string
      */
     public function getOpeningMode()
     {
         return $this->whichOneof("opening_mode");
+    }
+
+    /**
+     * @return string
+     */
+    public function getSource()
+    {
+        return $this->whichOneof("source");
     }
 
 }

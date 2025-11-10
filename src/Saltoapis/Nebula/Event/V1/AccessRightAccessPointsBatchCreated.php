@@ -28,6 +28,12 @@ class AccessRightAccessPointsBatchCreated extends \Google\Protobuf\Internal\Mess
      * Generated from protobuf field <code>repeated .salto.nebula.accesspoint.v1.AccessPoint access_points = 2;</code>
      */
     private $access_points;
+    /**
+     * The actor who created the multiple access rights access points association.
+     *
+     * Generated from protobuf field <code>.salto.nebula.event.v1.Principal actor = 3;</code>
+     */
+    protected $actor = null;
 
     /**
      * Constructor.
@@ -39,6 +45,8 @@ class AccessRightAccessPointsBatchCreated extends \Google\Protobuf\Internal\Mess
      *           The access right to which the access points have been added.
      *     @type array<\Saltoapis\Nebula\AccessPoint\V1\AccessPoint>|\Google\Protobuf\Internal\RepeatedField $access_points
      *           The access points added to the access right.
+     *     @type \Saltoapis\Nebula\Event\V1\Principal $actor
+     *           The actor who created the multiple access rights access points association.
      * }
      */
     public function __construct($data = NULL) {
@@ -104,6 +112,42 @@ class AccessRightAccessPointsBatchCreated extends \Google\Protobuf\Internal\Mess
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Saltoapis\Nebula\AccessPoint\V1\AccessPoint::class);
         $this->access_points = $arr;
+
+        return $this;
+    }
+
+    /**
+     * The actor who created the multiple access rights access points association.
+     *
+     * Generated from protobuf field <code>.salto.nebula.event.v1.Principal actor = 3;</code>
+     * @return \Saltoapis\Nebula\Event\V1\Principal|null
+     */
+    public function getActor()
+    {
+        return $this->actor;
+    }
+
+    public function hasActor()
+    {
+        return isset($this->actor);
+    }
+
+    public function clearActor()
+    {
+        unset($this->actor);
+    }
+
+    /**
+     * The actor who created the multiple access rights access points association.
+     *
+     * Generated from protobuf field <code>.salto.nebula.event.v1.Principal actor = 3;</code>
+     * @param \Saltoapis\Nebula\Event\V1\Principal $var
+     * @return $this
+     */
+    public function setActor($var)
+    {
+        GPBUtil::checkMessage($var, \Saltoapis\Nebula\Event\V1\Principal::class);
+        $this->actor = $var;
 
         return $this;
     }

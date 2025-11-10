@@ -22,6 +22,12 @@ class AccessPointDeleted extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.salto.nebula.accesspoint.v1.AccessPoint access_point = 1;</code>
      */
     protected $access_point = null;
+    /**
+     * The actor who deleted the access point.
+     *
+     * Generated from protobuf field <code>.salto.nebula.event.v1.Principal actor = 2;</code>
+     */
+    protected $actor = null;
 
     /**
      * Constructor.
@@ -31,6 +37,8 @@ class AccessPointDeleted extends \Google\Protobuf\Internal\Message
      *
      *     @type \Saltoapis\Nebula\AccessPoint\V1\AccessPoint $access_point
      *           Access point deleted.
+     *     @type \Saltoapis\Nebula\Event\V1\Principal $actor
+     *           The actor who deleted the access point.
      * }
      */
     public function __construct($data = NULL) {
@@ -70,6 +78,42 @@ class AccessPointDeleted extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Saltoapis\Nebula\AccessPoint\V1\AccessPoint::class);
         $this->access_point = $var;
+
+        return $this;
+    }
+
+    /**
+     * The actor who deleted the access point.
+     *
+     * Generated from protobuf field <code>.salto.nebula.event.v1.Principal actor = 2;</code>
+     * @return \Saltoapis\Nebula\Event\V1\Principal|null
+     */
+    public function getActor()
+    {
+        return $this->actor;
+    }
+
+    public function hasActor()
+    {
+        return isset($this->actor);
+    }
+
+    public function clearActor()
+    {
+        unset($this->actor);
+    }
+
+    /**
+     * The actor who deleted the access point.
+     *
+     * Generated from protobuf field <code>.salto.nebula.event.v1.Principal actor = 2;</code>
+     * @param \Saltoapis\Nebula\Event\V1\Principal $var
+     * @return $this
+     */
+    public function setActor($var)
+    {
+        GPBUtil::checkMessage($var, \Saltoapis\Nebula\Event\V1\Principal::class);
+        $this->actor = $var;
 
         return $this;
     }
