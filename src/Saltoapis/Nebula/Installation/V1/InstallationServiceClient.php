@@ -407,4 +407,30 @@ class InstallationServiceClient extends \Grpc\BaseStub {
         $metadata, $options);
     }
 
+    /**
+     * Generate authorization token for uninitialized devices
+     *
+     * Generates an authorization token for a client application to use when
+     * connecting to an uninitialized Salto device. The token contains the
+     * necessary security material for the client to validate the device's
+     * identity. This prevents man-in-the-middle (MITM) attacks and ensures the
+     * client is connecting to a genuine Salto device during its initial
+     * initialization.
+     *
+     * This token is distinct from other `GenerateAuthorizationToken` methods, it
+     * is used only for the client to validate the device and does not contain a
+     * client certificate for authenticating the client itself.
+     * @param \Saltoapis\Nebula\Installation\V1\GenerateAuthorizationTokenRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall
+     */
+    public function GenerateAuthorizationToken(\Saltoapis\Nebula\Installation\V1\GenerateAuthorizationTokenRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.installation.v1.InstallationService/GenerateAuthorizationToken',
+        $argument,
+        ['\Saltoapis\Nebula\Installation\V1\GenerateAuthorizationTokenResponse', 'decode'],
+        $metadata, $options);
+    }
+
 }
