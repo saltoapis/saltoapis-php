@@ -39,12 +39,28 @@ class Reason
      * Generated from protobuf enum <code>CREDENTIAL_LACKS_ACCESS_RIGHTS = 3;</code>
      */
     const CREDENTIAL_LACKS_ACCESS_RIGHTS = 3;
+    /**
+     * The provided credential is not permitted on this calendar day.
+     * Example: access attempted on a weekend for a weekday-only schedule
+     *
+     * Generated from protobuf enum <code>CREDENTIAL_OUTSIDE_CALENDAR_DAY = 4;</code>
+     */
+    const CREDENTIAL_OUTSIDE_CALENDAR_DAY = 4;
+    /**
+     * The provided credential is not permitted within the allowed time window.
+     * Example: access attempted at 8 PM for a 9 AM-5 PM schedule).
+     *
+     * Generated from protobuf enum <code>CREDENTIAL_OUTSIDE_TIME_WINDOW = 5;</code>
+     */
+    const CREDENTIAL_OUTSIDE_TIME_WINDOW = 5;
 
     private static $valueToName = [
         self::REASON_UNSPECIFIED => 'REASON_UNSPECIFIED',
         self::CREDENTIAL_EXPIRED => 'CREDENTIAL_EXPIRED',
         self::CREDENTIAL_UNACTIVATED => 'CREDENTIAL_UNACTIVATED',
         self::CREDENTIAL_LACKS_ACCESS_RIGHTS => 'CREDENTIAL_LACKS_ACCESS_RIGHTS',
+        self::CREDENTIAL_OUTSIDE_CALENDAR_DAY => 'CREDENTIAL_OUTSIDE_CALENDAR_DAY',
+        self::CREDENTIAL_OUTSIDE_TIME_WINDOW => 'CREDENTIAL_OUTSIDE_TIME_WINDOW',
     ];
 
     public static function name($value)
