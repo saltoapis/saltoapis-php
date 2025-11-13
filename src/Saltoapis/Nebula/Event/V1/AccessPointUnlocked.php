@@ -56,6 +56,8 @@ class AccessPointUnlocked extends \Google\Protobuf\Internal\Message
      *           The wallet key used to unlock the access point.
      *     @type \Saltoapis\Nebula\User\V1\Passcode $passcode
      *           The passcode used to unlock the access point.
+     *     @type \Saltoapis\Nebula\User\V1\ElectronicKey $electronic_key
+     *           The electronic key used to unlock the access point.
      *     @type int $direction
      *           Indicates the direction of passage for this unlock event.
      * }
@@ -288,6 +290,37 @@ class AccessPointUnlocked extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Saltoapis\Nebula\User\V1\Passcode::class);
         $this->writeOneof(7, $var);
+
+        return $this;
+    }
+
+    /**
+     * The electronic key used to unlock the access point.
+     *
+     * Generated from protobuf field <code>.salto.nebula.user.v1.ElectronicKey electronic_key = 9;</code>
+     * @return \Saltoapis\Nebula\User\V1\ElectronicKey|null
+     */
+    public function getElectronicKey()
+    {
+        return $this->readOneof(9);
+    }
+
+    public function hasElectronicKey()
+    {
+        return $this->hasOneof(9);
+    }
+
+    /**
+     * The electronic key used to unlock the access point.
+     *
+     * Generated from protobuf field <code>.salto.nebula.user.v1.ElectronicKey electronic_key = 9;</code>
+     * @param \Saltoapis\Nebula\User\V1\ElectronicKey $var
+     * @return $this
+     */
+    public function setElectronicKey($var)
+    {
+        GPBUtil::checkMessage($var, \Saltoapis\Nebula\User\V1\ElectronicKey::class);
+        $this->writeOneof(9, $var);
 
         return $this;
     }
