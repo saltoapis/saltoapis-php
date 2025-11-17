@@ -53,6 +53,15 @@ class Reason
      * Generated from protobuf enum <code>CREDENTIAL_OUTSIDE_TIME_WINDOW = 5;</code>
      */
     const CREDENTIAL_OUTSIDE_TIME_WINDOW = 5;
+    /**
+     * The provided access code is invalid. Access codes are numeric passcodes
+     * entered by users on a device keypad to gain access.
+     * An access code may be considered invalid either if the entered digits
+     * are incorrect or if the code does not meet required formatting rules.
+     *
+     * Generated from protobuf enum <code>INVALID_ACCESS_CODE = 6;</code>
+     */
+    const INVALID_ACCESS_CODE = 6;
 
     private static $valueToName = [
         self::REASON_UNSPECIFIED => 'REASON_UNSPECIFIED',
@@ -61,6 +70,7 @@ class Reason
         self::CREDENTIAL_LACKS_ACCESS_RIGHTS => 'CREDENTIAL_LACKS_ACCESS_RIGHTS',
         self::CREDENTIAL_OUTSIDE_CALENDAR_DAY => 'CREDENTIAL_OUTSIDE_CALENDAR_DAY',
         self::CREDENTIAL_OUTSIDE_TIME_WINDOW => 'CREDENTIAL_OUTSIDE_TIME_WINDOW',
+        self::INVALID_ACCESS_CODE => 'INVALID_ACCESS_CODE',
     ];
 
     public static function name($value)
