@@ -17,12 +17,6 @@ use Google\Protobuf\Internal\GPBUtil;
 class AccessDenied extends \Google\Protobuf\Internal\Message
 {
     /**
-     * Access denied by the access point.
-     *
-     * Generated from protobuf field <code>.salto.nebula.accesspoint.v1.AccessPoint access_point = 1;</code>
-     */
-    protected $access_point = null;
-    /**
      * The user whose access was rejected.
      *
      * Generated from protobuf field <code>.salto.nebula.user.v1.User user = 2;</code>
@@ -34,6 +28,7 @@ class AccessDenied extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.salto.nebula.event.v1.AccessDenied.Reason reason = 3;</code>
      */
     protected $reason = 0;
+    protected $source;
     protected $credential;
 
     /**
@@ -44,6 +39,8 @@ class AccessDenied extends \Google\Protobuf\Internal\Message
      *
      *     @type \Saltoapis\Nebula\AccessPoint\V1\AccessPoint $access_point
      *           Access denied by the access point.
+     *     @type \Saltoapis\Nebula\Controller\V1\Controller $controller
+     *           Access denied by the controller.
      *     @type \Saltoapis\Nebula\User\V1\User $user
      *           The user whose access was rejected.
      *     @type int $reason
@@ -75,17 +72,12 @@ class AccessDenied extends \Google\Protobuf\Internal\Message
      */
     public function getAccessPoint()
     {
-        return $this->access_point;
+        return $this->readOneof(1);
     }
 
     public function hasAccessPoint()
     {
-        return isset($this->access_point);
-    }
-
-    public function clearAccessPoint()
-    {
-        unset($this->access_point);
+        return $this->hasOneof(1);
     }
 
     /**
@@ -98,7 +90,38 @@ class AccessDenied extends \Google\Protobuf\Internal\Message
     public function setAccessPoint($var)
     {
         GPBUtil::checkMessage($var, \Saltoapis\Nebula\AccessPoint\V1\AccessPoint::class);
-        $this->access_point = $var;
+        $this->writeOneof(1, $var);
+
+        return $this;
+    }
+
+    /**
+     * Access denied by the controller.
+     *
+     * Generated from protobuf field <code>.salto.nebula.controller.v1.Controller controller = 10;</code>
+     * @return \Saltoapis\Nebula\Controller\V1\Controller|null
+     */
+    public function getController()
+    {
+        return $this->readOneof(10);
+    }
+
+    public function hasController()
+    {
+        return $this->hasOneof(10);
+    }
+
+    /**
+     * Access denied by the controller.
+     *
+     * Generated from protobuf field <code>.salto.nebula.controller.v1.Controller controller = 10;</code>
+     * @param \Saltoapis\Nebula\Controller\V1\Controller $var
+     * @return $this
+     */
+    public function setController($var)
+    {
+        GPBUtil::checkMessage($var, \Saltoapis\Nebula\Controller\V1\Controller::class);
+        $this->writeOneof(10, $var);
 
         return $this;
     }
@@ -349,6 +372,14 @@ class AccessDenied extends \Google\Protobuf\Internal\Message
         $this->writeOneof(9, $var);
 
         return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSource()
+    {
+        return $this->whichOneof("source");
     }
 
     /**
