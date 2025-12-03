@@ -21,7 +21,10 @@ class Reason
      */
     const REASON_UNSPECIFIED = 0;
     /**
-     * The presented credential has expired.
+     * The presented credential has expired and is no longer valid.
+     * Example: the user's expiration date has passed.
+     * Example: the user's key has expired. To prevent this,
+     * renew the key before the installation's key-renewal-duration ends.
      *
      * Generated from protobuf enum <code>CREDENTIAL_EXPIRED = 1;</code>
      */
@@ -29,30 +32,35 @@ class Reason
     /**
      * The provided key is not yet activated.
      * The key's activation date and time are scheduled for a future moment.
+     * Example: the user's activation date has not yet been reached.
      *
      * Generated from protobuf enum <code>CREDENTIAL_UNACTIVATED = 2;</code>
      */
     const CREDENTIAL_UNACTIVATED = 2;
     /**
-     * The provided credential does not have the required access rights.
+     * The provided credential does not have the required permission.
+     * Example: the user does not have permission to access the access point.
      *
-     * Generated from protobuf enum <code>CREDENTIAL_LACKS_ACCESS_RIGHTS = 3;</code>
+     * Generated from protobuf enum <code>CREDENTIAL_LACKS_PERMISSION = 3;</code>
      */
-    const CREDENTIAL_LACKS_ACCESS_RIGHTS = 3;
+    const CREDENTIAL_LACKS_PERMISSION = 3;
     /**
-     * The provided credential is not permitted on this calendar day.
-     * Example: access attempted on a weekend for a weekday-only schedule
+     * The provided credential is permitted within the allowed schedule
+     * but the permission is not activated at this time.
+     * Example: access attempted before the activation date of the permission.
+     * Example: access attempted after the expiration date of the permission.
      *
-     * Generated from protobuf enum <code>CREDENTIAL_OUTSIDE_CALENDAR_DAY = 4;</code>
+     * Generated from protobuf enum <code>CREDENTIAL_PERMISSION_OUTSIDE_VALIDITY = 4;</code>
      */
-    const CREDENTIAL_OUTSIDE_CALENDAR_DAY = 4;
+    const CREDENTIAL_PERMISSION_OUTSIDE_VALIDITY = 4;
     /**
-     * The provided credential is not permitted within the allowed time window.
+     * The provided credential is not permitted within the allowed schedule.
+     * Example: access attempted on a weekend for a weekday-only schedule.
      * Example: access attempted at 8 PM for a 9 AM-5 PM schedule).
      *
-     * Generated from protobuf enum <code>CREDENTIAL_OUTSIDE_TIME_WINDOW = 5;</code>
+     * Generated from protobuf enum <code>CREDENTIAL_PERMISSION_OUTSIDE_SCHEDULE = 5;</code>
      */
-    const CREDENTIAL_OUTSIDE_TIME_WINDOW = 5;
+    const CREDENTIAL_PERMISSION_OUTSIDE_SCHEDULE = 5;
     /**
      * The provided access code is invalid. Access codes are numeric passcodes
      * entered by users on a device keypad to gain access.
@@ -67,9 +75,9 @@ class Reason
         self::REASON_UNSPECIFIED => 'REASON_UNSPECIFIED',
         self::CREDENTIAL_EXPIRED => 'CREDENTIAL_EXPIRED',
         self::CREDENTIAL_UNACTIVATED => 'CREDENTIAL_UNACTIVATED',
-        self::CREDENTIAL_LACKS_ACCESS_RIGHTS => 'CREDENTIAL_LACKS_ACCESS_RIGHTS',
-        self::CREDENTIAL_OUTSIDE_CALENDAR_DAY => 'CREDENTIAL_OUTSIDE_CALENDAR_DAY',
-        self::CREDENTIAL_OUTSIDE_TIME_WINDOW => 'CREDENTIAL_OUTSIDE_TIME_WINDOW',
+        self::CREDENTIAL_LACKS_PERMISSION => 'CREDENTIAL_LACKS_PERMISSION',
+        self::CREDENTIAL_PERMISSION_OUTSIDE_VALIDITY => 'CREDENTIAL_PERMISSION_OUTSIDE_VALIDITY',
+        self::CREDENTIAL_PERMISSION_OUTSIDE_SCHEDULE => 'CREDENTIAL_PERMISSION_OUTSIDE_SCHEDULE',
         self::INVALID_ACCESS_CODE => 'INVALID_ACCESS_CODE',
     ];
 
