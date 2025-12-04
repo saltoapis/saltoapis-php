@@ -41,9 +41,9 @@ class Reason
      * The provided credential does not have the required permission.
      * Example: the user does not have permission to access the access point.
      *
-     * Generated from protobuf enum <code>CREDENTIAL_LACKS_PERMISSION = 3;</code>
+     * Generated from protobuf enum <code>CREDENTIAL_PERMISSION_INSUFFICIENT = 3;</code>
      */
-    const CREDENTIAL_LACKS_PERMISSION = 3;
+    const CREDENTIAL_PERMISSION_INSUFFICIENT = 3;
     /**
      * The provided credential is permitted within the allowed schedule
      * but the permission is not activated at this time.
@@ -70,15 +70,23 @@ class Reason
      * Generated from protobuf enum <code>INVALID_ACCESS_CODE = 6;</code>
      */
     const INVALID_ACCESS_CODE = 6;
+    /**
+     * The device at which the credential was presented has insufficient battery level
+     * and cannot process the access request.
+     *
+     * Generated from protobuf enum <code>DEVICE_BATTERY_INSUFFICIENT = 7;</code>
+     */
+    const DEVICE_BATTERY_INSUFFICIENT = 7;
 
     private static $valueToName = [
         self::REASON_UNSPECIFIED => 'REASON_UNSPECIFIED',
         self::CREDENTIAL_EXPIRED => 'CREDENTIAL_EXPIRED',
         self::CREDENTIAL_UNACTIVATED => 'CREDENTIAL_UNACTIVATED',
-        self::CREDENTIAL_LACKS_PERMISSION => 'CREDENTIAL_LACKS_PERMISSION',
+        self::CREDENTIAL_PERMISSION_INSUFFICIENT => 'CREDENTIAL_PERMISSION_INSUFFICIENT',
         self::CREDENTIAL_PERMISSION_OUTSIDE_VALIDITY => 'CREDENTIAL_PERMISSION_OUTSIDE_VALIDITY',
         self::CREDENTIAL_PERMISSION_OUTSIDE_SCHEDULE => 'CREDENTIAL_PERMISSION_OUTSIDE_SCHEDULE',
         self::INVALID_ACCESS_CODE => 'INVALID_ACCESS_CODE',
+        self::DEVICE_BATTERY_INSUFFICIENT => 'DEVICE_BATTERY_INSUFFICIENT',
     ];
 
     public static function name($value)
