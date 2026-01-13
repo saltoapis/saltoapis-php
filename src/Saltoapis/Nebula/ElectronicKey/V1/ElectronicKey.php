@@ -64,13 +64,6 @@ class ElectronicKey extends \Google\Protobuf\Internal\Message
      */
     protected $device_metadata = null;
     /**
-     * Indicates whether the battery of this electronic key is low, and needs
-     * replacing, or is normal and doesn't need replacing.
-     *
-     * Generated from protobuf field <code>bool low_battery = 7;</code>
-     */
-    protected $low_battery = false;
-    /**
      * User associated with this electronic key.
      *
      * Generated from protobuf field <code>optional string user = 8;</code>
@@ -106,9 +99,6 @@ class ElectronicKey extends \Google\Protobuf\Internal\Message
      *           and is conditionally set based on the current installation settings.
      *     @type \Saltoapis\Nebula\Type\DeviceMetadata $device_metadata
      *           Device metadata contains information about a device hardware and firmware.
-     *     @type bool $low_battery
-     *           Indicates whether the battery of this electronic key is low, and needs
-     *           replacing, or is normal and doesn't need replacing.
      *     @type string $user
      *           User associated with this electronic key.
      * }
@@ -312,34 +302,6 @@ class ElectronicKey extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Saltoapis\Nebula\Type\DeviceMetadata::class);
         $this->device_metadata = $var;
-
-        return $this;
-    }
-
-    /**
-     * Indicates whether the battery of this electronic key is low, and needs
-     * replacing, or is normal and doesn't need replacing.
-     *
-     * Generated from protobuf field <code>bool low_battery = 7;</code>
-     * @return bool
-     */
-    public function getLowBattery()
-    {
-        return $this->low_battery;
-    }
-
-    /**
-     * Indicates whether the battery of this electronic key is low, and needs
-     * replacing, or is normal and doesn't need replacing.
-     *
-     * Generated from protobuf field <code>bool low_battery = 7;</code>
-     * @param bool $var
-     * @return $this
-     */
-    public function setLowBattery($var)
-    {
-        GPBUtil::checkBool($var);
-        $this->low_battery = $var;
 
         return $this;
     }
