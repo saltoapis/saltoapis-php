@@ -28,6 +28,12 @@ class Firmware extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string version = 2;</code>
      */
     protected $version = '';
+    /**
+     * Firmware revision of a specific firmware number and version.
+     *
+     * Generated from protobuf field <code>string revision = 3;</code>
+     */
+    protected $revision = '';
 
     /**
      * Constructor.
@@ -39,6 +45,8 @@ class Firmware extends \Google\Protobuf\Internal\Message
      *           Firmware number, for example '0180'.
      *     @type string $version
      *           Firmware version of a specific firmware number.
+     *     @type string $revision
+     *           Firmware revision of a specific firmware number and version.
      * }
      */
     public function __construct($data = NULL) {
@@ -94,6 +102,32 @@ class Firmware extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->version = $var;
+
+        return $this;
+    }
+
+    /**
+     * Firmware revision of a specific firmware number and version.
+     *
+     * Generated from protobuf field <code>string revision = 3;</code>
+     * @return string
+     */
+    public function getRevision()
+    {
+        return $this->revision;
+    }
+
+    /**
+     * Firmware revision of a specific firmware number and version.
+     *
+     * Generated from protobuf field <code>string revision = 3;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setRevision($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->revision = $var;
 
         return $this;
     }
