@@ -6,8 +6,8 @@
 namespace Saltoapis\Longrunning\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The response message for
@@ -36,7 +36,7 @@ class ListOperationsResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<\Saltoapis\Longrunning\V1\Operation>|\Google\Protobuf\Internal\RepeatedField $operations
+     *     @type \Saltoapis\Longrunning\V1\Operation[] $operations
      *           A list of operations that matches the specified filter in the request.
      *     @type string $next_page_token
      *           The standard List next-page token.
@@ -51,7 +51,7 @@ class ListOperationsResponse extends \Google\Protobuf\Internal\Message
      * A list of operations that matches the specified filter in the request.
      *
      * Generated from protobuf field <code>repeated .salto.longrunning.v1.Operation operations = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Longrunning\V1\Operation>
      */
     public function getOperations()
     {
@@ -62,7 +62,7 @@ class ListOperationsResponse extends \Google\Protobuf\Internal\Message
      * A list of operations that matches the specified filter in the request.
      *
      * Generated from protobuf field <code>repeated .salto.longrunning.v1.Operation operations = 1;</code>
-     * @param array<\Saltoapis\Longrunning\V1\Operation>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Longrunning\V1\Operation[] $var
      * @return $this
      */
     public function setOperations($var)

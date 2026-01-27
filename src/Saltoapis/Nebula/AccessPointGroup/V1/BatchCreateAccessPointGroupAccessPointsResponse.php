@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\AccessPointGroup\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The response message for [`BatchCreateAccessPointGroupAccessPoints`][salto.nebula.user.v1.AccessPointGroupService.BatchCreateAccessPointGroupAccessPoints]
@@ -29,7 +29,7 @@ class BatchCreateAccessPointGroupAccessPointsResponse extends \Google\Protobuf\I
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<\Saltoapis\Nebula\AccessPointGroup\V1\AccessPointGroupAccessPoint>|\Google\Protobuf\Internal\RepeatedField $access_point_group_access_points
+     *     @type \Saltoapis\Nebula\AccessPointGroup\V1\AccessPointGroupAccessPoint[] $access_point_group_access_points
      *           Access point group access points created.
      * }
      */
@@ -42,7 +42,7 @@ class BatchCreateAccessPointGroupAccessPointsResponse extends \Google\Protobuf\I
      * Access point group access points created.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.accesspointgroup.v1.AccessPointGroupAccessPoint access_point_group_access_points = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\AccessPointGroup\V1\AccessPointGroupAccessPoint>
      */
     public function getAccessPointGroupAccessPoints()
     {
@@ -53,7 +53,7 @@ class BatchCreateAccessPointGroupAccessPointsResponse extends \Google\Protobuf\I
      * Access point group access points created.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.accesspointgroup.v1.AccessPointGroupAccessPoint access_point_group_access_points = 1;</code>
-     * @param array<\Saltoapis\Nebula\AccessPointGroup\V1\AccessPointGroupAccessPoint>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\AccessPointGroup\V1\AccessPointGroupAccessPoint[] $var
      * @return $this
      */
     public function setAccessPointGroupAccessPoints($var)

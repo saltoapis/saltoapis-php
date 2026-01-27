@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Encoder\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The response message for [ListEncoders][salto.nebula.encoder.v1.EncoderService.ListEncoders]
@@ -38,7 +38,7 @@ class ListEncodersResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<\Saltoapis\Nebula\Encoder\V1\Encoder>|\Google\Protobuf\Internal\RepeatedField $encoders
+     *     @type \Saltoapis\Nebula\Encoder\V1\Encoder[] $encoders
      *           The field name should match the noun `encoders` in the method name. There
      *           will be a maximum number of items returned based on the `page_size` field
      *           in the request.
@@ -58,7 +58,7 @@ class ListEncodersResponse extends \Google\Protobuf\Internal\Message
      * in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.encoder.v1.Encoder encoders = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\Encoder\V1\Encoder>
      */
     public function getEncoders()
     {
@@ -71,7 +71,7 @@ class ListEncodersResponse extends \Google\Protobuf\Internal\Message
      * in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.encoder.v1.Encoder encoders = 1;</code>
-     * @param array<\Saltoapis\Nebula\Encoder\V1\Encoder>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\Encoder\V1\Encoder[] $var
      * @return $this
      */
     public function setEncoders($var)

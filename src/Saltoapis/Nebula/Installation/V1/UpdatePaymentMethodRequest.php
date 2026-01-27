@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Installation\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * (-- api-linter: core::0134::request-mask-required=disabled

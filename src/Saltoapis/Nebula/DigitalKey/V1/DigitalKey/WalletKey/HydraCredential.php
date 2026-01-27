@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\DigitalKey\V1\DigitalKey\WalletKey;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * Representation of an Hydra credential

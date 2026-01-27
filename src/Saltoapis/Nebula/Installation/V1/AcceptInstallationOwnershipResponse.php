@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Installation\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The response message for [`AcceptInstallationOwnership`][salto.nebula.installation.v1.InstallationService.AcceptInstallationOwnership]

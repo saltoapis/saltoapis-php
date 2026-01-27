@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Unit\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The request message for [`CreateUnit`][salto.nebula.unit.v1.UnitService.CreateUnit]

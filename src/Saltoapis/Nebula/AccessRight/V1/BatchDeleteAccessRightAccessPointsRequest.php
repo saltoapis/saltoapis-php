@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\AccessRight\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The request message for [`BatchDeleteAccessRightAccessPoints`][salto.nebula.accessright.v1.AccessRightService.BatchDeleteAccessRightAccessPoints]
@@ -40,7 +40,7 @@ class BatchDeleteAccessRightAccessPointsRequest extends \Google\Protobuf\Interna
      *     @type string $parent
      *           Resource name of the access point's access right relation to be deleted.
      *           For example: `installations/surelock-homes-hq/access-rights/baskerville`.
-     *     @type array<\Saltoapis\Nebula\AccessRight\V1\DeleteAccessRightAccessPointRequest>|\Google\Protobuf\Internal\RepeatedField $requests
+     *     @type \Saltoapis\Nebula\AccessRight\V1\DeleteAccessRightAccessPointRequest[] $requests
      *           The request message specifying the resources to delete.
      *           A maximum of 100 access point's access rights associations can be deleted in a batch.
      * }
@@ -83,7 +83,7 @@ class BatchDeleteAccessRightAccessPointsRequest extends \Google\Protobuf\Interna
      * A maximum of 100 access point's access rights associations can be deleted in a batch.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.accessright.v1.DeleteAccessRightAccessPointRequest requests = 2;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\AccessRight\V1\DeleteAccessRightAccessPointRequest>
      */
     public function getRequests()
     {
@@ -95,7 +95,7 @@ class BatchDeleteAccessRightAccessPointsRequest extends \Google\Protobuf\Interna
      * A maximum of 100 access point's access rights associations can be deleted in a batch.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.accessright.v1.DeleteAccessRightAccessPointRequest requests = 2;</code>
-     * @param array<\Saltoapis\Nebula\AccessRight\V1\DeleteAccessRightAccessPointRequest>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\AccessRight\V1\DeleteAccessRightAccessPointRequest[] $var
      * @return $this
      */
     public function setRequests($var)

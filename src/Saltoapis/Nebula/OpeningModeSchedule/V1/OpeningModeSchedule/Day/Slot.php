@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\OpeningModeSchedule\V1\OpeningModeSchedule\Day;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The time period in which the opening mode will be valid

@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Unit\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The request message for [`ListUnits`][salto.nebula.unit.v1.UnitService.ListUnits]
@@ -38,7 +38,7 @@ class ListUnitsResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<\Saltoapis\Nebula\Unit\V1\Unit>|\Google\Protobuf\Internal\RepeatedField $units
+     *     @type \Saltoapis\Nebula\Unit\V1\Unit[] $units
      *           The field name should match the noun `units` in the method name. There
      *           will be a maximum number of items returned based on the `page_size` field
      *           in the request.
@@ -58,7 +58,7 @@ class ListUnitsResponse extends \Google\Protobuf\Internal\Message
      * in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.unit.v1.Unit units = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\Unit\V1\Unit>
      */
     public function getUnits()
     {
@@ -71,7 +71,7 @@ class ListUnitsResponse extends \Google\Protobuf\Internal\Message
      * in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.unit.v1.Unit units = 1;</code>
-     * @param array<\Saltoapis\Nebula\Unit\V1\Unit>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\Unit\V1\Unit[] $var
      * @return $this
      */
     public function setUnits($var)

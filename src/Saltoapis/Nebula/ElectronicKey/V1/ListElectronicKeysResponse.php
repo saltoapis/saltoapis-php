@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\ElectronicKey\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The response message for [ListElectronicKeys][salto.nebula.electronickey.v1.ElectronicKeyService.ListElectronicKeys]
@@ -38,7 +38,7 @@ class ListElectronicKeysResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<\Saltoapis\Nebula\ElectronicKey\V1\ElectronicKey>|\Google\Protobuf\Internal\RepeatedField $electronic_keys
+     *     @type \Saltoapis\Nebula\ElectronicKey\V1\ElectronicKey[] $electronic_keys
      *           The field name should match the noun `electronic_keys` in the method name. There
      *           will be a maximum number of items returned based on the `page_size` field
      *           in the request.
@@ -58,7 +58,7 @@ class ListElectronicKeysResponse extends \Google\Protobuf\Internal\Message
      * in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.electronickey.v1.ElectronicKey electronic_keys = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\ElectronicKey\V1\ElectronicKey>
      */
     public function getElectronicKeys()
     {
@@ -71,7 +71,7 @@ class ListElectronicKeysResponse extends \Google\Protobuf\Internal\Message
      * in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.electronickey.v1.ElectronicKey electronic_keys = 1;</code>
-     * @param array<\Saltoapis\Nebula\ElectronicKey\V1\ElectronicKey>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\ElectronicKey\V1\ElectronicKey[] $var
      * @return $this
      */
     public function setElectronicKeys($var)

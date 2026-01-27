@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Installation\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The subscription information
@@ -65,7 +65,7 @@ class Subscription extends \Google\Protobuf\Internal\Message
      *           The billing information of the subscription.
      *     @type \Saltoapis\Nebula\Installation\V1\PaymentMethod $payment_method
      *           The payment method of the subscription.
-     *     @type array<\Saltoapis\Nebula\Installation\V1\Coupon>|\Google\Protobuf\Internal\RepeatedField $coupons
+     *     @type \Saltoapis\Nebula\Installation\V1\Coupon[] $coupons
      *           The coupons applied to the subscription.
      * }
      */
@@ -216,7 +216,7 @@ class Subscription extends \Google\Protobuf\Internal\Message
      * The coupons applied to the subscription.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.installation.v1.Coupon coupons = 6;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\Installation\V1\Coupon>
      */
     public function getCoupons()
     {
@@ -227,7 +227,7 @@ class Subscription extends \Google\Protobuf\Internal\Message
      * The coupons applied to the subscription.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.installation.v1.Coupon coupons = 6;</code>
-     * @param array<\Saltoapis\Nebula\Installation\V1\Coupon>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\Installation\V1\Coupon[] $var
      * @return $this
      */
     public function setCoupons($var)

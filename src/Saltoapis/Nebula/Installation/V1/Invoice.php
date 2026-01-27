@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Installation\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The invoice object used for billing
@@ -71,7 +71,7 @@ class Invoice extends \Google\Protobuf\Internal\Message
      *           Start time of the invoice. It must be past time.
      *     @type \Google\Protobuf\Timestamp $end_time
      *           End time of the invoice.
-     *     @type array<\Saltoapis\Nebula\Installation\V1\Invoice\LineItem>|\Google\Protobuf\Internal\RepeatedField $line_items
+     *     @type \Saltoapis\Nebula\Installation\V1\Invoice\LineItem[] $line_items
      *           The line items included in the invoice. Must include at least one
      *           item and no more than 50.
      *     @type int|string $total
@@ -193,7 +193,7 @@ class Invoice extends \Google\Protobuf\Internal\Message
      * item and no more than 50.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.installation.v1.Invoice.LineItem line_items = 4;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\Installation\V1\Invoice\LineItem>
      */
     public function getLineItems()
     {
@@ -205,7 +205,7 @@ class Invoice extends \Google\Protobuf\Internal\Message
      * item and no more than 50.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.installation.v1.Invoice.LineItem line_items = 4;</code>
-     * @param array<\Saltoapis\Nebula\Installation\V1\Invoice\LineItem>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\Installation\V1\Invoice\LineItem[] $var
      * @return $this
      */
     public function setLineItems($var)

@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Installation\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The response message for [`ListInstallations`][salto.nebula.installation.v1.InstallationService.ListInstallations]
@@ -38,7 +38,7 @@ class ListInstallationsResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<\Saltoapis\Nebula\Installation\V1\Installation>|\Google\Protobuf\Internal\RepeatedField $installations
+     *     @type \Saltoapis\Nebula\Installation\V1\Installation[] $installations
      *           The field name should match the noun `installations` in the method name.
      *           There will be a maximum number of items returned based on the `page_size`
      *           field in the request.
@@ -58,7 +58,7 @@ class ListInstallationsResponse extends \Google\Protobuf\Internal\Message
      * field in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.installation.v1.Installation installations = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\Installation\V1\Installation>
      */
     public function getInstallations()
     {
@@ -71,7 +71,7 @@ class ListInstallationsResponse extends \Google\Protobuf\Internal\Message
      * field in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.installation.v1.Installation installations = 1;</code>
-     * @param array<\Saltoapis\Nebula\Installation\V1\Installation>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\Installation\V1\Installation[] $var
      * @return $this
      */
     public function setInstallations($var)

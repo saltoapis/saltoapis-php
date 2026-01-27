@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\OpeningModeSchedule\V1\OpeningModeSchedule;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * Day of the week
@@ -45,7 +45,7 @@ class Day extends \Google\Protobuf\Internal\Message
      *           Day type
      *     @type int $day_of_week
      *           In case `day_type` is `NORMAL`, the specific day of the week.
-     *     @type array<\Saltoapis\Nebula\OpeningModeSchedule\V1\OpeningModeSchedule\Day\Slot>|\Google\Protobuf\Internal\RepeatedField $slots
+     *     @type \Saltoapis\Nebula\OpeningModeSchedule\V1\OpeningModeSchedule\Day\Slot[] $slots
      *           The slot to be applied.
      * }
      */
@@ -110,7 +110,7 @@ class Day extends \Google\Protobuf\Internal\Message
      * The slot to be applied.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.openingmodeschedule.v1.OpeningModeSchedule.Day.Slot slots = 3;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\OpeningModeSchedule\V1\OpeningModeSchedule\Day\Slot>
      */
     public function getSlots()
     {
@@ -121,7 +121,7 @@ class Day extends \Google\Protobuf\Internal\Message
      * The slot to be applied.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.openingmodeschedule.v1.OpeningModeSchedule.Day.Slot slots = 3;</code>
-     * @param array<\Saltoapis\Nebula\OpeningModeSchedule\V1\OpeningModeSchedule\Day\Slot>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\OpeningModeSchedule\V1\OpeningModeSchedule\Day\Slot[] $var
      * @return $this
      */
     public function setSlots($var)

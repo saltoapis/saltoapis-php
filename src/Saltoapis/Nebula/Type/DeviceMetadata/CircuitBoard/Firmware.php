@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Type\DeviceMetadata\CircuitBoard;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * Firmware contains the firmware number and version.

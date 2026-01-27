@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\User\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The response message for [`BatchGetUsers`][salto.nebula.accesspoint.v1.UserService.BatchGetUsers]
@@ -29,7 +29,7 @@ class BatchGetUsersResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<\Saltoapis\Nebula\User\V1\User>|\Google\Protobuf\Internal\RepeatedField $users
+     *     @type \Saltoapis\Nebula\User\V1\User[] $users
      *           Users requested.
      * }
      */
@@ -42,7 +42,7 @@ class BatchGetUsersResponse extends \Google\Protobuf\Internal\Message
      * Users requested.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.user.v1.User users = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\User\V1\User>
      */
     public function getUsers()
     {
@@ -53,7 +53,7 @@ class BatchGetUsersResponse extends \Google\Protobuf\Internal\Message
      * Users requested.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.user.v1.User users = 1;</code>
-     * @param array<\Saltoapis\Nebula\User\V1\User>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\User\V1\User[] $var
      * @return $this
      */
     public function setUsers($var)

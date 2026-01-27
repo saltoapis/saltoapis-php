@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Installation\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The response message for [`ListPolicies`][salto.nebula.installation.v1.InstallationService.ListPolicies]
@@ -38,7 +38,7 @@ class ListPoliciesResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<\Saltoapis\Nebula\Installation\V1\Policy>|\Google\Protobuf\Internal\RepeatedField $policies
+     *     @type \Saltoapis\Nebula\Installation\V1\Policy[] $policies
      *           The field name should match the noun `policies` in the method name.
      *           There will be a maximum number of items returned based on the `page_size`
      *           field in the request.
@@ -58,7 +58,7 @@ class ListPoliciesResponse extends \Google\Protobuf\Internal\Message
      * field in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.installation.v1.Policy policies = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\Installation\V1\Policy>
      */
     public function getPolicies()
     {
@@ -71,7 +71,7 @@ class ListPoliciesResponse extends \Google\Protobuf\Internal\Message
      * field in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.installation.v1.Policy policies = 1;</code>
-     * @param array<\Saltoapis\Nebula\Installation\V1\Policy>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\Installation\V1\Policy[] $var
      * @return $this
      */
     public function setPolicies($var)

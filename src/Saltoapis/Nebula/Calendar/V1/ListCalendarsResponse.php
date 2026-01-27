@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Calendar\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The response message for [`ListCalendars`][salto.nebula.calendar.v1.CalendarService.ListCalendars]
@@ -38,7 +38,7 @@ class ListCalendarsResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<\Saltoapis\Nebula\Calendar\V1\Calendar>|\Google\Protobuf\Internal\RepeatedField $calendars
+     *     @type \Saltoapis\Nebula\Calendar\V1\Calendar[] $calendars
      *           The field name should match the noun `calendars` in the method name.
      *           There will be a maximum number of items returned based on the `page_size`
      *           field in the request.
@@ -58,7 +58,7 @@ class ListCalendarsResponse extends \Google\Protobuf\Internal\Message
      * field in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.calendar.v1.Calendar calendars = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\Calendar\V1\Calendar>
      */
     public function getCalendars()
     {
@@ -71,7 +71,7 @@ class ListCalendarsResponse extends \Google\Protobuf\Internal\Message
      * field in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.calendar.v1.Calendar calendars = 1;</code>
-     * @param array<\Saltoapis\Nebula\Calendar\V1\Calendar>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\Calendar\V1\Calendar[] $var
      * @return $this
      */
     public function setCalendars($var)

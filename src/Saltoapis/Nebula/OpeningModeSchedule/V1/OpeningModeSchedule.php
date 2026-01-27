@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\OpeningModeSchedule\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The opening mode schedule object
@@ -49,7 +49,7 @@ class OpeningModeSchedule extends \Google\Protobuf\Internal\Message
      *           `installations/surelock-homes-hq/opening-mode-schedules/office-24-7`.
      *     @type string $display_name
      *           Display name of the opening mode schedule.
-     *     @type array<\Saltoapis\Nebula\OpeningModeSchedule\V1\OpeningModeSchedule\Day>|\Google\Protobuf\Internal\RepeatedField $days
+     *     @type \Saltoapis\Nebula\OpeningModeSchedule\V1\OpeningModeSchedule\Day[] $days
      *           Days when the opening mode schedule is valid.
      * }
      */
@@ -118,7 +118,7 @@ class OpeningModeSchedule extends \Google\Protobuf\Internal\Message
      * Days when the opening mode schedule is valid.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.openingmodeschedule.v1.OpeningModeSchedule.Day days = 3;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\OpeningModeSchedule\V1\OpeningModeSchedule\Day>
      */
     public function getDays()
     {
@@ -129,7 +129,7 @@ class OpeningModeSchedule extends \Google\Protobuf\Internal\Message
      * Days when the opening mode schedule is valid.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.openingmodeschedule.v1.OpeningModeSchedule.Day days = 3;</code>
-     * @param array<\Saltoapis\Nebula\OpeningModeSchedule\V1\OpeningModeSchedule\Day>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\OpeningModeSchedule\V1\OpeningModeSchedule\Day[] $var
      * @return $this
      */
     public function setDays($var)

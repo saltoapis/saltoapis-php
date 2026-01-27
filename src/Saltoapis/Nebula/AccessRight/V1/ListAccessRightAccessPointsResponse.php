@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\AccessRight\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The request message for [`ListAccessRightAccessPoints`][salto.nebula.accessright.v1.AccessRightService.ListAccessRightAccessPoints]
@@ -38,7 +38,7 @@ class ListAccessRightAccessPointsResponse extends \Google\Protobuf\Internal\Mess
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<\Saltoapis\Nebula\AccessRight\V1\AccessRightAccessPoint>|\Google\Protobuf\Internal\RepeatedField $access_right_access_points
+     *     @type \Saltoapis\Nebula\AccessRight\V1\AccessRightAccessPoint[] $access_right_access_points
      *           The field name should match the noun `access_right_access_points` in the
      *           method name. There will be a maximum number of items returned based on
      *           the `page_size` field in the request.
@@ -58,7 +58,7 @@ class ListAccessRightAccessPointsResponse extends \Google\Protobuf\Internal\Mess
      * the `page_size` field in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.accessright.v1.AccessRightAccessPoint access_right_access_points = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\AccessRight\V1\AccessRightAccessPoint>
      */
     public function getAccessRightAccessPoints()
     {
@@ -71,7 +71,7 @@ class ListAccessRightAccessPointsResponse extends \Google\Protobuf\Internal\Mess
      * the `page_size` field in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.accessright.v1.AccessRightAccessPoint access_right_access_points = 1;</code>
-     * @param array<\Saltoapis\Nebula\AccessRight\V1\AccessRightAccessPoint>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\AccessRight\V1\AccessRightAccessPoint[] $var
      * @return $this
      */
     public function setAccessRightAccessPoints($var)

@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Event\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * Event representing the deletion of multiple access right's access point association.
@@ -43,7 +43,7 @@ class AccessRightAccessPointsBatchDeleted extends \Google\Protobuf\Internal\Mess
      *
      *     @type \Saltoapis\Nebula\AccessRight\V1\AccessRight $access_right
      *           The access right to which the access points have been removed.
-     *     @type array<\Saltoapis\Nebula\AccessPoint\V1\AccessPoint>|\Google\Protobuf\Internal\RepeatedField $access_points
+     *     @type \Saltoapis\Nebula\AccessPoint\V1\AccessPoint[] $access_points
      *           The access points removed from the access right.
      *     @type \Saltoapis\Nebula\Event\V1\Principal $actor
      *           The actor who deleted the multiple access rights access points association.
@@ -94,7 +94,7 @@ class AccessRightAccessPointsBatchDeleted extends \Google\Protobuf\Internal\Mess
      * The access points removed from the access right.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.accesspoint.v1.AccessPoint access_points = 2;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\AccessPoint\V1\AccessPoint>
      */
     public function getAccessPoints()
     {
@@ -105,7 +105,7 @@ class AccessRightAccessPointsBatchDeleted extends \Google\Protobuf\Internal\Mess
      * The access points removed from the access right.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.accesspoint.v1.AccessPoint access_points = 2;</code>
-     * @param array<\Saltoapis\Nebula\AccessPoint\V1\AccessPoint>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\AccessPoint\V1\AccessPoint[] $var
      * @return $this
      */
     public function setAccessPoints($var)

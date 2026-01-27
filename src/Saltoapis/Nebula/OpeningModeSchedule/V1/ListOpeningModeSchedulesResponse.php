@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\OpeningModeSchedule\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The response message for [`ListOpeningModeSchedules`][salto.nebula.openingmodeschedule.v1.OpeningModeScheduleService.ListOpeningModeSchedules]
@@ -38,7 +38,7 @@ class ListOpeningModeSchedulesResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<\Saltoapis\Nebula\OpeningModeSchedule\V1\OpeningModeSchedule>|\Google\Protobuf\Internal\RepeatedField $opening_mode_schedules
+     *     @type \Saltoapis\Nebula\OpeningModeSchedule\V1\OpeningModeSchedule[] $opening_mode_schedules
      *           The field name should match the noun `opening_mode_schedules` in the method name.
      *           There will be a maximum number of items returned based on the `page_size`
      *           field in the request.
@@ -58,7 +58,7 @@ class ListOpeningModeSchedulesResponse extends \Google\Protobuf\Internal\Message
      * field in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.openingmodeschedule.v1.OpeningModeSchedule opening_mode_schedules = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\OpeningModeSchedule\V1\OpeningModeSchedule>
      */
     public function getOpeningModeSchedules()
     {
@@ -71,7 +71,7 @@ class ListOpeningModeSchedulesResponse extends \Google\Protobuf\Internal\Message
      * field in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.openingmodeschedule.v1.OpeningModeSchedule opening_mode_schedules = 1;</code>
-     * @param array<\Saltoapis\Nebula\OpeningModeSchedule\V1\OpeningModeSchedule>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\OpeningModeSchedule\V1\OpeningModeSchedule[] $var
      * @return $this
      */
     public function setOpeningModeSchedules($var)

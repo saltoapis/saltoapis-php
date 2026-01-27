@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Iam\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The IAM role object
@@ -45,7 +45,7 @@ class Role extends \Google\Protobuf\Internal\Message
      *           Resource name of the role.
      *     @type string $display_name
      *           A human-readable display name for the role.
-     *     @type array<string>|\Google\Protobuf\Internal\RepeatedField $permissions
+     *     @type string[] $permissions
      *           The names of the permissions this role grants.
      * }
      */
@@ -110,7 +110,7 @@ class Role extends \Google\Protobuf\Internal\Message
      * The names of the permissions this role grants.
      *
      * Generated from protobuf field <code>repeated string permissions = 3;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<string>
      */
     public function getPermissions()
     {
@@ -121,7 +121,7 @@ class Role extends \Google\Protobuf\Internal\Message
      * The names of the permissions this role grants.
      *
      * Generated from protobuf field <code>repeated string permissions = 3;</code>
-     * @param array<string>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param string[] $var
      * @return $this
      */
     public function setPermissions($var)

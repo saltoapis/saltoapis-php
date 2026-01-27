@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Unit\V1\MoveInUnitRequest;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * Representation of a unit occupant resource inside the API.
@@ -75,11 +75,11 @@ class Occupant extends \Google\Protobuf\Internal\Message
      *     @type string $email
      *           The email address of the occupant. It must be unique within the
      *           unit.
-     *     @type array<string>|\Google\Protobuf\Internal\RepeatedField $access_rights
+     *     @type string[] $access_rights
      *           The access rights resource names to bind as an association to the
      *           occupant. For example:
      *           `installations/surelock-homes-hq/units/101/access-rights/baskerville`.
-     *     @type array<string>|\Google\Protobuf\Internal\RepeatedField $iam_roles
+     *     @type string[] $iam_roles
      *           The IAM roles to bind as an association to the occupant. For example:
      *           `iam-roles/unit.admin`.
      * }
@@ -205,7 +205,7 @@ class Occupant extends \Google\Protobuf\Internal\Message
      * `installations/surelock-homes-hq/units/101/access-rights/baskerville`.
      *
      * Generated from protobuf field <code>repeated string access_rights = 4;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<string>
      */
     public function getAccessRights()
     {
@@ -218,7 +218,7 @@ class Occupant extends \Google\Protobuf\Internal\Message
      * `installations/surelock-homes-hq/units/101/access-rights/baskerville`.
      *
      * Generated from protobuf field <code>repeated string access_rights = 4;</code>
-     * @param array<string>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param string[] $var
      * @return $this
      */
     public function setAccessRights($var)
@@ -234,7 +234,7 @@ class Occupant extends \Google\Protobuf\Internal\Message
      * `iam-roles/unit.admin`.
      *
      * Generated from protobuf field <code>repeated string iam_roles = 5;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<string>
      */
     public function getIamRoles()
     {
@@ -246,7 +246,7 @@ class Occupant extends \Google\Protobuf\Internal\Message
      * `iam-roles/unit.admin`.
      *
      * Generated from protobuf field <code>repeated string iam_roles = 5;</code>
-     * @param array<string>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param string[] $var
      * @return $this
      */
     public function setIamRoles($var)

@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Controller\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The controller object
@@ -105,7 +105,7 @@ class Controller extends \Google\Protobuf\Internal\Message
      *           Parent name, when controller is connected to a gateway
      *     @type string $extender
      *           Parent name, when controller is connected to an extender
-     *     @type array<string>|\Google\Protobuf\Internal\RepeatedField $access_points
+     *     @type string[] $access_points
      *           The access points that the controller gives coverage to.
      *     @type bool $initialized
      *           Indicates whether this controller has been initialized or not. This
@@ -295,7 +295,7 @@ class Controller extends \Google\Protobuf\Internal\Message
      * The access points that the controller gives coverage to.
      *
      * Generated from protobuf field <code>repeated string access_points = 6;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<string>
      */
     public function getAccessPoints()
     {
@@ -306,7 +306,7 @@ class Controller extends \Google\Protobuf\Internal\Message
      * The access points that the controller gives coverage to.
      *
      * Generated from protobuf field <code>repeated string access_points = 6;</code>
-     * @param array<string>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param string[] $var
      * @return $this
      */
     public function setAccessPoints($var)

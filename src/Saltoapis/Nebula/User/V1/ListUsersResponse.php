@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\User\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The response message for [`ListUsers`][salto.nebula.user.v1.UserService.ListUsers]
@@ -46,7 +46,7 @@ class ListUsersResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<\Saltoapis\Nebula\User\V1\User>|\Google\Protobuf\Internal\RepeatedField $users
+     *     @type \Saltoapis\Nebula\User\V1\User[] $users
      *           The field name should match the noun `users` in the method name. There
      *           will be a maximum number of items returned based on the `page_size` field
      *           in the request.
@@ -70,7 +70,7 @@ class ListUsersResponse extends \Google\Protobuf\Internal\Message
      * in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.user.v1.User users = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\User\V1\User>
      */
     public function getUsers()
     {
@@ -83,7 +83,7 @@ class ListUsersResponse extends \Google\Protobuf\Internal\Message
      * in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.user.v1.User users = 1;</code>
-     * @param array<\Saltoapis\Nebula\User\V1\User>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\User\V1\User[] $var
      * @return $this
      */
     public function setUsers($var)

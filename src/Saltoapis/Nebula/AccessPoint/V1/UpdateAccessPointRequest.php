@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\AccessPoint\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The request message for [`UpdateAccessPoint`][salto.nebula.accesspoint.v1.AccessPointService.UpdateAccessPoint]

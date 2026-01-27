@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\AccessRight\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The response message for [`BatchCreateAccessRightAccessPoints`][salto.nebula.user.v1.AccessRightService.BatchCreateAccessRightAccessPoints]
@@ -29,7 +29,7 @@ class BatchCreateAccessRightAccessPointsResponse extends \Google\Protobuf\Intern
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<\Saltoapis\Nebula\AccessRight\V1\AccessRightAccessPoint>|\Google\Protobuf\Internal\RepeatedField $access_right_access_points
+     *     @type \Saltoapis\Nebula\AccessRight\V1\AccessRightAccessPoint[] $access_right_access_points
      *           Access right access points created.
      * }
      */
@@ -42,7 +42,7 @@ class BatchCreateAccessRightAccessPointsResponse extends \Google\Protobuf\Intern
      * Access right access points created.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.accessright.v1.AccessRightAccessPoint access_right_access_points = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\AccessRight\V1\AccessRightAccessPoint>
      */
     public function getAccessRightAccessPoints()
     {
@@ -53,7 +53,7 @@ class BatchCreateAccessRightAccessPointsResponse extends \Google\Protobuf\Intern
      * Access right access points created.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.accessright.v1.AccessRightAccessPoint access_right_access_points = 1;</code>
-     * @param array<\Saltoapis\Nebula\AccessRight\V1\AccessRightAccessPoint>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\AccessRight\V1\AccessRightAccessPoint[] $var
      * @return $this
      */
     public function setAccessRightAccessPoints($var)

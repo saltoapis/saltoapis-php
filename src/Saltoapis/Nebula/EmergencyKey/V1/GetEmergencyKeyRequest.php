@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\EmergencyKey\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The request message for [`GetEmergencyKey`][salto.nebula.emergencykey.v1.EmergencyKeyService.GetEmergencyKey].

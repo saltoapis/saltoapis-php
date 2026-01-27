@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Installation\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The request message for [`IngestEncryptedPayloads`][salto.nebula.installation.v1.EncryptedPayloadService.IngestEncryptedPayloads]
@@ -39,7 +39,7 @@ class IngestEncryptedPayloadsRequest extends \Google\Protobuf\Internal\Message
      *     @type string $installation
      *           The parent installation resource name.
      *           For example: `installations/surelock-homes-hq`.
-     *     @type array<string>|\Google\Protobuf\Internal\RepeatedField $encrypted_payloads
+     *     @type string[] $encrypted_payloads
      *           The encrypted payloads to be ingested.
      * }
      */
@@ -80,7 +80,7 @@ class IngestEncryptedPayloadsRequest extends \Google\Protobuf\Internal\Message
      * The encrypted payloads to be ingested.
      *
      * Generated from protobuf field <code>repeated bytes encrypted_payloads = 2;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<string>
      */
     public function getEncryptedPayloads()
     {
@@ -91,7 +91,7 @@ class IngestEncryptedPayloadsRequest extends \Google\Protobuf\Internal\Message
      * The encrypted payloads to be ingested.
      *
      * Generated from protobuf field <code>repeated bytes encrypted_payloads = 2;</code>
-     * @param array<string>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param string[] $var
      * @return $this
      */
     public function setEncryptedPayloads($var)

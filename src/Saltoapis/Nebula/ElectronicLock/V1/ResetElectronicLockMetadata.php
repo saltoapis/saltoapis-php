@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\ElectronicLock\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The metadata message for [`ResetElectronicLock`][salto.nebula.electroniclock.v1.ElectronicLockService.ResetElectronicLock]

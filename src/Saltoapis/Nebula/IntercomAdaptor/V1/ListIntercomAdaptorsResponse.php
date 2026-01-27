@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\IntercomAdaptor\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The response message for [ListIntercomAdaptors][salto.nebula.intercomadaptor.v1.IntercomAdaptorService.ListIntercomAdaptors]
@@ -38,7 +38,7 @@ class ListIntercomAdaptorsResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<\Saltoapis\Nebula\IntercomAdaptor\V1\IntercomAdaptor>|\Google\Protobuf\Internal\RepeatedField $intercom_adaptors
+     *     @type \Saltoapis\Nebula\IntercomAdaptor\V1\IntercomAdaptor[] $intercom_adaptors
      *           The field name should match the noun `intercom_adaptors` in the method name. There
      *           will be a maximum number of items returned based on the `page_size` field
      *           in the request.
@@ -58,7 +58,7 @@ class ListIntercomAdaptorsResponse extends \Google\Protobuf\Internal\Message
      * in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.intercomadaptor.v1.IntercomAdaptor intercom_adaptors = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\IntercomAdaptor\V1\IntercomAdaptor>
      */
     public function getIntercomAdaptors()
     {
@@ -71,7 +71,7 @@ class ListIntercomAdaptorsResponse extends \Google\Protobuf\Internal\Message
      * in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.intercomadaptor.v1.IntercomAdaptor intercom_adaptors = 1;</code>
-     * @param array<\Saltoapis\Nebula\IntercomAdaptor\V1\IntercomAdaptor>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\IntercomAdaptor\V1\IntercomAdaptor[] $var
      * @return $this
      */
     public function setIntercomAdaptors($var)

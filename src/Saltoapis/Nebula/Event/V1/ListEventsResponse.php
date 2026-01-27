@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Event\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The response message for [`ListEvents`][salto.nebula.event.v1.EventService.ListEvents]
@@ -38,7 +38,7 @@ class ListEventsResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<\Saltoapis\Nebula\Event\V1\Event>|\Google\Protobuf\Internal\RepeatedField $events
+     *     @type \Saltoapis\Nebula\Event\V1\Event[] $events
      *           The field name should match the noun `events` in the method name. There
      *           will be a maximum number of items returned based on the `page_size` field
      *           in the request.
@@ -58,7 +58,7 @@ class ListEventsResponse extends \Google\Protobuf\Internal\Message
      * in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.event.v1.Event events = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\Event\V1\Event>
      */
     public function getEvents()
     {
@@ -71,7 +71,7 @@ class ListEventsResponse extends \Google\Protobuf\Internal\Message
      * in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.event.v1.Event events = 1;</code>
-     * @param array<\Saltoapis\Nebula\Event\V1\Event>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\Event\V1\Event[] $var
      * @return $this
      */
     public function setEvents($var)

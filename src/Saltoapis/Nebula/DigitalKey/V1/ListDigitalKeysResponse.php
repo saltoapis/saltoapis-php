@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\DigitalKey\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The response message for [`ListDigitalKeys`][salto.nebula.digitalkey.v1.DigitalKeyService.ListDigitalKeys]
@@ -38,7 +38,7 @@ class ListDigitalKeysResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<\Saltoapis\Nebula\DigitalKey\V1\DigitalKey>|\Google\Protobuf\Internal\RepeatedField $digital_keys
+     *     @type \Saltoapis\Nebula\DigitalKey\V1\DigitalKey[] $digital_keys
      *           The field name should match the noun `digital_keys` in the method name.
      *           There will be a maximum number of items returned based on the `page_size`
      *           field in the request.
@@ -58,7 +58,7 @@ class ListDigitalKeysResponse extends \Google\Protobuf\Internal\Message
      * field in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.digitalkey.v1.DigitalKey digital_keys = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\DigitalKey\V1\DigitalKey>
      */
     public function getDigitalKeys()
     {
@@ -71,7 +71,7 @@ class ListDigitalKeysResponse extends \Google\Protobuf\Internal\Message
      * field in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.digitalkey.v1.DigitalKey digital_keys = 1;</code>
-     * @param array<\Saltoapis\Nebula\DigitalKey\V1\DigitalKey>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\DigitalKey\V1\DigitalKey[] $var
      * @return $this
      */
     public function setDigitalKeys($var)

@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\AccessRight\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The request message for [`ListAccessRightAccessPointGroups`][salto.nebula.accessright.v1.AccessRightService.ListAccessRightAccessPointGroups]
@@ -38,7 +38,7 @@ class ListAccessRightAccessPointGroupsResponse extends \Google\Protobuf\Internal
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<\Saltoapis\Nebula\AccessRight\V1\AccessRightAccessPointGroup>|\Google\Protobuf\Internal\RepeatedField $access_right_access_point_groups
+     *     @type \Saltoapis\Nebula\AccessRight\V1\AccessRightAccessPointGroup[] $access_right_access_point_groups
      *           The field name should match the noun `access_right_access_point_groups`
      *           in the method name. There will be a maximum number of items returned
      *           based on the `page_size` field in the request.
@@ -58,7 +58,7 @@ class ListAccessRightAccessPointGroupsResponse extends \Google\Protobuf\Internal
      * based on the `page_size` field in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.accessright.v1.AccessRightAccessPointGroup access_right_access_point_groups = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\AccessRight\V1\AccessRightAccessPointGroup>
      */
     public function getAccessRightAccessPointGroups()
     {
@@ -71,7 +71,7 @@ class ListAccessRightAccessPointGroupsResponse extends \Google\Protobuf\Internal
      * based on the `page_size` field in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.accessright.v1.AccessRightAccessPointGroup access_right_access_point_groups = 1;</code>
-     * @param array<\Saltoapis\Nebula\AccessRight\V1\AccessRightAccessPointGroup>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\AccessRight\V1\AccessRightAccessPointGroup[] $var
      * @return $this
      */
     public function setAccessRightAccessPointGroups($var)

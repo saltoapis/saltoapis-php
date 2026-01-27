@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\AccessRight\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The response message for [`ListAccessRights`][salto.nebula.accessright.v1.AccessRightService.ListAccessRights]
@@ -38,7 +38,7 @@ class ListAccessRightsResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<\Saltoapis\Nebula\AccessRight\V1\AccessRight>|\Google\Protobuf\Internal\RepeatedField $access_rights
+     *     @type \Saltoapis\Nebula\AccessRight\V1\AccessRight[] $access_rights
      *           The field name should match the noun `access_rights` in the method name.
      *           There will be a maximum number of items returned based on the `page_size`
      *           field in the request.
@@ -58,7 +58,7 @@ class ListAccessRightsResponse extends \Google\Protobuf\Internal\Message
      * field in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.accessright.v1.AccessRight access_rights = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\AccessRight\V1\AccessRight>
      */
     public function getAccessRights()
     {
@@ -71,7 +71,7 @@ class ListAccessRightsResponse extends \Google\Protobuf\Internal\Message
      * field in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.accessright.v1.AccessRight access_rights = 1;</code>
-     * @param array<\Saltoapis\Nebula\AccessRight\V1\AccessRight>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\AccessRight\V1\AccessRight[] $var
      * @return $this
      */
     public function setAccessRights($var)
