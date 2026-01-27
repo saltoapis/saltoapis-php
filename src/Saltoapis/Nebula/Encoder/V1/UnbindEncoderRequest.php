@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Encoder\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The request message for [`UnbindEncoder`][salto.nebula.enconder.v1.EncoderService.UnbindEncoder]

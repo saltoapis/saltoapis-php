@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Controller\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * Relay represents a configurable output from a controller that can be used to control

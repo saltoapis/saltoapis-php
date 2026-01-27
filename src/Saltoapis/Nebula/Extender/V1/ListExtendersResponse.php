@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Extender\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The response message for [ListExtenders][salto.nebula.extender.v1.ExtenderService.ListExtenders]
@@ -38,7 +38,7 @@ class ListExtendersResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<\Saltoapis\Nebula\Extender\V1\Extender>|\Google\Protobuf\Internal\RepeatedField $extenders
+     *     @type \Saltoapis\Nebula\Extender\V1\Extender[] $extenders
      *           The field name should match the noun `extenders` in the method name.
      *           There will be a maximum number of items returned based on the `page_size`
      *           field in the request.
@@ -58,7 +58,7 @@ class ListExtendersResponse extends \Google\Protobuf\Internal\Message
      * field in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.extender.v1.Extender extenders = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\Extender\V1\Extender>
      */
     public function getExtenders()
     {
@@ -71,7 +71,7 @@ class ListExtendersResponse extends \Google\Protobuf\Internal\Message
      * field in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.extender.v1.Extender extenders = 1;</code>
-     * @param array<\Saltoapis\Nebula\Extender\V1\Extender>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\Extender\V1\Extender[] $var
      * @return $this
      */
     public function setExtenders($var)

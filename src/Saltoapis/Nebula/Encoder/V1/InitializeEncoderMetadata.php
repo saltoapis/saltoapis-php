@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Encoder\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The metadata message for [`InitializeEncoder`][salto.nebula.encoder.v1.EncoderService.InitializeEncoder]

@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Gateway\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * DNS settings
@@ -32,7 +32,7 @@ class DNSSettings extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<string>|\Google\Protobuf\Internal\RepeatedField $dns_addresses
+     *     @type string[] $dns_addresses
      *           DNS server IP addresses. The order of the elements in this list will mark
      *           priorities. For example: the first element will be primary DNS and the
      *           second element will be secondary DNS.
@@ -51,7 +51,7 @@ class DNSSettings extends \Google\Protobuf\Internal\Message
      * If empty, an automatic DNS address given by the network will be used.
      *
      * Generated from protobuf field <code>repeated string dns_addresses = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<string>
      */
     public function getDnsAddresses()
     {
@@ -65,7 +65,7 @@ class DNSSettings extends \Google\Protobuf\Internal\Message
      * If empty, an automatic DNS address given by the network will be used.
      *
      * Generated from protobuf field <code>repeated string dns_addresses = 1;</code>
-     * @param array<string>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param string[] $var
      * @return $this
      */
     public function setDnsAddresses($var)

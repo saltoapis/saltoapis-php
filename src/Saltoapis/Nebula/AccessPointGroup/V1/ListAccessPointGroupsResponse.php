@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\AccessPointGroup\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The response message for [`ListAccessPointGroups`][salto.nebula.accesspointgroup.v1.AccessPointGroupService.ListAccessPointGroups]
@@ -38,7 +38,7 @@ class ListAccessPointGroupsResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<\Saltoapis\Nebula\AccessPointGroup\V1\AccessPointGroup>|\Google\Protobuf\Internal\RepeatedField $access_point_groups
+     *     @type \Saltoapis\Nebula\AccessPointGroup\V1\AccessPointGroup[] $access_point_groups
      *           The field name should match the noun `access_point_groups` in the method name.
      *           There will be a maximum number of items returned based on the `page_size`
      *           field in the request.
@@ -58,7 +58,7 @@ class ListAccessPointGroupsResponse extends \Google\Protobuf\Internal\Message
      * field in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.accesspointgroup.v1.AccessPointGroup access_point_groups = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\AccessPointGroup\V1\AccessPointGroup>
      */
     public function getAccessPointGroups()
     {
@@ -71,7 +71,7 @@ class ListAccessPointGroupsResponse extends \Google\Protobuf\Internal\Message
      * field in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.accesspointgroup.v1.AccessPointGroup access_point_groups = 1;</code>
-     * @param array<\Saltoapis\Nebula\AccessPointGroup\V1\AccessPointGroup>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\AccessPointGroup\V1\AccessPointGroup[] $var
      * @return $this
      */
     public function setAccessPointGroups($var)

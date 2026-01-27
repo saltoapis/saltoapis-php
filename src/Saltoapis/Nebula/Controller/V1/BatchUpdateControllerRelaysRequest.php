@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Controller\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The request message for [`BatchUpdateControllerRelays`][salto.nebula.controller.v1.ControllerService.BatchUpdateControllerRelays]
@@ -40,7 +40,7 @@ class BatchUpdateControllerRelaysRequest extends \Google\Protobuf\Internal\Messa
      *     @type string $parent
      *           Resource name of the controller relays to be updated.
      *           For example: `installations/surelock-homes-hq/controllers/dancing-men`.
-     *     @type array<\Saltoapis\Nebula\Controller\V1\UpdateControllerRelayRequest>|\Google\Protobuf\Internal\RepeatedField $requests
+     *     @type \Saltoapis\Nebula\Controller\V1\UpdateControllerRelayRequest[] $requests
      *           The request message specifying the resources to update.
      *           A maximum of 100 controller relays can be updated in a batch.
      * }
@@ -83,7 +83,7 @@ class BatchUpdateControllerRelaysRequest extends \Google\Protobuf\Internal\Messa
      * A maximum of 100 controller relays can be updated in a batch.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.controller.v1.UpdateControllerRelayRequest requests = 2;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\Controller\V1\UpdateControllerRelayRequest>
      */
     public function getRequests()
     {
@@ -95,7 +95,7 @@ class BatchUpdateControllerRelaysRequest extends \Google\Protobuf\Internal\Messa
      * A maximum of 100 controller relays can be updated in a batch.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.controller.v1.UpdateControllerRelayRequest requests = 2;</code>
-     * @param array<\Saltoapis\Nebula\Controller\V1\UpdateControllerRelayRequest>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\Controller\V1\UpdateControllerRelayRequest[] $var
      * @return $this
      */
     public function setRequests($var)

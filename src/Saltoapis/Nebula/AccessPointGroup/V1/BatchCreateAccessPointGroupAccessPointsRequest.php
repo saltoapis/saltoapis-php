@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\AccessPointGroup\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The request message for [`BatchCreateAccessPointGroupAccessPoints`][salto.nebula.accesspointgroup.v1.AccessPointGroupService.BatchCreateAccessPointGroupAccessPoints]
@@ -42,7 +42,7 @@ class BatchCreateAccessPointGroupAccessPointsRequest extends \Google\Protobuf\In
      *           Resource name of the parent resource where the access point group's
      *           access point associations are to be created. For example:
      *           `installations/surelock-homes-hq/access-point-groups/common-accesses`.
-     *     @type array<\Saltoapis\Nebula\AccessPointGroup\V1\CreateAccessPointGroupAccessPointRequest>|\Google\Protobuf\Internal\RepeatedField $requests
+     *     @type \Saltoapis\Nebula\AccessPointGroup\V1\CreateAccessPointGroupAccessPointRequest[] $requests
      *           The request message specifying the resources to create.
      *           A maximum of 100 access point group access points can be created in a batch.
      * }
@@ -87,7 +87,7 @@ class BatchCreateAccessPointGroupAccessPointsRequest extends \Google\Protobuf\In
      * A maximum of 100 access point group access points can be created in a batch.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.accesspointgroup.v1.CreateAccessPointGroupAccessPointRequest requests = 2;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\AccessPointGroup\V1\CreateAccessPointGroupAccessPointRequest>
      */
     public function getRequests()
     {
@@ -99,7 +99,7 @@ class BatchCreateAccessPointGroupAccessPointsRequest extends \Google\Protobuf\In
      * A maximum of 100 access point group access points can be created in a batch.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.accesspointgroup.v1.CreateAccessPointGroupAccessPointRequest requests = 2;</code>
-     * @param array<\Saltoapis\Nebula\AccessPointGroup\V1\CreateAccessPointGroupAccessPointRequest>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\AccessPointGroup\V1\CreateAccessPointGroupAccessPointRequest[] $var
      * @return $this
      */
     public function setRequests($var)

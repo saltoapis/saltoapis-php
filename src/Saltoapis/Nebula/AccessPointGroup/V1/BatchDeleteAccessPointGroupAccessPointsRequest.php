@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\AccessPointGroup\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The request message for [`BatchDeleteAccessPointGroupAccessPoints`][salto.nebula.accesspointgroup.v1.AccessPointGroupService.BatchDeleteAccessPointGroupAccessPoints]
@@ -42,7 +42,7 @@ class BatchDeleteAccessPointGroupAccessPointsRequest extends \Google\Protobuf\In
      *           The resource name of the access point group's access point associations to be deleted.
      *           For example:
      *           `installations/surelock-homes-hq/access-point-groups/common-accesses`.
-     *     @type array<\Saltoapis\Nebula\AccessPointGroup\V1\DeleteAccessPointGroupAccessPointRequest>|\Google\Protobuf\Internal\RepeatedField $requests
+     *     @type \Saltoapis\Nebula\AccessPointGroup\V1\DeleteAccessPointGroupAccessPointRequest[] $requests
      *           The request message specifying the resources to delete.
      *           A maximum of 100 access point group access points can be deleted in a batch.
      * }
@@ -87,7 +87,7 @@ class BatchDeleteAccessPointGroupAccessPointsRequest extends \Google\Protobuf\In
      * A maximum of 100 access point group access points can be deleted in a batch.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.accesspointgroup.v1.DeleteAccessPointGroupAccessPointRequest requests = 2;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\AccessPointGroup\V1\DeleteAccessPointGroupAccessPointRequest>
      */
     public function getRequests()
     {
@@ -99,7 +99,7 @@ class BatchDeleteAccessPointGroupAccessPointsRequest extends \Google\Protobuf\In
      * A maximum of 100 access point group access points can be deleted in a batch.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.accesspointgroup.v1.DeleteAccessPointGroupAccessPointRequest requests = 2;</code>
-     * @param array<\Saltoapis\Nebula\AccessPointGroup\V1\DeleteAccessPointGroupAccessPointRequest>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\AccessPointGroup\V1\DeleteAccessPointGroupAccessPointRequest[] $var
      * @return $this
      */
     public function setRequests($var)

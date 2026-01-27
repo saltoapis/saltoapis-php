@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Type;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * Represents an schedule.
@@ -41,7 +41,7 @@ class Schedule extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<\Saltoapis\Nebula\Type\Schedule\Day>|\Google\Protobuf\Internal\RepeatedField $days
+     *     @type \Saltoapis\Nebula\Type\Schedule\Day[] $days
      *           Days when it's valid.
      *     @type \Saltoapis\Type\TimeOfDay $start_time
      *           Start time of day when schedule starts being valid.
@@ -58,7 +58,7 @@ class Schedule extends \Google\Protobuf\Internal\Message
      * Days when it's valid.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.type.Schedule.Day days = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\Type\Schedule\Day>
      */
     public function getDays()
     {
@@ -69,7 +69,7 @@ class Schedule extends \Google\Protobuf\Internal\Message
      * Days when it's valid.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.type.Schedule.Day days = 1;</code>
-     * @param array<\Saltoapis\Nebula\Type\Schedule\Day>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\Type\Schedule\Day[] $var
      * @return $this
      */
     public function setDays($var)

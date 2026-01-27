@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\AccessRight\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The access right object
@@ -49,7 +49,7 @@ class AccessRight extends \Google\Protobuf\Internal\Message
      *           `installations/surelock-homes-hq/access-rights/baskerville`.
      *     @type string $display_name
      *           Display name of the access right.
-     *     @type array<\Saltoapis\Nebula\Type\Schedule>|\Google\Protobuf\Internal\RepeatedField $schedules
+     *     @type \Saltoapis\Nebula\Type\Schedule[] $schedules
      *           Schedules in which this access right is applied.
      * }
      */
@@ -118,7 +118,7 @@ class AccessRight extends \Google\Protobuf\Internal\Message
      * Schedules in which this access right is applied.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.type.Schedule schedules = 5;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\Type\Schedule>
      */
     public function getSchedules()
     {
@@ -129,7 +129,7 @@ class AccessRight extends \Google\Protobuf\Internal\Message
      * Schedules in which this access right is applied.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.type.Schedule schedules = 5;</code>
-     * @param array<\Saltoapis\Nebula\Type\Schedule>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\Type\Schedule[] $var
      * @return $this
      */
     public function setSchedules($var)

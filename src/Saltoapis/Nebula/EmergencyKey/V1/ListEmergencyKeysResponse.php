@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\EmergencyKey\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The response message for [`ListEmergencyKeys`][salto.nebula.emergencykey.v1.EmergencyKeyService.ListEmergencyKeys].
@@ -37,7 +37,7 @@ class ListEmergencyKeysResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<\Saltoapis\Nebula\EmergencyKey\V1\EmergencyKey>|\Google\Protobuf\Internal\RepeatedField $emergency_keys
+     *     @type \Saltoapis\Nebula\EmergencyKey\V1\EmergencyKey[] $emergency_keys
      *           The field name should match the noun `emergency_keys` in the method name.
      *           There will be a maximum number of items returned based on the `page_size`
      *           field in the request.
@@ -56,7 +56,7 @@ class ListEmergencyKeysResponse extends \Google\Protobuf\Internal\Message
      * field in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.emergencykey.v1.EmergencyKey emergency_keys = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\EmergencyKey\V1\EmergencyKey>
      */
     public function getEmergencyKeys()
     {
@@ -69,7 +69,7 @@ class ListEmergencyKeysResponse extends \Google\Protobuf\Internal\Message
      * field in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.emergencykey.v1.EmergencyKey emergency_keys = 1;</code>
-     * @param array<\Saltoapis\Nebula\EmergencyKey\V1\EmergencyKey>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\EmergencyKey\V1\EmergencyKey[] $var
      * @return $this
      */
     public function setEmergencyKeys($var)

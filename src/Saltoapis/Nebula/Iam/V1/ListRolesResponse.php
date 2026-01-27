@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Iam\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The response message for [`ListRoles`][salto.nebula.iam.v1.IAMService.ListRoles]
@@ -38,7 +38,7 @@ class ListRolesResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<\Saltoapis\Nebula\Iam\V1\Role>|\Google\Protobuf\Internal\RepeatedField $roles
+     *     @type \Saltoapis\Nebula\Iam\V1\Role[] $roles
      *           The field name should match the noun `roles` in the method name. There
      *           will be a maximum number of items returned based on the `page_size` field
      *           in the request.
@@ -58,7 +58,7 @@ class ListRolesResponse extends \Google\Protobuf\Internal\Message
      * in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.iam.v1.Role roles = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\Iam\V1\Role>
      */
     public function getRoles()
     {
@@ -71,7 +71,7 @@ class ListRolesResponse extends \Google\Protobuf\Internal\Message
      * in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.iam.v1.Role roles = 1;</code>
-     * @param array<\Saltoapis\Nebula\Iam\V1\Role>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\Iam\V1\Role[] $var
      * @return $this
      */
     public function setRoles($var)

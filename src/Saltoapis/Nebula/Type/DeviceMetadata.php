@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Type;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * Metadata contains information about a device. Most metadata is immutable.
@@ -29,7 +29,7 @@ class DeviceMetadata extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<\Saltoapis\Nebula\Type\DeviceMetadata\CircuitBoard>|\Google\Protobuf\Internal\RepeatedField $circuit_boards
+     *     @type \Saltoapis\Nebula\Type\DeviceMetadata\CircuitBoard[] $circuit_boards
      *           Circuit boards present in this device.
      * }
      */
@@ -42,7 +42,7 @@ class DeviceMetadata extends \Google\Protobuf\Internal\Message
      * Circuit boards present in this device.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.type.DeviceMetadata.CircuitBoard circuit_boards = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\Type\DeviceMetadata\CircuitBoard>
      */
     public function getCircuitBoards()
     {
@@ -53,7 +53,7 @@ class DeviceMetadata extends \Google\Protobuf\Internal\Message
      * Circuit boards present in this device.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.type.DeviceMetadata.CircuitBoard circuit_boards = 1;</code>
-     * @param array<\Saltoapis\Nebula\Type\DeviceMetadata\CircuitBoard>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\Type\DeviceMetadata\CircuitBoard[] $var
      * @return $this
      */
     public function setCircuitBoards($var)

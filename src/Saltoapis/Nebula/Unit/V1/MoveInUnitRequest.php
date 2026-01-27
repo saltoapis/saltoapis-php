@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Unit\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The request message for [`MoveInUnit`][salto.nebula.unit.v1.UnitService.MoveInUnit]
@@ -39,7 +39,7 @@ class MoveInUnitRequest extends \Google\Protobuf\Internal\Message
      *     @type string $name
      *           Resource name of the parent resource where to move in the unit. For
      *           example: `installations/surelock-homes-hq/units/101`.
-     *     @type array<\Saltoapis\Nebula\Unit\V1\MoveInUnitRequest\Occupant>|\Google\Protobuf\Internal\RepeatedField $occupants
+     *     @type \Saltoapis\Nebula\Unit\V1\MoveInUnitRequest\Occupant[] $occupants
      *           The occupants to be created inside the unit.
      * }
      */
@@ -80,7 +80,7 @@ class MoveInUnitRequest extends \Google\Protobuf\Internal\Message
      * The occupants to be created inside the unit.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.unit.v1.MoveInUnitRequest.Occupant occupants = 2;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\Unit\V1\MoveInUnitRequest\Occupant>
      */
     public function getOccupants()
     {
@@ -91,7 +91,7 @@ class MoveInUnitRequest extends \Google\Protobuf\Internal\Message
      * The occupants to be created inside the unit.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.unit.v1.MoveInUnitRequest.Occupant occupants = 2;</code>
-     * @param array<\Saltoapis\Nebula\Unit\V1\MoveInUnitRequest\Occupant>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\Unit\V1\MoveInUnitRequest\Occupant[] $var
      * @return $this
      */
     public function setOccupants($var)

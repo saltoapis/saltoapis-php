@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Installation\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * Billing info object, belonging to a subscription
@@ -83,7 +83,7 @@ class BillingInfo extends \Google\Protobuf\Internal\Message
      *           `installations/surelock-homes-hq/subscription/billing-info`.
      *     @type string $company
      *           The company name.
-     *     @type array<string>|\Google\Protobuf\Internal\RepeatedField $address
+     *     @type string[] $address
      *           The lines of the address. The first line may include the street name,
      *           number, P.O. box, and further lines can include information such as
      *           an apartment number, suite or unit.
@@ -168,7 +168,7 @@ class BillingInfo extends \Google\Protobuf\Internal\Message
      * an apartment number, suite or unit.
      *
      * Generated from protobuf field <code>repeated string address = 3;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<string>
      */
     public function getAddress()
     {
@@ -181,7 +181,7 @@ class BillingInfo extends \Google\Protobuf\Internal\Message
      * an apartment number, suite or unit.
      *
      * Generated from protobuf field <code>repeated string address = 3;</code>
-     * @param array<string>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param string[] $var
      * @return $this
      */
     public function setAddress($var)

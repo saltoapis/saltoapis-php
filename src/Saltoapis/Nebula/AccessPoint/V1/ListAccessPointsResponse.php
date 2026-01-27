@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\AccessPoint\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The request message for [`ListAccessPoints`][salto.nebula.accesspoint.v1.AccessPointService.ListAccessPoints]
@@ -46,7 +46,7 @@ class ListAccessPointsResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<\Saltoapis\Nebula\AccessPoint\V1\AccessPoint>|\Google\Protobuf\Internal\RepeatedField $access_points
+     *     @type \Saltoapis\Nebula\AccessPoint\V1\AccessPoint[] $access_points
      *           The field name should match the noun `access_points` in the method name.
      *           There will be a maximum number of items returned based on the `page_size`
      *           field in the request.
@@ -70,7 +70,7 @@ class ListAccessPointsResponse extends \Google\Protobuf\Internal\Message
      * field in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.accesspoint.v1.AccessPoint access_points = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\AccessPoint\V1\AccessPoint>
      */
     public function getAccessPoints()
     {
@@ -83,7 +83,7 @@ class ListAccessPointsResponse extends \Google\Protobuf\Internal\Message
      * field in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.accesspoint.v1.AccessPoint access_points = 1;</code>
-     * @param array<\Saltoapis\Nebula\AccessPoint\V1\AccessPoint>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\AccessPoint\V1\AccessPoint[] $var
      * @return $this
      */
     public function setAccessPoints($var)

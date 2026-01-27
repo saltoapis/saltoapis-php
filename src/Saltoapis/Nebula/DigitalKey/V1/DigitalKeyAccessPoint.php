@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\DigitalKey\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The digital key's access point association
@@ -57,7 +57,7 @@ class DigitalKeyAccessPoint extends \Google\Protobuf\Internal\Message
      *           Display name of the access point.
      *     @type string $device_id
      *           The device which gives coverage to the access point.
-     *     @type array<int>|\Google\Protobuf\Internal\RepeatedField $supported_technologies
+     *     @type int[] $supported_technologies
      *           Supported technologies used by the app to open an access point.
      * }
      */
@@ -152,7 +152,7 @@ class DigitalKeyAccessPoint extends \Google\Protobuf\Internal\Message
      * Supported technologies used by the app to open an access point.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.type.AppKeyTechnology supported_technologies = 4;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<int>
      */
     public function getSupportedTechnologies()
     {
@@ -163,7 +163,7 @@ class DigitalKeyAccessPoint extends \Google\Protobuf\Internal\Message
      * Supported technologies used by the app to open an access point.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.type.AppKeyTechnology supported_technologies = 4;</code>
-     * @param array<int>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param int[] $var
      * @return $this
      */
     public function setSupportedTechnologies($var)

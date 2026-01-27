@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Type\DeviceMetadata;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * Metadata of a circuit board present on a device.
@@ -45,7 +45,7 @@ class CircuitBoard extends \Google\Protobuf\Internal\Message
      *           Date manufactured
      *     @type string $serial_number
      *           Hardware serial number, for example, `2.000.0020`
-     *     @type array<\Saltoapis\Nebula\Type\DeviceMetadata\CircuitBoard\Firmware>|\Google\Protobuf\Internal\RepeatedField $firmwares
+     *     @type \Saltoapis\Nebula\Type\DeviceMetadata\CircuitBoard\Firmware[] $firmwares
      *           Firmwares present in this circuit board.
      * }
      */
@@ -120,7 +120,7 @@ class CircuitBoard extends \Google\Protobuf\Internal\Message
      * Firmwares present in this circuit board.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.type.DeviceMetadata.CircuitBoard.Firmware firmwares = 4;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\Type\DeviceMetadata\CircuitBoard\Firmware>
      */
     public function getFirmwares()
     {
@@ -131,7 +131,7 @@ class CircuitBoard extends \Google\Protobuf\Internal\Message
      * Firmwares present in this circuit board.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.type.DeviceMetadata.CircuitBoard.Firmware firmwares = 4;</code>
-     * @param array<\Saltoapis\Nebula\Type\DeviceMetadata\CircuitBoard\Firmware>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\Type\DeviceMetadata\CircuitBoard\Firmware[] $var
      * @return $this
      */
     public function setFirmwares($var)

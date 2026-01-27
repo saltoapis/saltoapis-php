@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\AccessRight\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The request message for [`ListAccessRightDestinations`][salto.nebula.accessright.v1.AccessRightService.ListAccessRightDestinations]
@@ -38,7 +38,7 @@ class ListAccessRightDestinationsResponse extends \Google\Protobuf\Internal\Mess
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<\Saltoapis\Nebula\AccessRight\V1\AccessRightDestination>|\Google\Protobuf\Internal\RepeatedField $access_right_destinations
+     *     @type \Saltoapis\Nebula\AccessRight\V1\AccessRightDestination[] $access_right_destinations
      *           The field name should match the noun `access_right_destinations` in the
      *           method name. There will be a maximum number of items returned based on
      *           the `page_size` field in the request.
@@ -58,7 +58,7 @@ class ListAccessRightDestinationsResponse extends \Google\Protobuf\Internal\Mess
      * the `page_size` field in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.accessright.v1.AccessRightDestination access_right_destinations = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\AccessRight\V1\AccessRightDestination>
      */
     public function getAccessRightDestinations()
     {
@@ -71,7 +71,7 @@ class ListAccessRightDestinationsResponse extends \Google\Protobuf\Internal\Mess
      * the `page_size` field in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.accessright.v1.AccessRightDestination access_right_destinations = 1;</code>
-     * @param array<\Saltoapis\Nebula\AccessRight\V1\AccessRightDestination>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\AccessRight\V1\AccessRightDestination[] $var
      * @return $this
      */
     public function setAccessRightDestinations($var)

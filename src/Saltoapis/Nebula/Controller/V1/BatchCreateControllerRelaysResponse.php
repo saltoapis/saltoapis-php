@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Controller\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The response message for [`BatchCreateControllerRelays`][salto.nebula.controller.v1.ControllerService.BatchCreateControllerRelays]
@@ -29,7 +29,7 @@ class BatchCreateControllerRelaysResponse extends \Google\Protobuf\Internal\Mess
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<\Saltoapis\Nebula\Controller\V1\ControllerRelay>|\Google\Protobuf\Internal\RepeatedField $controller_relays
+     *     @type \Saltoapis\Nebula\Controller\V1\ControllerRelay[] $controller_relays
      *           The controller relay resources created.
      * }
      */
@@ -42,7 +42,7 @@ class BatchCreateControllerRelaysResponse extends \Google\Protobuf\Internal\Mess
      * The controller relay resources created.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.controller.v1.ControllerRelay controller_relays = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\Controller\V1\ControllerRelay>
      */
     public function getControllerRelays()
     {
@@ -53,7 +53,7 @@ class BatchCreateControllerRelaysResponse extends \Google\Protobuf\Internal\Mess
      * The controller relay resources created.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.controller.v1.ControllerRelay controller_relays = 1;</code>
-     * @param array<\Saltoapis\Nebula\Controller\V1\ControllerRelay>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\Controller\V1\ControllerRelay[] $var
      * @return $this
      */
     public function setControllerRelays($var)

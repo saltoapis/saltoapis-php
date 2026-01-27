@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Installation\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * (-- api-linter: core::0158::response-next-page-token-field=disabled
@@ -31,7 +31,7 @@ class ListInvoicesResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<\Saltoapis\Nebula\Installation\V1\Invoice>|\Google\Protobuf\Internal\RepeatedField $invoices
+     *     @type \Saltoapis\Nebula\Installation\V1\Invoice[] $invoices
      *           The field name should match the noun `invoices` in the method name.
      * }
      */
@@ -44,7 +44,7 @@ class ListInvoicesResponse extends \Google\Protobuf\Internal\Message
      * The field name should match the noun `invoices` in the method name.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.installation.v1.Invoice invoices = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\Installation\V1\Invoice>
      */
     public function getInvoices()
     {
@@ -55,7 +55,7 @@ class ListInvoicesResponse extends \Google\Protobuf\Internal\Message
      * The field name should match the noun `invoices` in the method name.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.installation.v1.Invoice invoices = 1;</code>
-     * @param array<\Saltoapis\Nebula\Installation\V1\Invoice>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\Installation\V1\Invoice[] $var
      * @return $this
      */
     public function setInvoices($var)

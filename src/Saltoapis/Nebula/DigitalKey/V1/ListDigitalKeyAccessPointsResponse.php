@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\DigitalKey\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The request message for [`ListDigitalKeyAccessPoints`][salto.nebula.digitalkey.v1.DigitalKeyService.ListDigitalKeyAccessPoints]
@@ -39,7 +39,7 @@ class ListDigitalKeyAccessPointsResponse extends \Google\Protobuf\Internal\Messa
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<\Saltoapis\Nebula\DigitalKey\V1\DigitalKeyAccessPoint>|\Google\Protobuf\Internal\RepeatedField $digital_key_access_points
+     *     @type \Saltoapis\Nebula\DigitalKey\V1\DigitalKeyAccessPoint[] $digital_key_access_points
      *           The field name should match the noun `digital_key_access_points` in the method name.
      *           There will be a maximum number of items returned based on the `page_size`
      *           field in the request.
@@ -60,7 +60,7 @@ class ListDigitalKeyAccessPointsResponse extends \Google\Protobuf\Internal\Messa
      * field in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.digitalkey.v1.DigitalKeyAccessPoint digital_key_access_points = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\DigitalKey\V1\DigitalKeyAccessPoint>
      */
     public function getDigitalKeyAccessPoints()
     {
@@ -73,7 +73,7 @@ class ListDigitalKeyAccessPointsResponse extends \Google\Protobuf\Internal\Messa
      * field in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.digitalkey.v1.DigitalKeyAccessPoint digital_key_access_points = 1;</code>
-     * @param array<\Saltoapis\Nebula\DigitalKey\V1\DigitalKeyAccessPoint>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\DigitalKey\V1\DigitalKeyAccessPoint[] $var
      * @return $this
      */
     public function setDigitalKeyAccessPoints($var)

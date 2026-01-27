@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Controller\V1\ControllerRelay;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * DestinationOutput contains configuration information that identifies a specific

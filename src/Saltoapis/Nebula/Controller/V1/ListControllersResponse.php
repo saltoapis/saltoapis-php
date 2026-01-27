@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Controller\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The response message for [ListControllers][salto.nebula.controllers.v1.ControllerService.ListControllers]
@@ -38,7 +38,7 @@ class ListControllersResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<\Saltoapis\Nebula\Controller\V1\Controller>|\Google\Protobuf\Internal\RepeatedField $controllers
+     *     @type \Saltoapis\Nebula\Controller\V1\Controller[] $controllers
      *           The field name should match the noun `controllers` in the method name. There
      *           will be a maximum number of items returned based on the `page_size` field
      *           in the request.
@@ -58,7 +58,7 @@ class ListControllersResponse extends \Google\Protobuf\Internal\Message
      * in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.controller.v1.Controller controllers = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\Controller\V1\Controller>
      */
     public function getControllers()
     {
@@ -71,7 +71,7 @@ class ListControllersResponse extends \Google\Protobuf\Internal\Message
      * in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.controller.v1.Controller controllers = 1;</code>
-     * @param array<\Saltoapis\Nebula\Controller\V1\Controller>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\Controller\V1\Controller[] $var
      * @return $this
      */
     public function setControllers($var)

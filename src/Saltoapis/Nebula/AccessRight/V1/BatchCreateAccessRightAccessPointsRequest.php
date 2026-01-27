@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\AccessRight\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The request message for [`BatchCreateAccessRightAccessPointsRequest`][salto.nebula.user.v1.AccessRightService.BatchCreateAccessRightAccessPoint]
@@ -42,7 +42,7 @@ class BatchCreateAccessRightAccessPointsRequest extends \Google\Protobuf\Interna
      *           Resource name of the parent resource where the access right's access points
      *           associations are to be created. For example:
      *           `installations/surelock-homes-hq/access-rights/baskerville`.
-     *     @type array<\Saltoapis\Nebula\AccessRight\V1\CreateAccessRightAccessPointRequest>|\Google\Protobuf\Internal\RepeatedField $requests
+     *     @type \Saltoapis\Nebula\AccessRight\V1\CreateAccessRightAccessPointRequest[] $requests
      *           The request message specifying the resources to create.
      *           A maximum of 100 access right access points can be created in a batch.
      * }
@@ -87,7 +87,7 @@ class BatchCreateAccessRightAccessPointsRequest extends \Google\Protobuf\Interna
      * A maximum of 100 access right access points can be created in a batch.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.accessright.v1.CreateAccessRightAccessPointRequest requests = 2;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\AccessRight\V1\CreateAccessRightAccessPointRequest>
      */
     public function getRequests()
     {
@@ -99,7 +99,7 @@ class BatchCreateAccessRightAccessPointsRequest extends \Google\Protobuf\Interna
      * A maximum of 100 access right access points can be created in a batch.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.accessright.v1.CreateAccessRightAccessPointRequest requests = 2;</code>
-     * @param array<\Saltoapis\Nebula\AccessRight\V1\CreateAccessRightAccessPointRequest>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\AccessRight\V1\CreateAccessRightAccessPointRequest[] $var
      * @return $this
      */
     public function setRequests($var)

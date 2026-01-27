@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Unit\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The request message for [`TestPermissions`][salto.nebula.unit.v1.UnitService.TestPermissions]
@@ -40,7 +40,7 @@ class TestPermissionsRequest extends \Google\Protobuf\Internal\Message
      *     @type string $unit
      *           The resource name for which the policy detail is being requested, for
      *           example: `installations/surelock-homes-hq/units/101`.
-     *     @type array<string>|\Google\Protobuf\Internal\RepeatedField $permissions
+     *     @type string[] $permissions
      *           The set of permissions to check for the `resource_name`. Permissions with
      *           wildcards (such as '*' or 'nebula.access-point.*') are not allowed.
      * }
@@ -83,7 +83,7 @@ class TestPermissionsRequest extends \Google\Protobuf\Internal\Message
      * wildcards (such as '*' or 'nebula.access-point.*') are not allowed.
      *
      * Generated from protobuf field <code>repeated string permissions = 2;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<string>
      */
     public function getPermissions()
     {
@@ -95,7 +95,7 @@ class TestPermissionsRequest extends \Google\Protobuf\Internal\Message
      * wildcards (such as '*' or 'nebula.access-point.*') are not allowed.
      *
      * Generated from protobuf field <code>repeated string permissions = 2;</code>
-     * @param array<string>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param string[] $var
      * @return $this
      */
     public function setPermissions($var)

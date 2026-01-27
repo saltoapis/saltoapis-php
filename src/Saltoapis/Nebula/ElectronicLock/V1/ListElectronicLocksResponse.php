@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\ElectronicLock\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The response message for [ListElectronicLocks][salto.nebula.electroniclock.v1.ElectronicLockService.ListElectronicLocks]
@@ -38,7 +38,7 @@ class ListElectronicLocksResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<\Saltoapis\Nebula\ElectronicLock\V1\ElectronicLock>|\Google\Protobuf\Internal\RepeatedField $electronic_locks
+     *     @type \Saltoapis\Nebula\ElectronicLock\V1\ElectronicLock[] $electronic_locks
      *           The field name should match the noun `electronic_locks` in the method name. There
      *           will be a maximum number of items returned based on the `page_size` field
      *           in the request.
@@ -58,7 +58,7 @@ class ListElectronicLocksResponse extends \Google\Protobuf\Internal\Message
      * in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.electroniclock.v1.ElectronicLock electronic_locks = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\ElectronicLock\V1\ElectronicLock>
      */
     public function getElectronicLocks()
     {
@@ -71,7 +71,7 @@ class ListElectronicLocksResponse extends \Google\Protobuf\Internal\Message
      * in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.electroniclock.v1.ElectronicLock electronic_locks = 1;</code>
-     * @param array<\Saltoapis\Nebula\ElectronicLock\V1\ElectronicLock>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\ElectronicLock\V1\ElectronicLock[] $var
      * @return $this
      */
     public function setElectronicLocks($var)

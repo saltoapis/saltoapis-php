@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\User\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The user's access right association
@@ -95,10 +95,10 @@ class UserAccessRight extends \Google\Protobuf\Internal\Message
      *           `installations/surelock-homes-hq/access-rights/baskerville`.
      *     @type string $display_name
      *           Display name of the associated entity. In this case an access right.
-     *     @type array<\Saltoapis\Nebula\Type\Schedule>|\Google\Protobuf\Internal\RepeatedField $schedules
+     *     @type \Saltoapis\Nebula\Type\Schedule[] $schedules
      *           The schedules for the user's access right. If set, this can only be more
      *           restrictive than the schedules defined in the associated access right.
-     *     @type array<\Saltoapis\Nebula\Type\Schedule>|\Google\Protobuf\Internal\RepeatedField $effective_schedules
+     *     @type \Saltoapis\Nebula\Type\Schedule[] $effective_schedules
      *           The computed effective schedules for the user's access right based on the
      *           given parent resource.
      *     @type \Google\Protobuf\Timestamp $activate_time
@@ -217,7 +217,7 @@ class UserAccessRight extends \Google\Protobuf\Internal\Message
      * restrictive than the schedules defined in the associated access right.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.type.Schedule schedules = 4;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\Type\Schedule>
      */
     public function getSchedules()
     {
@@ -229,7 +229,7 @@ class UserAccessRight extends \Google\Protobuf\Internal\Message
      * restrictive than the schedules defined in the associated access right.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.type.Schedule schedules = 4;</code>
-     * @param array<\Saltoapis\Nebula\Type\Schedule>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\Type\Schedule[] $var
      * @return $this
      */
     public function setSchedules($var)
@@ -245,7 +245,7 @@ class UserAccessRight extends \Google\Protobuf\Internal\Message
      * given parent resource.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.type.Schedule effective_schedules = 5;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\Type\Schedule>
      */
     public function getEffectiveSchedules()
     {
@@ -257,7 +257,7 @@ class UserAccessRight extends \Google\Protobuf\Internal\Message
      * given parent resource.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.type.Schedule effective_schedules = 5;</code>
-     * @param array<\Saltoapis\Nebula\Type\Schedule>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\Type\Schedule[] $var
      * @return $this
      */
     public function setEffectiveSchedules($var)

@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Destination\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The request message for [`BatchGetDestinationsRequest`][salto.nebula.destination.v1.DestinationService.BatchGetDestinations]
@@ -39,7 +39,7 @@ class BatchGetDestinationsRequest extends \Google\Protobuf\Internal\Message
      *     @type string $parent
      *           Resource name of the parent of the destinations to be retreived.
      *           For example: `installations/surelock-homes-hq`.
-     *     @type array<string>|\Google\Protobuf\Internal\RepeatedField $names
+     *     @type string[] $names
      *           The names of the destinations requested.
      * }
      */
@@ -80,7 +80,7 @@ class BatchGetDestinationsRequest extends \Google\Protobuf\Internal\Message
      * The names of the destinations requested.
      *
      * Generated from protobuf field <code>repeated string names = 2;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<string>
      */
     public function getNames()
     {
@@ -91,7 +91,7 @@ class BatchGetDestinationsRequest extends \Google\Protobuf\Internal\Message
      * The names of the destinations requested.
      *
      * Generated from protobuf field <code>repeated string names = 2;</code>
-     * @param array<string>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param string[] $var
      * @return $this
      */
     public function setNames($var)

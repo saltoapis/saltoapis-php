@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\User\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * Representation of a passcode, belonging to a user

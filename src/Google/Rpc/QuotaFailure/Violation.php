@@ -6,8 +6,8 @@
 namespace Google\Rpc\QuotaFailure;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * A message type used to describe a single quota violation.  For example, a

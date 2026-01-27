@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Gateway\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The response message for [ListGateways][salto.nebula.gateway.v1.GatewayService.ListGateways]
@@ -38,7 +38,7 @@ class ListGatewaysResponse extends \Google\Protobuf\Internal\Message
      * @param array $data {
      *     Optional. Data for populating the Message object.
      *
-     *     @type array<\Saltoapis\Nebula\Gateway\V1\Gateway>|\Google\Protobuf\Internal\RepeatedField $gateways
+     *     @type \Saltoapis\Nebula\Gateway\V1\Gateway[] $gateways
      *           The field name should match the noun `gateways` in the method name. There
      *           will be a maximum number of items returned based on the `page_size` field
      *           in the request.
@@ -58,7 +58,7 @@ class ListGatewaysResponse extends \Google\Protobuf\Internal\Message
      * in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.gateway.v1.Gateway gateways = 1;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\Gateway\V1\Gateway>
      */
     public function getGateways()
     {
@@ -71,7 +71,7 @@ class ListGatewaysResponse extends \Google\Protobuf\Internal\Message
      * in the request.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.gateway.v1.Gateway gateways = 1;</code>
-     * @param array<\Saltoapis\Nebula\Gateway\V1\Gateway>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\Gateway\V1\Gateway[] $var
      * @return $this
      */
     public function setGateways($var)

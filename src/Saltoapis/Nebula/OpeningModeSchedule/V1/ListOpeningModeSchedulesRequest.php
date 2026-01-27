@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\OpeningModeSchedule\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The request message for [`ListOpeningModeSchedules`][salto.nebula.openingmodeschedule.v1.OpeningModeScheduleService.ListOpeningModeSchedules]

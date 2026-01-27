@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\Unit\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * Representation of an IAM policy inside the API
@@ -49,7 +49,7 @@ class Policy extends \Google\Protobuf\Internal\Message
      *           `installations/surelock-homes-hq/units/101/iam-policies/standard`.
      *     @type string $member
      *           Specifies the identity requesting access to this resource.
-     *     @type array<string>|\Google\Protobuf\Internal\RepeatedField $roles
+     *     @type string[] $roles
      *           The names of the roles this policy grants.
      * }
      */
@@ -118,7 +118,7 @@ class Policy extends \Google\Protobuf\Internal\Message
      * The names of the roles this policy grants.
      *
      * Generated from protobuf field <code>repeated string roles = 3;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<string>
      */
     public function getRoles()
     {
@@ -129,7 +129,7 @@ class Policy extends \Google\Protobuf\Internal\Message
      * The names of the roles this policy grants.
      *
      * Generated from protobuf field <code>repeated string roles = 3;</code>
-     * @param array<string>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param string[] $var
      * @return $this
      */
     public function setRoles($var)

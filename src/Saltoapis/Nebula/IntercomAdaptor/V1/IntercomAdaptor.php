@@ -6,8 +6,8 @@
 namespace Saltoapis\Nebula\IntercomAdaptor\V1;
 
 use Google\Protobuf\Internal\GPBType;
-use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
+use Google\Protobuf\RepeatedField;
 
 /**
  * The intercom adaptor object
@@ -142,7 +142,7 @@ class IntercomAdaptor extends \Google\Protobuf\Internal\Message
      *           Parent name, when intercom adaptor is connected to a gateway
      *     @type string $extender
      *           Parent name, when intercom adaptor is connected to an extender
-     *     @type array<\Saltoapis\Nebula\IntercomAdaptor\V1\IntercomAdaptorAccessPoint>|\Google\Protobuf\Internal\RepeatedField $access_points
+     *     @type \Saltoapis\Nebula\IntercomAdaptor\V1\IntercomAdaptorAccessPoint[] $access_points
      *           The access points that the intercom adaptor gives coverage to.
      *     @type bool $initialized
      *           Indicates whether this intercom adaptor has been initialized or not. This
@@ -170,13 +170,13 @@ class IntercomAdaptor extends \Google\Protobuf\Internal\Message
      *     @type string $intercom
      *           Reference to intercom system model it is connected to. It will be used to
      *           know which parametrization to apply when configuring it.
-     *     @type array<string>|\Google\Protobuf\Internal\RepeatedField $photos
+     *     @type string[] $photos
      *           The file resource names for the intercom adaptor photos. It must have the
      *           format of
      *           `installations/surelock-homes-hq/files/01DSYSJ1PR36VVC3MRFRV4DC7G`.
-     *     @type array<string>|\Google\Protobuf\Internal\RepeatedField $photo_uris
+     *     @type string[] $photo_uris
      *           The URIs to view the intercom adaptor photos.
-     *     @type array<string>|\Google\Protobuf\Internal\RepeatedField $readings
+     *     @type string[] $readings
      *           The file resource names for intercom adaptor readings retrieved from the device's bus.
      *           It comes into play when the learning process encounters unexpected issues, prompting expert
      *           analysis of the readings. It must have the
@@ -349,7 +349,7 @@ class IntercomAdaptor extends \Google\Protobuf\Internal\Message
      * The access points that the intercom adaptor gives coverage to.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.intercomadaptor.v1.IntercomAdaptorAccessPoint access_points = 6;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<\Saltoapis\Nebula\IntercomAdaptor\V1\IntercomAdaptorAccessPoint>
      */
     public function getAccessPoints()
     {
@@ -360,7 +360,7 @@ class IntercomAdaptor extends \Google\Protobuf\Internal\Message
      * The access points that the intercom adaptor gives coverage to.
      *
      * Generated from protobuf field <code>repeated .salto.nebula.intercomadaptor.v1.IntercomAdaptorAccessPoint access_points = 6;</code>
-     * @param array<\Saltoapis\Nebula\IntercomAdaptor\V1\IntercomAdaptorAccessPoint>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \Saltoapis\Nebula\IntercomAdaptor\V1\IntercomAdaptorAccessPoint[] $var
      * @return $this
      */
     public function setAccessPoints($var)
@@ -613,7 +613,7 @@ class IntercomAdaptor extends \Google\Protobuf\Internal\Message
      * `installations/surelock-homes-hq/files/01DSYSJ1PR36VVC3MRFRV4DC7G`.
      *
      * Generated from protobuf field <code>repeated string photos = 13;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<string>
      */
     public function getPhotos()
     {
@@ -626,7 +626,7 @@ class IntercomAdaptor extends \Google\Protobuf\Internal\Message
      * `installations/surelock-homes-hq/files/01DSYSJ1PR36VVC3MRFRV4DC7G`.
      *
      * Generated from protobuf field <code>repeated string photos = 13;</code>
-     * @param array<string>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param string[] $var
      * @return $this
      */
     public function setPhotos($var)
@@ -641,7 +641,7 @@ class IntercomAdaptor extends \Google\Protobuf\Internal\Message
      * The URIs to view the intercom adaptor photos.
      *
      * Generated from protobuf field <code>repeated string photo_uris = 14;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<string>
      */
     public function getPhotoUris()
     {
@@ -652,7 +652,7 @@ class IntercomAdaptor extends \Google\Protobuf\Internal\Message
      * The URIs to view the intercom adaptor photos.
      *
      * Generated from protobuf field <code>repeated string photo_uris = 14;</code>
-     * @param array<string>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param string[] $var
      * @return $this
      */
     public function setPhotoUris($var)
@@ -671,7 +671,7 @@ class IntercomAdaptor extends \Google\Protobuf\Internal\Message
      * `installations/surelock-homes-hq/files/01DSYSJ1PR36VVC3MRFRV4DC7G`.
      *
      * Generated from protobuf field <code>repeated string readings = 15;</code>
-     * @return \Google\Protobuf\Internal\RepeatedField
+     * @return RepeatedField<string>
      */
     public function getReadings()
     {
@@ -686,7 +686,7 @@ class IntercomAdaptor extends \Google\Protobuf\Internal\Message
      * `installations/surelock-homes-hq/files/01DSYSJ1PR36VVC3MRFRV4DC7G`.
      *
      * Generated from protobuf field <code>repeated string readings = 15;</code>
-     * @param array<string>|\Google\Protobuf\Internal\RepeatedField $var
+     * @param string[] $var
      * @return $this
      */
     public function setReadings($var)
