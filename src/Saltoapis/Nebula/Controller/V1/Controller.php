@@ -84,6 +84,13 @@ class Controller extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.google.protobuf.Timestamp last_event_time = 10;</code>
      */
     protected $last_event_time = null;
+    /**
+     * Enables or disables card key updates. This property is only relevant when
+     * the controller functions as a destination enabler.
+     *
+     * Generated from protobuf field <code>optional bool card_key_updater = 12;</code>
+     */
+    protected $card_key_updater = null;
     protected $parent_device;
 
     /**
@@ -128,6 +135,9 @@ class Controller extends \Google\Protobuf\Internal\Message
      *           offline controller.
      *     @type \Google\Protobuf\Timestamp $last_event_time
      *           The last time an event was received.
+     *     @type bool $card_key_updater
+     *           Enables or disables card key updates. This property is only relevant when
+     *           the controller functions as a destination enabler.
      * }
      */
     public function __construct($data = NULL) {
@@ -495,6 +505,44 @@ class Controller extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->last_event_time = $var;
+
+        return $this;
+    }
+
+    /**
+     * Enables or disables card key updates. This property is only relevant when
+     * the controller functions as a destination enabler.
+     *
+     * Generated from protobuf field <code>optional bool card_key_updater = 12;</code>
+     * @return bool
+     */
+    public function getCardKeyUpdater()
+    {
+        return isset($this->card_key_updater) ? $this->card_key_updater : false;
+    }
+
+    public function hasCardKeyUpdater()
+    {
+        return isset($this->card_key_updater);
+    }
+
+    public function clearCardKeyUpdater()
+    {
+        unset($this->card_key_updater);
+    }
+
+    /**
+     * Enables or disables card key updates. This property is only relevant when
+     * the controller functions as a destination enabler.
+     *
+     * Generated from protobuf field <code>optional bool card_key_updater = 12;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setCardKeyUpdater($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->card_key_updater = $var;
 
         return $this;
     }
