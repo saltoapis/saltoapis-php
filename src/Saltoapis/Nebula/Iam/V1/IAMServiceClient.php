@@ -28,7 +28,7 @@ class IAMServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Iam\V1\GetRoleRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Iam\V1\Role>
      */
     public function GetRole(\Saltoapis\Nebula\Iam\V1\GetRoleRequest $argument,
       $metadata = [], $options = []) {
@@ -45,7 +45,7 @@ class IAMServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Iam\V1\ListRolesRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Iam\V1\ListRolesResponse>
      */
     public function ListRoles(\Saltoapis\Nebula\Iam\V1\ListRolesRequest $argument,
       $metadata = [], $options = []) {

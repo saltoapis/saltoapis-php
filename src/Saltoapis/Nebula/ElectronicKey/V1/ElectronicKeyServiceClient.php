@@ -24,7 +24,7 @@ class ElectronicKeyServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\ElectronicKey\V1\CreateElectronicKeyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\ElectronicKey\V1\ElectronicKey>
      */
     public function CreateElectronicKey(\Saltoapis\Nebula\ElectronicKey\V1\CreateElectronicKeyRequest $argument,
       $metadata = [], $options = []) {
@@ -41,7 +41,7 @@ class ElectronicKeyServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\ElectronicKey\V1\GetElectronicKeyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\ElectronicKey\V1\ElectronicKey>
      */
     public function GetElectronicKey(\Saltoapis\Nebula\ElectronicKey\V1\GetElectronicKeyRequest $argument,
       $metadata = [], $options = []) {
@@ -58,7 +58,7 @@ class ElectronicKeyServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\ElectronicKey\V1\ListElectronicKeysRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\ElectronicKey\V1\ListElectronicKeysResponse>
      */
     public function ListElectronicKeys(\Saltoapis\Nebula\ElectronicKey\V1\ListElectronicKeysRequest $argument,
       $metadata = [], $options = []) {
@@ -75,7 +75,7 @@ class ElectronicKeyServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\ElectronicKey\V1\UpdateElectronicKeyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\ElectronicKey\V1\ElectronicKey>
      */
     public function UpdateElectronicKey(\Saltoapis\Nebula\ElectronicKey\V1\UpdateElectronicKeyRequest $argument,
       $metadata = [], $options = []) {
@@ -92,7 +92,7 @@ class ElectronicKeyServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\ElectronicKey\V1\DeleteElectronicKeyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Google\Protobuf\GPBEmpty>
      */
     public function DeleteElectronicKey(\Saltoapis\Nebula\ElectronicKey\V1\DeleteElectronicKeyRequest $argument,
       $metadata = [], $options = []) {
@@ -111,7 +111,7 @@ class ElectronicKeyServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\ElectronicKey\V1\BindElectronicKeyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\ElectronicKey\V1\BindElectronicKeyResponse>
      */
     public function BindElectronicKey(\Saltoapis\Nebula\ElectronicKey\V1\BindElectronicKeyRequest $argument,
       $metadata = [], $options = []) {
@@ -134,7 +134,7 @@ class ElectronicKeyServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\ElectronicKey\V1\UnbindElectronicKeyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\ElectronicKey\V1\UnbindElectronicKeyResponse>
      */
     public function UnbindElectronicKey(\Saltoapis\Nebula\ElectronicKey\V1\UnbindElectronicKeyRequest $argument,
       $metadata = [], $options = []) {
@@ -152,7 +152,7 @@ class ElectronicKeyServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\ElectronicKey\V1\InitializeElectronicKeyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function InitializeElectronicKey(\Saltoapis\Nebula\ElectronicKey\V1\InitializeElectronicKeyRequest $argument,
       $metadata = [], $options = []) {
@@ -171,7 +171,7 @@ class ElectronicKeyServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\ElectronicKey\V1\ConfigureElectronicKeyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function ConfigureElectronicKey(\Saltoapis\Nebula\ElectronicKey\V1\ConfigureElectronicKeyRequest $argument,
       $metadata = [], $options = []) {
@@ -191,7 +191,7 @@ class ElectronicKeyServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\ElectronicKey\V1\ResetElectronicKeyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function ResetElectronicKey(\Saltoapis\Nebula\ElectronicKey\V1\ResetElectronicKeyRequest $argument,
       $metadata = [], $options = []) {
@@ -209,7 +209,7 @@ class ElectronicKeyServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\ElectronicKey\V1\GenerateAuthorizationTokenRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\ElectronicKey\V1\GenerateAuthorizationTokenResponse>
      */
     public function GenerateAuthorizationToken(\Saltoapis\Nebula\ElectronicKey\V1\GenerateAuthorizationTokenRequest $argument,
       $metadata = [], $options = []) {
@@ -228,7 +228,7 @@ class ElectronicKeyServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\ElectronicKey\V1\GenerateFirmwareDownloadUriRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function GenerateFirmwareDownloadUri(\Saltoapis\Nebula\ElectronicKey\V1\GenerateFirmwareDownloadUriRequest $argument,
       $metadata = [], $options = []) {

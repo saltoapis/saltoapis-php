@@ -53,8 +53,13 @@ class Event extends \Google\Protobuf\Internal\Message
      */
     protected $occur_time = null;
     /**
-     * The event entry payload, represented as a structure that is
-     * expressed as a JSON object.
+     * While the entire field is not filterable, filtering is supported on
+     * the following sub-fields:
+     *   - data.access_point: Filters events by access point. For example:
+     *     "data.access_point == 'installations/surelock-homes-hq/access-points/baker-street-entrance'"
+     *   - data.user: Filters events by user. For example:
+     *     "data.user == 'installations/surelock-homes-hq/users/john-doe'"
+     * These can be used in the filter field of ListEventsRequest.
      *
      * Generated from protobuf field <code>.google.protobuf.Struct data = 6;</code>
      */
@@ -83,8 +88,13 @@ class Event extends \Google\Protobuf\Internal\Message
      *           time by the producer. All producers for the type of event are consistent
      *           in this respect.
      *     @type \Google\Protobuf\Struct $data
-     *           The event entry payload, represented as a structure that is
-     *           expressed as a JSON object.
+     *           While the entire field is not filterable, filtering is supported on
+     *           the following sub-fields:
+     *             - data.access_point: Filters events by access point. For example:
+     *               "data.access_point == 'installations/surelock-homes-hq/access-points/baker-street-entrance'"
+     *             - data.user: Filters events by user. For example:
+     *               "data.user == 'installations/surelock-homes-hq/users/john-doe'"
+     *           These can be used in the filter field of ListEventsRequest.
      * }
      */
     public function __construct($data = NULL) {
@@ -255,8 +265,13 @@ class Event extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * The event entry payload, represented as a structure that is
-     * expressed as a JSON object.
+     * While the entire field is not filterable, filtering is supported on
+     * the following sub-fields:
+     *   - data.access_point: Filters events by access point. For example:
+     *     "data.access_point == 'installations/surelock-homes-hq/access-points/baker-street-entrance'"
+     *   - data.user: Filters events by user. For example:
+     *     "data.user == 'installations/surelock-homes-hq/users/john-doe'"
+     * These can be used in the filter field of ListEventsRequest.
      *
      * Generated from protobuf field <code>.google.protobuf.Struct data = 6;</code>
      * @return \Google\Protobuf\Struct|null
@@ -277,8 +292,13 @@ class Event extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * The event entry payload, represented as a structure that is
-     * expressed as a JSON object.
+     * While the entire field is not filterable, filtering is supported on
+     * the following sub-fields:
+     *   - data.access_point: Filters events by access point. For example:
+     *     "data.access_point == 'installations/surelock-homes-hq/access-points/baker-street-entrance'"
+     *   - data.user: Filters events by user. For example:
+     *     "data.user == 'installations/surelock-homes-hq/users/john-doe'"
+     * These can be used in the filter field of ListEventsRequest.
      *
      * Generated from protobuf field <code>.google.protobuf.Struct data = 6;</code>
      * @param \Google\Protobuf\Struct $var

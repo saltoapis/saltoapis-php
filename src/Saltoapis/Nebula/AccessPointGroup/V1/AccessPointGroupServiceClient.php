@@ -28,7 +28,7 @@ class AccessPointGroupServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessPointGroup\V1\CreateAccessPointGroupRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\AccessPointGroup\V1\AccessPointGroup>
      */
     public function CreateAccessPointGroup(\Saltoapis\Nebula\AccessPointGroup\V1\CreateAccessPointGroupRequest $argument,
       $metadata = [], $options = []) {
@@ -45,7 +45,7 @@ class AccessPointGroupServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessPointGroup\V1\GetAccessPointGroupRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\AccessPointGroup\V1\AccessPointGroup>
      */
     public function GetAccessPointGroup(\Saltoapis\Nebula\AccessPointGroup\V1\GetAccessPointGroupRequest $argument,
       $metadata = [], $options = []) {
@@ -63,7 +63,7 @@ class AccessPointGroupServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessPointGroup\V1\ListAccessPointGroupsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\AccessPointGroup\V1\ListAccessPointGroupsResponse>
      */
     public function ListAccessPointGroups(\Saltoapis\Nebula\AccessPointGroup\V1\ListAccessPointGroupsRequest $argument,
       $metadata = [], $options = []) {
@@ -80,7 +80,7 @@ class AccessPointGroupServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessPointGroup\V1\UpdateAccessPointGroupRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\AccessPointGroup\V1\AccessPointGroup>
      */
     public function UpdateAccessPointGroup(\Saltoapis\Nebula\AccessPointGroup\V1\UpdateAccessPointGroupRequest $argument,
       $metadata = [], $options = []) {
@@ -97,7 +97,7 @@ class AccessPointGroupServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessPointGroup\V1\DeleteAccessPointGroupRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\AccessPointGroup\V1\AccessPointGroup>
      */
     public function DeleteAccessPointGroup(\Saltoapis\Nebula\AccessPointGroup\V1\DeleteAccessPointGroupRequest $argument,
       $metadata = [], $options = []) {
@@ -114,7 +114,7 @@ class AccessPointGroupServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessPointGroup\V1\CreateAccessPointGroupAccessPointRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\AccessPointGroup\V1\AccessPointGroupAccessPoint>
      */
     public function CreateAccessPointGroupAccessPoint(\Saltoapis\Nebula\AccessPointGroup\V1\CreateAccessPointGroupAccessPointRequest $argument,
       $metadata = [], $options = []) {
@@ -132,7 +132,7 @@ class AccessPointGroupServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessPointGroup\V1\BatchCreateAccessPointGroupAccessPointsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\AccessPointGroup\V1\BatchCreateAccessPointGroupAccessPointsResponse>
      */
     public function BatchCreateAccessPointGroupAccessPoints(\Saltoapis\Nebula\AccessPointGroup\V1\BatchCreateAccessPointGroupAccessPointsRequest $argument,
       $metadata = [], $options = []) {
@@ -149,7 +149,7 @@ class AccessPointGroupServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessPointGroup\V1\GetAccessPointGroupAccessPointRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\AccessPointGroup\V1\AccessPointGroupAccessPoint>
      */
     public function GetAccessPointGroupAccessPoint(\Saltoapis\Nebula\AccessPointGroup\V1\GetAccessPointGroupAccessPointRequest $argument,
       $metadata = [], $options = []) {
@@ -166,7 +166,7 @@ class AccessPointGroupServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessPointGroup\V1\ListAccessPointGroupAccessPointsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\AccessPointGroup\V1\ListAccessPointGroupAccessPointsResponse>
      */
     public function ListAccessPointGroupAccessPoints(\Saltoapis\Nebula\AccessPointGroup\V1\ListAccessPointGroupAccessPointsRequest $argument,
       $metadata = [], $options = []) {
@@ -183,7 +183,7 @@ class AccessPointGroupServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessPointGroup\V1\UpdateAccessPointGroupAccessPointRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\AccessPointGroup\V1\AccessPointGroupAccessPoint>
      */
     public function UpdateAccessPointGroupAccessPoint(\Saltoapis\Nebula\AccessPointGroup\V1\UpdateAccessPointGroupAccessPointRequest $argument,
       $metadata = [], $options = []) {
@@ -200,7 +200,7 @@ class AccessPointGroupServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessPointGroup\V1\DeleteAccessPointGroupAccessPointRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Google\Protobuf\GPBEmpty>
      */
     public function DeleteAccessPointGroupAccessPoint(\Saltoapis\Nebula\AccessPointGroup\V1\DeleteAccessPointGroupAccessPointRequest $argument,
       $metadata = [], $options = []) {
@@ -218,7 +218,7 @@ class AccessPointGroupServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessPointGroup\V1\BatchDeleteAccessPointGroupAccessPointsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\AccessPointGroup\V1\BatchDeleteAccessPointGroupAccessPointsResponse>
      */
     public function BatchDeleteAccessPointGroupAccessPoints(\Saltoapis\Nebula\AccessPointGroup\V1\BatchDeleteAccessPointGroupAccessPointsRequest $argument,
       $metadata = [], $options = []) {

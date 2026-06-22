@@ -50,6 +50,27 @@ class Unit extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.salto.nebula.unit.v1.Unit.PrivacySettings privacy_settings = 5;</code>
      */
     protected $privacy_settings = null;
+    /**
+     * The resource names of the default access rights to be associated within this unit.
+     * For example: installations/surelock-homes-hq/access-rights/baskerville.
+     * A maximum of 5 access rights can be specified.
+     *
+     * Generated from protobuf field <code>repeated string default_access_rights = 6;</code>
+     */
+    private $default_access_rights;
+    /**
+     * The resource name of the manager resource that currently controls this
+     * unit. A manager resource is any resource (such as a booking) that creates
+     * and governs the lifecycle of this unit.
+     * Example: "installations/surelock-homes-hq/bookings/watson-family-booking"
+     * If set, this unit is considered "managed" and cannot be modified directly.
+     * It behaves as a side-effect of the manager resource. For example, a unit
+     * may become managed when a booking is checked in, and unmanaged when the
+     * booking is checked out.
+     *
+     * Generated from protobuf field <code>optional string manager = 7;</code>
+     */
+    protected $manager = null;
 
     /**
      * Constructor.
@@ -71,6 +92,19 @@ class Unit extends \Google\Protobuf\Internal\Message
      *           The privacy settings of the unit. Can either be enabled or disabled.
      *           If enabled, owners and installation managers can see neither events
      *           nor users that belong to the unit.
+     *     @type string[] $default_access_rights
+     *           The resource names of the default access rights to be associated within this unit.
+     *           For example: installations/surelock-homes-hq/access-rights/baskerville.
+     *           A maximum of 5 access rights can be specified.
+     *     @type string $manager
+     *           The resource name of the manager resource that currently controls this
+     *           unit. A manager resource is any resource (such as a booking) that creates
+     *           and governs the lifecycle of this unit.
+     *           Example: "installations/surelock-homes-hq/bookings/watson-family-booking"
+     *           If set, this unit is considered "managed" and cannot be modified directly.
+     *           It behaves as a side-effect of the manager resource. For example, a unit
+     *           may become managed when a booking is checked in, and unmanaged when the
+     *           booking is checked out.
      * }
      */
     public function __construct($data = NULL) {
@@ -242,6 +276,86 @@ class Unit extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Saltoapis\Nebula\Unit\V1\Unit\PrivacySettings::class);
         $this->privacy_settings = $var;
+
+        return $this;
+    }
+
+    /**
+     * The resource names of the default access rights to be associated within this unit.
+     * For example: installations/surelock-homes-hq/access-rights/baskerville.
+     * A maximum of 5 access rights can be specified.
+     *
+     * Generated from protobuf field <code>repeated string default_access_rights = 6;</code>
+     * @return RepeatedField<string>
+     */
+    public function getDefaultAccessRights()
+    {
+        return $this->default_access_rights;
+    }
+
+    /**
+     * The resource names of the default access rights to be associated within this unit.
+     * For example: installations/surelock-homes-hq/access-rights/baskerville.
+     * A maximum of 5 access rights can be specified.
+     *
+     * Generated from protobuf field <code>repeated string default_access_rights = 6;</code>
+     * @param string[] $var
+     * @return $this
+     */
+    public function setDefaultAccessRights($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->default_access_rights = $arr;
+
+        return $this;
+    }
+
+    /**
+     * The resource name of the manager resource that currently controls this
+     * unit. A manager resource is any resource (such as a booking) that creates
+     * and governs the lifecycle of this unit.
+     * Example: "installations/surelock-homes-hq/bookings/watson-family-booking"
+     * If set, this unit is considered "managed" and cannot be modified directly.
+     * It behaves as a side-effect of the manager resource. For example, a unit
+     * may become managed when a booking is checked in, and unmanaged when the
+     * booking is checked out.
+     *
+     * Generated from protobuf field <code>optional string manager = 7;</code>
+     * @return string
+     */
+    public function getManager()
+    {
+        return isset($this->manager) ? $this->manager : '';
+    }
+
+    public function hasManager()
+    {
+        return isset($this->manager);
+    }
+
+    public function clearManager()
+    {
+        unset($this->manager);
+    }
+
+    /**
+     * The resource name of the manager resource that currently controls this
+     * unit. A manager resource is any resource (such as a booking) that creates
+     * and governs the lifecycle of this unit.
+     * Example: "installations/surelock-homes-hq/bookings/watson-family-booking"
+     * If set, this unit is considered "managed" and cannot be modified directly.
+     * It behaves as a side-effect of the manager resource. For example, a unit
+     * may become managed when a booking is checked in, and unmanaged when the
+     * booking is checked out.
+     *
+     * Generated from protobuf field <code>optional string manager = 7;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setManager($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->manager = $var;
 
         return $this;
     }

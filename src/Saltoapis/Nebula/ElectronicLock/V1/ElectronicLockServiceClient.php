@@ -33,7 +33,7 @@ class ElectronicLockServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\ElectronicLock\V1\CreateElectronicLockRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\ElectronicLock\V1\ElectronicLock>
      */
     public function CreateElectronicLock(\Saltoapis\Nebula\ElectronicLock\V1\CreateElectronicLockRequest $argument,
       $metadata = [], $options = []) {
@@ -50,7 +50,7 @@ class ElectronicLockServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\ElectronicLock\V1\GetElectronicLockRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\ElectronicLock\V1\ElectronicLock>
      */
     public function GetElectronicLock(\Saltoapis\Nebula\ElectronicLock\V1\GetElectronicLockRequest $argument,
       $metadata = [], $options = []) {
@@ -67,7 +67,7 @@ class ElectronicLockServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\ElectronicLock\V1\ListElectronicLocksRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\ElectronicLock\V1\ListElectronicLocksResponse>
      */
     public function ListElectronicLocks(\Saltoapis\Nebula\ElectronicLock\V1\ListElectronicLocksRequest $argument,
       $metadata = [], $options = []) {
@@ -84,7 +84,7 @@ class ElectronicLockServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\ElectronicLock\V1\UpdateElectronicLockRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\ElectronicLock\V1\ElectronicLock>
      */
     public function UpdateElectronicLock(\Saltoapis\Nebula\ElectronicLock\V1\UpdateElectronicLockRequest $argument,
       $metadata = [], $options = []) {
@@ -101,7 +101,7 @@ class ElectronicLockServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\ElectronicLock\V1\DeleteElectronicLockRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Google\Protobuf\GPBEmpty>
      */
     public function DeleteElectronicLock(\Saltoapis\Nebula\ElectronicLock\V1\DeleteElectronicLockRequest $argument,
       $metadata = [], $options = []) {
@@ -120,7 +120,7 @@ class ElectronicLockServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\ElectronicLock\V1\BindElectronicLockRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\ElectronicLock\V1\BindElectronicLockResponse>
      */
     public function BindElectronicLock(\Saltoapis\Nebula\ElectronicLock\V1\BindElectronicLockRequest $argument,
       $metadata = [], $options = []) {
@@ -143,7 +143,7 @@ class ElectronicLockServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\ElectronicLock\V1\UnbindElectronicLockRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\ElectronicLock\V1\UnbindElectronicLockResponse>
      */
     public function UnbindElectronicLock(\Saltoapis\Nebula\ElectronicLock\V1\UnbindElectronicLockRequest $argument,
       $metadata = [], $options = []) {
@@ -161,7 +161,7 @@ class ElectronicLockServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\ElectronicLock\V1\InitializeElectronicLockRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function InitializeElectronicLock(\Saltoapis\Nebula\ElectronicLock\V1\InitializeElectronicLockRequest $argument,
       $metadata = [], $options = []) {
@@ -180,7 +180,7 @@ class ElectronicLockServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\ElectronicLock\V1\ConfigureElectronicLockRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function ConfigureElectronicLock(\Saltoapis\Nebula\ElectronicLock\V1\ConfigureElectronicLockRequest $argument,
       $metadata = [], $options = []) {
@@ -200,7 +200,7 @@ class ElectronicLockServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\ElectronicLock\V1\ResetElectronicLockRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function ResetElectronicLock(\Saltoapis\Nebula\ElectronicLock\V1\ResetElectronicLockRequest $argument,
       $metadata = [], $options = []) {
@@ -218,7 +218,7 @@ class ElectronicLockServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\ElectronicLock\V1\UpdateElectronicLockFirmwareRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function UpdateElectronicLockFirmware(\Saltoapis\Nebula\ElectronicLock\V1\UpdateElectronicLockFirmwareRequest $argument,
       $metadata = [], $options = []) {
@@ -236,7 +236,7 @@ class ElectronicLockServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\ElectronicLock\V1\GenerateAuthorizationTokenRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\ElectronicLock\V1\GenerateAuthorizationTokenResponse>
      */
     public function GenerateAuthorizationToken(\Saltoapis\Nebula\ElectronicLock\V1\GenerateAuthorizationTokenRequest $argument,
       $metadata = [], $options = []) {
@@ -255,7 +255,7 @@ class ElectronicLockServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\ElectronicLock\V1\GenerateFirmwareDownloadUriRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function GenerateFirmwareDownloadUri(\Saltoapis\Nebula\ElectronicLock\V1\GenerateFirmwareDownloadUriRequest $argument,
       $metadata = [], $options = []) {

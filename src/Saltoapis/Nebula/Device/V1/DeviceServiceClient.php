@@ -26,7 +26,7 @@ class DeviceServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Device\V1\GetDeviceRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Device\V1\Device>
      */
     public function GetDevice(\Saltoapis\Nebula\Device\V1\GetDeviceRequest $argument,
       $metadata = [], $options = []) {
@@ -43,7 +43,7 @@ class DeviceServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Device\V1\ListDevicesRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Device\V1\ListDevicesResponse>
      */
     public function ListDevices(\Saltoapis\Nebula\Device\V1\ListDevicesRequest $argument,
       $metadata = [], $options = []) {

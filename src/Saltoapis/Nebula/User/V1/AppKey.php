@@ -36,10 +36,7 @@ class AppKey extends \Google\Protobuf\Internal\Message
     protected $state = 0;
     /**
      * Indicates whether this app key has pending updates or not.
-     * This field cannot be modified using a standard
-     * [`UpdateAppKey`][salto.nebula.user.v1.UserService.UpdateAppKey]
-     * operation. To change the value of this field, you must call
-     * [`OutdateAppKey`][salto.nebula.user.v1.UserService.OutdateAppKey].
+     * Deprecated: This field is deprecated and should not be used.
      *
      * Generated from protobuf field <code>bool outdated = 3;</code>
      */
@@ -63,10 +60,7 @@ class AppKey extends \Google\Protobuf\Internal\Message
      *           [`AssignAppKey`][salto.nebula.user.v1.UserService.AssignAppKey].
      *     @type bool $outdated
      *           Indicates whether this app key has pending updates or not.
-     *           This field cannot be modified using a standard
-     *           [`UpdateAppKey`][salto.nebula.user.v1.UserService.UpdateAppKey]
-     *           operation. To change the value of this field, you must call
-     *           [`OutdateAppKey`][salto.nebula.user.v1.UserService.OutdateAppKey].
+     *           Deprecated: This field is deprecated and should not be used.
      * }
      */
     public function __construct($data = NULL) {
@@ -140,10 +134,7 @@ class AppKey extends \Google\Protobuf\Internal\Message
 
     /**
      * Indicates whether this app key has pending updates or not.
-     * This field cannot be modified using a standard
-     * [`UpdateAppKey`][salto.nebula.user.v1.UserService.UpdateAppKey]
-     * operation. To change the value of this field, you must call
-     * [`OutdateAppKey`][salto.nebula.user.v1.UserService.OutdateAppKey].
+     * Deprecated: This field is deprecated and should not be used.
      *
      * Generated from protobuf field <code>bool outdated = 3;</code>
      * @return bool
@@ -155,10 +146,7 @@ class AppKey extends \Google\Protobuf\Internal\Message
 
     /**
      * Indicates whether this app key has pending updates or not.
-     * This field cannot be modified using a standard
-     * [`UpdateAppKey`][salto.nebula.user.v1.UserService.UpdateAppKey]
-     * operation. To change the value of this field, you must call
-     * [`OutdateAppKey`][salto.nebula.user.v1.UserService.OutdateAppKey].
+     * Deprecated: This field is deprecated and should not be used.
      *
      * Generated from protobuf field <code>bool outdated = 3;</code>
      * @param bool $var

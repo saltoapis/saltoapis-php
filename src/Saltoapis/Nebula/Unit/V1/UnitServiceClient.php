@@ -24,7 +24,7 @@ class UnitServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Unit\V1\CreateUnitRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Unit\V1\Unit>
      */
     public function CreateUnit(\Saltoapis\Nebula\Unit\V1\CreateUnitRequest $argument,
       $metadata = [], $options = []) {
@@ -41,7 +41,7 @@ class UnitServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Unit\V1\GetUnitRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Unit\V1\Unit>
      */
     public function GetUnit(\Saltoapis\Nebula\Unit\V1\GetUnitRequest $argument,
       $metadata = [], $options = []) {
@@ -58,7 +58,7 @@ class UnitServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Unit\V1\ListUnitsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Unit\V1\ListUnitsResponse>
      */
     public function ListUnits(\Saltoapis\Nebula\Unit\V1\ListUnitsRequest $argument,
       $metadata = [], $options = []) {
@@ -75,7 +75,7 @@ class UnitServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Unit\V1\UpdateUnitRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Unit\V1\Unit>
      */
     public function UpdateUnit(\Saltoapis\Nebula\Unit\V1\UpdateUnitRequest $argument,
       $metadata = [], $options = []) {
@@ -92,7 +92,7 @@ class UnitServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Unit\V1\DeleteUnitRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Google\Protobuf\GPBEmpty>
      */
     public function DeleteUnit(\Saltoapis\Nebula\Unit\V1\DeleteUnitRequest $argument,
       $metadata = [], $options = []) {
@@ -112,7 +112,7 @@ class UnitServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Unit\V1\CleanOutUnitRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Unit\V1\CleanOutUnitResponse>
      */
     public function CleanOutUnit(\Saltoapis\Nebula\Unit\V1\CleanOutUnitRequest $argument,
       $metadata = [], $options = []) {
@@ -132,7 +132,7 @@ class UnitServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Unit\V1\MoveInUnitRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Unit\V1\MoveInUnitResponse>
      */
     public function MoveInUnit(\Saltoapis\Nebula\Unit\V1\MoveInUnitRequest $argument,
       $metadata = [], $options = []) {
@@ -155,7 +155,7 @@ class UnitServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Unit\V1\MoveOutUnitRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Unit\V1\MoveOutUnitResponse>
      */
     public function MoveOutUnit(\Saltoapis\Nebula\Unit\V1\MoveOutUnitRequest $argument,
       $metadata = [], $options = []) {
@@ -172,7 +172,7 @@ class UnitServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Unit\V1\CreatePolicyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Unit\V1\Policy>
      */
     public function CreatePolicy(\Saltoapis\Nebula\Unit\V1\CreatePolicyRequest $argument,
       $metadata = [], $options = []) {
@@ -189,7 +189,7 @@ class UnitServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Unit\V1\GetPolicyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Unit\V1\Policy>
      */
     public function GetPolicy(\Saltoapis\Nebula\Unit\V1\GetPolicyRequest $argument,
       $metadata = [], $options = []) {
@@ -206,7 +206,7 @@ class UnitServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Unit\V1\ListPoliciesRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Unit\V1\ListPoliciesResponse>
      */
     public function ListPolicies(\Saltoapis\Nebula\Unit\V1\ListPoliciesRequest $argument,
       $metadata = [], $options = []) {
@@ -223,7 +223,7 @@ class UnitServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Unit\V1\UpdatePolicyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Unit\V1\Policy>
      */
     public function UpdatePolicy(\Saltoapis\Nebula\Unit\V1\UpdatePolicyRequest $argument,
       $metadata = [], $options = []) {
@@ -240,7 +240,7 @@ class UnitServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Unit\V1\DeletePolicyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Google\Protobuf\GPBEmpty>
      */
     public function DeletePolicy(\Saltoapis\Nebula\Unit\V1\DeletePolicyRequest $argument,
       $metadata = [], $options = []) {
@@ -259,7 +259,7 @@ class UnitServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Unit\V1\TestPermissionsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Unit\V1\TestPermissionsResponse>
      */
     public function TestPermissions(\Saltoapis\Nebula\Unit\V1\TestPermissionsRequest $argument,
       $metadata = [], $options = []) {

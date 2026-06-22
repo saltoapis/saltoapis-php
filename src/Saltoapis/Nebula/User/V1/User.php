@@ -126,6 +126,26 @@ class User extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool blocked = 14;</code>
      */
     protected $blocked = false;
+    /**
+     * The resource name of the manager resource that owns this user. A manager
+     * resource is any resource (such as a booking) that creates and governs the
+     * lifecycle of this user.
+     * Example: "installations/surelock-homes-hq/bookings/watson-family-booking"
+     * If set, this user is considered "managed" and cannot be modified directly.
+     * It behaves as a side-effect of the manager resource.
+     *
+     * Generated from protobuf field <code>optional string manager = 17;</code>
+     */
+    protected $manager = null;
+    /**
+     * Indicates whether the user has permission to override Do Not Disturb mode
+     * on a device.
+     * Example: a user with this field set to true can unlock a device while
+     * its Do Not Disturb mode is active.
+     *
+     * Generated from protobuf field <code>bool allow_do_not_disturb_override = 18;</code>
+     */
+    protected $allow_do_not_disturb_override = false;
 
     /**
      * Constructor.
@@ -179,6 +199,18 @@ class User extends \Google\Protobuf\Internal\Message
      *           perform any admin actions, that is, if they have a management role this
      *           will no longer be valid. If the user has a key then it will no longer
      *           unlock access points.
+     *     @type string $manager
+     *           The resource name of the manager resource that owns this user. A manager
+     *           resource is any resource (such as a booking) that creates and governs the
+     *           lifecycle of this user.
+     *           Example: "installations/surelock-homes-hq/bookings/watson-family-booking"
+     *           If set, this user is considered "managed" and cannot be modified directly.
+     *           It behaves as a side-effect of the manager resource.
+     *     @type bool $allow_do_not_disturb_override
+     *           Indicates whether the user has permission to override Do Not Disturb mode
+     *           on a device.
+     *           Example: a user with this field set to true can unlock a device while
+     *           its Do Not Disturb mode is active.
      * }
      */
     public function __construct($data = NULL) {
@@ -736,6 +768,84 @@ class User extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->blocked = $var;
+
+        return $this;
+    }
+
+    /**
+     * The resource name of the manager resource that owns this user. A manager
+     * resource is any resource (such as a booking) that creates and governs the
+     * lifecycle of this user.
+     * Example: "installations/surelock-homes-hq/bookings/watson-family-booking"
+     * If set, this user is considered "managed" and cannot be modified directly.
+     * It behaves as a side-effect of the manager resource.
+     *
+     * Generated from protobuf field <code>optional string manager = 17;</code>
+     * @return string
+     */
+    public function getManager()
+    {
+        return isset($this->manager) ? $this->manager : '';
+    }
+
+    public function hasManager()
+    {
+        return isset($this->manager);
+    }
+
+    public function clearManager()
+    {
+        unset($this->manager);
+    }
+
+    /**
+     * The resource name of the manager resource that owns this user. A manager
+     * resource is any resource (such as a booking) that creates and governs the
+     * lifecycle of this user.
+     * Example: "installations/surelock-homes-hq/bookings/watson-family-booking"
+     * If set, this user is considered "managed" and cannot be modified directly.
+     * It behaves as a side-effect of the manager resource.
+     *
+     * Generated from protobuf field <code>optional string manager = 17;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setManager($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->manager = $var;
+
+        return $this;
+    }
+
+    /**
+     * Indicates whether the user has permission to override Do Not Disturb mode
+     * on a device.
+     * Example: a user with this field set to true can unlock a device while
+     * its Do Not Disturb mode is active.
+     *
+     * Generated from protobuf field <code>bool allow_do_not_disturb_override = 18;</code>
+     * @return bool
+     */
+    public function getAllowDoNotDisturbOverride()
+    {
+        return $this->allow_do_not_disturb_override;
+    }
+
+    /**
+     * Indicates whether the user has permission to override Do Not Disturb mode
+     * on a device.
+     * Example: a user with this field set to true can unlock a device while
+     * its Do Not Disturb mode is active.
+     *
+     * Generated from protobuf field <code>bool allow_do_not_disturb_override = 18;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setAllowDoNotDisturbOverride($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->allow_do_not_disturb_override = $var;
 
         return $this;
     }

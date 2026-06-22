@@ -28,7 +28,7 @@ class DestinationServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Destination\V1\CreateDestinationRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Destination\V1\Destination>
      */
     public function CreateDestination(\Saltoapis\Nebula\Destination\V1\CreateDestinationRequest $argument,
       $metadata = [], $options = []) {
@@ -45,7 +45,7 @@ class DestinationServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Destination\V1\GetDestinationRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Destination\V1\Destination>
      */
     public function GetDestination(\Saltoapis\Nebula\Destination\V1\GetDestinationRequest $argument,
       $metadata = [], $options = []) {
@@ -62,7 +62,7 @@ class DestinationServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Destination\V1\BatchGetDestinationsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Destination\V1\BatchGetDestinationsResponse>
      */
     public function BatchGetDestinations(\Saltoapis\Nebula\Destination\V1\BatchGetDestinationsRequest $argument,
       $metadata = [], $options = []) {
@@ -79,7 +79,7 @@ class DestinationServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Destination\V1\UpdateDestinationRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Destination\V1\Destination>
      */
     public function UpdateDestination(\Saltoapis\Nebula\Destination\V1\UpdateDestinationRequest $argument,
       $metadata = [], $options = []) {
@@ -96,7 +96,7 @@ class DestinationServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Destination\V1\ListDestinationsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Destination\V1\ListDestinationsResponse>
      */
     public function ListDestinations(\Saltoapis\Nebula\Destination\V1\ListDestinationsRequest $argument,
       $metadata = [], $options = []) {
@@ -113,7 +113,7 @@ class DestinationServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Destination\V1\DeleteDestinationRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Google\Protobuf\GPBEmpty>
      */
     public function DeleteDestination(\Saltoapis\Nebula\Destination\V1\DeleteDestinationRequest $argument,
       $metadata = [], $options = []) {

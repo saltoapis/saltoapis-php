@@ -29,7 +29,7 @@ class ControllerServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Controller\V1\CreateControllerRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Controller\V1\Controller>
      */
     public function CreateController(\Saltoapis\Nebula\Controller\V1\CreateControllerRequest $argument,
       $metadata = [], $options = []) {
@@ -46,7 +46,7 @@ class ControllerServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Controller\V1\GetControllerRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Controller\V1\Controller>
      */
     public function GetController(\Saltoapis\Nebula\Controller\V1\GetControllerRequest $argument,
       $metadata = [], $options = []) {
@@ -63,7 +63,7 @@ class ControllerServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Controller\V1\ListControllersRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Controller\V1\ListControllersResponse>
      */
     public function ListControllers(\Saltoapis\Nebula\Controller\V1\ListControllersRequest $argument,
       $metadata = [], $options = []) {
@@ -80,7 +80,7 @@ class ControllerServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Controller\V1\UpdateControllerRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Controller\V1\Controller>
      */
     public function UpdateController(\Saltoapis\Nebula\Controller\V1\UpdateControllerRequest $argument,
       $metadata = [], $options = []) {
@@ -97,7 +97,7 @@ class ControllerServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Controller\V1\DeleteControllerRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Google\Protobuf\GPBEmpty>
      */
     public function DeleteController(\Saltoapis\Nebula\Controller\V1\DeleteControllerRequest $argument,
       $metadata = [], $options = []) {
@@ -116,7 +116,7 @@ class ControllerServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Controller\V1\BindControllerRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Controller\V1\BindControllerResponse>
      */
     public function BindController(\Saltoapis\Nebula\Controller\V1\BindControllerRequest $argument,
       $metadata = [], $options = []) {
@@ -139,7 +139,7 @@ class ControllerServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Controller\V1\UnbindControllerRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Controller\V1\UnbindControllerResponse>
      */
     public function UnbindController(\Saltoapis\Nebula\Controller\V1\UnbindControllerRequest $argument,
       $metadata = [], $options = []) {
@@ -157,7 +157,7 @@ class ControllerServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Controller\V1\InitializeControllerRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function InitializeController(\Saltoapis\Nebula\Controller\V1\InitializeControllerRequest $argument,
       $metadata = [], $options = []) {
@@ -176,7 +176,7 @@ class ControllerServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Controller\V1\ConfigureControllerRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function ConfigureController(\Saltoapis\Nebula\Controller\V1\ConfigureControllerRequest $argument,
       $metadata = [], $options = []) {
@@ -196,7 +196,7 @@ class ControllerServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Controller\V1\ResetControllerRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function ResetController(\Saltoapis\Nebula\Controller\V1\ResetControllerRequest $argument,
       $metadata = [], $options = []) {
@@ -214,7 +214,7 @@ class ControllerServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Controller\V1\UpdateControllerFirmwareRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function UpdateControllerFirmware(\Saltoapis\Nebula\Controller\V1\UpdateControllerFirmwareRequest $argument,
       $metadata = [], $options = []) {
@@ -232,7 +232,7 @@ class ControllerServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Controller\V1\GenerateAuthorizationTokenRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Controller\V1\GenerateAuthorizationTokenResponse>
      */
     public function GenerateAuthorizationToken(\Saltoapis\Nebula\Controller\V1\GenerateAuthorizationTokenRequest $argument,
       $metadata = [], $options = []) {
@@ -251,7 +251,7 @@ class ControllerServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Controller\V1\GenerateFirmwareDownloadUriRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function GenerateFirmwareDownloadUri(\Saltoapis\Nebula\Controller\V1\GenerateFirmwareDownloadUriRequest $argument,
       $metadata = [], $options = []) {
@@ -268,7 +268,7 @@ class ControllerServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Controller\V1\CreateControllerRelayRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Controller\V1\ControllerRelay>
      */
     public function CreateControllerRelay(\Saltoapis\Nebula\Controller\V1\CreateControllerRelayRequest $argument,
       $metadata = [], $options = []) {
@@ -286,7 +286,7 @@ class ControllerServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Controller\V1\BatchCreateControllerRelaysRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Controller\V1\BatchCreateControllerRelaysResponse>
      */
     public function BatchCreateControllerRelays(\Saltoapis\Nebula\Controller\V1\BatchCreateControllerRelaysRequest $argument,
       $metadata = [], $options = []) {
@@ -303,7 +303,7 @@ class ControllerServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Controller\V1\GetControllerRelayRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Controller\V1\ControllerRelay>
      */
     public function GetControllerRelay(\Saltoapis\Nebula\Controller\V1\GetControllerRelayRequest $argument,
       $metadata = [], $options = []) {
@@ -320,7 +320,7 @@ class ControllerServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Controller\V1\ListControllerRelaysRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Controller\V1\ListControllerRelaysResponse>
      */
     public function ListControllerRelays(\Saltoapis\Nebula\Controller\V1\ListControllerRelaysRequest $argument,
       $metadata = [], $options = []) {
@@ -337,7 +337,7 @@ class ControllerServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Controller\V1\UpdateControllerRelayRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Controller\V1\ControllerRelay>
      */
     public function UpdateControllerRelay(\Saltoapis\Nebula\Controller\V1\UpdateControllerRelayRequest $argument,
       $metadata = [], $options = []) {
@@ -354,7 +354,7 @@ class ControllerServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Controller\V1\BatchUpdateControllerRelaysRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Controller\V1\BatchUpdateControllerRelaysResponse>
      */
     public function BatchUpdateControllerRelays(\Saltoapis\Nebula\Controller\V1\BatchUpdateControllerRelaysRequest $argument,
       $metadata = [], $options = []) {
@@ -371,7 +371,7 @@ class ControllerServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Controller\V1\DeleteControllerRelayRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Google\Protobuf\GPBEmpty>
      */
     public function DeleteControllerRelay(\Saltoapis\Nebula\Controller\V1\DeleteControllerRelayRequest $argument,
       $metadata = [], $options = []) {
@@ -388,7 +388,7 @@ class ControllerServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Controller\V1\BatchDeleteControllerRelaysRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Controller\V1\BatchDeleteControllerRelaysResponse>
      */
     public function BatchDeleteControllerRelays(\Saltoapis\Nebula\Controller\V1\BatchDeleteControllerRelaysRequest $argument,
       $metadata = [], $options = []) {

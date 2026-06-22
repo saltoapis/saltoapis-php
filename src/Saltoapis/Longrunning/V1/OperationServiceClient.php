@@ -32,7 +32,7 @@ class OperationServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Longrunning\V1\GetOperationRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function GetOperation(\Saltoapis\Longrunning\V1\GetOperationRequest $argument,
       $metadata = [], $options = []) {
@@ -49,7 +49,7 @@ class OperationServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Longrunning\V1\ListOperationsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\ListOperationsResponse>
      */
     public function ListOperations(\Saltoapis\Longrunning\V1\ListOperationsRequest $argument,
       $metadata = [], $options = []) {
@@ -66,7 +66,7 @@ class OperationServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Longrunning\V1\DeleteOperationRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Google\Protobuf\GPBEmpty>
      */
     public function DeleteOperation(\Saltoapis\Longrunning\V1\DeleteOperationRequest $argument,
       $metadata = [], $options = []) {
@@ -92,7 +92,7 @@ class OperationServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Longrunning\V1\CancelOperationRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Google\Protobuf\GPBEmpty>
      */
     public function CancelOperation(\Saltoapis\Longrunning\V1\CancelOperationRequest $argument,
       $metadata = [], $options = []) {

@@ -26,7 +26,7 @@ class ExtenderServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Extender\V1\CreateExtenderRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Extender\V1\Extender>
      */
     public function CreateExtender(\Saltoapis\Nebula\Extender\V1\CreateExtenderRequest $argument,
       $metadata = [], $options = []) {
@@ -43,7 +43,7 @@ class ExtenderServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Extender\V1\GetExtenderRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Extender\V1\Extender>
      */
     public function GetExtender(\Saltoapis\Nebula\Extender\V1\GetExtenderRequest $argument,
       $metadata = [], $options = []) {
@@ -60,7 +60,7 @@ class ExtenderServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Extender\V1\ListExtendersRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Extender\V1\ListExtendersResponse>
      */
     public function ListExtenders(\Saltoapis\Nebula\Extender\V1\ListExtendersRequest $argument,
       $metadata = [], $options = []) {
@@ -77,7 +77,7 @@ class ExtenderServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Extender\V1\UpdateExtenderRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Extender\V1\Extender>
      */
     public function UpdateExtender(\Saltoapis\Nebula\Extender\V1\UpdateExtenderRequest $argument,
       $metadata = [], $options = []) {
@@ -94,7 +94,7 @@ class ExtenderServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Extender\V1\DeleteExtenderRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Google\Protobuf\GPBEmpty>
      */
     public function DeleteExtender(\Saltoapis\Nebula\Extender\V1\DeleteExtenderRequest $argument,
       $metadata = [], $options = []) {
@@ -112,7 +112,7 @@ class ExtenderServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Extender\V1\BindExtenderRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Extender\V1\BindExtenderResponse>
      */
     public function BindExtender(\Saltoapis\Nebula\Extender\V1\BindExtenderRequest $argument,
       $metadata = [], $options = []) {
@@ -130,7 +130,7 @@ class ExtenderServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Extender\V1\UnbindExtenderRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Extender\V1\UnbindExtenderResponse>
      */
     public function UnbindExtender(\Saltoapis\Nebula\Extender\V1\UnbindExtenderRequest $argument,
       $metadata = [], $options = []) {
@@ -148,7 +148,7 @@ class ExtenderServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Extender\V1\UpdateExtenderFirmwareRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function UpdateExtenderFirmware(\Saltoapis\Nebula\Extender\V1\UpdateExtenderFirmwareRequest $argument,
       $metadata = [], $options = []) {
@@ -167,7 +167,7 @@ class ExtenderServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Extender\V1\ResetExtenderRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function ResetExtender(\Saltoapis\Nebula\Extender\V1\ResetExtenderRequest $argument,
       $metadata = [], $options = []) {
@@ -186,7 +186,7 @@ class ExtenderServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Extender\V1\GenerateFirmwareDownloadUriRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function GenerateFirmwareDownloadUri(\Saltoapis\Nebula\Extender\V1\GenerateFirmwareDownloadUriRequest $argument,
       $metadata = [], $options = []) {
