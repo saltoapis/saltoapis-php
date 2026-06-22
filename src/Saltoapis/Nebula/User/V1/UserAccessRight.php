@@ -77,6 +77,17 @@ class UserAccessRight extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>optional .google.protobuf.Timestamp expire_time = 7;</code>
      */
     protected $expire_time = null;
+    /**
+     * The resource name of the manager resource that owns this user access right. A manager
+     * resource is any resource (such as a booking) that creates and governs the
+     * lifecycle of this user access right.
+     * Example: "installations/surelock-homes-hq/bookings/watson-family-booking"
+     * If set, this user access right is considered "managed" and cannot be modified directly.
+     * It behaves as a side-effect of the manager resource.
+     *
+     * Generated from protobuf field <code>optional string manager = 8;</code>
+     */
+    protected $manager = null;
 
     /**
      * Constructor.
@@ -117,6 +128,13 @@ class UserAccessRight extends \Google\Protobuf\Internal\Message
      *              - Be at least 10 minutes after activation time.
      *              - Always be a multiple of 10 minutes. The system does not round or adjust expiration time for you.
      *                For example, if you attempt to set 10:15, the system will reject it.
+     *     @type string $manager
+     *           The resource name of the manager resource that owns this user access right. A manager
+     *           resource is any resource (such as a booking) that creates and governs the
+     *           lifecycle of this user access right.
+     *           Example: "installations/surelock-homes-hq/bookings/watson-family-booking"
+     *           If set, this user access right is considered "managed" and cannot be modified directly.
+     *           It behaves as a side-effect of the manager resource.
      * }
      */
     public function __construct($data = NULL) {
@@ -360,6 +378,52 @@ class UserAccessRight extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
         $this->expire_time = $var;
+
+        return $this;
+    }
+
+    /**
+     * The resource name of the manager resource that owns this user access right. A manager
+     * resource is any resource (such as a booking) that creates and governs the
+     * lifecycle of this user access right.
+     * Example: "installations/surelock-homes-hq/bookings/watson-family-booking"
+     * If set, this user access right is considered "managed" and cannot be modified directly.
+     * It behaves as a side-effect of the manager resource.
+     *
+     * Generated from protobuf field <code>optional string manager = 8;</code>
+     * @return string
+     */
+    public function getManager()
+    {
+        return isset($this->manager) ? $this->manager : '';
+    }
+
+    public function hasManager()
+    {
+        return isset($this->manager);
+    }
+
+    public function clearManager()
+    {
+        unset($this->manager);
+    }
+
+    /**
+     * The resource name of the manager resource that owns this user access right. A manager
+     * resource is any resource (such as a booking) that creates and governs the
+     * lifecycle of this user access right.
+     * Example: "installations/surelock-homes-hq/bookings/watson-family-booking"
+     * If set, this user access right is considered "managed" and cannot be modified directly.
+     * It behaves as a side-effect of the manager resource.
+     *
+     * Generated from protobuf field <code>optional string manager = 8;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setManager($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->manager = $var;
 
         return $this;
     }

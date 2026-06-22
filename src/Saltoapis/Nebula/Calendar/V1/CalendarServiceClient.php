@@ -26,7 +26,7 @@ class CalendarServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Calendar\V1\CreateCalendarRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Calendar\V1\Calendar>
      */
     public function CreateCalendar(\Saltoapis\Nebula\Calendar\V1\CreateCalendarRequest $argument,
       $metadata = [], $options = []) {
@@ -43,7 +43,7 @@ class CalendarServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Calendar\V1\GetCalendarRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Calendar\V1\Calendar>
      */
     public function GetCalendar(\Saltoapis\Nebula\Calendar\V1\GetCalendarRequest $argument,
       $metadata = [], $options = []) {
@@ -60,7 +60,7 @@ class CalendarServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Calendar\V1\ListCalendarsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Calendar\V1\ListCalendarsResponse>
      */
     public function ListCalendars(\Saltoapis\Nebula\Calendar\V1\ListCalendarsRequest $argument,
       $metadata = [], $options = []) {
@@ -77,7 +77,7 @@ class CalendarServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Calendar\V1\UpdateCalendarRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Calendar\V1\Calendar>
      */
     public function UpdateCalendar(\Saltoapis\Nebula\Calendar\V1\UpdateCalendarRequest $argument,
       $metadata = [], $options = []) {
@@ -94,7 +94,7 @@ class CalendarServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Calendar\V1\DeleteCalendarRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Google\Protobuf\GPBEmpty>
      */
     public function DeleteCalendar(\Saltoapis\Nebula\Calendar\V1\DeleteCalendarRequest $argument,
       $metadata = [], $options = []) {
@@ -111,7 +111,7 @@ class CalendarServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Calendar\V1\CreateEventRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Calendar\V1\Event>
      */
     public function CreateEvent(\Saltoapis\Nebula\Calendar\V1\CreateEventRequest $argument,
       $metadata = [], $options = []) {
@@ -128,7 +128,7 @@ class CalendarServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Calendar\V1\GetEventRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Calendar\V1\Event>
      */
     public function GetEvent(\Saltoapis\Nebula\Calendar\V1\GetEventRequest $argument,
       $metadata = [], $options = []) {
@@ -145,7 +145,7 @@ class CalendarServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Calendar\V1\ListEventsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Calendar\V1\ListEventsResponse>
      */
     public function ListEvents(\Saltoapis\Nebula\Calendar\V1\ListEventsRequest $argument,
       $metadata = [], $options = []) {
@@ -162,7 +162,7 @@ class CalendarServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Calendar\V1\UpdateEventRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Calendar\V1\Event>
      */
     public function UpdateEvent(\Saltoapis\Nebula\Calendar\V1\UpdateEventRequest $argument,
       $metadata = [], $options = []) {
@@ -179,7 +179,7 @@ class CalendarServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Calendar\V1\DeleteEventRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Google\Protobuf\GPBEmpty>
      */
     public function DeleteEvent(\Saltoapis\Nebula\Calendar\V1\DeleteEventRequest $argument,
       $metadata = [], $options = []) {

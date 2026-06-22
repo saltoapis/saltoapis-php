@@ -26,7 +26,7 @@ class InstallationServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Installation\V1\CreateInstallationRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Installation\V1\Installation>
      */
     public function CreateInstallation(\Saltoapis\Nebula\Installation\V1\CreateInstallationRequest $argument,
       $metadata = [], $options = []) {
@@ -43,7 +43,7 @@ class InstallationServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Installation\V1\GetInstallationRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Installation\V1\Installation>
      */
     public function GetInstallation(\Saltoapis\Nebula\Installation\V1\GetInstallationRequest $argument,
       $metadata = [], $options = []) {
@@ -60,7 +60,7 @@ class InstallationServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Installation\V1\ListInstallationsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Installation\V1\ListInstallationsResponse>
      */
     public function ListInstallations(\Saltoapis\Nebula\Installation\V1\ListInstallationsRequest $argument,
       $metadata = [], $options = []) {
@@ -77,7 +77,7 @@ class InstallationServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Installation\V1\UpdateInstallationRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Installation\V1\Installation>
      */
     public function UpdateInstallation(\Saltoapis\Nebula\Installation\V1\UpdateInstallationRequest $argument,
       $metadata = [], $options = []) {
@@ -94,7 +94,7 @@ class InstallationServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Installation\V1\DeleteInstallationRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Installation\V1\Installation>
      */
     public function DeleteInstallation(\Saltoapis\Nebula\Installation\V1\DeleteInstallationRequest $argument,
       $metadata = [], $options = []) {
@@ -111,7 +111,7 @@ class InstallationServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Installation\V1\UndeleteInstallationRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Installation\V1\Installation>
      */
     public function UndeleteInstallation(\Saltoapis\Nebula\Installation\V1\UndeleteInstallationRequest $argument,
       $metadata = [], $options = []) {
@@ -130,7 +130,7 @@ class InstallationServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Installation\V1\CreatePolicyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Installation\V1\Policy>
      */
     public function CreatePolicy(\Saltoapis\Nebula\Installation\V1\CreatePolicyRequest $argument,
       $metadata = [], $options = []) {
@@ -147,7 +147,7 @@ class InstallationServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Installation\V1\GetPolicyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Installation\V1\Policy>
      */
     public function GetPolicy(\Saltoapis\Nebula\Installation\V1\GetPolicyRequest $argument,
       $metadata = [], $options = []) {
@@ -164,7 +164,7 @@ class InstallationServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Installation\V1\ListPoliciesRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Installation\V1\ListPoliciesResponse>
      */
     public function ListPolicies(\Saltoapis\Nebula\Installation\V1\ListPoliciesRequest $argument,
       $metadata = [], $options = []) {
@@ -181,7 +181,7 @@ class InstallationServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Installation\V1\UpdatePolicyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Installation\V1\Policy>
      */
     public function UpdatePolicy(\Saltoapis\Nebula\Installation\V1\UpdatePolicyRequest $argument,
       $metadata = [], $options = []) {
@@ -198,7 +198,7 @@ class InstallationServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Installation\V1\DeletePolicyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Google\Protobuf\GPBEmpty>
      */
     public function DeletePolicy(\Saltoapis\Nebula\Installation\V1\DeletePolicyRequest $argument,
       $metadata = [], $options = []) {
@@ -217,7 +217,7 @@ class InstallationServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Installation\V1\TestPermissionsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Installation\V1\TestPermissionsResponse>
      */
     public function TestPermissions(\Saltoapis\Nebula\Installation\V1\TestPermissionsRequest $argument,
       $metadata = [], $options = []) {
@@ -234,7 +234,7 @@ class InstallationServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Installation\V1\TransferInstallationOwnershipRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Installation\V1\TransferInstallationOwnershipResponse>
      */
     public function TransferInstallationOwnership(\Saltoapis\Nebula\Installation\V1\TransferInstallationOwnershipRequest $argument,
       $metadata = [], $options = []) {
@@ -251,7 +251,7 @@ class InstallationServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Installation\V1\AcceptInstallationOwnershipRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Installation\V1\AcceptInstallationOwnershipResponse>
      */
     public function AcceptInstallationOwnership(\Saltoapis\Nebula\Installation\V1\AcceptInstallationOwnershipRequest $argument,
       $metadata = [], $options = []) {
@@ -268,7 +268,7 @@ class InstallationServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Installation\V1\GetSubscriptionRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Installation\V1\Subscription>
      */
     public function GetSubscription(\Saltoapis\Nebula\Installation\V1\GetSubscriptionRequest $argument,
       $metadata = [], $options = []) {
@@ -287,7 +287,7 @@ class InstallationServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Installation\V1\UpdateBillingInfoRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Installation\V1\BillingInfo>
      */
     public function UpdateBillingInfo(\Saltoapis\Nebula\Installation\V1\UpdateBillingInfoRequest $argument,
       $metadata = [], $options = []) {
@@ -307,7 +307,7 @@ class InstallationServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Installation\V1\UpdatePaymentMethodRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Installation\V1\PaymentMethod>
      */
     public function UpdatePaymentMethod(\Saltoapis\Nebula\Installation\V1\UpdatePaymentMethodRequest $argument,
       $metadata = [], $options = []) {
@@ -325,7 +325,7 @@ class InstallationServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Installation\V1\UpdateCardRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Installation\V1\UpdateCardResponse>
      */
     public function UpdateCard(\Saltoapis\Nebula\Installation\V1\UpdateCardRequest $argument,
       $metadata = [], $options = []) {
@@ -346,7 +346,7 @@ class InstallationServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Installation\V1\CreatePaymentAuthorizationRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Installation\V1\PaymentAuthorization>
      */
     public function CreatePaymentAuthorization(\Saltoapis\Nebula\Installation\V1\CreatePaymentAuthorizationRequest $argument,
       $metadata = [], $options = []) {
@@ -363,7 +363,7 @@ class InstallationServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Installation\V1\ListInvoicesRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Installation\V1\ListInvoicesResponse>
      */
     public function ListInvoices(\Saltoapis\Nebula\Installation\V1\ListInvoicesRequest $argument,
       $metadata = [], $options = []) {
@@ -380,7 +380,7 @@ class InstallationServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Installation\V1\ApplyCouponRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Installation\V1\ApplyCouponResponse>
      */
     public function ApplyCoupon(\Saltoapis\Nebula\Installation\V1\ApplyCouponRequest $argument,
       $metadata = [], $options = []) {
@@ -397,7 +397,7 @@ class InstallationServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Installation\V1\UnapplyCouponRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Installation\V1\UnapplyCouponResponse>
      */
     public function UnapplyCoupon(\Saltoapis\Nebula\Installation\V1\UnapplyCouponRequest $argument,
       $metadata = [], $options = []) {
@@ -423,7 +423,7 @@ class InstallationServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Installation\V1\GenerateAuthorizationTokenRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Installation\V1\GenerateAuthorizationTokenResponse>
      */
     public function GenerateAuthorizationToken(\Saltoapis\Nebula\Installation\V1\GenerateAuthorizationTokenRequest $argument,
       $metadata = [], $options = []) {

@@ -26,7 +26,7 @@ class EncoderServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Encoder\V1\CreateEncoderRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Encoder\V1\Encoder>
      */
     public function CreateEncoder(\Saltoapis\Nebula\Encoder\V1\CreateEncoderRequest $argument,
       $metadata = [], $options = []) {
@@ -43,7 +43,7 @@ class EncoderServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Encoder\V1\GetEncoderRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Encoder\V1\Encoder>
      */
     public function GetEncoder(\Saltoapis\Nebula\Encoder\V1\GetEncoderRequest $argument,
       $metadata = [], $options = []) {
@@ -60,7 +60,7 @@ class EncoderServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Encoder\V1\ListEncodersRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Encoder\V1\ListEncodersResponse>
      */
     public function ListEncoders(\Saltoapis\Nebula\Encoder\V1\ListEncodersRequest $argument,
       $metadata = [], $options = []) {
@@ -77,7 +77,7 @@ class EncoderServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Encoder\V1\UpdateEncoderRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Encoder\V1\Encoder>
      */
     public function UpdateEncoder(\Saltoapis\Nebula\Encoder\V1\UpdateEncoderRequest $argument,
       $metadata = [], $options = []) {
@@ -94,7 +94,7 @@ class EncoderServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Encoder\V1\DeleteEncoderRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Google\Protobuf\GPBEmpty>
      */
     public function DeleteEncoder(\Saltoapis\Nebula\Encoder\V1\DeleteEncoderRequest $argument,
       $metadata = [], $options = []) {
@@ -112,7 +112,7 @@ class EncoderServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Encoder\V1\InitializeEncoderRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function InitializeEncoder(\Saltoapis\Nebula\Encoder\V1\InitializeEncoderRequest $argument,
       $metadata = [], $options = []) {
@@ -130,7 +130,7 @@ class EncoderServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Encoder\V1\ConfigureEncoderRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function ConfigureEncoder(\Saltoapis\Nebula\Encoder\V1\ConfigureEncoderRequest $argument,
       $metadata = [], $options = []) {
@@ -150,7 +150,7 @@ class EncoderServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Encoder\V1\ResetEncoderRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function ResetEncoder(\Saltoapis\Nebula\Encoder\V1\ResetEncoderRequest $argument,
       $metadata = [], $options = []) {
@@ -168,7 +168,7 @@ class EncoderServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Encoder\V1\UpdateEncoderFirmwareRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function UpdateEncoderFirmware(\Saltoapis\Nebula\Encoder\V1\UpdateEncoderFirmwareRequest $argument,
       $metadata = [], $options = []) {
@@ -187,7 +187,7 @@ class EncoderServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Encoder\V1\BindEncoderRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Encoder\V1\BindEncoderResponse>
      */
     public function BindEncoder(\Saltoapis\Nebula\Encoder\V1\BindEncoderRequest $argument,
       $metadata = [], $options = []) {
@@ -210,7 +210,7 @@ class EncoderServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Encoder\V1\UnbindEncoderRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Encoder\V1\UnbindEncoderResponse>
      */
     public function UnbindEncoder(\Saltoapis\Nebula\Encoder\V1\UnbindEncoderRequest $argument,
       $metadata = [], $options = []) {
@@ -228,7 +228,7 @@ class EncoderServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Encoder\V1\ReadKeyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function ReadKey(\Saltoapis\Nebula\Encoder\V1\ReadKeyRequest $argument,
       $metadata = [], $options = []) {
@@ -246,7 +246,7 @@ class EncoderServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Encoder\V1\GenerateAuthorizationTokenRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Encoder\V1\GenerateAuthorizationTokenResponse>
      */
     public function GenerateAuthorizationToken(\Saltoapis\Nebula\Encoder\V1\GenerateAuthorizationTokenRequest $argument,
       $metadata = [], $options = []) {
@@ -265,7 +265,7 @@ class EncoderServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Encoder\V1\GenerateFirmwareDownloadUriRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function GenerateFirmwareDownloadUri(\Saltoapis\Nebula\Encoder\V1\GenerateFirmwareDownloadUriRequest $argument,
       $metadata = [], $options = []) {

@@ -27,7 +27,7 @@ class UserServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\User\V1\CreateUserRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\User\V1\User>
      */
     public function CreateUser(\Saltoapis\Nebula\User\V1\CreateUserRequest $argument,
       $metadata = [], $options = []) {
@@ -44,7 +44,7 @@ class UserServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\User\V1\GetUserRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\User\V1\User>
      */
     public function GetUser(\Saltoapis\Nebula\User\V1\GetUserRequest $argument,
       $metadata = [], $options = []) {
@@ -61,7 +61,7 @@ class UserServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\User\V1\BatchGetUsersRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\User\V1\BatchGetUsersResponse>
      */
     public function BatchGetUsers(\Saltoapis\Nebula\User\V1\BatchGetUsersRequest $argument,
       $metadata = [], $options = []) {
@@ -78,7 +78,7 @@ class UserServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\User\V1\ListUsersRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\User\V1\ListUsersResponse>
      */
     public function ListUsers(\Saltoapis\Nebula\User\V1\ListUsersRequest $argument,
       $metadata = [], $options = []) {
@@ -95,7 +95,7 @@ class UserServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\User\V1\UpdateUserRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\User\V1\User>
      */
     public function UpdateUser(\Saltoapis\Nebula\User\V1\UpdateUserRequest $argument,
       $metadata = [], $options = []) {
@@ -112,7 +112,7 @@ class UserServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\User\V1\DeleteUserRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Google\Protobuf\GPBEmpty>
      */
     public function DeleteUser(\Saltoapis\Nebula\User\V1\DeleteUserRequest $argument,
       $metadata = [], $options = []) {
@@ -131,7 +131,7 @@ class UserServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\User\V1\BlockUserRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\User\V1\BlockUserResponse>
      */
     public function BlockUser(\Saltoapis\Nebula\User\V1\BlockUserRequest $argument,
       $metadata = [], $options = []) {
@@ -152,7 +152,7 @@ class UserServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\User\V1\UnblockUserRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\User\V1\UnblockUserResponse>
      */
     public function UnblockUser(\Saltoapis\Nebula\User\V1\UnblockUserRequest $argument,
       $metadata = [], $options = []) {
@@ -169,7 +169,7 @@ class UserServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\User\V1\CreateUserAccessRightRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\User\V1\UserAccessRight>
      */
     public function CreateUserAccessRight(\Saltoapis\Nebula\User\V1\CreateUserAccessRightRequest $argument,
       $metadata = [], $options = []) {
@@ -186,7 +186,7 @@ class UserServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\User\V1\GetUserAccessRightRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\User\V1\UserAccessRight>
      */
     public function GetUserAccessRight(\Saltoapis\Nebula\User\V1\GetUserAccessRightRequest $argument,
       $metadata = [], $options = []) {
@@ -203,7 +203,7 @@ class UserServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\User\V1\ListUserAccessRightsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\User\V1\ListUserAccessRightsResponse>
      */
     public function ListUserAccessRights(\Saltoapis\Nebula\User\V1\ListUserAccessRightsRequest $argument,
       $metadata = [], $options = []) {
@@ -220,7 +220,7 @@ class UserServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\User\V1\UpdateUserAccessRightRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\User\V1\UserAccessRight>
      */
     public function UpdateUserAccessRight(\Saltoapis\Nebula\User\V1\UpdateUserAccessRightRequest $argument,
       $metadata = [], $options = []) {
@@ -237,7 +237,7 @@ class UserServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\User\V1\DeleteUserAccessRightRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Google\Protobuf\GPBEmpty>
      */
     public function DeleteUserAccessRight(\Saltoapis\Nebula\User\V1\DeleteUserAccessRightRequest $argument,
       $metadata = [], $options = []) {
@@ -254,7 +254,7 @@ class UserServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\User\V1\AssignCardKeyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\User\V1\CardKey>
      */
     public function AssignCardKey(\Saltoapis\Nebula\User\V1\AssignCardKeyRequest $argument,
       $metadata = [], $options = []) {
@@ -271,7 +271,7 @@ class UserServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\User\V1\CancelCardKeyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\User\V1\CardKey>
      */
     public function CancelCardKey(\Saltoapis\Nebula\User\V1\CancelCardKeyRequest $argument,
       $metadata = [], $options = []) {
@@ -288,7 +288,7 @@ class UserServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\User\V1\EncodeCardKeyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function EncodeCardKey(\Saltoapis\Nebula\User\V1\EncodeCardKeyRequest $argument,
       $metadata = [], $options = []) {
@@ -305,7 +305,7 @@ class UserServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\User\V1\AssignAppKeyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\User\V1\AppKey>
      */
     public function AssignAppKey(\Saltoapis\Nebula\User\V1\AssignAppKeyRequest $argument,
       $metadata = [], $options = []) {
@@ -322,7 +322,7 @@ class UserServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\User\V1\CancelAppKeyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\User\V1\AppKey>
      */
     public function CancelAppKey(\Saltoapis\Nebula\User\V1\CancelAppKeyRequest $argument,
       $metadata = [], $options = []) {
@@ -346,7 +346,7 @@ class UserServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\User\V1\ComputeAppKeyDataRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\User\V1\ComputeAppKeyDataResponse>
      */
     public function ComputeAppKeyData(\Saltoapis\Nebula\User\V1\ComputeAppKeyDataRequest $argument,
       $metadata = [], $options = []) {
@@ -363,7 +363,7 @@ class UserServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\User\V1\AssignWalletKeyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\User\V1\AssignWalletKeyResponse>
      */
     public function AssignWalletKey(\Saltoapis\Nebula\User\V1\AssignWalletKeyRequest $argument,
       $metadata = [], $options = []) {
@@ -380,7 +380,7 @@ class UserServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\User\V1\CancelWalletKeyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\User\V1\CancelWalletKeyResponse>
      */
     public function CancelWalletKey(\Saltoapis\Nebula\User\V1\CancelWalletKeyRequest $argument,
       $metadata = [], $options = []) {
@@ -397,7 +397,7 @@ class UserServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\User\V1\AssignPasscodeRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\User\V1\AssignPasscodeResponse>
      */
     public function AssignPasscode(\Saltoapis\Nebula\User\V1\AssignPasscodeRequest $argument,
       $metadata = [], $options = []) {
@@ -414,7 +414,7 @@ class UserServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\User\V1\CancelPasscodeRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\User\V1\CancelPasscodeResponse>
      */
     public function CancelPasscode(\Saltoapis\Nebula\User\V1\CancelPasscodeRequest $argument,
       $metadata = [], $options = []) {
@@ -431,7 +431,7 @@ class UserServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\User\V1\AssignElectronicKeyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\User\V1\AssignElectronicKeyResponse>
      */
     public function AssignElectronicKey(\Saltoapis\Nebula\User\V1\AssignElectronicKeyRequest $argument,
       $metadata = [], $options = []) {
@@ -448,7 +448,7 @@ class UserServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\User\V1\CancelElectronicKeyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\User\V1\CancelElectronicKeyResponse>
      */
     public function CancelElectronicKey(\Saltoapis\Nebula\User\V1\CancelElectronicKeyRequest $argument,
       $metadata = [], $options = []) {
@@ -465,7 +465,7 @@ class UserServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\User\V1\EncodeElectronicKeyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function EncodeElectronicKey(\Saltoapis\Nebula\User\V1\EncodeElectronicKeyRequest $argument,
       $metadata = [], $options = []) {

@@ -26,7 +26,7 @@ class DigitalKeyServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\DigitalKey\V1\GetDigitalKeyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\DigitalKey\V1\DigitalKey>
      */
     public function GetDigitalKey(\Saltoapis\Nebula\DigitalKey\V1\GetDigitalKeyRequest $argument,
       $metadata = [], $options = []) {
@@ -43,7 +43,7 @@ class DigitalKeyServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\DigitalKey\V1\ListDigitalKeysRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\DigitalKey\V1\ListDigitalKeysResponse>
      */
     public function ListDigitalKeys(\Saltoapis\Nebula\DigitalKey\V1\ListDigitalKeysRequest $argument,
       $metadata = [], $options = []) {
@@ -60,7 +60,7 @@ class DigitalKeyServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\DigitalKey\V1\GetDigitalKeyAccessPointRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\DigitalKey\V1\DigitalKeyAccessPoint>
      */
     public function GetDigitalKeyAccessPoint(\Saltoapis\Nebula\DigitalKey\V1\GetDigitalKeyAccessPointRequest $argument,
       $metadata = [], $options = []) {
@@ -77,7 +77,7 @@ class DigitalKeyServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\DigitalKey\V1\ListDigitalKeyAccessPointsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\DigitalKey\V1\ListDigitalKeyAccessPointsResponse>
      */
     public function ListDigitalKeyAccessPoints(\Saltoapis\Nebula\DigitalKey\V1\ListDigitalKeyAccessPointsRequest $argument,
       $metadata = [], $options = []) {
@@ -97,7 +97,7 @@ class DigitalKeyServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\DigitalKey\V1\SyncDigitalKeyAccessPointsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function SyncDigitalKeyAccessPoints(\Saltoapis\Nebula\DigitalKey\V1\SyncDigitalKeyAccessPointsRequest $argument,
       $metadata = [], $options = []) {
@@ -117,7 +117,7 @@ class DigitalKeyServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\DigitalKey\V1\UnlockDigitalKeyAccessPointRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function UnlockDigitalKeyAccessPoint(\Saltoapis\Nebula\DigitalKey\V1\UnlockDigitalKeyAccessPointRequest $argument,
       $metadata = [], $options = []) {

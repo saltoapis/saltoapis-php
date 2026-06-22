@@ -27,7 +27,7 @@ class OpeningModeScheduleServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\OpeningModeSchedule\V1\CreateOpeningModeScheduleRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\OpeningModeSchedule\V1\OpeningModeSchedule>
      */
     public function CreateOpeningModeSchedule(\Saltoapis\Nebula\OpeningModeSchedule\V1\CreateOpeningModeScheduleRequest $argument,
       $metadata = [], $options = []) {
@@ -44,7 +44,7 @@ class OpeningModeScheduleServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\OpeningModeSchedule\V1\GetOpeningModeScheduleRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\OpeningModeSchedule\V1\OpeningModeSchedule>
      */
     public function GetOpeningModeSchedule(\Saltoapis\Nebula\OpeningModeSchedule\V1\GetOpeningModeScheduleRequest $argument,
       $metadata = [], $options = []) {
@@ -62,7 +62,7 @@ class OpeningModeScheduleServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\OpeningModeSchedule\V1\ListOpeningModeSchedulesRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\OpeningModeSchedule\V1\ListOpeningModeSchedulesResponse>
      */
     public function ListOpeningModeSchedules(\Saltoapis\Nebula\OpeningModeSchedule\V1\ListOpeningModeSchedulesRequest $argument,
       $metadata = [], $options = []) {
@@ -79,7 +79,7 @@ class OpeningModeScheduleServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\OpeningModeSchedule\V1\UpdateOpeningModeScheduleRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\OpeningModeSchedule\V1\OpeningModeSchedule>
      */
     public function UpdateOpeningModeSchedule(\Saltoapis\Nebula\OpeningModeSchedule\V1\UpdateOpeningModeScheduleRequest $argument,
       $metadata = [], $options = []) {
@@ -96,7 +96,7 @@ class OpeningModeScheduleServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\OpeningModeSchedule\V1\DeleteOpeningModeScheduleRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Google\Protobuf\GPBEmpty>
      */
     public function DeleteOpeningModeSchedule(\Saltoapis\Nebula\OpeningModeSchedule\V1\DeleteOpeningModeScheduleRequest $argument,
       $metadata = [], $options = []) {

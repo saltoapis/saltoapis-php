@@ -28,7 +28,7 @@ class AccessRightServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessRight\V1\CreateAccessRightRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\AccessRight\V1\AccessRight>
      */
     public function CreateAccessRight(\Saltoapis\Nebula\AccessRight\V1\CreateAccessRightRequest $argument,
       $metadata = [], $options = []) {
@@ -45,7 +45,7 @@ class AccessRightServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessRight\V1\GetAccessRightRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\AccessRight\V1\AccessRight>
      */
     public function GetAccessRight(\Saltoapis\Nebula\AccessRight\V1\GetAccessRightRequest $argument,
       $metadata = [], $options = []) {
@@ -62,7 +62,7 @@ class AccessRightServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessRight\V1\ListAccessRightsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\AccessRight\V1\ListAccessRightsResponse>
      */
     public function ListAccessRights(\Saltoapis\Nebula\AccessRight\V1\ListAccessRightsRequest $argument,
       $metadata = [], $options = []) {
@@ -79,7 +79,7 @@ class AccessRightServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessRight\V1\UpdateAccessRightRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\AccessRight\V1\AccessRight>
      */
     public function UpdateAccessRight(\Saltoapis\Nebula\AccessRight\V1\UpdateAccessRightRequest $argument,
       $metadata = [], $options = []) {
@@ -96,7 +96,7 @@ class AccessRightServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessRight\V1\DeleteAccessRightRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Google\Protobuf\GPBEmpty>
      */
     public function DeleteAccessRight(\Saltoapis\Nebula\AccessRight\V1\DeleteAccessRightRequest $argument,
       $metadata = [], $options = []) {
@@ -113,7 +113,7 @@ class AccessRightServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessRight\V1\CreateAccessRightAccessPointRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\AccessRight\V1\AccessRightAccessPoint>
      */
     public function CreateAccessRightAccessPoint(\Saltoapis\Nebula\AccessRight\V1\CreateAccessRightAccessPointRequest $argument,
       $metadata = [], $options = []) {
@@ -131,7 +131,7 @@ class AccessRightServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessRight\V1\BatchCreateAccessRightAccessPointsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\AccessRight\V1\BatchCreateAccessRightAccessPointsResponse>
      */
     public function BatchCreateAccessRightAccessPoints(\Saltoapis\Nebula\AccessRight\V1\BatchCreateAccessRightAccessPointsRequest $argument,
       $metadata = [], $options = []) {
@@ -148,7 +148,7 @@ class AccessRightServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessRight\V1\GetAccessRightAccessPointRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\AccessRight\V1\AccessRightAccessPoint>
      */
     public function GetAccessRightAccessPoint(\Saltoapis\Nebula\AccessRight\V1\GetAccessRightAccessPointRequest $argument,
       $metadata = [], $options = []) {
@@ -165,7 +165,7 @@ class AccessRightServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessRight\V1\ListAccessRightAccessPointsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\AccessRight\V1\ListAccessRightAccessPointsResponse>
      */
     public function ListAccessRightAccessPoints(\Saltoapis\Nebula\AccessRight\V1\ListAccessRightAccessPointsRequest $argument,
       $metadata = [], $options = []) {
@@ -182,7 +182,7 @@ class AccessRightServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessRight\V1\UpdateAccessRightAccessPointRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\AccessRight\V1\AccessRightAccessPoint>
      */
     public function UpdateAccessRightAccessPoint(\Saltoapis\Nebula\AccessRight\V1\UpdateAccessRightAccessPointRequest $argument,
       $metadata = [], $options = []) {
@@ -199,7 +199,7 @@ class AccessRightServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessRight\V1\DeleteAccessRightAccessPointRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Google\Protobuf\GPBEmpty>
      */
     public function DeleteAccessRightAccessPoint(\Saltoapis\Nebula\AccessRight\V1\DeleteAccessRightAccessPointRequest $argument,
       $metadata = [], $options = []) {
@@ -217,7 +217,7 @@ class AccessRightServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessRight\V1\BatchDeleteAccessRightAccessPointsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\AccessRight\V1\BatchDeleteAccessRightAccessPointsResponse>
      */
     public function BatchDeleteAccessRightAccessPoints(\Saltoapis\Nebula\AccessRight\V1\BatchDeleteAccessRightAccessPointsRequest $argument,
       $metadata = [], $options = []) {
@@ -234,7 +234,7 @@ class AccessRightServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessRight\V1\CreateAccessRightAccessPointGroupRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\AccessRight\V1\AccessRightAccessPointGroup>
      */
     public function CreateAccessRightAccessPointGroup(\Saltoapis\Nebula\AccessRight\V1\CreateAccessRightAccessPointGroupRequest $argument,
       $metadata = [], $options = []) {
@@ -252,7 +252,7 @@ class AccessRightServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessRight\V1\BatchCreateAccessRightAccessPointGroupsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\AccessRight\V1\BatchCreateAccessRightAccessPointGroupsResponse>
      */
     public function BatchCreateAccessRightAccessPointGroups(\Saltoapis\Nebula\AccessRight\V1\BatchCreateAccessRightAccessPointGroupsRequest $argument,
       $metadata = [], $options = []) {
@@ -269,7 +269,7 @@ class AccessRightServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessRight\V1\GetAccessRightAccessPointGroupRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\AccessRight\V1\AccessRightAccessPointGroup>
      */
     public function GetAccessRightAccessPointGroup(\Saltoapis\Nebula\AccessRight\V1\GetAccessRightAccessPointGroupRequest $argument,
       $metadata = [], $options = []) {
@@ -286,7 +286,7 @@ class AccessRightServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessRight\V1\ListAccessRightAccessPointGroupsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\AccessRight\V1\ListAccessRightAccessPointGroupsResponse>
      */
     public function ListAccessRightAccessPointGroups(\Saltoapis\Nebula\AccessRight\V1\ListAccessRightAccessPointGroupsRequest $argument,
       $metadata = [], $options = []) {
@@ -303,7 +303,7 @@ class AccessRightServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessRight\V1\UpdateAccessRightAccessPointGroupRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\AccessRight\V1\AccessRightAccessPointGroup>
      */
     public function UpdateAccessRightAccessPointGroup(\Saltoapis\Nebula\AccessRight\V1\UpdateAccessRightAccessPointGroupRequest $argument,
       $metadata = [], $options = []) {
@@ -320,7 +320,7 @@ class AccessRightServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessRight\V1\DeleteAccessRightAccessPointGroupRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Google\Protobuf\GPBEmpty>
      */
     public function DeleteAccessRightAccessPointGroup(\Saltoapis\Nebula\AccessRight\V1\DeleteAccessRightAccessPointGroupRequest $argument,
       $metadata = [], $options = []) {
@@ -337,7 +337,7 @@ class AccessRightServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessRight\V1\BatchDeleteAccessRightAccessPointGroupsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\AccessRight\V1\BatchDeleteAccessRightAccessPointGroupsResponse>
      */
     public function BatchDeleteAccessRightAccessPointGroups(\Saltoapis\Nebula\AccessRight\V1\BatchDeleteAccessRightAccessPointGroupsRequest $argument,
       $metadata = [], $options = []) {
@@ -354,7 +354,7 @@ class AccessRightServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessRight\V1\CreateAccessRightDestinationRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\AccessRight\V1\AccessRightDestination>
      */
     public function CreateAccessRightDestination(\Saltoapis\Nebula\AccessRight\V1\CreateAccessRightDestinationRequest $argument,
       $metadata = [], $options = []) {
@@ -371,7 +371,7 @@ class AccessRightServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessRight\V1\GetAccessRightDestinationRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\AccessRight\V1\AccessRightDestination>
      */
     public function GetAccessRightDestination(\Saltoapis\Nebula\AccessRight\V1\GetAccessRightDestinationRequest $argument,
       $metadata = [], $options = []) {
@@ -388,7 +388,7 @@ class AccessRightServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessRight\V1\ListAccessRightDestinationsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\AccessRight\V1\ListAccessRightDestinationsResponse>
      */
     public function ListAccessRightDestinations(\Saltoapis\Nebula\AccessRight\V1\ListAccessRightDestinationsRequest $argument,
       $metadata = [], $options = []) {
@@ -405,7 +405,7 @@ class AccessRightServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessRight\V1\UpdateAccessRightDestinationRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\AccessRight\V1\AccessRightDestination>
      */
     public function UpdateAccessRightDestination(\Saltoapis\Nebula\AccessRight\V1\UpdateAccessRightDestinationRequest $argument,
       $metadata = [], $options = []) {
@@ -422,7 +422,7 @@ class AccessRightServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\AccessRight\V1\DeleteAccessRightDestinationRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Google\Protobuf\GPBEmpty>
      */
     public function DeleteAccessRightDestination(\Saltoapis\Nebula\AccessRight\V1\DeleteAccessRightDestinationRequest $argument,
       $metadata = [], $options = []) {

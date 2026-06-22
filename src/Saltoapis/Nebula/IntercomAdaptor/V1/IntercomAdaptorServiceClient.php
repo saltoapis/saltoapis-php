@@ -27,7 +27,7 @@ class IntercomAdaptorServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\IntercomAdaptor\V1\CreateIntercomAdaptorRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\IntercomAdaptor\V1\IntercomAdaptor>
      */
     public function CreateIntercomAdaptor(\Saltoapis\Nebula\IntercomAdaptor\V1\CreateIntercomAdaptorRequest $argument,
       $metadata = [], $options = []) {
@@ -44,7 +44,7 @@ class IntercomAdaptorServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\IntercomAdaptor\V1\GetIntercomAdaptorRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\IntercomAdaptor\V1\IntercomAdaptor>
      */
     public function GetIntercomAdaptor(\Saltoapis\Nebula\IntercomAdaptor\V1\GetIntercomAdaptorRequest $argument,
       $metadata = [], $options = []) {
@@ -61,7 +61,7 @@ class IntercomAdaptorServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\IntercomAdaptor\V1\ListIntercomAdaptorsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\IntercomAdaptor\V1\ListIntercomAdaptorsResponse>
      */
     public function ListIntercomAdaptors(\Saltoapis\Nebula\IntercomAdaptor\V1\ListIntercomAdaptorsRequest $argument,
       $metadata = [], $options = []) {
@@ -78,7 +78,7 @@ class IntercomAdaptorServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\IntercomAdaptor\V1\UpdateIntercomAdaptorRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\IntercomAdaptor\V1\IntercomAdaptor>
      */
     public function UpdateIntercomAdaptor(\Saltoapis\Nebula\IntercomAdaptor\V1\UpdateIntercomAdaptorRequest $argument,
       $metadata = [], $options = []) {
@@ -95,7 +95,7 @@ class IntercomAdaptorServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\IntercomAdaptor\V1\DeleteIntercomAdaptorRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Google\Protobuf\GPBEmpty>
      */
     public function DeleteIntercomAdaptor(\Saltoapis\Nebula\IntercomAdaptor\V1\DeleteIntercomAdaptorRequest $argument,
       $metadata = [], $options = []) {
@@ -114,7 +114,7 @@ class IntercomAdaptorServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\IntercomAdaptor\V1\BindIntercomAdaptorRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\IntercomAdaptor\V1\BindIntercomAdaptorResponse>
      */
     public function BindIntercomAdaptor(\Saltoapis\Nebula\IntercomAdaptor\V1\BindIntercomAdaptorRequest $argument,
       $metadata = [], $options = []) {
@@ -137,7 +137,7 @@ class IntercomAdaptorServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\IntercomAdaptor\V1\UnbindIntercomAdaptorRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\IntercomAdaptor\V1\UnbindIntercomAdaptorResponse>
      */
     public function UnbindIntercomAdaptor(\Saltoapis\Nebula\IntercomAdaptor\V1\UnbindIntercomAdaptorRequest $argument,
       $metadata = [], $options = []) {
@@ -155,7 +155,7 @@ class IntercomAdaptorServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\IntercomAdaptor\V1\InitializeIntercomAdaptorRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function InitializeIntercomAdaptor(\Saltoapis\Nebula\IntercomAdaptor\V1\InitializeIntercomAdaptorRequest $argument,
       $metadata = [], $options = []) {
@@ -174,7 +174,7 @@ class IntercomAdaptorServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\IntercomAdaptor\V1\ConfigureIntercomAdaptorRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function ConfigureIntercomAdaptor(\Saltoapis\Nebula\IntercomAdaptor\V1\ConfigureIntercomAdaptorRequest $argument,
       $metadata = [], $options = []) {
@@ -194,7 +194,7 @@ class IntercomAdaptorServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\IntercomAdaptor\V1\ResetIntercomAdaptorRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function ResetIntercomAdaptor(\Saltoapis\Nebula\IntercomAdaptor\V1\ResetIntercomAdaptorRequest $argument,
       $metadata = [], $options = []) {
@@ -212,7 +212,7 @@ class IntercomAdaptorServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\IntercomAdaptor\V1\UpdateIntercomAdaptorFirmwareRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function UpdateIntercomAdaptorFirmware(\Saltoapis\Nebula\IntercomAdaptor\V1\UpdateIntercomAdaptorFirmwareRequest $argument,
       $metadata = [], $options = []) {
@@ -230,7 +230,7 @@ class IntercomAdaptorServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\IntercomAdaptor\V1\GenerateAuthorizationTokenRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\IntercomAdaptor\V1\GenerateAuthorizationTokenResponse>
      */
     public function GenerateAuthorizationToken(\Saltoapis\Nebula\IntercomAdaptor\V1\GenerateAuthorizationTokenRequest $argument,
       $metadata = [], $options = []) {
@@ -249,7 +249,7 @@ class IntercomAdaptorServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\IntercomAdaptor\V1\GenerateFirmwareDownloadUriRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function GenerateFirmwareDownloadUri(\Saltoapis\Nebula\IntercomAdaptor\V1\GenerateFirmwareDownloadUriRequest $argument,
       $metadata = [], $options = []) {

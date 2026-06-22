@@ -26,7 +26,7 @@ class EventServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Event\V1\GetEventRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Event\V1\Event>
      */
     public function GetEvent(\Saltoapis\Nebula\Event\V1\GetEventRequest $argument,
       $metadata = [], $options = []) {
@@ -43,7 +43,7 @@ class EventServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Event\V1\ListEventsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Event\V1\ListEventsResponse>
      */
     public function ListEvents(\Saltoapis\Nebula\Event\V1\ListEventsRequest $argument,
       $metadata = [], $options = []) {

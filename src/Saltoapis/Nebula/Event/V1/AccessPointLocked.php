@@ -28,6 +28,12 @@ class AccessPointLocked extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>.salto.nebula.user.v1.User user = 2;</code>
      */
     protected $user = null;
+    /**
+     * Indicates the direction of passage for this lock event.
+     *
+     * Generated from protobuf field <code>.salto.nebula.event.v1.AccessPointLocked.Direction direction = 9;</code>
+     */
+    protected $direction = 0;
     protected $credential;
 
     /**
@@ -52,6 +58,8 @@ class AccessPointLocked extends \Google\Protobuf\Internal\Message
      *           The passcode used to lock the access point.
      *     @type \Saltoapis\Nebula\User\V1\ElectronicKey $electronic_key
      *           The electronic key used to lock the access point.
+     *     @type int $direction
+     *           Indicates the direction of passage for this lock event.
      * }
      */
     public function __construct($data = NULL) {
@@ -313,6 +321,32 @@ class AccessPointLocked extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Saltoapis\Nebula\User\V1\ElectronicKey::class);
         $this->writeOneof(8, $var);
+
+        return $this;
+    }
+
+    /**
+     * Indicates the direction of passage for this lock event.
+     *
+     * Generated from protobuf field <code>.salto.nebula.event.v1.AccessPointLocked.Direction direction = 9;</code>
+     * @return int
+     */
+    public function getDirection()
+    {
+        return $this->direction;
+    }
+
+    /**
+     * Indicates the direction of passage for this lock event.
+     *
+     * Generated from protobuf field <code>.salto.nebula.event.v1.AccessPointLocked.Direction direction = 9;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setDirection($var)
+    {
+        GPBUtil::checkEnum($var, \Saltoapis\Nebula\Event\V1\AccessPointLocked\Direction::class);
+        $this->direction = $var;
 
         return $this;
     }

@@ -24,7 +24,7 @@ class EncryptedPayloadServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Installation\V1\IngestEncryptedPayloadsRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Installation\V1\IngestEncryptedPayloadsResponse>
      */
     public function IngestEncryptedPayloads(\Saltoapis\Nebula\Installation\V1\IngestEncryptedPayloadsRequest $argument,
       $metadata = [], $options = []) {

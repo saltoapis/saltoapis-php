@@ -25,7 +25,7 @@ class FileServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\File\V1\CreateFileRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\File\V1\File>
      */
     public function CreateFile(\Saltoapis\Nebula\File\V1\CreateFileRequest $argument,
       $metadata = [], $options = []) {

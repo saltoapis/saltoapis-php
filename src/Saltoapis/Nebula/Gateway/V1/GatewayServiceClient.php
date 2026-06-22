@@ -26,7 +26,7 @@ class GatewayServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Gateway\V1\CreateGatewayRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Gateway\V1\Gateway>
      */
     public function CreateGateway(\Saltoapis\Nebula\Gateway\V1\CreateGatewayRequest $argument,
       $metadata = [], $options = []) {
@@ -43,7 +43,7 @@ class GatewayServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Gateway\V1\GetGatewayRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Gateway\V1\Gateway>
      */
     public function GetGateway(\Saltoapis\Nebula\Gateway\V1\GetGatewayRequest $argument,
       $metadata = [], $options = []) {
@@ -60,7 +60,7 @@ class GatewayServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Gateway\V1\ListGatewaysRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Gateway\V1\ListGatewaysResponse>
      */
     public function ListGateways(\Saltoapis\Nebula\Gateway\V1\ListGatewaysRequest $argument,
       $metadata = [], $options = []) {
@@ -77,7 +77,7 @@ class GatewayServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Gateway\V1\UpdateGatewayRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Gateway\V1\Gateway>
      */
     public function UpdateGateway(\Saltoapis\Nebula\Gateway\V1\UpdateGatewayRequest $argument,
       $metadata = [], $options = []) {
@@ -94,7 +94,7 @@ class GatewayServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Gateway\V1\DeleteGatewayRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Google\Protobuf\GPBEmpty>
      */
     public function DeleteGateway(\Saltoapis\Nebula\Gateway\V1\DeleteGatewayRequest $argument,
       $metadata = [], $options = []) {
@@ -113,7 +113,7 @@ class GatewayServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Gateway\V1\BindGatewayRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Gateway\V1\BindGatewayResponse>
      */
     public function BindGateway(\Saltoapis\Nebula\Gateway\V1\BindGatewayRequest $argument,
       $metadata = [], $options = []) {
@@ -136,7 +136,7 @@ class GatewayServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Gateway\V1\UnbindGatewayRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Gateway\V1\UnbindGatewayResponse>
      */
     public function UnbindGateway(\Saltoapis\Nebula\Gateway\V1\UnbindGatewayRequest $argument,
       $metadata = [], $options = []) {
@@ -154,7 +154,7 @@ class GatewayServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Gateway\V1\InitializeGatewayRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function InitializeGateway(\Saltoapis\Nebula\Gateway\V1\InitializeGatewayRequest $argument,
       $metadata = [], $options = []) {
@@ -172,7 +172,7 @@ class GatewayServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Gateway\V1\ConfigureGatewayRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function ConfigureGateway(\Saltoapis\Nebula\Gateway\V1\ConfigureGatewayRequest $argument,
       $metadata = [], $options = []) {
@@ -192,7 +192,7 @@ class GatewayServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Gateway\V1\ResetGatewayRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function ResetGateway(\Saltoapis\Nebula\Gateway\V1\ResetGatewayRequest $argument,
       $metadata = [], $options = []) {
@@ -210,7 +210,7 @@ class GatewayServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Gateway\V1\UpdateGatewayFirmwareRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function UpdateGatewayFirmware(\Saltoapis\Nebula\Gateway\V1\UpdateGatewayFirmwareRequest $argument,
       $metadata = [], $options = []) {
@@ -228,7 +228,7 @@ class GatewayServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Gateway\V1\GenerateAuthorizationTokenRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\Gateway\V1\GenerateAuthorizationTokenResponse>
      */
     public function GenerateAuthorizationToken(\Saltoapis\Nebula\Gateway\V1\GenerateAuthorizationTokenRequest $argument,
       $metadata = [], $options = []) {
@@ -247,7 +247,7 @@ class GatewayServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\Gateway\V1\GenerateFirmwareDownloadUriRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
      */
     public function GenerateFirmwareDownloadUri(\Saltoapis\Nebula\Gateway\V1\GenerateFirmwareDownloadUriRequest $argument,
       $metadata = [], $options = []) {

@@ -27,7 +27,7 @@ class EmergencyKeyServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\EmergencyKey\V1\CreateEmergencyKeyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\EmergencyKey\V1\EmergencyKey>
      */
     public function CreateEmergencyKey(\Saltoapis\Nebula\EmergencyKey\V1\CreateEmergencyKeyRequest $argument,
       $metadata = [], $options = []) {
@@ -44,7 +44,7 @@ class EmergencyKeyServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\EmergencyKey\V1\GetEmergencyKeyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\EmergencyKey\V1\EmergencyKey>
      */
     public function GetEmergencyKey(\Saltoapis\Nebula\EmergencyKey\V1\GetEmergencyKeyRequest $argument,
       $metadata = [], $options = []) {
@@ -61,7 +61,7 @@ class EmergencyKeyServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\EmergencyKey\V1\ListEmergencyKeysRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\EmergencyKey\V1\ListEmergencyKeysResponse>
      */
     public function ListEmergencyKeys(\Saltoapis\Nebula\EmergencyKey\V1\ListEmergencyKeysRequest $argument,
       $metadata = [], $options = []) {
@@ -78,7 +78,7 @@ class EmergencyKeyServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\EmergencyKey\V1\UpdateEmergencyKeyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\EmergencyKey\V1\EmergencyKey>
      */
     public function UpdateEmergencyKey(\Saltoapis\Nebula\EmergencyKey\V1\UpdateEmergencyKeyRequest $argument,
       $metadata = [], $options = []) {
@@ -95,7 +95,7 @@ class EmergencyKeyServiceClient extends \Grpc\BaseStub {
      * @param \Saltoapis\Nebula\EmergencyKey\V1\DeleteEmergencyKeyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Google\Protobuf\GPBEmpty>
      */
     public function DeleteEmergencyKey(\Saltoapis\Nebula\EmergencyKey\V1\DeleteEmergencyKeyRequest $argument,
       $metadata = [], $options = []) {

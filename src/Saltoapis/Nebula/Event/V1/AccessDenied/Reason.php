@@ -77,6 +77,15 @@ class Reason
      * Generated from protobuf enum <code>DEVICE_BATTERY_INSUFFICIENT = 7;</code>
      */
     const DEVICE_BATTERY_INSUFFICIENT = 7;
+    /**
+     * The credential does not have permission to override the Do Not Disturb
+     * mode that is active on the device.
+     * Example: a user without the Do Not Disturb override permission attempts
+     * to unlock a device while its Do Not Disturb mode is active.
+     *
+     * Generated from protobuf enum <code>CREDENTIAL_DO_NOT_DISTURB_OVERRIDE_PERMISSION_NOT_PRESENT = 8;</code>
+     */
+    const CREDENTIAL_DO_NOT_DISTURB_OVERRIDE_PERMISSION_NOT_PRESENT = 8;
 
     private static $valueToName = [
         self::REASON_UNSPECIFIED => 'REASON_UNSPECIFIED',
@@ -87,6 +96,7 @@ class Reason
         self::CREDENTIAL_PERMISSION_OUTSIDE_SCHEDULE => 'CREDENTIAL_PERMISSION_OUTSIDE_SCHEDULE',
         self::INVALID_ACCESS_CODE => 'INVALID_ACCESS_CODE',
         self::DEVICE_BATTERY_INSUFFICIENT => 'DEVICE_BATTERY_INSUFFICIENT',
+        self::CREDENTIAL_DO_NOT_DISTURB_OVERRIDE_PERMISSION_NOT_PRESENT => 'CREDENTIAL_DO_NOT_DISTURB_OVERRIDE_PERMISSION_NOT_PRESENT',
     ];
 
     public static function name($value)

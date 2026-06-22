@@ -10,7 +10,7 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
- * The request message for [`AssignDigitalkey`][salto.nebula.user.v1.UserService.AssignDigitalkey]
+ * The request message for [`AssignAppKey`][salto.nebula.user.v1.UserService.AssignAppKey]
  *
  * Generated from protobuf message <code>salto.nebula.user.v1.AssignAppKeyRequest</code>
  */
