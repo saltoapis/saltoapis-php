@@ -127,4 +127,24 @@ class DigitalKeyServiceClient extends \Grpc\BaseStub {
         $metadata, $options);
     }
 
+    /**
+     * Lock an user access point
+     *
+     * Remotely locks an access point. This can be run against those access
+     * points where their associated devices are online and connected.
+     * The user related to the digital key must have the necessary access rights
+     * and the access point has to include a permitted schedule to perform a remote lock.
+     * @param \Saltoapis\Nebula\DigitalKey\V1\LockDigitalKeyAccessPointRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall<\Saltoapis\Longrunning\V1\Operation>
+     */
+    public function LockDigitalKeyAccessPoint(\Saltoapis\Nebula\DigitalKey\V1\LockDigitalKeyAccessPointRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.digitalkey.v1.DigitalKeyService/LockDigitalKeyAccessPoint',
+        $argument,
+        ['\Saltoapis\Longrunning\V1\Operation', 'decode'],
+        $metadata, $options);
+    }
+
 }
