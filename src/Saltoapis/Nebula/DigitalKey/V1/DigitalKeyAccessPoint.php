@@ -42,6 +42,12 @@ class DigitalKeyAccessPoint extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .salto.nebula.type.AppKeyTechnology supported_technologies = 4;</code>
      */
     private $supported_technologies;
+    /**
+     * Allowed remote operations for the digital key access point.
+     *
+     * Generated from protobuf field <code>repeated .salto.nebula.type.AppKeyRemoteOperation remote_operations = 5;</code>
+     */
+    private $remote_operations;
 
     /**
      * Constructor.
@@ -59,6 +65,8 @@ class DigitalKeyAccessPoint extends \Google\Protobuf\Internal\Message
      *           The device which gives coverage to the access point.
      *     @type int[] $supported_technologies
      *           Supported technologies used by the app to open an access point.
+     *     @type int[] $remote_operations
+     *           Allowed remote operations for the digital key access point.
      * }
      */
     public function __construct($data = NULL) {
@@ -170,6 +178,32 @@ class DigitalKeyAccessPoint extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \Saltoapis\Nebula\Type\AppKeyTechnology::class);
         $this->supported_technologies = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Allowed remote operations for the digital key access point.
+     *
+     * Generated from protobuf field <code>repeated .salto.nebula.type.AppKeyRemoteOperation remote_operations = 5;</code>
+     * @return RepeatedField<int>
+     */
+    public function getRemoteOperations()
+    {
+        return $this->remote_operations;
+    }
+
+    /**
+     * Allowed remote operations for the digital key access point.
+     *
+     * Generated from protobuf field <code>repeated .salto.nebula.type.AppKeyRemoteOperation remote_operations = 5;</code>
+     * @param int[] $var
+     * @return $this
+     */
+    public function setRemoteOperations($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \Saltoapis\Nebula\Type\AppKeyRemoteOperation::class);
+        $this->remote_operations = $arr;
 
         return $this;
     }

@@ -8,26 +8,27 @@ namespace Saltoapis\Nebula\Type;
 use UnexpectedValueException;
 
 /**
- * Specifies the remote operation supported by the app key.
+ * Specifies a remote operation that an app key can perform on an access
+ * point via a mobile phone.
  *
  * Protobuf type <code>salto.nebula.type.AppKeyRemoteOperation</code>
  */
 class AppKeyRemoteOperation
 {
     /**
-     * Unspecified or unknown remote operation.
+     * Unspecified. This value is not allowed and will be rejected by the API.
      *
      * Generated from protobuf enum <code>APP_KEY_REMOTE_OPERATION_UNSPECIFIED = 0;</code>
      */
     const APP_KEY_REMOTE_OPERATION_UNSPECIFIED = 0;
     /**
-     * Locks the access point remotely.
+     * Remotely locks the access point.
      *
      * Generated from protobuf enum <code>LOCK = 1;</code>
      */
     const LOCK = 1;
     /**
-     * Unlocks the access point remotely.
+     * Remotely unlocks the access point.
      *
      * Generated from protobuf enum <code>UNLOCK = 2;</code>
      */
