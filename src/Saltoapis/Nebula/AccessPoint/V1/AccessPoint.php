@@ -62,6 +62,13 @@ class AccessPoint extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool left_open = 8;</code>
      */
     protected $left_open = false;
+    /**
+     * Remote operations (for example: lock, unlock) that end users can perform on this
+     * access point via an app key.
+     *
+     * Generated from protobuf field <code>repeated .salto.nebula.type.AppKeyRemoteOperation user_remote_operations = 12;</code>
+     */
+    private $user_remote_operations;
     protected $opening_mode;
     protected $source;
 
@@ -103,6 +110,9 @@ class AccessPoint extends \Google\Protobuf\Internal\Message
      *           Source name, when source is a controller.
      *     @type string $intercom_adaptor
      *           Source name, when source is an intercom adaptor.
+     *     @type int[] $user_remote_operations
+     *           Remote operations (for example: lock, unlock) that end users can perform on this
+     *           access point via an app key.
      * }
      */
     public function __construct($data = NULL) {
@@ -467,6 +477,34 @@ class AccessPoint extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->writeOneof(11, $var);
+
+        return $this;
+    }
+
+    /**
+     * Remote operations (for example: lock, unlock) that end users can perform on this
+     * access point via an app key.
+     *
+     * Generated from protobuf field <code>repeated .salto.nebula.type.AppKeyRemoteOperation user_remote_operations = 12;</code>
+     * @return RepeatedField<int>
+     */
+    public function getUserRemoteOperations()
+    {
+        return $this->user_remote_operations;
+    }
+
+    /**
+     * Remote operations (for example: lock, unlock) that end users can perform on this
+     * access point via an app key.
+     *
+     * Generated from protobuf field <code>repeated .salto.nebula.type.AppKeyRemoteOperation user_remote_operations = 12;</code>
+     * @param int[] $var
+     * @return $this
+     */
+    public function setUserRemoteOperations($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \Saltoapis\Nebula\Type\AppKeyRemoteOperation::class);
+        $this->user_remote_operations = $arr;
 
         return $this;
     }

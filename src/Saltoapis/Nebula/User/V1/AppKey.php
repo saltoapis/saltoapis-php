@@ -41,6 +41,12 @@ class AppKey extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool outdated = 3;</code>
      */
     protected $outdated = false;
+    /**
+     * Allowed remote operations for the app key.
+     *
+     * Generated from protobuf field <code>repeated .salto.nebula.type.AppKeyRemoteOperation remote_operations = 4;</code>
+     */
+    private $remote_operations;
 
     /**
      * Constructor.
@@ -61,6 +67,8 @@ class AppKey extends \Google\Protobuf\Internal\Message
      *     @type bool $outdated
      *           Indicates whether this app key has pending updates or not.
      *           Deprecated: This field is deprecated and should not be used.
+     *     @type int[] $remote_operations
+     *           Allowed remote operations for the app key.
      * }
      */
     public function __construct($data = NULL) {
@@ -156,6 +164,32 @@ class AppKey extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->outdated = $var;
+
+        return $this;
+    }
+
+    /**
+     * Allowed remote operations for the app key.
+     *
+     * Generated from protobuf field <code>repeated .salto.nebula.type.AppKeyRemoteOperation remote_operations = 4;</code>
+     * @return RepeatedField<int>
+     */
+    public function getRemoteOperations()
+    {
+        return $this->remote_operations;
+    }
+
+    /**
+     * Allowed remote operations for the app key.
+     *
+     * Generated from protobuf field <code>repeated .salto.nebula.type.AppKeyRemoteOperation remote_operations = 4;</code>
+     * @param int[] $var
+     * @return $this
+     */
+    public function setRemoteOperations($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \Saltoapis\Nebula\Type\AppKeyRemoteOperation::class);
+        $this->remote_operations = $arr;
 
         return $this;
     }
