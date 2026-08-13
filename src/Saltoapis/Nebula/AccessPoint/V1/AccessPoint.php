@@ -69,6 +69,15 @@ class AccessPoint extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .salto.nebula.type.AppKeyRemoteOperation user_remote_operations = 12;</code>
      */
     private $user_remote_operations;
+    /**
+     * Time zone where the access point is located. It must follow the IANA Time
+     * Zone Database format. For example, "America/New_York." If not set, it falls
+     * back to the installation's time zone.
+     * This field is only usable on allowlisted installations.
+     *
+     * Generated from protobuf field <code>optional string time_zone = 13;</code>
+     */
+    protected $time_zone = null;
     protected $opening_mode;
     protected $source;
 
@@ -113,6 +122,11 @@ class AccessPoint extends \Google\Protobuf\Internal\Message
      *     @type int[] $user_remote_operations
      *           Remote operations (for example: lock, unlock) that end users can perform on this
      *           access point via an app key.
+     *     @type string $time_zone
+     *           Time zone where the access point is located. It must follow the IANA Time
+     *           Zone Database format. For example, "America/New_York." If not set, it falls
+     *           back to the installation's time zone.
+     *           This field is only usable on allowlisted installations.
      * }
      */
     public function __construct($data = NULL) {
@@ -505,6 +519,48 @@ class AccessPoint extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \Saltoapis\Nebula\Type\AppKeyRemoteOperation::class);
         $this->user_remote_operations = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Time zone where the access point is located. It must follow the IANA Time
+     * Zone Database format. For example, "America/New_York." If not set, it falls
+     * back to the installation's time zone.
+     * This field is only usable on allowlisted installations.
+     *
+     * Generated from protobuf field <code>optional string time_zone = 13;</code>
+     * @return string
+     */
+    public function getTimeZone()
+    {
+        return isset($this->time_zone) ? $this->time_zone : '';
+    }
+
+    public function hasTimeZone()
+    {
+        return isset($this->time_zone);
+    }
+
+    public function clearTimeZone()
+    {
+        unset($this->time_zone);
+    }
+
+    /**
+     * Time zone where the access point is located. It must follow the IANA Time
+     * Zone Database format. For example, "America/New_York." If not set, it falls
+     * back to the installation's time zone.
+     * This field is only usable on allowlisted installations.
+     *
+     * Generated from protobuf field <code>optional string time_zone = 13;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setTimeZone($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->time_zone = $var;
 
         return $this;
     }
