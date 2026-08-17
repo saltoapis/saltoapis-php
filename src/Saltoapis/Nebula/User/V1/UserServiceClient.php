@@ -299,6 +299,23 @@ class UserServiceClient extends \Grpc\BaseStub {
     }
 
     /**
+     * Update an app key
+     *
+     * Updates an existing user's app key.
+     * @param \Saltoapis\Nebula\User\V1\UpdateAppKeyRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     * @return \Grpc\UnaryCall<\Saltoapis\Nebula\User\V1\AppKey>
+     */
+    public function UpdateAppKey(\Saltoapis\Nebula\User\V1\UpdateAppKeyRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/salto.nebula.user.v1.UserService/UpdateAppKey',
+        $argument,
+        ['\Saltoapis\Nebula\User\V1\AppKey', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
      * Assign an app key
      *
      * Assigns an app key to an existing user.
