@@ -48,6 +48,12 @@ class DigitalKeyAccessPoint extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .salto.nebula.type.AppKeyRemoteOperation remote_operations = 5;</code>
      */
     private $remote_operations;
+    /**
+     * Allowed local operations for the digital key access point.
+     *
+     * Generated from protobuf field <code>repeated .salto.nebula.type.AppKeyLocalOperation local_operations = 6;</code>
+     */
+    private $local_operations;
 
     /**
      * Constructor.
@@ -67,6 +73,8 @@ class DigitalKeyAccessPoint extends \Google\Protobuf\Internal\Message
      *           Supported technologies used by the app to open an access point.
      *     @type int[] $remote_operations
      *           Allowed remote operations for the digital key access point.
+     *     @type int[] $local_operations
+     *           Allowed local operations for the digital key access point.
      * }
      */
     public function __construct($data = NULL) {
@@ -204,6 +212,32 @@ class DigitalKeyAccessPoint extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \Saltoapis\Nebula\Type\AppKeyRemoteOperation::class);
         $this->remote_operations = $arr;
+
+        return $this;
+    }
+
+    /**
+     * Allowed local operations for the digital key access point.
+     *
+     * Generated from protobuf field <code>repeated .salto.nebula.type.AppKeyLocalOperation local_operations = 6;</code>
+     * @return RepeatedField<int>
+     */
+    public function getLocalOperations()
+    {
+        return $this->local_operations;
+    }
+
+    /**
+     * Allowed local operations for the digital key access point.
+     *
+     * Generated from protobuf field <code>repeated .salto.nebula.type.AppKeyLocalOperation local_operations = 6;</code>
+     * @param int[] $var
+     * @return $this
+     */
+    public function setLocalOperations($var)
+    {
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \Saltoapis\Nebula\Type\AppKeyLocalOperation::class);
+        $this->local_operations = $arr;
 
         return $this;
     }
