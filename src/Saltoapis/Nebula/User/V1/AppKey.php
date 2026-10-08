@@ -47,6 +47,24 @@ class AppKey extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>repeated .salto.nebula.type.AppKeyRemoteOperation remote_operations = 4;</code>
      */
     private $remote_operations;
+    /**
+     * How access to the app key is managed. Determines whether a digital key
+     * is created for this app key or not.
+     *
+     * Generated from protobuf field <code>.salto.nebula.user.v1.AppKey.Type type = 5;</code>
+     */
+    protected $type = 0;
+    /**
+     * The email identity to which the digital key was issued.
+     * Set iff `type` is `MANAGED`. At the moment, this is always
+     * set for managed app keys, as it is the email used for the digital key
+     * binding.
+     * This is an assignment-time snapshot and is not subsequently
+     * synchronized with `User.email`.
+     *
+     * Generated from protobuf field <code>optional string email = 6;</code>
+     */
+    protected $email = null;
 
     /**
      * Constructor.
@@ -69,6 +87,16 @@ class AppKey extends \Google\Protobuf\Internal\Message
      *           Deprecated: This field is deprecated and should not be used.
      *     @type int[] $remote_operations
      *           Allowed remote operations for the app key.
+     *     @type int $type
+     *           How access to the app key is managed. Determines whether a digital key
+     *           is created for this app key or not.
+     *     @type string $email
+     *           The email identity to which the digital key was issued.
+     *           Set iff `type` is `MANAGED`. At the moment, this is always
+     *           set for managed app keys, as it is the email used for the digital key
+     *           binding.
+     *           This is an assignment-time snapshot and is not subsequently
+     *           synchronized with `User.email`.
      * }
      */
     public function __construct($data = NULL) {
@@ -190,6 +218,80 @@ class AppKey extends \Google\Protobuf\Internal\Message
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \Saltoapis\Nebula\Type\AppKeyRemoteOperation::class);
         $this->remote_operations = $arr;
+
+        return $this;
+    }
+
+    /**
+     * How access to the app key is managed. Determines whether a digital key
+     * is created for this app key or not.
+     *
+     * Generated from protobuf field <code>.salto.nebula.user.v1.AppKey.Type type = 5;</code>
+     * @return int
+     */
+    public function getType()
+    {
+        return $this->type;
+    }
+
+    /**
+     * How access to the app key is managed. Determines whether a digital key
+     * is created for this app key or not.
+     *
+     * Generated from protobuf field <code>.salto.nebula.user.v1.AppKey.Type type = 5;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setType($var)
+    {
+        GPBUtil::checkEnum($var, \Saltoapis\Nebula\User\V1\AppKey\Type::class);
+        $this->type = $var;
+
+        return $this;
+    }
+
+    /**
+     * The email identity to which the digital key was issued.
+     * Set iff `type` is `MANAGED`. At the moment, this is always
+     * set for managed app keys, as it is the email used for the digital key
+     * binding.
+     * This is an assignment-time snapshot and is not subsequently
+     * synchronized with `User.email`.
+     *
+     * Generated from protobuf field <code>optional string email = 6;</code>
+     * @return string
+     */
+    public function getEmail()
+    {
+        return isset($this->email) ? $this->email : '';
+    }
+
+    public function hasEmail()
+    {
+        return isset($this->email);
+    }
+
+    public function clearEmail()
+    {
+        unset($this->email);
+    }
+
+    /**
+     * The email identity to which the digital key was issued.
+     * Set iff `type` is `MANAGED`. At the moment, this is always
+     * set for managed app keys, as it is the email used for the digital key
+     * binding.
+     * This is an assignment-time snapshot and is not subsequently
+     * synchronized with `User.email`.
+     *
+     * Generated from protobuf field <code>optional string email = 6;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setEmail($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->email = $var;
 
         return $this;
     }
