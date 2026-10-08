@@ -31,6 +31,9 @@ class Principal extends \Google\Protobuf\Internal\Message
      *
      *     @type \Saltoapis\Nebula\User\V1\User $user
      *           A user represents a human actor within the system.
+     *     @type \Saltoapis\Nebula\ServiceAccount\V1\ServiceAccount $service_account
+     *           A service account represents a non-human actor within the system,
+     *           such as an application, an integration or an automated process.
      * }
      */
     public function __construct($data = NULL) {
@@ -65,6 +68,39 @@ class Principal extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Saltoapis\Nebula\User\V1\User::class);
         $this->writeOneof(1, $var);
+
+        return $this;
+    }
+
+    /**
+     * A service account represents a non-human actor within the system,
+     * such as an application, an integration or an automated process.
+     *
+     * Generated from protobuf field <code>.salto.nebula.serviceaccount.v1.ServiceAccount service_account = 2;</code>
+     * @return \Saltoapis\Nebula\ServiceAccount\V1\ServiceAccount|null
+     */
+    public function getServiceAccount()
+    {
+        return $this->readOneof(2);
+    }
+
+    public function hasServiceAccount()
+    {
+        return $this->hasOneof(2);
+    }
+
+    /**
+     * A service account represents a non-human actor within the system,
+     * such as an application, an integration or an automated process.
+     *
+     * Generated from protobuf field <code>.salto.nebula.serviceaccount.v1.ServiceAccount service_account = 2;</code>
+     * @param \Saltoapis\Nebula\ServiceAccount\V1\ServiceAccount $var
+     * @return $this
+     */
+    public function setServiceAccount($var)
+    {
+        GPBUtil::checkMessage($var, \Saltoapis\Nebula\ServiceAccount\V1\ServiceAccount::class);
+        $this->writeOneof(2, $var);
 
         return $this;
     }
