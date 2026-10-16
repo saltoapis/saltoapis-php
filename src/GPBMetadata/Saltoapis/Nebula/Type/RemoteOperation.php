@@ -16,7 +16,7 @@ class RemoteOperation
           return;
         }
         $pool->internalAddGeneratedFile(
-            "\x0A\x80\x03\x0A(salto/nebula/type/remote_operation.proto\x12\x11salto.nebula.type*W\x0A\x15AppKeyRemoteOperation\x12(\x0A\$APP_KEY_REMOTE_OPERATION_UNSPECIFIED\x10\x00\x12\x08\x0A\x04LOCK\x10\x01\x12\x0A\x0A\x06UNLOCK\x10\x02B\xDF\x01\x0A\x19com.saltoapis.nebula.typeB\x14RemoteOperationProtoP\x01ZVgithub.com/saltoapis-internal/saltoapis-go/nebula/type/remoteoperation;remoteoperation\xAA\x02\x15Saltoapis.Nebula.Type\xCA\x02\x15Saltoapis\\Nebula\\Type\xE2\x02!GPBMetadata\\Saltoapis\\Nebula\\Typeb\x06proto3"
+            "\x0A\xB3\x03\x0A(salto/nebula/type/remote_operation.proto\x12\x11salto.nebula.type*\x89\x01\x0A\x15AppKeyRemoteOperation\x12(\x0A\$APP_KEY_REMOTE_OPERATION_UNSPECIFIED\x10\x00\x12!\x0A\x1DAPP_KEY_REMOTE_OPERATION_LOCK\x10\x01\x12#\x0A\x1FAPP_KEY_REMOTE_OPERATION_UNLOCK\x10\x02B\xDF\x01\x0A\x19com.saltoapis.nebula.typeB\x14RemoteOperationProtoP\x01ZVgithub.com/saltoapis-internal/saltoapis-go/nebula/type/remoteoperation;remoteoperation\xAA\x02\x15Saltoapis.Nebula.Type\xCA\x02\x15Saltoapis\\Nebula\\Type\xE2\x02!GPBMetadata\\Saltoapis\\Nebula\\Typeb\x06proto3"
         , true);
 
         static::$is_initialized = true;

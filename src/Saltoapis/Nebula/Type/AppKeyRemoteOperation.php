@@ -24,20 +24,20 @@ class AppKeyRemoteOperation
     /**
      * Remotely locks the access point.
      *
-     * Generated from protobuf enum <code>LOCK = 1;</code>
+     * Generated from protobuf enum <code>APP_KEY_REMOTE_OPERATION_LOCK = 1;</code>
      */
-    const LOCK = 1;
+    const APP_KEY_REMOTE_OPERATION_LOCK = 1;
     /**
      * Remotely unlocks the access point.
      *
-     * Generated from protobuf enum <code>UNLOCK = 2;</code>
+     * Generated from protobuf enum <code>APP_KEY_REMOTE_OPERATION_UNLOCK = 2;</code>
      */
-    const UNLOCK = 2;
+    const APP_KEY_REMOTE_OPERATION_UNLOCK = 2;
 
     private static $valueToName = [
         self::APP_KEY_REMOTE_OPERATION_UNSPECIFIED => 'APP_KEY_REMOTE_OPERATION_UNSPECIFIED',
-        self::LOCK => 'LOCK',
-        self::UNLOCK => 'UNLOCK',
+        self::APP_KEY_REMOTE_OPERATION_LOCK => 'APP_KEY_REMOTE_OPERATION_LOCK',
+        self::APP_KEY_REMOTE_OPERATION_UNLOCK => 'APP_KEY_REMOTE_OPERATION_UNLOCK',
     ];
 
     public static function name($value)
