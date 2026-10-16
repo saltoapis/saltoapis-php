@@ -23,6 +23,7 @@ class AssignAppKeyRequest extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string name = 1;</code>
      */
     protected $name = '';
+    protected $management;
 
     /**
      * Constructor.
@@ -33,6 +34,11 @@ class AssignAppKeyRequest extends \Google\Protobuf\Internal\Message
      *     @type string $name
      *           The name of the requested user's app key to be assigned. For example:
      *           `installations/surelock-homes-hq/users/john-watson/app-key`.
+     *     @type \Saltoapis\Nebula\User\V1\AssignAppKeyRequest\Managed $managed
+     *           A digital key is created and managed.
+     *     @type \Saltoapis\Nebula\User\V1\AssignAppKeyRequest\CallerManaged $caller_managed
+     *           The caller retrieves and distributes the credential. No digital key
+     *           is created.
      * }
      */
     public function __construct($data = NULL) {
@@ -66,6 +72,78 @@ class AssignAppKeyRequest extends \Google\Protobuf\Internal\Message
         $this->name = $var;
 
         return $this;
+    }
+
+    /**
+     * A digital key is created and managed.
+     *
+     * Generated from protobuf field <code>.salto.nebula.user.v1.AssignAppKeyRequest.Managed managed = 2;</code>
+     * @return \Saltoapis\Nebula\User\V1\AssignAppKeyRequest\Managed|null
+     */
+    public function getManaged()
+    {
+        return $this->readOneof(2);
+    }
+
+    public function hasManaged()
+    {
+        return $this->hasOneof(2);
+    }
+
+    /**
+     * A digital key is created and managed.
+     *
+     * Generated from protobuf field <code>.salto.nebula.user.v1.AssignAppKeyRequest.Managed managed = 2;</code>
+     * @param \Saltoapis\Nebula\User\V1\AssignAppKeyRequest\Managed $var
+     * @return $this
+     */
+    public function setManaged($var)
+    {
+        GPBUtil::checkMessage($var, \Saltoapis\Nebula\User\V1\AssignAppKeyRequest\Managed::class);
+        $this->writeOneof(2, $var);
+
+        return $this;
+    }
+
+    /**
+     * The caller retrieves and distributes the credential. No digital key
+     * is created.
+     *
+     * Generated from protobuf field <code>.salto.nebula.user.v1.AssignAppKeyRequest.CallerManaged caller_managed = 3;</code>
+     * @return \Saltoapis\Nebula\User\V1\AssignAppKeyRequest\CallerManaged|null
+     */
+    public function getCallerManaged()
+    {
+        return $this->readOneof(3);
+    }
+
+    public function hasCallerManaged()
+    {
+        return $this->hasOneof(3);
+    }
+
+    /**
+     * The caller retrieves and distributes the credential. No digital key
+     * is created.
+     *
+     * Generated from protobuf field <code>.salto.nebula.user.v1.AssignAppKeyRequest.CallerManaged caller_managed = 3;</code>
+     * @param \Saltoapis\Nebula\User\V1\AssignAppKeyRequest\CallerManaged $var
+     * @return $this
+     */
+    public function setCallerManaged($var)
+    {
+        GPBUtil::checkMessage($var, \Saltoapis\Nebula\User\V1\AssignAppKeyRequest\CallerManaged::class);
+        $this->writeOneof(3, $var);
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getManagement()
+    {
+        return $this->whichOneof("management");
     }
 
 }

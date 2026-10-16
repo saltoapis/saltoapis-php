@@ -52,7 +52,7 @@ class AccessPoint extends \Google\Protobuf\Internal\Message
     /**
      * The duration the access point remains unlocked. This field is optional
      * for the server to check for its presence and assign a default value if it's missing.
-     * Allowed values are between 1 s and 30 m when set.
+     * Allowed values are between 0 s and 30 m when set.
      *
      * Generated from protobuf field <code>optional .google.protobuf.Duration unlock_duration = 7;</code>
      */
@@ -112,7 +112,7 @@ class AccessPoint extends \Google\Protobuf\Internal\Message
      *     @type \Google\Protobuf\Duration $unlock_duration
      *           The duration the access point remains unlocked. This field is optional
      *           for the server to check for its presence and assign a default value if it's missing.
-     *           Allowed values are between 1 s and 30 m when set.
+     *           Allowed values are between 0 s and 30 m when set.
      *     @type bool $left_open
      *           Indicates whether the access point was left open.
      *     @type string $electronic_lock
@@ -343,7 +343,7 @@ class AccessPoint extends \Google\Protobuf\Internal\Message
     /**
      * The duration the access point remains unlocked. This field is optional
      * for the server to check for its presence and assign a default value if it's missing.
-     * Allowed values are between 1 s and 30 m when set.
+     * Allowed values are between 0 s and 30 m when set.
      *
      * Generated from protobuf field <code>optional .google.protobuf.Duration unlock_duration = 7;</code>
      * @return \Google\Protobuf\Duration|null
@@ -366,7 +366,7 @@ class AccessPoint extends \Google\Protobuf\Internal\Message
     /**
      * The duration the access point remains unlocked. This field is optional
      * for the server to check for its presence and assign a default value if it's missing.
-     * Allowed values are between 1 s and 30 m when set.
+     * Allowed values are between 0 s and 30 m when set.
      *
      * Generated from protobuf field <code>optional .google.protobuf.Duration unlock_duration = 7;</code>
      * @param \Google\Protobuf\Duration $var
