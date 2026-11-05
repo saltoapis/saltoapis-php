@@ -146,6 +146,15 @@ class User extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool allow_do_not_disturb_override = 18;</code>
      */
     protected $allow_do_not_disturb_override = false;
+    /**
+     * Indicates whether the user has permission to enable office mode on a
+     * device.
+     * Example: a user with this field set to true can enable office mode on a
+     * device, allowing it to remain unlocked without requiring a credential.
+     *
+     * Generated from protobuf field <code>optional bool allow_office_activation = 19;</code>
+     */
+    protected $allow_office_activation = null;
 
     /**
      * Constructor.
@@ -211,6 +220,11 @@ class User extends \Google\Protobuf\Internal\Message
      *           on a device.
      *           Example: a user with this field set to true can unlock a device while
      *           its Do Not Disturb mode is active.
+     *     @type bool $allow_office_activation
+     *           Indicates whether the user has permission to enable office mode on a
+     *           device.
+     *           Example: a user with this field set to true can enable office mode on a
+     *           device, allowing it to remain unlocked without requiring a credential.
      * }
      */
     public function __construct($data = NULL) {
@@ -846,6 +860,48 @@ class User extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->allow_do_not_disturb_override = $var;
+
+        return $this;
+    }
+
+    /**
+     * Indicates whether the user has permission to enable office mode on a
+     * device.
+     * Example: a user with this field set to true can enable office mode on a
+     * device, allowing it to remain unlocked without requiring a credential.
+     *
+     * Generated from protobuf field <code>optional bool allow_office_activation = 19;</code>
+     * @return bool
+     */
+    public function getAllowOfficeActivation()
+    {
+        return isset($this->allow_office_activation) ? $this->allow_office_activation : false;
+    }
+
+    public function hasAllowOfficeActivation()
+    {
+        return isset($this->allow_office_activation);
+    }
+
+    public function clearAllowOfficeActivation()
+    {
+        unset($this->allow_office_activation);
+    }
+
+    /**
+     * Indicates whether the user has permission to enable office mode on a
+     * device.
+     * Example: a user with this field set to true can enable office mode on a
+     * device, allowing it to remain unlocked without requiring a credential.
+     *
+     * Generated from protobuf field <code>optional bool allow_office_activation = 19;</code>
+     * @param bool $var
+     * @return $this
+     */
+    public function setAllowOfficeActivation($var)
+    {
+        GPBUtil::checkBool($var);
+        $this->allow_office_activation = $var;
 
         return $this;
     }

@@ -96,8 +96,8 @@ class Booking extends \Google\Protobuf\Internal\Message
      *           The timestamp when the check-in was performed.
      *     @type \Google\Protobuf\Timestamp $check_out_time
      *           The timestamp when the check-out was performed.
-     *     @type string $unit
-     *           The unit resource reference assigned to the booking.
+     *     @type \Saltoapis\Nebula\Booking\V1\Booking\UnitAsset $unit_asset
+     *           The unit asset assigned to the booking.
      *     @type string[] $access_rights
      *           Access rights explicitly associated with the booking, such as common areas
      *           or facilities. A maximum of 5 access rights can be specified.
@@ -320,31 +320,31 @@ class Booking extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * The unit resource reference assigned to the booking.
+     * The unit asset assigned to the booking.
      *
-     * Generated from protobuf field <code>string unit = 7;</code>
-     * @return string
+     * Generated from protobuf field <code>.salto.nebula.booking.v1.Booking.UnitAsset unit_asset = 7;</code>
+     * @return \Saltoapis\Nebula\Booking\V1\Booking\UnitAsset|null
      */
-    public function getUnit()
+    public function getUnitAsset()
     {
         return $this->readOneof(7);
     }
 
-    public function hasUnit()
+    public function hasUnitAsset()
     {
         return $this->hasOneof(7);
     }
 
     /**
-     * The unit resource reference assigned to the booking.
+     * The unit asset assigned to the booking.
      *
-     * Generated from protobuf field <code>string unit = 7;</code>
-     * @param string $var
+     * Generated from protobuf field <code>.salto.nebula.booking.v1.Booking.UnitAsset unit_asset = 7;</code>
+     * @param \Saltoapis\Nebula\Booking\V1\Booking\UnitAsset $var
      * @return $this
      */
-    public function setUnit($var)
+    public function setUnitAsset($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkMessage($var, \Saltoapis\Nebula\Booking\V1\Booking\UnitAsset::class);
         $this->writeOneof(7, $var);
 
         return $this;
