@@ -53,6 +53,15 @@ class CardKey extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>bool outdated = 4;</code>
      */
     protected $outdated = false;
+    /**
+     * Expiration time independent of any time zone or calendar.
+     * The expiration time can be different depending on the status of the device.
+     * For further information, see:
+     * https://support.saltosystems.com/homelok/user-guide/property-manager/getting-started/core-concepts/
+     *
+     * Generated from protobuf field <code>.google.protobuf.Timestamp expire_time = 5;</code>
+     */
+    protected $expire_time = null;
 
     /**
      * Constructor.
@@ -81,6 +90,11 @@ class CardKey extends \Google\Protobuf\Internal\Message
      *           [`UpdateCardKey`][salto.nebula.user.v1.UserService.UpdateCardKey]
      *           operation. To change the value of this field, you must call
      *           [`OutdateCardKey`][salto.nebula.user.v1.UserService.OutdateCardKey].
+     *     @type \Google\Protobuf\Timestamp $expire_time
+     *           Expiration time independent of any time zone or calendar.
+     *           The expiration time can be different depending on the status of the device.
+     *           For further information, see:
+     *           https://support.saltosystems.com/homelok/user-guide/property-manager/getting-started/core-concepts/
      * }
      */
     public function __construct($data = NULL) {
@@ -214,6 +228,48 @@ class CardKey extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkBool($var);
         $this->outdated = $var;
+
+        return $this;
+    }
+
+    /**
+     * Expiration time independent of any time zone or calendar.
+     * The expiration time can be different depending on the status of the device.
+     * For further information, see:
+     * https://support.saltosystems.com/homelok/user-guide/property-manager/getting-started/core-concepts/
+     *
+     * Generated from protobuf field <code>.google.protobuf.Timestamp expire_time = 5;</code>
+     * @return \Google\Protobuf\Timestamp|null
+     */
+    public function getExpireTime()
+    {
+        return $this->expire_time;
+    }
+
+    public function hasExpireTime()
+    {
+        return isset($this->expire_time);
+    }
+
+    public function clearExpireTime()
+    {
+        unset($this->expire_time);
+    }
+
+    /**
+     * Expiration time independent of any time zone or calendar.
+     * The expiration time can be different depending on the status of the device.
+     * For further information, see:
+     * https://support.saltosystems.com/homelok/user-guide/property-manager/getting-started/core-concepts/
+     *
+     * Generated from protobuf field <code>.google.protobuf.Timestamp expire_time = 5;</code>
+     * @param \Google\Protobuf\Timestamp $var
+     * @return $this
+     */
+    public function setExpireTime($var)
+    {
+        GPBUtil::checkMessage($var, \Google\Protobuf\Timestamp::class);
+        $this->expire_time = $var;
 
         return $this;
     }

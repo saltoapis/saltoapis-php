@@ -29,6 +29,15 @@ class AccessPointLocked extends \Google\Protobuf\Internal\Message
      */
     protected $user = null;
     /**
+     * The actor that locked the access point through the API, for example a
+     * user or service account sending a lock request. Unset when the access
+     * point was locked on site, in which case `user` and `credential` identify
+     * who locked it.
+     *
+     * Generated from protobuf field <code>.salto.nebula.event.v1.Principal actor = 10;</code>
+     */
+    protected $actor = null;
+    /**
      * Indicates the direction of passage for this lock event.
      *
      * Generated from protobuf field <code>.salto.nebula.event.v1.AccessPointLocked.Direction direction = 9;</code>
@@ -46,6 +55,11 @@ class AccessPointLocked extends \Google\Protobuf\Internal\Message
      *           The access point that's been locked.
      *     @type \Saltoapis\Nebula\User\V1\User $user
      *           The user who locked the access point, if any.
+     *     @type \Saltoapis\Nebula\Event\V1\Principal $actor
+     *           The actor that locked the access point through the API, for example a
+     *           user or service account sending a lock request. Unset when the access
+     *           point was locked on site, in which case `user` and `credential` identify
+     *           who locked it.
      *     @type \Saltoapis\Nebula\EmergencyKey\V1\EmergencyKey $emergency_key
      *           The emergency key used to lock the access point.
      *     @type \Saltoapis\Nebula\User\V1\CardKey $card_key
@@ -135,6 +149,48 @@ class AccessPointLocked extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Saltoapis\Nebula\User\V1\User::class);
         $this->user = $var;
+
+        return $this;
+    }
+
+    /**
+     * The actor that locked the access point through the API, for example a
+     * user or service account sending a lock request. Unset when the access
+     * point was locked on site, in which case `user` and `credential` identify
+     * who locked it.
+     *
+     * Generated from protobuf field <code>.salto.nebula.event.v1.Principal actor = 10;</code>
+     * @return \Saltoapis\Nebula\Event\V1\Principal|null
+     */
+    public function getActor()
+    {
+        return $this->actor;
+    }
+
+    public function hasActor()
+    {
+        return isset($this->actor);
+    }
+
+    public function clearActor()
+    {
+        unset($this->actor);
+    }
+
+    /**
+     * The actor that locked the access point through the API, for example a
+     * user or service account sending a lock request. Unset when the access
+     * point was locked on site, in which case `user` and `credential` identify
+     * who locked it.
+     *
+     * Generated from protobuf field <code>.salto.nebula.event.v1.Principal actor = 10;</code>
+     * @param \Saltoapis\Nebula\Event\V1\Principal $var
+     * @return $this
+     */
+    public function setActor($var)
+    {
+        GPBUtil::checkMessage($var, \Saltoapis\Nebula\Event\V1\Principal::class);
+        $this->actor = $var;
 
         return $this;
     }
