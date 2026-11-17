@@ -40,6 +40,8 @@ class PaymentMethod extends \Google\Protobuf\Internal\Message
      *           Card details.
      *     @type \Saltoapis\Nebula\Installation\V1\PaymentMethod\DirectDebit $direct_debit
      *           Direct debit details.
+     *     @type \Saltoapis\Nebula\Installation\V1\PaymentMethod\BankTransfer $bank_transfer
+     *           Bank transfer details.
      * }
      */
     public function __construct($data = NULL) {
@@ -135,6 +137,37 @@ class PaymentMethod extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkMessage($var, \Saltoapis\Nebula\Installation\V1\PaymentMethod\DirectDebit::class);
         $this->writeOneof(3, $var);
+
+        return $this;
+    }
+
+    /**
+     * Bank transfer details.
+     *
+     * Generated from protobuf field <code>.salto.nebula.installation.v1.PaymentMethod.BankTransfer bank_transfer = 4;</code>
+     * @return \Saltoapis\Nebula\Installation\V1\PaymentMethod\BankTransfer|null
+     */
+    public function getBankTransfer()
+    {
+        return $this->readOneof(4);
+    }
+
+    public function hasBankTransfer()
+    {
+        return $this->hasOneof(4);
+    }
+
+    /**
+     * Bank transfer details.
+     *
+     * Generated from protobuf field <code>.salto.nebula.installation.v1.PaymentMethod.BankTransfer bank_transfer = 4;</code>
+     * @param \Saltoapis\Nebula\Installation\V1\PaymentMethod\BankTransfer $var
+     * @return $this
+     */
+    public function setBankTransfer($var)
+    {
+        GPBUtil::checkMessage($var, \Saltoapis\Nebula\Installation\V1\PaymentMethod\BankTransfer::class);
+        $this->writeOneof(4, $var);
 
         return $this;
     }
